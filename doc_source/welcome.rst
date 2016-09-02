@@ -85,7 +85,7 @@ For an overview of AWS deployment services, see
 About Amazon Web Services
 -------------------------
 
-|AWS| (AWS) is a collection of digital infrastructure services that developers can leverage when developing their applications.
+Amazon Web Services (AWS) is a collection of digital infrastructure services that developers can leverage when developing their applications.
 The services include computing, storage, database, and application synchronization(messaging and queuing).
 AWS uses a pay-as-you-go service model.
 You are charged only for the services that you-or your applications-use.
