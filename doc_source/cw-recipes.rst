@@ -14,10 +14,10 @@
 |CWlong| Recipes
 ################
 
-This section provides recipes you can use to access |CWlong| (|CW|) using the |sdk-ruby|. For more
+You can use the following recipes to access |CWlong| (|CW|) by using the |sdk-ruby|. For more
 information about |CW|, see the `CloudWatch Developer Guide <http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide>`_.
 
-This section contains the following recipes:
+**Recipes**
 
 * :ref:`aws-ruby-sdk-cw-recipe-show_alarms`
 
@@ -25,7 +25,7 @@ This section contains the following recipes:
 
 .. _aws-ruby-sdk-cw-recipe-show_alarms:
 
-Getting Information about all Alarms
+Getting Information about All Alarms
 ====================================
 
 The following example displays information about your |CW| alarms.
@@ -40,8 +40,8 @@ The following example displays information about your |CW| alarms.
 Creating an Alarm
 =================
 
-The following example creates a |CW| alarm :code:`my-alarm` that sends a message through the |SNS| topic with the ARN :code:`ARN`
-when the S3 bucket :code:`my-bucket` has more than 50 items in a 24 hour period.
+The following example creates a |CW| alarm *my-alarm* that sends a message through the |SNS| topic with the ARN :code:`ARN`
+when the |S3| bucket *my-bucket* has more than 50 items in a 24-hour period.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/cw/cw-ruby-example-create-alarm.rb
    :lines: 13-41

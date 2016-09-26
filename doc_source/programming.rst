@@ -15,7 +15,7 @@ Programming with the |sdk-ruby|
 ###############################
 
 This section provides information about developing software with the |sdk-ruby|, including how to
-use some of the advanced features of the SDK.
+use some of the SDK's advanced features.
 
 .. toctree::
     :titlesonly:

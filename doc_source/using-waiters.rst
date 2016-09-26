@@ -11,7 +11,7 @@
 .. _aws-ruby-sdk-waiters:
 
 #######
-Waiters
+Using Waiters
 #######
 
 Waiters are utility methods that poll for a particular state to occur on a client. Waiters can fail
@@ -79,7 +79,7 @@ following example.
 
 .. _aws-ruby-sdk-configuring-waiters:
 
-Configuring Waiters
+Configuring a Waiter
 ===================
 
 Each waiter has a default polling interval and a maximum number of attempts it will make before
@@ -89,7 +89,7 @@ seconds, polling every 5 seconds.
 
 .. code-block:: ruby
 
-    # poll for ~25 seconds
+    # Poll for ~25 seconds
     client.wait_until(...) do |w|
       w.max_attempts = 5
       w.delay = 5
@@ -99,7 +99,7 @@ To disable wait failures, set the value of either of these parameters to :code:`
 
 .. _aws-ruby-sdk-extending-waiters:
 
-Extending Waiters
+Extending a Waiter
 =================
 
 To modify the behavior of waiters, you can register callbacks that are triggered before each polling
@@ -126,10 +126,10 @@ seconds) before failing.
 
     started_at = Time.now
     client.wait_until(...) do |w|
-      # disable max attempts
+      # Disable max attempts
       w.max_attempts = nil
     
-      # poll for 1 hour, instead of a number of attempts
+      # Poll for 1 hour, instead of a number of attempts
       before_wait do |attempts, response|
         throw :failure if Time.now - started_at > 3600
       end

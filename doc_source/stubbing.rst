@@ -14,7 +14,7 @@
 Stubbing Client Responses and Errors
 ####################################
 
-This topic provides information about stubbing client responses and errors in a |sdk-ruby|
+This topic shows you how to stub client responses and errors in an |sdk-ruby|
 application.
 
 .. _aws-ruby-sdk-stubbing-clients:
@@ -22,8 +22,8 @@ application.
 Stubbing Client Responses
 =========================
 
-When you stub a response, the SDK disables network traffic and the client returns fake or stubbed
-data. If you do not supply fake data, the client returns:
+When you stub a response, the |sdk-ruby| disables network traffic and the client returns stubbed
+(or fake) data. If you don't supply stubbed data, the client returns:
 
 * Lists as empty arrays
 
@@ -33,7 +33,7 @@ data. If you do not supply fake data, the client returns:
 
 * Dates as :code:`now`
 
-Let's look at a simple example of returning fake names for the list of |S3| buckets.
+The following example returns stubbed names for the list of |S3| buckets.
 
 .. code-block:: ruby
 
@@ -50,25 +50,25 @@ Let's look at a simple example of returning fake names for the list of |S3| buck
       puts name
     end
 
-Running this code displays:
+Running this code displays the following.
 
 .. code-block:: none
 
     aws-sdk
     aws-sdk2
 
-.. note:: Once you supply any fake data, the default values no longer apply for any remaining instance
-    attributes. This means that in our example, the remaining instance attribute,
-    :code:`creation_date`, is not :code:`now`, but :code:`nil`.
+.. note:: After you supply any stubbed data, the default values no longer apply for any remaining instance
+    attributes. This means that in the previous example, the remaining instance attribute,
+    :code:`creation_date`, is not :code:`now` but :code:`nil`.
 
-The sdk validates your fake data. If you pass in data of the wrong type, it raises an :code:`ArgumentError` exception. For example, if
-instead of the previous assignment to :code:`bucket_data`, you instead used the following:
+The |sdk-ruby| validates your stubbed data. If you pass in data of the wrong type, it raises an :code:`ArgumentError` exception. For example, if
+instead of the previous assignment to :code:`bucket_data`, you used the following:
 
 .. code-block:: ruby
 
     bucket_data = s3.stub_data(:list_buckets, buckets:['aws-sdk', 'aws-sdk2'])
 
-The sdk raises two :code:`ArgumentError` exceptions:
+The |sdk-ruby| raises two :code:`ArgumentError` exceptions.
 
 .. code-block:: none
 
@@ -80,8 +80,8 @@ The sdk raises two :code:`ArgumentError` exceptions:
 Stubbing Client Errors
 ======================
 
-You can also stub errors that sdk raises for specific methods. The following example displays
-:code:`Caught Timeout::Error error calling head_bucket on aws-sdk`:
+You can also stub errors that the |sdk-ruby| raises for specific methods. The following example displays
+:code:`Caught Timeout::Error error calling head_bucket on aws-sdk`.
 
 .. code-block:: ruby
 

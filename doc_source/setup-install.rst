@@ -33,22 +33,22 @@ To sign up for AWS
 2. Follow the online instructions.
 
 If your project uses `Bundler <http://bundler.io/>`_, add the following line to your :code:`Gemfile`
-to add the |sdk-ruby| to your project:
+to add the |sdk-ruby| to your project.
 
 .. code-block:: none
 
     gem aws-sdk
 
-If you do not use Bundler, the easiest way to install the SDK is to use `RubyGems
+If you don't use Bundler, the easiest way to install the SDK is to use `RubyGems
 <https://rubygems.org/gems/aws-sdk/>`_. To install the latest version of the SDK, use the following
-command:
+command.
 
 .. code-block:: none
 
     gem install aws-sdk
 
 If the previous command fails on your Unix-based system, use :code:`sudo` to install the SDK, as
-shown in the following command:
+shown in the following command.
 
 .. code-block:: none
 

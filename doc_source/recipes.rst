@@ -14,7 +14,11 @@
 |sdk-ruby| Recipes
 ##################
 
+<<<<<<< HEAD
 This section provides the following recipes that you can use to access AWS services using the
+=======
+This section provides recipes you can use to access AWS services by using the
+>>>>>>> aws-ruby-developer-guide-editsBA
 |sdk-ruby|.
 
 .. toctree::
@@ -34,170 +38,190 @@ This section provides the following recipes that you can use to access AWS servi
 
 :ref:`aws-ruby-sdk-cw-recipes`
 
-    Demonstrates how to use the |sdk-ruby| with |CW| to:
+    * :ref:`aws-ruby-sdk-cw-recipe-show_alarms`
 
-    * Get information about all alarms
+    * :ref:`aws-ruby-sdk-cw-recipe-create_alarm`
 
-    * Create an alarm
 
 :ref:`aws-ruby-sdk-dynamo-recipes`
-
-    Demonstrates how to use the |sdk-ruby| with |DDB| to: 
      
-    * Get information about all tables
+    * :ref:`aws-ruby-sdk-dynamo-recipe-get-tables`
 
-    * Create a table
+	* :ref:`aws-ruby-sdk-dynamo-recipe-create-table`
 
-    * Add an item to a table
+	* :ref:`aws-ruby-sdk-dynamo-recipe-add-item-to-table`
 
-    * Get information about all table items
+	* :ref:`aws-ruby-sdk-dynamo-recipe-list-table-items`
 
-    * Get information about a specific table item
+	* :ref:`aws-ruby-sdk-dynamo-recipe-get-table-item`
 
-    * Update a table to include a new field
+	* :ref:`aws-ruby-sdk-dynamo-recipe-update-table`
 
-    * Create an index
+	* :ref:`aws-ruby-sdk-dynamo-recipe-create-index`
+
 
 :ref:`aws-ruby-sdk-ec2-recipes`
-
-    Demonstrates how use to the |sdk-ruby| with |EC2| to:
          
-    * Create a Virtual Private Cloud
+	* :ref:`aws-ruby-sdk-ec2-create-vpc`
 
-    * Create an Internet Gateway
+	* :ref:`aws-ruby-sdk-ec2-attach-igw-vpc`
 
-    * Create a Public Subnet
+	* :ref:`aws-ruby-sdk-ec2-create-subnet`
 
-    * Create a Route Table
+	* :ref:`aws-ruby-sdk-ec2-create-route-table`
 
-    * Create a Security Group
+	* :ref:`aws-ruby-sdk-ec2-create-security-group`
 
-    * Create a Key-Pair
+	* :ref:`aws-ruby-sdk-ec2-create-key-pair`
 
-    * Get information about all instances
+	* :ref:`aws-ruby-sdk-ec2-recipe-get-instances`
 
-    * Get information about all instances with a specific tag value
+	* :ref:`aws-ruby-sdk-ec2-recipe-get-instance-by-tag`
 
-    * Get information about a specific instance
+	* :ref:`aws-ruby-sdk-ec2-recipe-get-instance`
 
-    * Create an instances
+	* :ref:`aws-ruby-sdk-ec2-recipe-create-instance`
 
-    * Start, stop, and reboot an instance
+	* :ref:`aws-ruby-sdk-ec2-recipe-stop-instance`
 
-    * Terminate an instance
+	* :ref:`aws-ruby-sdk-ec2-recipe-start-instance`
+
+	* :ref:`aws-ruby-sdk-ec2-recipe-reboot-instance`
+
+	* :ref:`aws-ruby-sdk-ec2-recipe-terminate-instance`
+
 
 :ref:`aws-ruby-sdk-eb-recipes`
-
-    Demonstrates how to use the |sdk-ruby| with |AEB| to:
      
-    * Get information about all applications
+	* :ref:`aws-ruby-sdk-eb-recipe-get-apps`
 
-    * Get information about a specific application
+	* :ref:`aws-ruby-sdk-eb-recipe-get-app`
 
-    * Update a Ruby on Rails application
+	* :ref:`aws-ruby-sdk-eb-recipe-update-ruby-on-rails-app`
+
 
 :ref:`aws-ruby-sdk-iam-recipes`
-
-    Demonstrates how to use the |sdk-ruby| with |IAM| to:
      
-    * Get information about all users
+	* :ref:`aws-ruby-sdk-iam-recipe-get-users`
 
-    * Add a new user
+	* :ref:`aws-ruby-sdk-iam-recipe-add-user`
 
-    * Create a user's access keys
+	* :ref:`aws-ruby-sdk-iam-recipe-create-user-access-keys`
 
-    * Add a managed policy to a user
+	* :ref:`aws-ruby-sdk-iam-recipe-add-managed-policy`
 
-    * Create a role
+	* :ref:`aws-ruby-sdk-iam-recipe-create-role`
+
 
 :ref:`aws-ruby-sdk-lambda-recipes`
-
-    Demonstrates how to use the |sdk-ruby| with |LAM| to:
      
-    * Get information about all functions
+	* :ref:`lambda-ruby-example-show-functions`
 
-    * Create a function
+	* :ref:`lambda-ruby-example-create-function`
 
-    * Configure a function to receive notifications
+	* :ref:`lambda-ruby-example-configure-function-for-notification`
+
 
 :ref:`aws-ruby-sdk-rds-recipes`
-
-    Demonstrates how to use the |sdk-ruby| with |RDS| to:
      
-    * Get information about all instances
+	* :ref:`aws-ruby-sdk-rds-recipe-get-instances`
 
-    * Get information about all snapshots
+	* :ref:`aws-ruby-sdk-rds-recipe-get-snapshots`
 
-    * Get information about all cluster and their snapshots
+	* :ref:`aws-ruby-sdk-rds-recipe-get-cluster-snapshots`
 
-    * Get information about all security groups
+	* :ref:`aws-ruby-sdk-rds-recipe-get-security_groups`
 
-    * Get information about all subnet groups
+	* :ref:`aws-ruby-sdk-rds-recipe-get-subnet-groups`
 
-    * Get information about all parameter groups
+	* :ref:`aws-ruby-sdk-rds-recipe-get-parameter_groups`
 
-    * Create an instance snapshot
+	* :ref:`aws-ruby-sdk-rds-recipe-create-snapshot`
 
-    * Create a cluster snapshot
+	* :ref:`aws-ruby-sdk-rds-recipe-create-cluster-snapshot`
+
 
 :ref:`aws-ruby-sdk-s3-recipes`
-
-    Demonstrates how to use the |sdk-ruby| with |S3| to:
      
-    * Get information about all buckets
+	* :ref:`aws-ruby-sdk-s3-recipe-get-buckets`
 
-    * Get information about all buckets in a region
+	* :ref:`aws-ruby-sdk-s3-recipe-get-buckets-in-region`
 
-    * Create a bucket
+	* :ref:`aws-ruby-sdk-s3-recipe-create-buckets`
 
-    * Determine whether a bucket exists or is accessible
+	* :ref:`aws-ruby-sdk-s3-recipe-does-bucket-exist`
 
-    * Get information about all bucket items
+	* :ref:`aws-ruby-sdk-s3-recipe-get-bucket-items`
 
-    * Add an item to a bucket
+	* :ref:`aws-ruby-sdk-s3-recipe-upload-bucket-item`
 
-    * Add an item with metadata to a bucket
+	* :ref:`aws-ruby-sdk-s3-recipe-upload-bucket-item-with-metadata`
 
-    * Retrieve an item from a bucket
+	* :ref:`aws-ruby-sdk-s3-recipe-get-bucket-item`
 
-    * Change the properties of a bucket item
+	* :ref:`aws-ruby-sdk-s3-recipe-set-item-props`
 
-    * Trigger a notification when an item is added to a bucket
+	* :ref:`aws-ruby-sdk-s3-recipe-add-notification`
 
-    * Create a bucket lifecycle template
+	* :ref:`aws-ruby-sdk-s3-recipe-create-policy-template`
+
 
 :ref:`aws-ruby-sdk-sns-recipes`
-
-    Demonstrates how to use the |sdk-ruby| with |SNS| to:
      
-    * Get information about all topics
+	* :ref:`aws-ruby-sdk-sns-recipe-show-topics`
 
-    * Create a topic
+	* :ref:`aws-ruby-sdk-sns-recipe-create-topic`
 
-    * Get information about all of the subscribers to a topic
+	* :ref:`aws-ruby-sdk-sns-recipe-show-subscriptions`
 
-    * Add new subscriber to a topic
+	* :ref:`aws-ruby-sdk-sns-recipe-create-subscription`
 
-    * Send a message to all topic subscribers
+	* :ref:`aws-ruby-sdk-sns-recipe-send-message`
+
+	* :ref:`aws-ruby-sdk-sns-recipe-enable-resource`
+
 
 :ref:`aws-ruby-sdk-sqs-recipes`
-
-    Demonstrates how to use the |sdk-ruby| with |SQS| to:
      
-    * Get information about all queues
+	* :ref:`aws-ruby-sdk-sqs-recipe-show-queues`
 
-    * Create a queue
+	* :ref:`aws-ruby-sdk-sqs-recipe-create-queue`
 
-    * Send messages through a queue
+	* :ref:`aws-ruby-sdk-sqs-recipe-send-messages`
 
-    * Get the messages in a queue
+	* :ref:`aws-ruby-sdk-sqs-recipe-get-messages`
 
-    * Poll the messages in a queue
+	* :ref:`aws-ruby-sdk-sqs-recipe-get-messages-with-long-polling`
 
-    * Redirect dead letters in a queue
+	* :ref:`aws-ruby-sdk-sqs-recipe-poll-messages`
 
-    * Delete a queue
+	* :ref:`aws-ruby-sdk-sqs-recipe-redirect-deadletters`
 
+	* :ref:`aws-ruby-sdk-sqs-recipe-delete_queue`
+
+<<<<<<< HEAD
+=======
+	* :ref:`aws-ruby-sdk-sqs-recipe-enable-resource`
+	
+	
+.. include:: cw-recipes.rst
+
+.. include:: dynamo-recipes.rst
+
+.. include:: ec2-recipes.rst
+
+.. include:: eb-recipes.rst
+
+.. include:: iam-recipes.rst
+
+.. include:: lambda-recipes.rst
+
+.. include:: rds-recipes.rst
+
+.. include:: s3-recipes.rst
+
+.. include:: sns-recipes.rst
+>>>>>>> aws-ruby-developer-guide-editsBA
 
 
 

@@ -14,10 +14,10 @@
 |LAM| Recipes
 #############
 
-This section provides some recipes you can use to access |LAMlong| (|LAM|) using the |sdk-ruby|. For
+You can use the following recipes to access |LAMlong| (|LAM|) using the |sdk-ruby|. For
 more information about |LAM|, see the `Lambda documentation <http://aws.amazon.com/documentation/lambda/>`_.
 
-This section contains the following recipes:
+**Recipes**
 
 * :ref:`lambda-ruby-example-show-functions`
 
@@ -27,10 +27,10 @@ This section contains the following recipes:
 
 .. _lambda-ruby-example-show-functions:
 
-Displaying Information about all |LAM| Functions
+Displaying Information about All |LAM| Functions
 ================================================
 
-The following example displays the name, ARN, and role of all of your |LAM| functions in the region :code:`us-west-2`
+The following example displays the name, ARN, and role of all of your |LAM| functions in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/lambda/aws-ruby-sdk-lambda-example-show-functions.rb
    :lines: 13-21
@@ -42,19 +42,19 @@ The following example displays the name, ARN, and role of all of your |LAM| func
 Creating a |LAM| Function
 =========================
 
-The following example creates the |LAM| function :code:`my-notification-function` in the region :code:`us-west-2`
+The following example creates the |LAM| function :code:`my-notification-function` in the :code:`us-west-2` region using these values:
 
-* The role ARN :code:`my-resource-arn`. In most cases you need only attach the :code:`AWSLambdaExecute` managed policy to the policy for this role.
+* Role ARN: :code:`my-resource-arn`. In most cases, you need to attach only the :code:`AWSLambdaExecute` managed policy to the policy for this role.
   
-* The function entry point :code:`my-package.my-class`
+* Function entry point: :code:`my-package.my-class`
 
-* The runtime :code:`java8`
+* Runtime: :code:`java8`
 
-* The the zip file :code:`my-zip-file.zip`
+* Zip file: :code:`my-zip-file.zip`
 
-* The bucket :code:`my-notification-bucket`
+* Bucket: :code:`my-notification-bucket`
 
-* The key :code:`my-zip-file`
+* Key: :code:`my-zip-file`
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/lambda/aws-ruby-sdk-lambda-example-create-function.rb
    :lines: 13-32
@@ -66,7 +66,7 @@ The following example creates the |LAM| function :code:`my-notification-function
 Configuring a |LAM| Function to Receive Notifications
 =====================================================
 
-The following example configures the Lambda function :code:`my-notification-function` in the region :code:`us-west-2` accept notifications from the resource with the ARN :code:`my-resource-arn`:
+The following example configures the |LAM| function :code:`my-notification-function` in the :code:`us-west-2` region to accept notifications from the resource with the ARN :code:`my-resource-arn`.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/lambda/aws-ruby-sdk-lambda-example-configure-function-for-notification.rb
    :lines: 13-24

@@ -14,10 +14,9 @@
 |EC2| Recipes
 #############
 
-This section provides recipes you can use to access |EC2long| (|EC2|) using the |sdk-ruby|. For more
-information about |EC2|, see the `Amazon EC2 Documentation <http://aws.amazon.com/documentation/ec2/>`_.
+You can use the following recipes to access |EC2long| (|EC2|) using the |sdk-ruby|. For more information about |EC2|, see the `Amazon EC2 Documentation <http://aws.amazon.com/documentation/ec2/>`_.
 
-This section contains the following recipes:
+**Recipes**
 
 * :ref:`aws-ruby-sdk-ec2-create-vpc`
 
@@ -49,11 +48,12 @@ This section contains the following recipes:
 
 .. _aws-ruby-sdk-ec2-create-vpc:
 
-Creating a Virtual Private Cloud (VPC)
+Creating a VPC
 ======================================
 
-The following example creates the VPC :code:`MyGroovyVPC` with the CIDR block :code:`10.200.0.0/16` and displays its ID.
-This example creates a virtual network with 65,536 private IP addresses.
+The following example creates the virtual private cloud (VPC) :code:`MyGroovyVPC` with the CIDR block :code:`10.200.0.0/16`, and then displays the VPC's ID.
+
+The example creates a virtual network with 65,536 private IP addresses.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-vpc.rb
    :lines: 13-31
@@ -62,10 +62,10 @@ This example creates a virtual network with 65,536 private IP addresses.
 
 .. _aws-ruby-sdk-ec2-attach-igw-vpc:
 
-Creating an Internet Gateway and attaching it to a VPC
+Creating an Internet Gateway and Attaching It to a VPC
 ======================================================
 
-The following example creates the internet gateway :code:`MyGroovyIGW`, attaches it to the VPC with ID :code:`VPC_ID`, and displays its ID.
+The following example creates an Internet gateway :code:`MyGroovyIGW`, attaches it to a VPC that has ID :code:`VPC_ID`, and then displays the Internet gateway's ID.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-attach-igw-vpc.rb
    :lines: 13-22
@@ -77,11 +77,11 @@ The following example creates the internet gateway :code:`MyGroovyIGW`, attaches
 Creating a Public Subnet
 ========================
 
-The following example creates the public subnet :code:`MyGroovySubnet` in the region :code:`us-west-2`,
-and the availablity zone :code:`us-west-2a`,
-attaches it to the VPC with the ID :code:`VPC_ID` using the CIDR block of :code:`10.200.10.0/24`,
-and displays its ID
-The example creates a subnet of 256 private IP addresses within the VPC.
+The following example creates a public subnet :code:`MyGroovySubnet` in the :code:`us-west-2` region
+and the Availablity Zone :code:`us-west-2a`. The example attaches the public subnet to a VPC with the ID :code:`VPC_ID` that uses the CIDR block :code:`10.200.10.0/24`, and then 
+displays the subnet's ID.
+
+The public subnet created in this example has 256 private IP addresses within the VPC.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-subnet.rb
    :lines: 13-24
@@ -90,12 +90,12 @@ The example creates a subnet of 256 private IP addresses within the VPC.
 
 .. _aws-ruby-sdk-ec2-create-route-table:
 
-Creating a Route Table and associating it with a Subnet
+Creating a Route Table and Associating It with a Subnet
 =======================================================
 
-The following example creates the route table :code:`MyGroovyRouteTable` in region :code:`us-west-2`, the VPC with the ID :code;`VPC_ID`,
-the route with the CIDR block :code:`0.0.0.0/0` and the gateway with the ID :code:`IGW_ID`,
-associates it with the subnet with the ID :code:`SUBNET_ID`, and displays its ID.
+The following example creates a route table :code:`MyGroovyRouteTable` in :code:`us-west-2` region on a VPC with the ID :code;`VPC_ID`.
+The route table uses the route with the CIDR block :code:`0.0.0.0/0` and the gateway with the ID :code:`IGW_ID`.
+The example associates the route table with the subnet that has ID :code:`SUBNET_ID`, and then displays the route table's ID.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-route-table.rb
    :lines: 13-32
@@ -107,9 +107,9 @@ associates it with the subnet with the ID :code:`SUBNET_ID`, and displays its ID
 Creating a Security Group
 =========================
 
-The following example creates the security group :code:`MyGroovySecurityGroup` in the region :code:`us-west-2`, the VPC with the ID :code:`VPC_ID`,
-allows access over port 22 (SSH) from all addresses (CIDR block :code:`0.0.0.0/0`),
-gives it the description "Security group for MyGroovyInstance", and displays its ID.
+The following example creates a security group :code:`MyGroovySecurityGroup` in the :code:`us-west-2` region on a VPC with the ID :code:`VPC_ID`.
+In the example, the security group is allowed access over port 22 (SSH) from all addresses (CIDR block :code:`0.0.0.0/0`) and
+is given the description "Security group for MyGroovyInstance". Then, the security group's ID is displayed.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-security-group.rb
    :lines: 13-33
@@ -118,11 +118,10 @@ gives it the description "Security group for MyGroovyInstance", and displays its
 
 .. _aws-ruby-sdk-ec2-create-key-pair:
 
-Creating a Key-Pair
+Creating a Key Pair
 ===================
 
-The following example creates an unencrypted, PEM-encoded RSA private key in your home folder as :file:`MyGroovyKeyPair.pem`.
-You need a key pair when you connect to your Amazon EC2 instance.
+You need a key pair when you connect to your |EC2| instance. The following example creates an unencrypted, PEM-encoded RSA private key :file:`MyGroovyKeyPair.pem` in your home folder.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-key-pair.rb
    :lines: 13-22
@@ -134,8 +133,8 @@ You need a key pair when you connect to your Amazon EC2 instance.
 Getting Information about All Instances
 =======================================
 
-The following example lists the IDs and state (pending, running, shutting down, terminated, stopping, or stopped)
-of all of your EC2 instances in the region :code:`us-west-2`.
+The following example lists the IDs and states (pending, running, shutting down, terminated, stopping, or stopped)
+for all of your |EC2| instances in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-get-all-instance-info.rb
    :lines: 13-22
@@ -148,8 +147,9 @@ Getting Information about All Instances with a Specific Tag Value
 =================================================================
 
 The following example lists the ID and state (pending, running, shutting down, terminated, stopping, or stopped)
-of the EC2 instance with the tag :code:`Group` and tag value :code:`MyGroovyGroup` in the region :code:`us-west-2`.
-Note that both the tag name and value are case-sensitive.
+of an |EC2| instance with the tag :code:`Group` and tag value :code:`MyGroovyGroup` in the :code:`us-west-2` region.
+
+.. note:: The tag name and value are case-sensitive.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-get-instance-info-by-tag.rb
    :lines: 13-22
@@ -161,7 +161,7 @@ Note that both the tag name and value are case-sensitive.
 Getting Information about a Specific Instance
 =============================================
 
-The following example lists the state of the instance :code:`i-123abc` in the region :code:`us-west-2`.
+The following example lists the state of an instance :code:`i-123abc` in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-list-state-instance-i-123abc.rb
    :lines: 13-21
@@ -173,10 +173,11 @@ The following example lists the state of the instance :code:`i-123abc` in the re
 Creating an Instance
 ====================
 
-The following example creates the EC2 instance :code:`MyGroovyInstance` with the tag :code:`Group` and value :code:`MyGroovyGroup`
-in the availability zone :code:`us-west-2a` with the machine image :code:`MACHINE_IMAGE` for the account with ID :code:`ACCOUNT_ID`,
-the security group with the ID :code:`SECURITY_GROUP_ID`, the subnet with the ID :code:`SUBNET_ID`, and displays its public DNS and IP address.
-Note the empty script value. You can add instructions here that your EC2 instance executes when it starts.
+The following example creates an |EC2| instance :code:`MyGroovyInstance`, with the tag :code:`Group` and value :code:`MyGroovyGroup`. The instance is created
+in Availability Zone :code:`us-west-2a` with the machine image :code:`MACHINE_IMAGE` for the account with ID :code:`ACCOUNT_ID`,
+the security group with the ID :code:`SECURITY_GROUP_ID`, and the subnet with the ID :code:`SUBNET_ID`. Then, it displays the instance's public DNS and IP address.
+
+.. note:: In the empty script value, you can add instructions that your |EC2| instance executes when it starts.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-instance.rb
    :lines: 13-50
@@ -188,7 +189,7 @@ Note the empty script value. You can add instructions here that your EC2 instanc
 Stopping an Instance
 ====================
 
-The following example stops the instance :code:`i-123abc` in the region :code:`us-west-2`.
+The following example stops the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-stop-instance-i-123abc.rb
    :lines: 13-30
@@ -200,7 +201,7 @@ The following example stops the instance :code:`i-123abc` in the region :code:`u
 Starting an Instance
 ====================
 
-The following example starts the instance :code:`i-123abc` in the region :code:`us-west-2`.
+The following example starts the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-start-instance-i-123abc.rb
    :lines: 13-30
@@ -212,7 +213,7 @@ The following example starts the instance :code:`i-123abc` in the region :code:`
 Rebooting an Instance
 =====================
 
-The following example reboots the instance :code:`i-123abc` in the region :code:`us-west-2`.
+The following example reboots the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-reboot-instance-i-123abc.rb
    :lines: 13-26
@@ -224,7 +225,7 @@ The following example reboots the instance :code:`i-123abc` in the region :code:
 Terminating an Instance
 =======================
 
-The following example terminates the instance :code:`i-123abc` in the region :code:`us-west-2`.
+The following example terminates the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-terminate-instance-i-123abc.rb
    :lines: 13-26
