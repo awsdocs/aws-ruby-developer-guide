@@ -62,6 +62,13 @@ Please note the change in the version number pattern. The major number denotes t
 SDK, the second number is the two-digit representation of the year, for example, 2016 is represented
 as 16, and the final number denotes the month, starting with 1 for January.
 
+.. toctree::
+    :titlesonly:
+    :maxdepth: 1
+
+    release_2_16_7
+    release_2_4
+
 * Version 2.16.8 in August 2016 (this version)
 
 * Version 2.16.7 in July 2016
@@ -72,8 +79,6 @@ as 16, and the final number denotes the month, starting with 1 for January.
 
 * `Version 1.0.0 <https://w.amazon.com/index.php/AWSDevDocs/PublishPDF>`_: September 2013
 
-.. include:: release_2_16_7.rst
 
-.. include:: release_2_4.rst
 
 

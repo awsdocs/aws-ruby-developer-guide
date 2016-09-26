@@ -237,7 +237,7 @@ a notification to them.
 
 * :ref:`aws-ruby-sdk-sqs-recipe-enable-resource`
 
-* :ref:`aws-ruby-sdk-lambda-example-configure-function-for-notification`
+* :ref:`lambda-ruby-example-configure-function-for-notification`
 
 .. _aws-ruby-sdk-s3-recipe-set-notification:
 

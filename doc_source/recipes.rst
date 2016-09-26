@@ -14,8 +14,23 @@
 |sdk-ruby| Recipes
 ##################
 
-This section provides the following recipes, which you can use to access AWS services using the
+This section provides the following recipes that you can use to access AWS services using the
 |sdk-ruby|.
+
+.. toctree::
+    :titlesonly:
+    :maxdepth: 1
+
+    cw-recipes
+    dynamo-recipes
+    ec2-recipes
+    eb-recipes
+    iam-recipes
+    lambda-recipes
+    rds-recipes
+    s3-recipes
+    sns-recipes
+    sqs-recipes
 
 :ref:`aws-ruby-sdk-cw-recipes`
 
@@ -183,24 +198,6 @@ This section provides the following recipes, which you can use to access AWS ser
 
     * Delete a queue
 
-.. include:: cw-recipes.rst
 
-.. include:: dynamo-recipes.rst
-
-.. include:: ec2-recipes.rst
-
-.. include:: eb-recipes.rst
-
-.. include:: iam-recipes.rst
-
-.. include:: lambda-recipes.rst
-
-.. include:: rds-recipes.rst
-
-.. include:: s3-recipes.rst
-
-.. include:: sns-recipes.rst
-
-.. include:: sqs-recipes.rst
 
 

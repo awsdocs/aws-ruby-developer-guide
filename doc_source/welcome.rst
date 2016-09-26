@@ -94,5 +94,3 @@ On this tier, services are free below a certain level of usage.
 For more information about AWS costs and the Free Tier, see
 `Test-Driving AWS in the Free Usage Tier <http://docs.aws.amazon.com/FeaturedArticles/latest/TestDriveFreeTier.html>`_.
 To obtain an AWS account, open the `AWS home page <https://portal.aws.amazon.com/gp/aws/developer/registration/index.html>`_ and follow the instructions on the page.
-
-.. include:: quick-start-guide.rst

@@ -77,8 +77,8 @@ The following example creates a subscription for the topic with the ARN :code:`a
 for a user with the email address :code:`MyGroovyUser@MyGroovy.com` in the region :code:`us-west-2` and displays the resulting ARN.
 Note that initially the ARN value is pending confirmation. Once the user has confirmed their email address, this value becomes a true ARN.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/
-   :lines: 13-
+.. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-create-subscription.rb
+   :lines: 13-24
    :dedent: 0
    :language: ruby
 
