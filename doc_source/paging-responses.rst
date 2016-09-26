@@ -15,7 +15,7 @@ Paging Response Data
 ####################
 
 Some AWS calls provide paged responses to limit the amount of data returned with each response. A
-page of data represents up to 1000 items.
+page of data represents up to 1,000 items.
 
 .. _aws-ruby-sdk-paged-response-enumerable:
 
@@ -33,8 +33,8 @@ object, as shown in the following example.
       puts response.contents.map(&:key)
     end
 
-This yields one response object per API call made, and will enumerate objects in the named bucket.
-Additional pages of data are retrieved by the SDK to complete the request.
+This yields one response object per API call made, and enumerates objects in the named bucket.
+The SDK retrieves additional pages of data to complete the request.
 
 .. _aws-ruby-sdk-handling-paged-response-handling:
 
@@ -45,20 +45,20 @@ To handle paging yourself, use the response's :code:`next_page?` method to verif
 pages to retrieve, or use the :code:`last_page?` method to verify there are no more pages to
 retrieve.
 
-If there are more pages, use the :code:`next_page` (note there is no :code:`?`) method to retrieve
+If there are more pages, use the :code:`next_page` (notice there is no :code:`?`) method to retrieve
 the next page of results, as shown in the following example.
 
 .. code-block:: ruby
 
     s3 = Aws::S3::Client.new
           
-    # get the first page of data
+    # Get the first page of data
     response = s3.list_objects(bucket:'aws-sdk')
     
-    # get additional pages
+    # Get additional pages
     while response.next_page? do
       response = response.next_page
-      # use the response data here...
+      # Use the response data here...
     end
 
 .. note:: If you call the :code:`next_page` method and there are no more pages to retrieve, the SDK raises an

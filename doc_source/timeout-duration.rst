@@ -14,10 +14,10 @@
 Specifying a Client Timeout Duration
 ####################################
 
-The following example creates a new |S3|, client in the region :code:`us-west-2`, and specifies to
-wait 5 seconds between two retries on every client operation. By default the SDK performs up to
-three retries, with 15 seconds between retries, for a total of up to four attempts. Therefore an
-operation could take 60 seconds to time out, so the example could take 15 seconds to timeout.
+The following example creates an |S3| client in the region :code:`us-west-2`, and specifies to
+wait 5 seconds between two retries on every client operation. By default, the SDK performs up to
+three retries, with 15 seconds between retries, for a total of up to four attempts. Therefore, an
+operation could take 60 seconds to time out, so the example could take 15 seconds to time out.
 
 .. code-block:: ruby
 

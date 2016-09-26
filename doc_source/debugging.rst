@@ -14,16 +14,14 @@
 Debugging Tip: Getting Wire Trace Information from a Client
 ###########################################################
 
-You can get wire trace information from an AWS client by setting the :code:`http_wire_proxy` option
-when you create the client. This information helps differentiate between client changes, service
-issues, and user errors. The following example creates an S3 client with wire tracing enabled.
+You can get wire trace information from an AWS client when you create it by setting the :code:`http_wire_proxy` option. This information helps differentiate client changes, service issues, and user errors. The following example creates an |S3| client with wire tracing enabled.
 
 .. code-block:: ruby
 
     s3 = Aws::S3::Client.new(http_wire_trace: true)
 
-Given the following code and the argument :code:`bucket_name`, it displays a message stating whether
-a bucket of that name exists.
+Given the following code and the argument :code:`bucket_name`, the output displays a message that says whether
+a bucket with that name exists.
 
 .. code-block:: ruby
 
@@ -38,7 +36,7 @@ a bucket of that name exists.
     end
 
 If the bucket exists, the output looks something like the following, where *ACCESS_KEY* is the value
-of your access key. (Additional returns have been added to the :code:`HEAD` line for readability.)
+of your access key. (Returns were added to the :code:`HEAD` line for readability.)
 
 .. code-block:: sh
 

@@ -14,10 +14,10 @@
 |SNS| Recipes
 #############
 
-This section provides some recipes you can use to access |SNSlong| (|SNS|) using the |sdk-ruby|. For
+You can use the following recipes to access |SNSlong| (|SNS|) using the |sdk-ruby|. For
 more information about |SNS|, see the `Amazon SNS documentation <http://aws.amazon.com/documentation/sns/>`_.
 
-This section contains the following recipes:
+**Recipes**
 
 * :ref:`aws-ruby-sdk-sns-recipe-show-topics`
 
@@ -33,10 +33,10 @@ This section contains the following recipes:
 
 .. _aws-ruby-sdk-sns-recipe-show-topics:
 
-Getting Information about all Topics
+Getting Information about All Topics
 ====================================
 
-The following example lists the ARNs of your SNS topics in the region :code:`us-west-2`.
+The following example lists the ARNs of your SNS topics in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-show-topics.rb
    :lines: 13-19
@@ -45,10 +45,10 @@ The following example lists the ARNs of your SNS topics in the region :code:`us-
 
 .. _aws-ruby-sdk-sns-recipe-create-topic:
 
-Creating a new Topic
+Creating a Topic
 ====================
 
-The following example creates the topic :code:`MyGroovyTopic` in the region :code:`us-west-2` and displays the resulting topic ARN.
+The following example creates the topic :code:`MyGroovyTopic` in the :code:`us-west-2` region and displays the resulting topic ARN.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-create-topic.rb
    :lines: 13-18
@@ -57,11 +57,11 @@ The following example creates the topic :code:`MyGroovyTopic` in the region :cod
 
 .. _aws-ruby-sdk-sns-recipe-show-subscriptions:
 
-Getting Information about all Subscriptions in a Topic
+Getting Information about All Subscriptions in a Topic
 ======================================================
 
 The following example lists the email addresses of the SNS subscriptions for the topic with the ARN
-:code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic` in the region :code:`us-west-2`.
+:code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic` in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-show-subscriptions.rb
    :lines: 13-21
@@ -70,12 +70,12 @@ The following example lists the email addresses of the SNS subscriptions for the
 
 .. _aws-ruby-sdk-sns-recipe-create-subscription:
 
-Creating a new Subscription in a Topic
+Creating a Subscription in a Topic
 ======================================
 
 The following example creates a subscription for the topic with the ARN :code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic`
-for a user with the email address :code:`MyGroovyUser@MyGroovy.com` in the region :code:`us-west-2` and displays the resulting ARN.
-Note that initially the ARN value is pending confirmation. Once the user has confirmed their email address, this value becomes a true ARN.
+for a user who has the email address :code:`MyGroovyUser@MyGroovy.com` in the :code:`us-west-2` region, and displays the resulting ARN.
+Initially the ARN value is pending confirmation. When the user confirms their email address, this value becomes a true ARN.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/
    :lines: 13-
@@ -84,10 +84,10 @@ Note that initially the ARN value is pending confirmation. Once the user has con
 
 .. _aws-ruby-sdk-sns-recipe-send-message:
 
-Sending a Message to all Topic Subscribers
+Sending a Message to All Topic Subscribers
 ==========================================
 
-The following example sends the message "Hello!" to all of the subscribers to the topic with the ARN
+The following example sends the message "Hello!" to all subscribers to the topic with the ARN
 :code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic`.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-send-message.rb
@@ -101,7 +101,7 @@ Enabling a Resource to Publish to a Topic
 =========================================
 
 The following example enables the resource with the ARN
-:code:`my-resource-arn` to publish to the topic with the :code:`ARN my-topic-arn` in the region :code:`us-west-2`.
+:code:`my-resource-arn` to publish to the topic with the :code:`ARN my-topic-arn` in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-enable-resource.rb
    :lines: 13-38

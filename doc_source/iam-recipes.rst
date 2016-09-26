@@ -14,10 +14,10 @@
 |IAMlong| Recipes
 #################
 
-This section provides recipes you can use to access |IAMlong| (|IAM|) using the |sdk-ruby|. For more
+You can use the following recipes to access |IAMlong| (|IAM|) using the |sdk-ruby|. For more
 information about |IAM|, see the `IAM documentation <http://aws.amazon.com/documentation/iam/>`_.
 
-This section contains the following recipes:
+**Recipes**
 
 * :ref:`aws-ruby-sdk-iam-recipe-get-users`
 
@@ -31,10 +31,10 @@ This section contains the following recipes:
 
 .. _aws-ruby-sdk-iam-recipe-get-users:
 
-Getting Information about all Users
+Getting Information about All Users
 ===================================
 
-The following example lists the groups, policies, and and access key IDs of all of IAM users in the region :code:`us-west-2`
+The following example lists the groups, policies, and access key IDs of all IAM users in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/iam/iam-ruby-example-list-all-users.rb
    :lines: 13-37
@@ -43,10 +43,10 @@ The following example lists the groups, policies, and and access key IDs of all 
 
 .. _aws-ruby-sdk-iam-recipe-add-user:
 
-Adding a new User
+Adding a New User
 =================
 
-The following example creates the IAM user :code:`my_groovy_user` in the region :code:`us-west-2` with the password :code:`REPLACE_ME`,
+The following example creates the IAM user :code:`my_groovy_user` in the :code:`us-west-2` region with the password :code:`REPLACE_ME`,
 and displays the user's account ID. If a user with that name already exists, it displays a message and does not create a new user.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/iam/iam-ruby-example-add-new-user.rb
@@ -56,10 +56,10 @@ and displays the user's account ID. If a user with that name already exists, it 
 
 .. _aws-ruby-sdk-iam-recipe-create-user-access-keys:
 
-Create User's Access Keys
+Create a User's Access Keys
 =========================
 
-The following example creates a new access key and secret key for the IAM user :code:`my_groovy_user` in the region :code-:`us-west-2`
+The following example creates an access key and secret key for the IAM user :code:`my_groovy_user` in the :code-:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/iam/iam-ruby-example-create-user-access-keys.rb
    :lines: 13-26
@@ -71,7 +71,7 @@ The following example creates a new access key and secret key for the IAM user :
 Adding a Managed Policy
 =======================
 
-The following example adds the managed policy :code:`AmazonS3FullAccess` to the IAM user :code:`my_groovy_user in the region :code:`us-west-2`
+The following example adds the managed policy :code:`AmazonS3FullAccess` to the IAM user :code:`my_groovy_user in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/iam/iam-ruby-example-add-managed-policy.rb
    :lines: 13-26
@@ -83,7 +83,7 @@ The following example adds the managed policy :code:`AmazonS3FullAccess` to the 
 Creating a Role
 ===============
 
-The following example creates the role :code:`my_groovy_role` so that |EC2| can access |S3| and |DDB| in the region :code:`us-west-2`
+The following example creates the role :code:`my_groovy_role` so that |EC2long| can access |S3| and |DDBlong| in the :code:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/iam/iam-ruby-example-create-role.rb
    :lines: 13-44
