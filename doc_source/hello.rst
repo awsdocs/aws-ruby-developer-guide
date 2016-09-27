@@ -14,7 +14,7 @@
 Hello World Tutorial
 ####################
 
-This section shows you how to use the |sdk-ruby| to create a command-line program that performs some
+This tutorial shows you how to use the |sdk-ruby| to create a command-line program that performs some
 common |S3| operations.
 
 .. _aws-ruby-sdk-hello-world-require:
@@ -118,8 +118,8 @@ The following is the entire :code:`hello-s3.rb` program.
     
     DOC
     
-    # Set the name of the bucket on which the operations are performed.
-    # This argument is required.
+    # Set the name of the bucket on which the operations are performed
+    # This argument is required
     bucket_name = nil
     
     if ARGV.length > 0
@@ -145,7 +145,7 @@ The following is the entire :code:`hello-s3.rb` program.
     
     case operation
     when 'create'
-      # create a new bucket if it doesn't already exist
+      # Create a bucket if it doesn't already exist
       if bucket.exists?
         puts "The bucket '%s' already exists!" % bucket_name
       else
@@ -176,7 +176,7 @@ The following is the entire :code:`hello-s3.rb` program.
     
     when 'list'
       if bucket.exists?
-        # enumerate the bucket contents and object etags
+        # Enumerate the bucket contents and object etags
         puts "Contents of '%s':" % bucket_name
         puts '  Name => GUID'
         
@@ -198,7 +198,7 @@ Running the Program
 ===================
 
 To list the contents of a bucket, use either of the following commands, where *bucket_name* is the
-name of the bucket to list. We need not include :code:`list`, as it is the default operation.
+name of the bucket to list. We don't have to include :code:`list` because it is the default operation.
 
 .. code-block:: sh
 
@@ -228,7 +228,7 @@ Next Steps
 ==========
 
 Now that you've completed your first |sdk-ruby| application, here are some suggestions to extend the
-code you just wrote.
+code you just wrote:
 
 * Use the :code:`buckets` collection from the `Aws::S3::Resource <http://docs.aws.amazon.com/sdkforruby/api/Aws/S3/Resource.html>`_ class to get a list of buckets.
 

@@ -26,7 +26,7 @@ Use the following command to install :code:`pry`:
 
     gem install pry
 
-To use :code:`aws.rb`, invoke it in a console window, as shown in one of the following two command
+To use :code:`aws.rb`, invoke it in a console window. You can use one of the following two command
 lines.
 
 .. code-block:: none

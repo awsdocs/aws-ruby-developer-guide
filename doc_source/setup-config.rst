@@ -14,7 +14,7 @@
 Configuring the |sdk-ruby|
 ##########################
 
-This section describes how to configure the |sdk-ruby|. To use the SDK, you must set the AWS region
+This section describes how to configure the |sdk-ruby|. To use the SDK, you must set the AWS Region
 and either set AWS credentials or create an |STS| access token.
 
 .. _aws-ruby-sdk-setting-credentials:
@@ -23,10 +23,10 @@ Setting AWS Credentials
 =======================
 
 Before you can use the |sdk-ruby| to make a call to an AWS service, you must set the AWS access
-credentials that will be used by the |sdk-ruby| to verify your access to AWS services and resources.
-You can set credentials in a number of ways.
+credentials that the |sdk-ruby| will use to verify your access to AWS services and resources.
+You can set credentials in several ways.
 
-The |sdk-ruby| searches for credentials in the following order.
+The |sdk-ruby| searches for credentials in the following order:
 
 * :ref:`aws-ruby-sdk-credentials-client`
 
@@ -41,8 +41,7 @@ The |sdk-ruby| searches for credentials in the following order.
 The following sections describe how to set credentials, starting with the most flexible approach.
 For more information about AWS credentials and recommended approaches for credential management, see
 `AWS Security Credentials
-<http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html>`_ in the AWS General
-Reference.
+<http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html>`_ in the *|AWS-gr|*.
 
 .. _aws-ruby-sdk-credentials-shared:
 
@@ -51,13 +50,13 @@ Setting Shared Credentials
 
 Set shared credentials in the AWS credentials profile file on your local system.
 
-On Unix-based systems, such as Linux or OS X, this file is located in the following location:
+On Unix-based systems, such as Linux or OS X, this file is located in the following location.
 
 .. code-block:: none
 
     ~/.aws/credentials
 
-On Windows, this file is located in the following location:
+On Windows, this file is located in the following location.
 
 .. code-block:: none
 
@@ -120,7 +119,7 @@ Setting Credentials in a Client Object
 
 Set the credentials in your code by specifying them when you create an AWS client.
 
-The following example creates an S3 client using the access key *your_access_key_id* and the secret
+The following example creates an |S3| client using the access key *your_access_key_id* and the secret
 access key *your_secret_access_key*.
 
 .. code-block:: ruby
@@ -135,10 +134,10 @@ access key *your_secret_access_key*.
 Setting Credentials Using IAM
 -----------------------------
 
-For an |EC2| instance, create an |IAM| role, and then give your |EC2| instance access to that role.
+For an |EC2long| instance, create an |IAM| role, and then give your |EC2| instance access to that role.
 For more information, see
 `IAM Roles for Amazon EC2 <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html>`_
-in the |EC2| User Guide.
+in the |EC2-ug| for Linux Instances or `IAM Roles for Amazon EC2 <http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/iam-roles-for-amazon-ec2.html>`_ in the |EC2-ug| for Windows Instances.
 
 .. _aws-ruby-sdk-credentials-access-token:
 
@@ -169,8 +168,8 @@ Setting a Region
 ================
 
 You need to set a `region <http://docs.aws.amazon.com/general/latest/gr/rande.html>`_ when using
-most AWS services. The AWS region can be set in ways similar to setting your AWS credentials. The
-|sdk-ruby| searches for a region in the following order.
+most AWS services. The AWS Region can be set in ways similar to setting your AWS credentials. The
+|sdk-ruby| searches for a region in the following order:
 
 * :ref:`aws-ruby-sdk-region-client-resource`
 
@@ -207,7 +206,7 @@ Setting the Region Using Aws.config
 -----------------------------------
 
 Set the region by adding a :code:`region` value to the :code:`Aws.config` hash. The following
-example updates the :code:`Aws.config` hash to use the :code:`us-west-1` region:
+example updates the :code:`Aws.config` hash to use the :code:`us-west-1` region.
 
 .. code-block:: ruby
 
@@ -221,7 +220,7 @@ Setting the Region in a Client or Resource Object
 -------------------------------------------------
 
 Set the region when you create an AWS client or resource. The following example creates an S3
-resource object in the :code:`us-west-1` region:
+resource object in the :code:`us-west-1` region.
 
 .. code-block:: ruby
 

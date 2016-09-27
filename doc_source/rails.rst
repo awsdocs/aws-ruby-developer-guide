@@ -17,8 +17,8 @@ Using the SDK with Ruby on Rails
 `Ruby on Rails <http://rubyonrails.org/>`_ provides a web development framework for Ruby that makes
 it easy to create websites with Ruby.
 
-The |sdk-ruby| provides a gem to enable easy integration with Rails. You can use |AEBlong|, |OPS|,
-or |ACD| to deploy and run your Rails applications on the AWS cloud.
+The |sdk-ruby| provides a gem to enable easy integration with Rails. You can use |AEBlong|, |OPSlong|,
+or |ACDlong| to deploy and run your Rails applications in the AWS Cloud.
 
 .. _aws-ruby-sdk-integrating-the-sdk-ruby-with-rails:
 

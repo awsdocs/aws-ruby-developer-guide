@@ -14,12 +14,9 @@
 |DDBlong| Recipes
 #################
 
-This section provides recipes you can use to access |DDBlong| services using the |sdk-ruby|. For
-more information about |DDB|,
-see the
-`Amazon DynamoDB documentation <http://aws.amazon.com/documentation/dynamodb>`_, and in particular, the
-`Ruby and DynamoDB <http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.Ruby.html>`_
-topic, which demonstrates how to:
+You can use the following recipes to access |DDBlong| services by using the |sdk-ruby|. For more information about |DDB|, see the
+`Amazon DynamoDB documentation <http://aws.amazon.com/documentation/dynamodb>`_. Specifically,
+see `Ruby and DynamoDB <http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.Ruby.html>`_to learn how to:
 
 * Create a table and load sample data in JSON format.
 
@@ -27,10 +24,10 @@ topic, which demonstrates how to:
 
 * Run simple queries.
 
-The topic also provides a link to a downloadable version of DynamoDB, which includes an interactive
-web interface, so you can experiment with DynamoDB offline.
+The topic also provides a link to a downloadable version of |DDB|, which includes an interactive
+web interface so you can experiment with |DDB| offline.
 
-This section contains the following recipes:
+**Recipes**
 
 * :ref:`aws-ruby-sdk-dynamo-recipe-get-tables`
 
@@ -48,7 +45,7 @@ This section contains the following recipes:
 
 .. _aws-ruby-sdk-dynamo-recipe-get-tables:
 
-Getting Information About All Tables
+Getting Information about All Tables
 ====================================
 
 The following example lists the names and number of items in each table in the :code-ruby:`us-west-2` region.
@@ -63,11 +60,11 @@ The following example lists the names and number of items in each table in the :
 Creating a Simple Table with a Single Primary Key
 =================================================
 
-The following example creates the table :code-ruby:`Users` with three attributes: ID, FirstName, and LastName, in the :code-ruby:`us-west-2` region.
+The following example creates the table :code-ruby:`Users` with three attributes: :code-ruby:`ID`, :code-ruby:`FirstName`, and :code-ruby:`LastName` in the :code-ruby:`us-west-2` region.
 
 The :code-ruby:`wait_until` call blocks you from using the table until |DDB| has created it.
 By default, the |DDB| client's :code-ruby:`wait_until` method checks every 20 seconds,
-up to a maximum of 500 seconds to see if the table has been created.
+up to a maximum of 500 seconds, to see if the table was created.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-create-users-table.rb
    :lines: 13-48
@@ -79,9 +76,9 @@ up to a maximum of 500 seconds to see if the table has been created.
 Adding an Item to a Table
 =========================
 
-The following example adds an item with the ID value of **123456**,
-:code-ruby:`FirstName` value of **Snoop**,
-and :code-ruby:`LastName` value **Doug** to the table :code-ruby:`Users` the :code-ruby:`us-west-2`.
+The following example adds an item with the :code:`ID` value of **123456**,
+:code-ruby:`FirstName` value of **John**,
+and :code-ruby:`LastName` value of **Doe** to the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-add-item-users-table.rb
    :lines: 13-25
@@ -90,10 +87,10 @@ and :code-ruby:`LastName` value **Doug** to the table :code-ruby:`Users` the :co
 
 .. _aws-ruby-sdk-dynamo-recipe-list-table-items:
 
-Getting Information About the Items in a Table
+Getting Information about the Items in a Table
 ==============================================
 
-The following example lists up to 50 items from the table :code-ruby:`Users` the :code-ruby:`us-west-2`.
+The following example lists up to 50 items from the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-list-50-users-table-items.rb
    :lines: 13-30
@@ -102,11 +99,11 @@ The following example lists up to 50 items from the table :code-ruby:`Users` the
 
 .. _aws-ruby-sdk-dynamo-recipe-get-table-item:
 
-Getting Information About a Specific Item in a Table
+Getting Information about a Specific Item in a Table
 ====================================================
 
 The following example displays the first and last name of an item with an
-:code-ruby:`ID` of **123456** in the table :code-ruby:`Users` the :code-ruby:`us-west-2`.
+:code-ruby:`ID` of **123456** in the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-list-item-123456-users-table.rb
    :lines: 13-27
@@ -118,8 +115,8 @@ The following example displays the first and last name of an item with an
 Updating a Table
 ================
 
-The following example updates all of the items in the table :code-ruby:`Users` the :code-ruby:`us-west-2`
-to include a new field, :code-ruby:`airmiles` and sets the value to **10000**.
+The following example updates all the items in the :code-ruby:`Users` table in the :code-ruby:`us-west-2`
+region to include a new field, :code-ruby:`airmiles`, and sets the value to **10000**.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-update-users-table.rb
    :lines: 13-33
@@ -131,8 +128,8 @@ to include a new field, :code-ruby:`airmiles` and sets the value to **10000**.
 Creating an Index
 =================
 
-The following example adds a new index, :code-ruby:`air-mileage-index` to the table :code-ruby:`Users` the :code-ruby:`us-west-2`.
-Once the status of the index is :code-ruby:`ACTIVE` you can search for items in the table based on the value of their :code-ruby:`airmiles`.
+The following example adds a new index, :code-ruby:`air-mileage-index`, to the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
+Once the status of the index is :code-ruby:`ACTIVE`, you can search for items in the table based on the value of their :code-ruby:`airmiles`.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-add-index.rb
    :lines: 13-47

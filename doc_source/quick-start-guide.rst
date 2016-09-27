@@ -17,9 +17,9 @@ QuickStart Guide to Using the |sdk-ruby|
 This section shows you how to use the |sdk-ruby| to create a simple Ruby application that lists your
 |S3| buckets.
 
-* If you have not installed the SDK, see :ref:`aws-ruby-sdk-installing-sdk`.
+* If you haven't installed the SDK, see :ref:`aws-ruby-sdk-installing-sdk`.
 
-* If you have not configured the SDK, see :ref:`aws-ruby-sdk-configuration`.
+* If you haven't configured the SDK, see :ref:`aws-ruby-sdk-configuration`.
 
 .. _aws-ruby-sdk-quick-start-code:
 
@@ -52,11 +52,10 @@ Enter the following command to execute :code:`buckets.rb`.
 
 .. _aws-ruby-sdk-quick-start-windows:
 
-Note for Windows Users
+Note for Windows users
 ======================
 
-When you use SSL certificates on Windows, you will see an error similar to the following when you
-run your Ruby code:
+When you use SSL certificates on Windows and run your Ruby code, you will see an error similar to the following:
 
 .. code-block:: none
 
