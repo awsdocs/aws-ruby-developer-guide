@@ -23,8 +23,8 @@ services, including |S3long|, |EC2long|, and |DDBlong|. For a complete list of s
 About This Guide
 ================
 
-The *|sdk-ruby-dg|* provides information about how to install, set up, and use the
-|sdk-ruby| to create Ruby applications that use AWS services.
+The |sdk-ruby-dg| provides information about how to install, set up, and use the |sdk-ruby| to
+create Ruby applications that use AWS services.
 
 This guide contains the following sections:
 
