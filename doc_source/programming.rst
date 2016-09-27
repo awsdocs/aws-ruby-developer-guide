@@ -21,8 +21,8 @@ use some of the advanced features of the SDK.
     :titlesonly:
     :maxdepth: 1
 
-    debugging
-    stubbing
-    paging-responses
-    using-waiters
-    timeout-duration
+   debugging
+   stubbing
+   paging-responses
+   using-waiters
+   timeout-duration

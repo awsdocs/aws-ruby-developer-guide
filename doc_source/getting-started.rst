@@ -21,11 +21,11 @@ installing, setting up, and using the SDK to create a Ruby application to access
     :titlesonly:
     :maxdepth: 1
 
-    quick-start-guide
-    setup-install
-    setup-config
-    repl
-    rails
+   quick-start-guide
+   setup-install
+   setup-config
+   repl
+   rails
 
 
 

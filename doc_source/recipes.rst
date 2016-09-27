@@ -21,16 +21,16 @@ This section provides the following recipes that you can use to access AWS servi
     :titlesonly:
     :maxdepth: 1
 
-    cw-recipes
-    dynamo-recipes
-    ec2-recipes
-    eb-recipes
-    iam-recipes
-    lambda-recipes
-    rds-recipes
-    s3-recipes
-    sns-recipes
-    sqs-recipes
+   cw-recipes
+   dynamo-recipes
+   ec2-recipes
+   eb-recipes
+   iam-recipes
+   lambda-recipes
+   rds-recipes
+   s3-recipes
+   sns-recipes
+   sqs-recipes
 
 :ref:`aws-ruby-sdk-cw-recipes`
 

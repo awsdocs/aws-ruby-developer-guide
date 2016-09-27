@@ -21,8 +21,8 @@ This section provides tips and tricks on using the |sdk-ruby| with AWS services.
 
 * Associate an Elastic IP address with an instance    
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-    ec2-tips
+   ec2-tips

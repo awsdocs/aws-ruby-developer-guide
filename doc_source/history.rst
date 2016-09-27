@@ -63,11 +63,11 @@ SDK, the second number is the two-digit representation of the year, for example,
 as 16, and the final number denotes the month, starting with 1 for January.
 
 .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 1
 
-    release_2_16_7
-    release_2_4
+   release_2_16_7
+   release_2_4
 
 * Version 2.16.8 in August 2016 (this version)
 
