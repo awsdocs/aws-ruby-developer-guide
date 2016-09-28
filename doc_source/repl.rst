@@ -20,7 +20,7 @@ read-evaluate-print loop (REPL) console tool that is part of the :code:`aws-sdk-
 Although :code:`aws.rb` works with the Interactive Ruby Shell (:code:`irb`), we recommend that you
 install :code:`pry`, which provides a more powerful REPL environment.
 
-Use the following command to install :code:`pry`:
+Use the following command to install :code:`pry`.
 
 .. code-block:: none
 
