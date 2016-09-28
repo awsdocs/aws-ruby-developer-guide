@@ -18,8 +18,8 @@ This section provides information about developing software with the |sdk-ruby|,
 use some of the SDK's advanced features.
 
 .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 1
 
    debugging
    stubbing

@@ -18,8 +18,8 @@ If you're new to the |sdk-ruby|, you should start here. This section contains in
 installing, setting up, and using the SDK to create a Ruby application to access |S3|.
 
 .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 1
 
    quick-start-guide
    setup-install

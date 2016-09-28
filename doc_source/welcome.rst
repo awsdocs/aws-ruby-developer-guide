@@ -48,7 +48,7 @@ This guide contains the following sections:
 .. _aws-ruby-sdk-additional-information:
 
 Additional Documentation and Resources
-===============
+======================================
 
 For more resources for |sdk-ruby| developers, see the following:
 

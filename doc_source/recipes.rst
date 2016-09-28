@@ -18,8 +18,8 @@ This section provides recipes you can use to access AWS services by using the
 |sdk-ruby|.
 
 .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 1
 
    cw-recipes
    dynamo-recipes

@@ -83,7 +83,7 @@ Getting Information about All Security Groups
 The following example lists the names of all of your |RDS| security groups in the :code:`us-west-2` region.
 
 .. note:: |RDS| security groups are only applicable when you are using the |EC2| classic platform.
-If you are using |EC2| VPC, use VPC security groups. Both are shown in the example.
+   If you are using |EC2| VPC, use VPC security groups. Both are shown in the example.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/rds/rds-ruby-example-list-security-groups.rb
    :lines: 13-35
