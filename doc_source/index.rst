@@ -20,15 +20,15 @@
 ##################################
 
 .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 1
 
-    welcome
-    getting-started
-    hello
-    programming
-    recipes
-    tips-and-tricks
-    history
+   welcome
+   getting-started
+   hello
+   programming
+   recipes
+   tips-and-tricks
+   history
 
 

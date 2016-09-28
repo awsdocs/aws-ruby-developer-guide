@@ -17,12 +17,12 @@ Programming with the |sdk-ruby|
 This section provides information about developing software with the |sdk-ruby|, including how to
 use some of the SDK's advanced features.
 
-.. include:: debugging.rst
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-.. include:: stubbing.rst
-
-.. include:: paging-responses.rst
-
-.. include:: using-waiters.rst
-
-.. include:: timeout-duration.rst
+   debugging
+   stubbing
+   paging-responses
+   using-waiters
+   timeout-duration

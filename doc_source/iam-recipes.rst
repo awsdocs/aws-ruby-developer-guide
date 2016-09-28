@@ -57,7 +57,7 @@ and displays the user's account ID. If a user with that name already exists, it 
 .. _aws-ruby-sdk-iam-recipe-create-user-access-keys:
 
 Create a User's Access Keys
-=========================
+===========================
 
 The following example creates an access key and secret key for the IAM user :code:`my_groovy_user` in the :code-:`us-west-2` region.
 

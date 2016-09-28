@@ -17,12 +17,17 @@ Getting Started with the |sdk-ruby|
 If you're new to the |sdk-ruby|, you should start here. This section contains information about
 installing, setting up, and using the SDK to create a Ruby application to access |S3|.
 
-.. include:: setup-install.rst
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-.. include:: setup-config.rst
+   quick-start-guide
+   setup-install
+   setup-config
+   repl
+   rails
 
-.. include:: repl.rst
 
-.. include:: rails.rst
+
 
 

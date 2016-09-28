@@ -89,8 +89,8 @@ Receiving Messages
 The following example displays the body of up to 10 messages in the |SQS| queue with the URL :code:`URL` in the :code:`us-west-2` region.
 
 .. note:: :code:`receive_message` does not guarantee to get all messages
-(see `Properties of Distributed Queues <http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/DistributedQueues.html>`_),
-and by default does not delete the message.
+   (see `Properties of Distributed Queues <http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/DistributedQueues.html>`_),
+   and by default does not delete the message.
 
 .. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-get-messages.rb
    :lines: 13-21
@@ -183,7 +183,7 @@ Enabling a Resource to Publish to a Queue
 The following example enables the resource with the ARN :code:`my-resource-arn` to publish
 to the queue with the ARN :code:`my-queue-arn` and URL :code:`my-queue-url` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-enable-resorce.rb
+.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-enable-resource.rb
    :lines: 13-40
    :dedent: 0
    :language: ruby

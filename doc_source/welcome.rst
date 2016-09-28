@@ -23,8 +23,8 @@ services, including |S3long|, |EC2long|, and |DDBlong|. For a complete list of s
 About This Guide
 ================
 
-The *|sdk-ruby-dg|* provides information about how to install, set up, and use the
-|sdk-ruby| to create Ruby applications that use AWS services.
+The |sdk-ruby-dg| provides information about how to install, set up, and use the |sdk-ruby| to
+create Ruby applications that use AWS services.
 
 This guide contains the following sections:
 
@@ -48,7 +48,7 @@ This guide contains the following sections:
 .. _aws-ruby-sdk-additional-information:
 
 Additional Documentation and Resources
-===============
+======================================
 
 For more resources for |sdk-ruby| developers, see the following:
 
@@ -92,5 +92,3 @@ Also, to make AWS more approachable as a platform for prototyping and experiment
 For more information, see
 `Using the Free Tier <http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-free-tier.html>`_.
 To create an AWS account, open the `AWS home page <https://portal.aws.amazon.com/gp/aws/developer/registration/index.html>`_ and follow the instructions on the page.
-
-.. include:: quick-start-guide.rst

@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-waiters:
 
-#######
+#############
 Using Waiters
-#######
+#############
 
 Waiters are utility methods that poll for a particular state to occur on a client. Waiters can fail
 after a number of attempts at a polling interval defined for the service client. For an example of
@@ -80,7 +80,7 @@ following example.
 .. _aws-ruby-sdk-configuring-waiters:
 
 Configuring a Waiter
-===================
+====================
 
 Each waiter has a default polling interval and a maximum number of attempts it will make before
 returning control to your program. To set these values, use the :code:`max_attempts` and
@@ -100,7 +100,7 @@ To disable wait failures, set the value of either of these parameters to :code:`
 .. _aws-ruby-sdk-extending-waiters:
 
 Extending a Waiter
-=================
+==================
 
 To modify the behavior of waiters, you can register callbacks that are triggered before each polling
 attempt and before waiting.
