@@ -41,7 +41,7 @@ The |sdk-ruby| searches for credentials in the following order:
 The following sections describe how to set credentials, starting with the most flexible approach.
 For more information about AWS credentials and recommended approaches for credential management, see
 `AWS Security Credentials
-<http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html>`_ in the *|AWS-gr|*.
+<http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html>`_ in the |AWS-gr|.
 
 .. _aws-ruby-sdk-credentials-shared:
 
@@ -63,8 +63,8 @@ On Windows, this file is located in the following location.
     %HOMEPATH%\.aws\credentials
 
 This file must have the following format, where :code:`default` is the name of the default
-configuration profile given to these credentials, *your_access_key_id* is the value of your access
-key, and *your_secret_access_key* is the value of your secret access key.
+configuration profile given to these credentials, :code:`your_access_key_id` is the value of your access
+key, and :code:`your_secret_access_key` is the value of your secret access key.
 
 .. code-block:: none
 
@@ -80,8 +80,8 @@ Setting Credentials Using Environment Variables
 Set the :code:`AWS_ACCESS_KEY_ID` and :code:`AWS_SECRET_ACCESS_KEY` environment variables.
 
 Use the :code:`export` command to set these variables on a Unix-based systems, such as Linux or OS
-X. The following example sets the value of your access key to *your_access_key_id* and the value of
-your secret access key to *your_secret_access_key*.
+X. The following example sets the value of your access key to :code:`your_access_key_id` and the value of
+your secret access key to :code:`your_secret_access_key`.
 
 .. code-block:: none
 
@@ -102,8 +102,8 @@ Setting Credentials Using Aws.config
 
 Set the credentials in your code by updating the values in the :code:`Aws.config` hash.
 
-The following example sets the value of your access key to *your_access_key_id* and the value of
-your secret access key to *your_secret_access_key*. Any client or resource you create subsequently
+The following example sets the value of your access key to :code:`your_access_key_id` and the value of
+your secret access key to :code:`your_secret_access_key`. Any client or resource you create subsequently
 will use these credentials.
 
 .. code-block:: ruby
@@ -119,8 +119,8 @@ Setting Credentials in a Client Object
 
 Set the credentials in your code by specifying them when you create an AWS client.
 
-The following example creates an |S3| client using the access key *your_access_key_id* and the secret
-access key *your_secret_access_key*.
+The following example creates an |S3| client using the access key :code:`your_access_key_id` and the secret
+access key :code:`your_secret_access_key`.
 
 .. code-block:: ruby
 
@@ -137,7 +137,7 @@ Setting Credentials Using IAM
 For an |EC2long| instance, create an |IAM| role, and then give your |EC2| instance access to that role.
 For more information, see
 `IAM Roles for Amazon EC2 <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html>`_
-in the |EC2-ug| for Linux Instances or `IAM Roles for Amazon EC2 <http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/iam-roles-for-amazon-ec2.html>`_ in the |EC2-ug| for Windows Instances.
+in the |EC2-ug| or `IAM Roles for Amazon EC2 <http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/iam-roles-for-amazon-ec2.html>`_ in the |EC2-ug-win|.
 
 .. _aws-ruby-sdk-credentials-access-token:
 
@@ -148,8 +148,8 @@ Use the
 `Aws::AssumeRoleCredentials <http://docs.aws.amazon.com/sdkforruby/api/Aws/AssumeRoleCredentials.html>`_
 method to create an |STS| access token.
 
-The following example uses an access token to create an S3 client object, where
-*linked::account::arn* is the Amazon Resource Name (ARN) of the role to assume and *session-name* is
+The following example uses an access token to create an |S3| client object, where
+:code:`linked::account::arn` is the Amazon Resource Name (ARN) of the role to assume and :code:`session-name` is
 an identifier for the assumed role session.
 
 .. code-block:: ruby
@@ -168,7 +168,7 @@ Setting a Region
 ================
 
 You need to set a `region <http://docs.aws.amazon.com/general/latest/gr/rande.html>`_ when using
-most AWS services. The AWS Region can be set in ways similar to setting your AWS credentials. The
+most AWS services. You can set the AWS Region in ways similar to setting your AWS credentials. The
 |sdk-ruby| searches for a region in the following order:
 
 * :ref:`aws-ruby-sdk-region-client-resource`
@@ -187,14 +187,14 @@ Setting the Region Using Environment Variables
 Set the region by setting the :code:`AWS_REGION` environment variable.
 
 Use the :code:`export` command to set this variable on Unix-based systems, such as Linux or OS X.
-The following example sets the region to :code:`us-west-2`:
+The following example sets the region to :code:`us-west-2`.
 
 .. code-block:: none
 
     export AWS_REGION=us-west-2
 
 To set this variable on Windows, use the :code:`set` command. The following example sets the region
-to :code:`us-west-2`:
+to :code:`us-west-2`.
 
 .. code-block:: none
 
@@ -219,7 +219,7 @@ Any clients or resources you subsequently create are bound to this region.
 Setting the Region in a Client or Resource Object
 -------------------------------------------------
 
-Set the region when you create an AWS client or resource. The following example creates an S3
+Set the region when you create an AWS client or resource. The following example creates an |S3|
 resource object in the :code:`us-west-1` region.
 
 .. code-block:: ruby
@@ -228,12 +228,12 @@ resource object in the :code:`us-west-1` region.
 
 .. _aws-ruby-sdk-setting-non-standard-endpoint:
 
-Setting a Non-Standard Endpoint
+Setting a Nonstandard Endpoint
 ===============================
 
-If you need to use a non-standard endpoint in the region you've selected, add an :code:`endpoint`
+If you need to use a nonstandard endpoint in the region you've selected, add an :code:`endpoint`
 entry to :code:`Aws.config` or set the :code:`endpoint:` when creating a service client or resource
-object. The following example creates an S3 resource object in the *other_endpoint* endpoint:
+object. The following example creates an |S3| resource object in the :code:`other_endpoint` endpoint.
 
 .. code-block:: ruby
 

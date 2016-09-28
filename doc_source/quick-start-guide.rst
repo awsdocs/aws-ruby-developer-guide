@@ -55,7 +55,7 @@ Enter the following command to execute :code:`buckets.rb`.
 Note for Windows users
 ======================
 
-When you use SSL certificates on Windows and run your Ruby code, you will see an error similar to the following:
+When you use SSL certificates on Windows and run your Ruby code, you will see an error similar to the following.
 
 .. code-block:: none
 

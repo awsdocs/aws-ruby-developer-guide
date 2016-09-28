@@ -23,7 +23,7 @@ Using the |sdk-ruby| in Your Program
 ====================================
 
 Add a :code:`require` statement to the top of your Ruby source file so you can use the classes and
-methods provided by the |sdk-ruby|:
+methods provided by the |sdk-ruby|.
 
 .. code-block:: ruby
 
@@ -197,7 +197,7 @@ The following is the entire :code:`hello-s3.rb` program.
 Running the Program
 ===================
 
-To list the contents of a bucket, use either of the following commands, where *bucket_name* is the
+To list the contents of a bucket, use either of the following commands, where :code:`bucket_name` is the
 name of the bucket to list. We don't have to include :code:`list` because it is the default operation.
 
 .. code-block:: sh
@@ -205,14 +205,14 @@ name of the bucket to list. We don't have to include :code:`list` because it is 
     ruby hello-s3.rb bucket_name list
     ruby hello-s3.rb bucket_name
 
-To create a bucket, use the following command, where *bucket_name* is the name of the bucket you
+To create a bucket, use the following command, where :code:`bucket_name` is the name of the bucket you
 want to create.
 
 .. code-block:: sh
 
     ruby hello-s3.rb bucket_name create
 
-If |S3| already has a bucket named *bucket_name*, the service issues an error message and does not
+If |S3| already has a bucket named :code:`bucket_name`, the service issues an error message and does not
 create another copy.
 
 After you create your bucket, you can upload an object to the bucket. The following command adds
