@@ -76,7 +76,7 @@ Deploying to the AWS Cloud
 You can use AWS services such as |AEBlong|, |OPS|, and |ACD| to deploy your application to the AWS Cloud.
 For deploying Ruby applications with |AEB|, see
 `Working with Ruby <http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Ruby.html>`_
-in the *|AEB-dg|*. For deploying a Ruby on Rails application with |OPS|, see
+in the |AEB-dg|. For deploying a Ruby on Rails application with |OPS|, see
 `Deploying Ruby on Rails Applications to AWS OpsWorks <http://ruby.awsblog.com/post/Tx7FQMT084INCR/Deploying-Ruby-on-Rails-Applications-to-AWS-OpsWorks>`_.
 For an overview of AWS deployment services, see
 `Overview of Deployment Options on AWS <https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf>`_.
