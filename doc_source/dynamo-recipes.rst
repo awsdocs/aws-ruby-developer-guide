@@ -50,7 +50,7 @@ Getting Information about All Tables
 
 The following example lists the names and number of items in each table in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-show-tables-names-and-item-count.rb
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-show-tables-names-and-item-count.rb
    :lines: 13-20
    :dedent: 0
    :language: ruby
@@ -66,7 +66,7 @@ The :code-ruby:`wait_until` call blocks you from using the table until |DDB| has
 By default, the |DDB| client's :code-ruby:`wait_until` method checks every 20 seconds,
 up to a maximum of 500 seconds, to see if the table was created.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-create-users-table.rb
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-create-users-table.rb
    :lines: 13-48
    :dedent: 0
    :language: ruby
@@ -80,7 +80,7 @@ The following example adds an item with the :code:`ID` value of **123456**,
 :code-ruby:`FirstName` value of **John**,
 and :code-ruby:`LastName` value of **Doe** to the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-add-item-users-table.rb
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-add-item-users-table.rb
    :lines: 13-25
    :dedent: 0
    :language: ruby
@@ -92,7 +92,7 @@ Getting Information about the Items in a Table
 
 The following example lists up to 50 items from the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-list-50-users-table-items.rb
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-50-users-table-items.rb
    :lines: 13-30
    :dedent: 0
    :language: ruby
@@ -105,7 +105,7 @@ Getting Information about a Specific Item in a Table
 The following example displays the first and last name of an item with an
 :code-ruby:`ID` of **123456** in the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-list-item-123456-users-table.rb
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-item-123456-users-table.rb
    :lines: 13-27
    :dedent: 0
    :language: ruby       
@@ -118,7 +118,7 @@ Updating a Table
 The following example updates all the items in the :code-ruby:`Users` table in the :code-ruby:`us-west-2`
 region to include a new field, :code-ruby:`airmiles`, and sets the value to **10000**.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-update-users-table.rb
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-update-users-table.rb
    :lines: 13-33
    :dedent: 0
    :language: ruby       
@@ -131,7 +131,7 @@ Creating an Index
 The following example adds a new index, :code-ruby:`air-mileage-index`, to the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
 Once the status of the index is :code-ruby:`ACTIVE`, you can search for items in the table based on the value of their :code-ruby:`airmiles`.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/dynamodb/dynamodb-ruby-example-add-index.rb
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-add-index.rb
    :lines: 13-47
    :dedent: 0
    :language: ruby

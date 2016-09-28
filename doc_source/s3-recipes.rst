@@ -50,7 +50,7 @@ The following example lists the names of up to 50 of your |S3| buckets.
 Copy the code and save it as :file:`buckets.rb`. Notice that although the :code:`Resource` object is created in the :code:`us-west-2` region,
 |S3| returns buckets to which you have access, regardless of the region they are in.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/s3/s3-ruby-example-show-50-buckets.rb
+.. literalinclude:: ./example_code/s3/s3-ruby-example-show-50-buckets.rb
    :lines: 13-20
    :dedent: 0
    :language: ruby
@@ -68,7 +68,7 @@ Getting Information about All Buckets in a Region
 The following example lists the names of the first 50 buckets for the :code:`us-west-2` region.
 If you don't specify a limit, |S3| lists all buckets in :code:`us-west-2`.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/s3/s3-ruby-example-show-buckets-in-region.rb
+.. literalinclude:: ./example_code/s3/s3-ruby-example-show-buckets-in-region.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby
@@ -89,7 +89,7 @@ Creating a Bucket
 
 The following example creates a bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/s3/s3-ruby-example-create-bucket.rb
+.. literalinclude:: ./example_code/s3/s3-ruby-example-create-bucket.rb
    :lines: 13-16
    :dedent: 0
    :language: ruby
@@ -111,7 +111,7 @@ There are two cases in which you would want to determine whether a bucket alread
 The following example sets :code-ruby:`bucket_exists` to :code:`true` if a bucket with the name :code-ruby:`my-bucket` already exists.
 The :code:`region:` parameter to :code:`Resource` has no effect on the result.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/s3/s3-ruby-example-bucket-exists.rb
+.. literalinclude:: ./example_code/s3/s3-ruby-example-bucket-exists.rb
    :lines: 13-16
    :dedent: 0
    :language: ruby
@@ -128,7 +128,7 @@ to click a link and see an item without having to make the item public.
 The following example lists the names and presigned URLs of the first 50 items of the bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
 If a limit is not specified, |S3| lists up to 1000 items.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/s3/s3-ruby-example-list-bucket-items.rb
+.. literalinclude:: ./example_code/s3/s3-ruby-example-list-bucket-items.rb
    :lines: 13-23
    :dedent: 0
    :language: ruby
@@ -141,7 +141,7 @@ Uploading an Item to a Bucket
 The following example uploads the item (file) :file:`C:\file.txt` to the bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
 Because :file:`C:\file.txt` is the fully qualified name of the file, the name of the item is set to the name of the file.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/s3/s3-ruby-example-upload-item.rb
+.. literalinclude:: ./example_code/s3/s3-ruby-example-upload-item.rb
    :lines: 13-27
    :dedent: 0
    :language: ruby
@@ -155,7 +155,7 @@ The following example uploads the item (file) :file:`C:\file.txt` with the metad
 to the bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
 Because :file:`C:\file.txt` is the fully qualified name of the file, the name of the item is set to the file name.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/s3/s3-ruby-example-upload-item-with-metadata.rb
+.. literalinclude:: ./example_code/s3/s3-ruby-example-upload-item-with-metadata.rb
    :lines: 13-30
    :dedent: 0
    :language: ruby
@@ -168,7 +168,7 @@ Downloading an Object from a Bucket into a File
 The following example gets the contents of the item :code-ruby:`my-item` from the bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region,
 and saves it to the :file:`my-item.txt` file in the :file:`./my-code` directory.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/s3/s3-ruby-example-get-item.rb
+.. literalinclude:: ./example_code/s3/s3-ruby-example-get-item.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby
@@ -181,7 +181,7 @@ Changing the Properties for a Bucket Item
 The following example adds public read-only access, sets server-side encryption to AES-256,
 and sets the storage class to Reduced Redundancy for the item :code-ruby:`my-item` in the bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/s3/s3-ruby-example-set-item-props.rb
+.. literalinclude:: ./example_code/s3/s3-ruby-example-set-item-props.rb
    :lines: 13-36
    :dedent: 0
    :language: ruby
@@ -247,7 +247,7 @@ The following example enables the |S3| bucket :code-ruby:`my-bucket` to send a n
 
 * The |LAM| function with the ARN :code-ruby:`my-function-arn`
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/s3/s3-ruby-example-add-notification.rb
+.. literalinclude:: ./example_code/s3/s3-ruby-example-add-notification.rb
    :lines: 13-58
    :dedent: 0
    :language: ruby

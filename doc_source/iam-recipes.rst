@@ -36,7 +36,7 @@ Getting Information about All Users
 
 The following example lists the groups, policies, and access key IDs of all IAM users in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/iam/iam-ruby-example-list-all-users.rb
+.. literalinclude:: ./example_code/iam/iam-ruby-example-list-all-users.rb
    :lines: 13-37
    :dedent: 0
    :language: ruby
@@ -49,7 +49,7 @@ Adding a New User
 The following example creates the IAM user :code:`my_groovy_user` in the :code:`us-west-2` region with the password :code:`REPLACE_ME`,
 and displays the user's account ID. If a user with that name already exists, it displays a message and does not create a new user.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/iam/iam-ruby-example-add-new-user.rb
+.. literalinclude:: ./example_code/iam/iam-ruby-example-add-new-user.rb
    :lines: 13-27
    :dedent: 0
    :language: ruby
@@ -61,7 +61,7 @@ Create a User's Access Keys
 
 The following example creates an access key and secret key for the IAM user :code:`my_groovy_user` in the :code-:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/iam/iam-ruby-example-create-user-access-keys.rb
+.. literalinclude:: ./example_code/iam/iam-ruby-example-create-user-access-keys.rb
    :lines: 13-26
    :dedent: 0
    :language: ruby
@@ -73,7 +73,7 @@ Adding a Managed Policy
 
 The following example adds the managed policy :code:`AmazonS3FullAccess` to the IAM user :code:`my_groovy_user in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/iam/iam-ruby-example-add-managed-policy.rb
+.. literalinclude:: ./example_code/iam/iam-ruby-example-add-managed-policy.rb
    :lines: 13-26
    :dedent: 0
    :language: ruby
@@ -85,7 +85,7 @@ Creating a Role
 
 The following example creates the role :code:`my_groovy_role` so that |EC2long| can access |S3| and |DDBlong| in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/iam/iam-ruby-example-create-role.rb
+.. literalinclude:: ./example_code/iam/iam-ruby-example-create-role.rb
    :lines: 13-44
    :dedent: 0
    :language: ruby

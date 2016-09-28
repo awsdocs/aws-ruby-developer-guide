@@ -32,7 +32,7 @@ Displaying Information about All |LAM| Functions
 
 The following example displays the name, ARN, and role of all of your |LAM| functions in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/lambda/aws-ruby-sdk-lambda-example-show-functions.rb
+.. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-show-functions.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby
@@ -56,7 +56,7 @@ The following example creates the |LAM| function :code:`my-notification-function
 
 * Key: :code:`my-zip-file`
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/lambda/aws-ruby-sdk-lambda-example-create-function.rb
+.. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-create-function.rb
    :lines: 13-32
    :dedent: 0
    :language: ruby
@@ -68,7 +68,7 @@ Configuring a |LAM| Function to Receive Notifications
 
 The following example configures the |LAM| function :code:`my-notification-function` in the :code:`us-west-2` region to accept notifications from the resource with the ARN :code:`my-resource-arn`.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/lambda/aws-ruby-sdk-lambda-example-configure-function-for-notification.rb
+.. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-configure-function-for-notification.rb
    :lines: 13-24
    :dedent: 0
    :language: ruby

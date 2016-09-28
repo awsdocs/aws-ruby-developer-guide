@@ -30,7 +30,7 @@ Getting Information about All Alarms
 
 The following example displays information about your |CW| alarms.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/cw/cw-ruby-example-show-alarms.rb
+.. literalinclude:: ./example_code/cw/cw-ruby-example-show-alarms.rb
    :lines: 13-52
    :dedent: 0
    :language: ruby
@@ -43,7 +43,7 @@ Creating an Alarm
 The following example creates a |CW| alarm *my-alarm* that sends a message through the |SNS| topic with the ARN :code:`ARN`
 when the |S3| bucket *my-bucket* has more than 50 items in a 24-hour period.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/cw/cw-ruby-example-create-alarm.rb
+.. literalinclude:: ./example_code/cw/cw-ruby-example-create-alarm.rb
    :lines: 13-41
    :dedent: 0
    :language: ruby

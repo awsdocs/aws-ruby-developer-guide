@@ -38,7 +38,7 @@ Getting Information about All Topics
 
 The following example lists the ARNs of your SNS topics in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-show-topics.rb
+.. literalinclude:: ./example_code/sns/sns-ruby-example-show-topics.rb
    :lines: 13-19
    :dedent: 0
    :language: ruby
@@ -50,7 +50,7 @@ Creating a Topic
 
 The following example creates the topic :code:`MyGroovyTopic` in the :code:`us-west-2` region and displays the resulting topic ARN.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-create-topic.rb
+.. literalinclude:: ./example_code/sns/sns-ruby-example-create-topic.rb
    :lines: 13-18
    :dedent: 0
    :language: ruby
@@ -63,7 +63,7 @@ Getting Information about All Subscriptions in a Topic
 The following example lists the email addresses of the SNS subscriptions for the topic with the ARN
 :code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-show-subscriptions.rb
+.. literalinclude:: ./example_code/sns/sns-ruby-example-show-subscriptions.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby
@@ -77,7 +77,7 @@ The following example creates a subscription for the topic with the ARN :code:`a
 for a user who has the email address :code:`MyGroovyUser@MyGroovy.com` in the :code:`us-west-2` region, and displays the resulting ARN.
 Initially the ARN value is pending confirmation. When the user confirms their email address, this value becomes a true ARN.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-create-subscription.rb
+.. literalinclude:: ./example_code/sns/sns-ruby-example-create-subscription.rb
    :lines: 13-24
    :dedent: 0
    :language: ruby
@@ -90,7 +90,7 @@ Sending a Message to All Topic Subscribers
 The following example sends the message "Hello!" to all subscribers to the topic with the ARN
 :code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic`.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-send-message.rb
+.. literalinclude:: ./example_code/sns/sns-ruby-example-send-message.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby
@@ -103,7 +103,7 @@ Enabling a Resource to Publish to a Topic
 The following example enables the resource with the ARN
 :code:`my-resource-arn` to publish to the topic with the :code:`ARN my-topic-arn` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sns/sns-ruby-example-enable-resource.rb
+.. literalinclude:: ./example_code/sns/sns-ruby-example-enable-resource.rb
    :lines: 13-38
    :dedent: 0
    :language: ruby

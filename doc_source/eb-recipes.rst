@@ -32,7 +32,7 @@ Getting Information about All Applications
 
 The following example lists the names, descriptions, and URLs of all of your |AEB| applications in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/elb/elb-ruby-example-list-all-apps.rb
+.. literalinclude:: ./example_code/elb/elb-ruby-example-list-all-apps.rb
    :lines: 13-26
    :dedent: 0
    :language: ruby
@@ -44,7 +44,7 @@ Getting Information about a Specific Application
 
 The following example lists the name, description, and URL of the :code:`MyRailsApp` application in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/elb/elb-ruby-example-list-name-description-url-myrailsapp.rb
+.. literalinclude:: ./example_code/elb/elb-ruby-example-list-name-description-url-myrailsapp.rb
    :lines: 13-25
    :dedent: 0
    :language: ruby
@@ -58,7 +58,7 @@ The following example updates the Ruby on Rails application :code:`MyRailsApp` i
 
 .. note:: You must be in the root of your Rails app to succesfully run the script.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/elb/elb-ruby-example-update-myrailsapp.rb
+.. literalinclude:: ./example_code/elb/elb-ruby-example-update-myrailsapp.rb
    :lines: 13-79
    :dedent: 0
    :language: ruby

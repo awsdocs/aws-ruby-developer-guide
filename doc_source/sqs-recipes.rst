@@ -44,7 +44,7 @@ Getting Information about All Queues
 
 The following example lists the URLs, ARNs, messages available, and messages in flight of your |SQS| queues in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-show-queues.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-show-queues.rb
    :lines: 13-42
    :dedent: 0
    :language: ruby
@@ -56,7 +56,7 @@ Creating a Queue
 
 The following example creates the |SQS| queue :code:`MyGroovyQueue` in the :code:`us-west-2` region and displays its URL.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-create-queue.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-create-queue.rb
    :lines: 13-19
    :dedent: 0
    :language: ruby
@@ -68,7 +68,7 @@ Sending Messages
 
 The following example sends the message "Hello world" through the |SQS| queue with the URL :code:`URL` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-send-message.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-send-message.rb
    :lines: 13-17
    :dedent: 0
    :language: ruby
@@ -76,7 +76,7 @@ The following example sends the message "Hello world" through the |SQS| queue wi
 The following example sends the messages "Hello world" and "How is the weather?" through the |SQS| queue
 with the URL :code:`URL` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-send-message-batch.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-send-message-batch.rb
    :lines: 13-29
    :dedent: 0
    :language: ruby
@@ -92,7 +92,7 @@ The following example displays the body of up to 10 messages in the |SQS| queue 
    (see `Properties of Distributed Queues <http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/DistributedQueues.html>`_),
    and by default does not delete the message.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-get-messages.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-get-messages.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby
@@ -107,7 +107,7 @@ with the URL :code:`URL` in the :code:`us-west-2` region.
 
 If you do not specify a wait time, the default value is **0** (|SQS| does not wait).
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-get-messages-with-long-polling.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-get-messages-with-long-polling.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby
@@ -121,7 +121,7 @@ The following example uses the :code:`QueuePoller` utility class to display the 
 with the URL :code:`URL` in the :code:`us-west-2` region, and deletes the message.
 After approximately 15 seconds of inactivity, the script times out.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-poll-messages.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-poll-messages.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby
@@ -130,7 +130,7 @@ The following example loops through the |SQS| queue with the URL :code:`URL`, an
 
 You can get the correct URL by executing the |SQS| example in :ref:`aws-ruby-sdk-sqs-recipe-show-queues`.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-long-polling.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-long-polling.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby
@@ -138,7 +138,7 @@ You can get the correct URL by executing the |SQS| example in :ref:`aws-ruby-sdk
 The following example loops through the |SQS| queue with the URL :code:`URL`,
 and gives you up to the visibility *timeout* seconds to process the message, represented by the method :code:`do_something`.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-visibility-timeout.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-visibility-timeout.rb
    :lines: 13-26
    :dedent: 0
    :language: ruby
@@ -146,7 +146,7 @@ and gives you up to the visibility *timeout* seconds to process the message, rep
 The following example loops through the |SQS| queue with the URL :code:`URL`,
 and changes the visibility *timeout* seconds, for any message that needs additional processing by the method :code:`do_something2`.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-visibility-timeout2.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-visibility-timeout2.rb
    :lines: 13-36
    :dedent: 0
    :language: ruby
@@ -158,7 +158,7 @@ Redirecting Dead Letters
 
 The following example redirects any dead letters from the queue with the URL :code:`URL` to the queue with the ARN :code:`ARN`.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-redirect-queue-deadletters.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-redirect-queue-deadletters.rb
    :lines: 13-23
    :dedent: 0
    :language: ruby
@@ -170,7 +170,7 @@ Deleting a Queue
 
 The following example deletes the |SQS| queue with the URL :code:`URL` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-delete-queue.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-delete-queue.rb
    :lines: 13-17
    :dedent: 0
    :language: ruby
@@ -183,7 +183,7 @@ Enabling a Resource to Publish to a Queue
 The following example enables the resource with the ARN :code:`my-resource-arn` to publish
 to the queue with the ARN :code:`my-queue-arn` and URL :code:`my-queue-url` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/sqs/sqs-ruby-example-enable-resource.rb
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-enable-resource.rb
    :lines: 13-40
    :dedent: 0
    :language: ruby

@@ -55,7 +55,7 @@ The following example creates the virtual private cloud (VPC) :code:`MyGroovyVPC
 
 The example creates a virtual network with 65,536 private IP addresses.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-vpc.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-vpc.rb
    :lines: 13-31
    :dedent: 0
    :language: ruby
@@ -67,7 +67,7 @@ Creating an Internet Gateway and Attaching It to a VPC
 
 The following example creates an Internet gateway :code:`MyGroovyIGW`, attaches it to a VPC that has ID :code:`VPC_ID`, and then displays the Internet gateway's ID.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-attach-igw-vpc.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-attach-igw-vpc.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby
@@ -83,7 +83,7 @@ displays the subnet's ID.
 
 The public subnet created in this example has 256 private IP addresses within the VPC.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-subnet.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-subnet.rb
    :lines: 13-24
    :dedent: 0
    :language: ruby
@@ -97,7 +97,7 @@ The following example creates a route table :code:`MyGroovyRouteTable` in :code:
 The route table uses the route with the CIDR block :code:`0.0.0.0/0` and the gateway with the ID :code:`IGW_ID`.
 The example associates the route table with the subnet that has ID :code:`SUBNET_ID`, and then displays the route table's ID.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-route-table.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-route-table.rb
    :lines: 13-32
    :dedent: 0
    :language: ruby
@@ -111,7 +111,7 @@ The following example creates a security group :code:`MyGroovySecurityGroup` in 
 In the example, the security group is allowed access over port 22 (SSH) from all addresses (CIDR block :code:`0.0.0.0/0`) and
 is given the description "Security group for MyGroovyInstance". Then, the security group's ID is displayed.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-security-group.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-security-group.rb
    :lines: 13-33
    :dedent: 0
    :language: ruby
@@ -123,7 +123,7 @@ Creating a Key Pair
 
 You need a key pair when you connect to your |EC2| instance. The following example creates an unencrypted, PEM-encoded RSA private key :file:`MyGroovyKeyPair.pem` in your home folder.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-key-pair.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-key-pair.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby
@@ -136,7 +136,7 @@ Getting Information about All Instances
 The following example lists the IDs and states (pending, running, shutting down, terminated, stopping, or stopped)
 for all of your |EC2| instances in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-get-all-instance-info.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-get-all-instance-info.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby
@@ -151,7 +151,7 @@ of an |EC2| instance with the tag :code:`Group` and tag value :code:`MyGroovyGro
 
 .. note:: The tag name and value are case-sensitive.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-get-instance-info-by-tag.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-get-instance-info-by-tag.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby
@@ -163,7 +163,7 @@ Getting Information about a Specific Instance
 
 The following example lists the state of an instance :code:`i-123abc` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-list-state-instance-i-123abc.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-list-state-instance-i-123abc.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby
@@ -179,7 +179,7 @@ the security group with the ID :code:`SECURITY_GROUP_ID`, and the subnet with th
 
 .. note:: In the empty script value, you can add instructions that your |EC2| instance executes when it starts.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-create-instance.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-instance.rb
    :lines: 13-50
    :dedent: 0
    :language: ruby
@@ -191,7 +191,7 @@ Stopping an Instance
 
 The following example stops the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-stop-instance-i-123abc.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-stop-instance-i-123abc.rb
    :lines: 13-30
    :dedent: 0
    :language: ruby
@@ -203,7 +203,7 @@ Starting an Instance
 
 The following example starts the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-start-instance-i-123abc.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-start-instance-i-123abc.rb
    :lines: 13-30
    :dedent: 0
    :language: ruby
@@ -215,7 +215,7 @@ Rebooting an Instance
 
 The following example reboots the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-reboot-instance-i-123abc.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-reboot-instance-i-123abc.rb
    :lines: 13-26
    :dedent: 0
    :language: ruby
@@ -227,7 +227,7 @@ Terminating an Instance
 
 The following example terminates the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
-.. literalinclude:: ../build_dependencies/1/ruby/example_code/ec2/ec2-ruby-example-terminate-instance-i-123abc.rb
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-terminate-instance-i-123abc.rb
    :lines: 13-26
    :dedent: 0
    :language: ruby
