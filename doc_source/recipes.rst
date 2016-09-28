@@ -14,11 +14,7 @@
 |sdk-ruby| Recipes
 ##################
 
-<<<<<<< HEAD
-This section provides the following recipes that you can use to access AWS services using the
-=======
 This section provides recipes you can use to access AWS services by using the
->>>>>>> aws-ruby-developer-guide-editsBA
 |sdk-ruby|.
 
 .. toctree::
@@ -199,29 +195,4 @@ This section provides recipes you can use to access AWS services by using the
 
 	* :ref:`aws-ruby-sdk-sqs-recipe-delete_queue`
 
-<<<<<<< HEAD
-=======
 	* :ref:`aws-ruby-sdk-sqs-recipe-enable-resource`
-	
-	
-.. include:: cw-recipes.rst
-
-.. include:: dynamo-recipes.rst
-
-.. include:: ec2-recipes.rst
-
-.. include:: eb-recipes.rst
-
-.. include:: iam-recipes.rst
-
-.. include:: lambda-recipes.rst
-
-.. include:: rds-recipes.rst
-
-.. include:: s3-recipes.rst
-
-.. include:: sns-recipes.rst
->>>>>>> aws-ruby-developer-guide-editsBA
-
-
-

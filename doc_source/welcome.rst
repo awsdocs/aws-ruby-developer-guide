@@ -87,19 +87,8 @@ About Amazon Web Services
 |AWSlong| (AWS) is a collection of digital infrastructure services that developers can leverage when developing their applications.
 The services include computing, storage, database, and application synchronization (messaging and queuing).
 AWS uses a pay-as-you-go service model.
-<<<<<<< HEAD
-You are charged only for the services that you-or your applications-use.
-Also, to make AWS more approachable as a platform for prototyping and experimentation, AWS offers a free usage tier.
-On this tier, services are free below a certain level of usage.
-For more information about AWS costs and the Free Tier, see
-`Test-Driving AWS in the Free Usage Tier <http://docs.aws.amazon.com/FeaturedArticles/latest/TestDriveFreeTier.html>`_.
-To obtain an AWS account, open the `AWS home page <https://portal.aws.amazon.com/gp/aws/developer/registration/index.html>`_ and follow the instructions on the page.
-=======
 You are charged only for the services that you or your applications use.
 Also, to make AWS more approachable as a platform for prototyping and experimentation, AWS offers a Free Tier, on which services are free below a certain level of usage.
 For more information, see
 `Using the Free Tier <http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-free-tier.html>`_.
 To create an AWS account, open the `AWS home page <https://portal.aws.amazon.com/gp/aws/developer/registration/index.html>`_ and follow the instructions on the page.
-
-.. include:: quick-start-guide.rst
->>>>>>> aws-ruby-developer-guide-editsBA
