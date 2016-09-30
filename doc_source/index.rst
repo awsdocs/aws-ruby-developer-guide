@@ -11,7 +11,7 @@
 .. _top:
 
 .. meta::
-    :description: 
+    :description:
         Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
         AWS infrastructure services with the |sdk-ruby|.
 

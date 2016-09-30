@@ -23,13 +23,13 @@ Latest Changes
 
 This document had the following major changes, by section.
 
-:ref:`aws-ruby-sdk-cw-recipes`
+:doc:`cw-recipes`
 
 * Added :ref:`aws-ruby-sdk-cw-recipe-show_alarms`
 
 * Added :ref:`aws-ruby-sdk-cw-recipe-create_alarm`
 
-:ref:`aws-ruby-sdk-lambda-recipes`
+:doc:`lambda-recipes`
 
 * Added :ref:`lambda-ruby-example-show-functions`
 
@@ -37,7 +37,7 @@ This document had the following major changes, by section.
 
 * Added :ref:`lambda-ruby-example-configure-function-for-notification`
 
-:ref:`aws-ruby-sdk-s3-recipes`
+:doc:`s3-recipes`
 
 * Added :ref:`aws-ruby-sdk-s3-recipe-add-notification`
 
@@ -45,11 +45,11 @@ This document had the following major changes, by section.
 
 * Added :ref:`aws-ruby-sdk-s3-recipe-set-notification`
 
-:ref:`aws-ruby-sdk-sns-recipes`
+:doc:`sns-recipes`
 
 * Added :ref:`aws-ruby-sdk-sns-recipe-enable-resource`
 
-:ref:`aws-ruby-sdk-sqs-recipes`
+:doc:`sqs-recipes`
 
 * Added :ref:`aws-ruby-sdk-sqs-recipe-enable-resource`
 

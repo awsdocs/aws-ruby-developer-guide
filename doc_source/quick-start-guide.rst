@@ -17,19 +17,19 @@ QuickStart Guide to Using the |sdk-ruby|
 This section shows you how to use the |sdk-ruby| to create a simple Ruby application that lists your
 |S3| buckets.
 
-* If you haven't installed the SDK, see :ref:`aws-ruby-sdk-installing-sdk`.
+* If you haven't installed the SDK, see :doc:`setup-install`.
 
-* If you haven't configured the SDK, see :ref:`aws-ruby-sdk-configuration`.
+* If you haven't configured the SDK, see :doc:`setup-config`.
 
 .. _aws-ruby-sdk-quick-start-code:
 
 Write the Code
 ==============
 
-The following example lists the names of up to 50 of your buckets.
-Copy the code and save it as :file:`buckets.rb`.
-Note that although the **Resource** object is created in the :code-ruby:`us-west-2` region,
-|S3| returns buckets to which you have access, regardless of the region.
+The following example lists the names of up to 50 of your buckets.  Copy the code and save it as
+:file:`buckets.rb`.  Note that although the **Resource** object is created in the
+:code-ruby:`us-west-2` region, |S3| returns buckets to which you have access, regardless of the
+region.
 
 .. code-block:: ruby
 
@@ -55,14 +55,15 @@ Enter the following command to execute :code:`buckets.rb`.
 Note for Windows users
 ======================
 
-When you use SSL certificates on Windows and run your Ruby code, you will see an error similar to the following.
+When you use SSL certificates on Windows and run your Ruby code, you will see an error similar to
+the following.
 
 .. code-block:: none
 
    C:\Ruby>ruby buckets.rb
    C:/Ruby200-x64/lib/ruby/2.0.0/net/http.rb:921:in `connect': SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (Seahorse::Client::NetworkingError)
             from C:/Ruby200-x64/lib/ruby/2.0.0/net/http.rb:921:in `block in connect'
-    
+
             from C:/Ruby200-x64/lib/ruby/2.0.0/timeout.rb:66:in `timeout'
             from C:/Ruby200-x64/lib/ruby/2.0.0/net/http.rb:921:in `connect'
             from C:/Ruby200-x64/lib/ruby/2.0.0/net/http.rb:862:in `do_start'
@@ -75,3 +76,4 @@ call.
 .. code-block:: ruby
 
    Aws.use_bundled_cert!
+

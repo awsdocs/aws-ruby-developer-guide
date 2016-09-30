@@ -28,20 +28,19 @@ create Ruby applications that use AWS services.
 
 This guide contains the following sections:
 
-:ref:`aws-ruby-sdk-getting-started`
+:doc:`getting-started`
     Describes how to set up and use the |sdk-ruby|.
 
-:ref:`aws-ruby-sdk-hello-world-tutorial`
+:doc:`hello`
     Steps you through creating an application using the |sdk-ruby|.
 
-:ref:`aws-ruby-sdk-programming`
+:doc:`programming`
     Provides general information about developing software with the |sdk-ruby|.
 
-:ref:`aws-ruby-sdk-recipes`
-    Provides code samples that developers can copy to program AWS services with the
-    |sdk-ruby|.
+:doc:`recipes`
+    Provides code samples that developers can copy to program AWS services with the |sdk-ruby|.
 
-:ref:`aws-ruby-sdk-document-history`
+:doc:`history`
     Describes the history of this document.
 
 
@@ -81,14 +80,5 @@ in the |AEB-dg|. For deploying a Ruby on Rails application with |OPS|, see
 For an overview of AWS deployment services, see
 `Overview of Deployment Options on AWS <https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf>`_.
 
-About Amazon Web Services
--------------------------
+.. include:: about-aws.txt
 
-|AWSlong| (AWS) is a collection of digital infrastructure services that developers can leverage when developing their applications.
-The services include computing, storage, database, and application synchronization (messaging and queuing).
-AWS uses a pay-as-you-go service model.
-You are charged only for the services that you or your applications use.
-Also, to make AWS more approachable as a platform for prototyping and experimentation, AWS offers a Free Tier, on which services are free below a certain level of usage.
-For more information, see
-`Using the Free Tier <http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-free-tier.html>`_.
-To create an AWS account, open the `AWS home page <https://portal.aws.amazon.com/gp/aws/developer/registration/index.html>`_ and follow the instructions on the page.

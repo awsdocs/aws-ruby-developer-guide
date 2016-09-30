@@ -8,8 +8,6 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-s3-recipes:
-
 ############
 |S3| Recipes
 ############
@@ -46,19 +44,20 @@ more information about |S3|, see the `Amazon S3 documentation <http://aws.amazon
 Getting Information about All Buckets
 =====================================
 
-The following example lists the names of up to 50 of your |S3| buckets.
-Copy the code and save it as :file:`buckets.rb`. Notice that although the :code:`Resource` object is created in the :code:`us-west-2` region,
-|S3| returns buckets to which you have access, regardless of the region they are in.
+The following example lists the names of up to 50 of your |S3| buckets.  Copy the code and save it
+as :file:`buckets.rb`. Notice that although the :code:`Resource` object is created in the
+:code:`us-west-2` region, |S3| returns buckets to which you have access, regardless of the region
+they are in.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-show-50-buckets.rb
    :lines: 13-20
    :dedent: 0
    :language: ruby
 
-.. note:: When you specify a region,
-   the :code:`buckets` method calls the :code:`Client#list_buckets` method,
-   which returns a list of all buckets owned by the authenticated sender of the request.
-   See :ref:`aws-ruby-sdk-s3-recipe-get-buckets-in-region` to learn how to filter this list to get the buckets only in a specific region.
+.. note:: When you specify a region, the :code:`buckets` method calls the
+   :code:`Client#list_buckets` method, which returns a list of all buckets owned by the
+   authenticated sender of the request.  See :ref:`aws-ruby-sdk-s3-recipe-get-buckets-in-region` to
+   learn how to filter this list to get the buckets only in a specific region.
 
 .. _aws-ruby-sdk-s3-recipe-get-buckets-in-region:
 
@@ -73,10 +72,9 @@ If you don't specify a limit, |S3| lists all buckets in :code:`us-west-2`.
    :dedent: 0
    :language: ruby
 
-.. note:: 
-   If a bucket is not in the region in which you instantiated your :code-ruby:`Resource` object,
-   the SDK emits a warning message when you call :code-ruby:`get_bucket_location`.
-   You can suppress this message by redirecting STDERR.
+.. note:: If a bucket is not in the region in which you instantiated your :code-ruby:`Resource`
+   object, the SDK emits a warning message when you call :code-ruby:`get_bucket_location`. You can
+   suppress this message by redirecting STDERR.
 
    On Windows, append :code:`2> nul` to the command.
 
@@ -99,17 +97,19 @@ The following example creates a bucket :code-ruby:`my-bucket` in the :code:`us-w
 Determining Whether a Bucket Exists
 ===================================
 
-There are two cases in which you would want to determine whether a bucket already exists. You perform these tests in lieu of receiving an exception if the condition fails:
+There are two cases in which you would want to determine whether a bucket already exists. You
+perform these tests in lieu of receiving an exception if the condition fails:
 
-* You want to determine whether a bucket with a specific name already exists among all buckets,
-  even ones to which you do not have access.
-  This test helps prevent you from trying to create a bucket with the name of an existing bucket, which causes an exception.
+* You want to determine whether a bucket with a specific name already exists among all buckets, even
+  ones to which you do not have access.  This test helps prevent you from trying to create a bucket
+  with the name of an existing bucket, which causes an exception.
 
-* You want to perform an operation,
-  such as add an item to a bucket, only on a bucket to which you have access.
+* You want to perform an operation, such as add an item to a bucket, only on a bucket to which you
+  have access.
 
-The following example sets :code-ruby:`bucket_exists` to :code:`true` if a bucket with the name :code-ruby:`my-bucket` already exists.
-The :code:`region:` parameter to :code:`Resource` has no effect on the result.
+The following example sets :code-ruby:`bucket_exists` to :code:`true` if a bucket with the name
+:code-ruby:`my-bucket` already exists.  The :code:`region:` parameter to :code:`Resource` has no
+effect on the result.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-bucket-exists.rb
    :lines: 13-16
@@ -121,12 +121,13 @@ The :code:`region:` parameter to :code:`Resource` has no effect on the result.
 Getting Information about Bucket Items
 ======================================
 
-A presigned URL gives you access to the object identified in the URL, if the creator of
-the presigned URL has permissions to access that object. You can use a presigned URL to allow a user
-to click a link and see an item without having to make the item public.
+A presigned URL gives you access to the object identified in the URL, if the creator of the
+presigned URL has permissions to access that object. You can use a presigned URL to allow a user to
+click a link and see an item without having to make the item public.
 
-The following example lists the names and presigned URLs of the first 50 items of the bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
-If a limit is not specified, |S3| lists up to 1000 items.
+The following example lists the names and presigned URLs of the first 50 items of the bucket
+:code-ruby:`my-bucket` in the :code:`us-west-2` region.  If a limit is not specified, |S3| lists up
+to 1000 items.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-list-bucket-items.rb
    :lines: 13-23
@@ -138,8 +139,9 @@ If a limit is not specified, |S3| lists up to 1000 items.
 Uploading an Item to a Bucket
 =============================
 
-The following example uploads the item (file) :file:`C:\file.txt` to the bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
-Because :file:`C:\file.txt` is the fully qualified name of the file, the name of the item is set to the name of the file.
+The following example uploads the item (file) :file:`C:\file.txt` to the bucket
+:code-ruby:`my-bucket` in the :code:`us-west-2` region.  Because :file:`C:\file.txt` is the fully
+qualified name of the file, the name of the item is set to the name of the file.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-upload-item.rb
    :lines: 13-27
@@ -151,9 +153,10 @@ Because :file:`C:\file.txt` is the fully qualified name of the file, the name of
 Uploading an Item with Metadata to a Bucket
 ===========================================
 
-The following example uploads the item (file) :file:`C:\file.txt` with the metadata key-value pair :code-ruby:`answer` and :code-ruby:`42`
-to the bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
-Because :file:`C:\file.txt` is the fully qualified name of the file, the name of the item is set to the file name.
+The following example uploads the item (file) :file:`C:\file.txt` with the metadata key-value pair
+:code-ruby:`answer` and :code-ruby:`42` to the bucket :code-ruby:`my-bucket` in the
+:code:`us-west-2` region.  Because :file:`C:\file.txt` is the fully qualified name of the file, the
+name of the item is set to the file name.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-upload-item-with-metadata.rb
    :lines: 13-30
@@ -165,8 +168,9 @@ Because :file:`C:\file.txt` is the fully qualified name of the file, the name of
 Downloading an Object from a Bucket into a File
 ===============================================
 
-The following example gets the contents of the item :code-ruby:`my-item` from the bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region,
-and saves it to the :file:`my-item.txt` file in the :file:`./my-code` directory.
+The following example gets the contents of the item :code-ruby:`my-item` from the bucket
+:code-ruby:`my-bucket` in the :code:`us-west-2` region, and saves it to the :file:`my-item.txt` file
+in the :file:`./my-code` directory.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-get-item.rb
    :lines: 13-21
@@ -178,8 +182,9 @@ and saves it to the :file:`my-item.txt` file in the :file:`./my-code` directory.
 Changing the Properties for a Bucket Item
 =========================================
 
-The following example adds public read-only access, sets server-side encryption to AES-256,
-and sets the storage class to Reduced Redundancy for the item :code-ruby:`my-item` in the bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
+The following example adds public read-only access, sets server-side encryption to AES-256, and sets
+the storage class to Reduced Redundancy for the item :code-ruby:`my-item` in the bucket
+:code-ruby:`my-bucket` in the :code:`us-west-2` region.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-set-item-props.rb
    :lines: 13-36
@@ -225,8 +230,8 @@ programming languages that |LAM| supports.
 Enabling |S3| to Send a Notification
 ------------------------------------
 
-Learn how to configure an |SNSlong| topic or |SQSlong| queue, or create a |LAM| function so that |S3| can send
-a notification to them.
+Learn how to configure an |SNSlong| topic or |SQSlong| queue, or create a |LAM| function so that
+|S3| can send a notification to them.
 
 * :ref:`aws-ruby-sdk-sns-recipe-enable-resource`
 
@@ -239,7 +244,8 @@ a notification to them.
 Creating an |S3| Bucket Notification
 ------------------------------------
 
-The following example enables the |S3| bucket :code-ruby:`my-bucket` to send a notification to the following when an item is added to the bucket:
+The following example enables the |S3| bucket :code-ruby:`my-bucket` to send a notification to the
+following when an item is added to the bucket:
 
 * The |SNS| topic with the ARN :code-ruby:`my-topic-arn`
 
@@ -258,8 +264,8 @@ Creating a Bucket LifeCycle Rule Configuration Template
 =======================================================
 
 If you have (or plan to create) a non-trivial number of objects and want to specify when to move
-them to long-term storage or delete them, you can save a lot of time by creating a template
-for the lifecycle rules and applying that template to all of your buckets. 
+them to long-term storage or delete them, you can save a lot of time by creating a template for the
+lifecycle rules and applying that template to all of your buckets.
 
 The process includes these steps:
 
@@ -295,7 +301,8 @@ The output should look like the following:
     [{"expiration":{"date":null,"days":425},"id":"default","prefix":"","status":"Enabled","transitions":[{"date":null,"days":30,"storage_class":"STANDARD_IA"},{"date":null,"days":60,"storage_class":"GLACIER"}],"noncurrent_version_transitions":[],"noncurrent_version_expiration":null}]
 
 Now that you have the JSON for a lifecycle rule, you can apply it to any other bucket using the
-following example, which takes the rule from :file:`default.json` and applies it to the bucket :code-ruby:`other_bucket`:
+following example, which takes the rule from :file:`default.json` and applies it to the bucket
+:code-ruby:`other_bucket`:
 
 .. code-block:: ruby
 
