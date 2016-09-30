@@ -8,8 +8,6 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-release-2.4:
-
 ###################
 Release 2.4 Details
 ###################
@@ -17,11 +15,11 @@ Release 2.4 Details
 This section lists the major changes to the *Rubylong Developer Guide* (this document) for the 2.4
 release in June 2016.
 
-:ref:`aws-ruby-sdk-s3-recipes`
+:doc:`s3-recipes`
 
 * Added :ref:`aws-ruby-sdk-s3-recipe-get-bucket-item`
 
-:ref:`aws-ruby-sdk-ec2-recipes`
+:doc:`ec2-recipes`
 
 * Added :ref:`aws-ruby-sdk-ec2-create-vpc`
 
@@ -37,11 +35,11 @@ release in June 2016.
 
 * Added :ref:`aws-ruby-sdk-ec2-recipe-create-instance`
 
-:ref:`aws-ruby-sdk-dynamo-recipes`
+:doc:`dynamo-recipes`
 
 * Modified :ref:`aws-ruby-sdk-dynamo-recipe-create-table`
 
-:ref:`aws-ruby-sdk-iam-recipes`
+:doc:`iam-recipes`
 
 * Added :ref:`aws-ruby-sdk-iam-recipe-add-user`
 
@@ -51,7 +49,7 @@ release in June 2016.
 
 * Added :ref:`aws-ruby-sdk-iam-recipe-create-role`
 
-:ref:`aws-ruby-sdk-sns-recipes`
+:doc:`sns-recipes`
 
 * Added :ref:`aws-ruby-sdk-sns-recipe-show-topics`
 
@@ -63,7 +61,7 @@ release in June 2016.
 
 * Added :ref:`aws-ruby-sdk-sns-recipe-send-message`
 
-:ref:`aws-ruby-sdk-sqs-recipes`
+:doc:`sqs-recipes`
 
 * Added :ref:`aws-ruby-sdk-sqs-recipe-show-queues`
 

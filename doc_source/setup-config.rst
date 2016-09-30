@@ -8,8 +8,6 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-configuration:
-
 ##########################
 Configuring the |sdk-ruby|
 ##########################
@@ -28,15 +26,15 @@ You can set credentials in several ways.
 
 The |sdk-ruby| searches for credentials in the following order:
 
-* :ref:`aws-ruby-sdk-credentials-client`
+1. :ref:`aws-ruby-sdk-credentials-client`
 
-* :ref:`aws-ruby-sdk-credentials-aws-config`
+2. :ref:`aws-ruby-sdk-credentials-aws-config`
 
-* :ref:`aws-ruby-sdk-credentials-environment`
+3. :ref:`aws-ruby-sdk-credentials-environment`
 
-* :ref:`aws-ruby-sdk-credentials-shared`
+4. :ref:`aws-ruby-sdk-credentials-shared`
 
-* :ref:`aws-ruby-sdk-credentials-iam`
+5. :ref:`aws-ruby-sdk-credentials-iam`
 
 The following sections describe how to set credentials, starting with the most flexible approach.
 For more information about AWS credentials and recommended approaches for credential management, see
@@ -119,8 +117,8 @@ Setting Credentials in a Client Object
 
 Set the credentials in your code by specifying them when you create an AWS client.
 
-The following example creates an |S3| client using the access key :code:`your_access_key_id` and the secret
-access key :code:`your_secret_access_key`.
+The following example creates an |S3| client using the access key :code:`your_access_key_id` and the
+secret access key :code:`your_secret_access_key`.
 
 .. code-block:: ruby
 
@@ -134,10 +132,9 @@ access key :code:`your_secret_access_key`.
 Setting Credentials Using IAM
 -----------------------------
 
-For an |EC2long| instance, create an |IAM| role, and then give your |EC2| instance access to that role.
-For more information, see
-`IAM Roles for Amazon EC2 <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html>`_
-in the |EC2-ug| or `IAM Roles for Amazon EC2 <http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/iam-roles-for-amazon-ec2.html>`_ in the |EC2-ug-win|.
+For an |EC2long| instance, create an |IAM| role, and then give your |EC2| instance access to that
+role. For more information, see :ec2-ug:`IAM Roles for Amazon EC2 <iam-roles-for-amazon-ec2>` in the
+|EC2-ug| or :ec2-ug-win:`IAM Roles for Amazon EC2 <iam-roles-for-amazon-ec2>` in the |EC2-ug-win|.
 
 .. _aws-ruby-sdk-credentials-access-token:
 
@@ -149,8 +146,8 @@ Use the
 method to create an |STS| access token.
 
 The following example uses an access token to create an |S3| client object, where
-:code:`linked::account::arn` is the Amazon Resource Name (ARN) of the role to assume and :code:`session-name` is
-an identifier for the assumed role session.
+:code:`linked::account::arn` is the Amazon Resource Name (ARN) of the role to assume and
+:code:`session-name` is an identifier for the assumed role session.
 
 .. code-block:: ruby
 
@@ -159,7 +156,7 @@ an identifier for the assumed role session.
       role_arn: "linked::account::arn",
       role_session_name: "session-name"
     )
-    
+
     s3 = Aws::S3::Client.new(credentials: role_credentials)
 
 .. _aws-ruby-sdk-setting-region:
@@ -167,9 +164,9 @@ an identifier for the assumed role session.
 Setting a Region
 ================
 
-You need to set a `region <http://docs.aws.amazon.com/general/latest/gr/rande.html>`_ when using
-most AWS services. You can set the AWS Region in ways similar to setting your AWS credentials. The
-|sdk-ruby| searches for a region in the following order:
+You need to set a :aws-gr:`region <rande>` when using most AWS services. You can set the AWS Region
+in ways similar to setting your AWS credentials. The |sdk-ruby| searches for a region in the
+following order:
 
 * :ref:`aws-ruby-sdk-region-client-resource`
 
@@ -238,3 +235,4 @@ object. The following example creates an |S3| resource object in the :code:`othe
 .. code-block:: ruby
 
     s3 = Aws::S3::Resource.new(endpoint: other_endpoint)
+

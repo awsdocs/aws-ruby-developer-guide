@@ -15,21 +15,13 @@
 #####
 
 This section provides solutions to some common |SQS| scenarios using the |sdk-ruby|. For more
-information about |SQS|, see the `SQS-dg`_.
+information about |SQS|, see the |SQS-dg|_.
 
-You can find more examples of using the |sdk-ruby| with |SQS| in :ref:`aws-ruby-sdk-sqs-recipes`.
+You can find more examples of using the |sdk-ruby| with |SQS| in :doc:`sqs-recipes`.
 
-This section contains the following solutions:
-
-* :ref:`aws-ruby-sdk-sns-scenario-enable-long-polling`
-
-* :ref:`aws-ruby-sdk-sns-scenario-visibility-timeout`
-
-* :ref:`aws-ruby-sdk-sns-scenario-sending-receiving-messages`
-
-* :ref:`aws-ruby-sdk-sns-scenario-queues`
-
-* :ref:`aws-ruby-sdk-sns-scenario-dead-letter-queues`
+.. contents:: In this section
+    :local:
+    :depth: 1
 
 .. _aws-ruby-sdk-sns-scenario-enable-long-polling:
 
