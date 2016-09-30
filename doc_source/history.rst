@@ -14,7 +14,7 @@
 Document History
 ################
 
-This topic lists the major changes to the *Rubylong Developer Guide* (this document).
+This topic lists the major changes to the |sdk-ruby-dg| (this document).
 
 .. _aws-ruby-sdk-latest-changes:
 

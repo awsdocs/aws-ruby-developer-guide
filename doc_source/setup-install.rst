@@ -19,9 +19,9 @@ This section includes prerequisites and installation instructions.
 Prerequisites
 =============
 
-Before you can install the |sdk-ruby|, you will need an AWS account and Ruby version 1.9 or later.
+Before you install the |sdk-ruby|, you need an AWS account and Ruby version 1.9 or later.
 
-If you do not have an AWS account, use the following procedure to create one.
+If you don't have an AWS account, use the following procedure to create one.
 
 To sign up for AWS
 ------------------
@@ -29,6 +29,9 @@ To sign up for AWS
 1. Open http://aws.amazon.com/ and choose **Create an AWS Account**.
 
 2. Follow the online instructions.
+
+Installing the |sdk-ruby|
+=========================
 
 If your project uses `Bundler <http://bundler.io/>`_, add the following line to your :code:`Gemfile`
 to add the |sdk-ruby| to your project.
