@@ -10,15 +10,17 @@
 
 .. _top:
 
+#####################
+|sdk-ruby-dg| v2.16.8
+#####################
+
 .. meta::
     :description:
         Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
         AWS infrastructure services with the |sdk-ruby|.
-
-##################################
-|sdk-ruby| Developer Guide v2.16.8
-##################################
-
+    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
+               ruby recipes
+    
 .. toctree::
    :titlesonly:
    :maxdepth: 1
@@ -31,4 +33,4 @@
    tips-and-tricks
    history
 
-
+.. include:: about-aws.txt

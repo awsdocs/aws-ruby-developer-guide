@@ -17,6 +17,11 @@ Paging Response Data
 Some AWS calls provide paged responses to limit the amount of data returned with each response. A
 page of data represents up to 1,000 items.
 
+.. contents::
+     :local:
+     :depth: 1
+     
+
 .. _aws-ruby-sdk-paged-response-enumerable:
 
 Paged Responses Are Enumerable
