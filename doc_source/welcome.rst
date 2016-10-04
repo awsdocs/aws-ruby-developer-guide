@@ -10,9 +10,11 @@
 
 .. _aws-ruby-sdk-about-ruby-sdk:
 
-####################
-About the |sdk-ruby|
-####################
+#############
+|sdk-ruby-dg|
+#############
+
+Welcome to the |sdk-ruby|. 
 
 The |sdk-ruby| helps take the complexity out of coding by providing Ruby classes for almost all AWS
 services, including |S3long|, |EC2long|, and |DDBlong|. For a complete list of services supported by the

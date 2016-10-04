@@ -14,7 +14,7 @@
 Stubbing Client Responses and Errors
 ####################################
 
-This topic shows you how to stub client responses and errors in an |sdk-ruby|
+Learn how to stub client responses and client errors in an |sdk-ruby|
 application.
 
 .. _aws-ruby-sdk-stubbing-clients:
