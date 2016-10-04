@@ -82,5 +82,5 @@ in the |AEB-dg|. For deploying a Ruby on Rails application with |OPS|, see
 For an overview of AWS deployment services, see
 `Overview of Deployment Options on AWS <https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf>`_.
 
-.. include:: about-aws.txt
+
 
