@@ -16,13 +16,7 @@
 
 This section provides tips and tricks on using the |sdk-ruby| with AWS services.
 
-:ref:`aws-ruby-sdk-ec2-tips`
-    Some tips on using the |sdk-ruby| with |EC2| to:
-
-* Associate an Elastic IP address with an instance    
-
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
    ec2-tips
