@@ -14,7 +14,7 @@
 Debugging Tip: Getting Wire Trace Information from a Client
 ###########################################################
 
-You can get wire trace information from an AWS client when you create it by setting the :code:`http_wire_proxy` option. This information helps differentiate client changes, service issues, and user errors. The following example creates an |S3| client with wire tracing enabled.
+You can get wire trace information from an AWS client when you create it by setting the :code:`http_wire_trace` option. This information helps differentiate client changes, service issues, and user errors. The following example creates an |S3| client with wire tracing enabled.
 
 .. code-block:: ruby
 
