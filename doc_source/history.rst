@@ -77,8 +77,4 @@ as 16, and the final number denotes the month, starting with 1 for January.
 
 * Version 2.3 in March 2016
 
-* `Version 1.0.0 <https://w.amazon.com/index.php/AWSDevDocs/PublishPDF>`_: September 2013
-
-
-
-
+* `Version 1.0.0 <http://awsdocs.s3.amazonaws.com/sdk-ruby/latest/aws-sdk-ruby-dg.pdf>`_: May 2014
