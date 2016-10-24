@@ -351,3 +351,5 @@ following example, which takes the rule from :file:`default.json` and applies it
 
     s3 = Aws::S3::Client.new(region: 'us-west-2')
     s3.put_bucket_lifecycle_configuration(:bucket => 'other_bucket', :lifecycle_configuration => {:rules => json_data})
+
+.. include:: common/s3-note-incomplete-upload-policy.txt
