@@ -231,7 +231,8 @@ You can configure the service to send a notification to:
    <aws-ruby-sdk-s3-recipe-set-notification>`.
 
 After you do these steps, your application can respond to the information. For example,
-the |LAM| topic `Programming Model </programming-model-v2.html>`_ describes how to use the various
+the |LAM| topic 
+:LAM-dg:`Programming Model <programming-model-v2>` describes how to use the various
 programming languages that |LAM| supports.
 
 .. _aws-ruby-sdk-s3-recipe-grant-s3-permission:
