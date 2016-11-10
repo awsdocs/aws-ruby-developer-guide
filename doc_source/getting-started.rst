@@ -24,6 +24,7 @@ installing, setting up, and using the SDK to create a Ruby application to access
    setup-config
    repl
    rails
+   migrating-to-v2
 
 
 
