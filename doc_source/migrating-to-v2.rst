@@ -47,7 +47,7 @@ Version 2 differs from version 1 in a number of important ways.
 
 * Different root namespace, :code:`Aws` vs :code:`AWS`. This enables side-by-side usage.
 * :code:`Aws.config` is now a vanilla Ruby hash, instead of a method.
-* **Strict constructor options** - When constructing a client or resource object in the version 1 SDK, 
+* Strict constructor options - When constructing a client or resource object in the version 1 SDK, 
   unknown constructor options are ignored. In version 2, unknown constructor options trigger an :code:`ArgumentError`.  
   For example:
 
@@ -72,7 +72,7 @@ will have compatible interfaces after client construction. Some important differ
 
 * :code:`Aws::S3::Client` - The version 1 |S3| client class was hand-coded. Version 2 is generated from a 
   service model. Method names an inputs are very different in version 2.
-* :code:`Aws::EC2::Client`*- Version 2 uses plural names for output lists, version 1 uses the suffix :code:`_set`. 
+* :code:`Aws::EC2::Client`- Version 2 uses plural names for output lists, version 1 uses the suffix :code:`_set`. 
   For example:
 
   .. code-block:: ruby
@@ -88,13 +88,13 @@ will have compatible interfaces after client construction. Some important differ
      #=> [...]
   
 * :code:`Aws::SWF::Client` - Version two uses structured responses, where version 1 uses vanilla Ruby hashes.
-* **Service class renames** - Version 2 uses a different name for multiple services:
+* Service class renames - Version 2 uses a different name for multiple services:
 
   * :code:`AWS::SimpleWorkflow` has become :code:`Aws::SWF`
   * :code:`AWS::ELB` has become :code:`Aws::ElasticLoadBalancing`
   * :code:`AWS::SimpleEmailService` has become :code:`Aws::SES`
 
-* **Client configuration options** - Some of the version 1 configuration options have been renamed in version 2. 
+* Client configuration options - Some of the version 1 configuration options have been renamed in version 2. 
   Others have been removed or replaced. Here are the primary changes:
 
   * :code:`:use_ssl` has been removed. Version 2 uses SSL everywhere. To disable SSL you must configure an 
@@ -115,7 +115,7 @@ There are significant differences between the resource interfaces in version 1 a
 entirely hand-coded, where as version 2 resource interfaces are generated from a model. Version 2 resource 
 interfaces are significantly more consistent. Some of the systemic differences include:
 
-* **Separate resource class** - In version 2, the service name is a module and not a class. In this module is 
+* Separate resource class - In version 2, the service name is a module and not a class. In this module is 
   the resource interface:
 
   .. code-block:: ruby
@@ -126,7 +126,7 @@ interfaces are significantly more consistent. Some of the systemic differences i
      # version 2
      s3 = Aws::S3::Resource.new
 
-* **Referencing resources** - The version 2 SDK separates collections and individual resource getters into two 
+* Referencing resources - The version 2 SDK separates collections and individual resource getters into two 
   different methods:
   
   .. code-block:: ruby
@@ -137,6 +137,6 @@ interfaces are significantly more consistent. Some of the systemic differences i
      # version 2
      s3.bucket('bucket-name').object('key').delete
 
-* **Batch operations** - In version 1, all batch operations were hand-coded utilities. In version 2, many batch 
+* Batch operations - In version 1, all batch operations were hand-coded utilities. In version 2, many batch 
   operations are auto-generated batching operations over the API. 
   **Version 2 batching interfaces are very different from version 1.**
