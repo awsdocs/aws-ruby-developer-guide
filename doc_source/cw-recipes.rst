@@ -29,7 +29,7 @@ Getting Information about All Alarms
 The following example displays information about your |CW| alarms.
 
 .. literalinclude:: ./example_code/cw/cw-ruby-example-show-alarms.rb
-   :lines: 13-52
+   :lines: 13-41
    :dedent: 0
    :language: ruby
 
@@ -42,6 +42,6 @@ The following example creates a |CW| alarm *my-alarm* that sends a message throu
 when the |S3| bucket *my-bucket* has more than 50 items in a 24-hour period.
 
 .. literalinclude:: ./example_code/cw/cw-ruby-example-create-alarm.rb
-   :lines: 13-41
+   :lines: 13-52
    :dedent: 0
    :language: ruby
