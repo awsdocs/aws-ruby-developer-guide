@@ -8,29 +8,23 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-iam-examples:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+##################
+|IAMlong| Examples
+##################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
+You can use the following examples to access |IAMlong| (|IAM|) using the |sdk-ruby|. For more
+information about |IAM|, see the `IAM documentation <http://aws.amazon.com/documentation/iam/>`_.
+
+**Examples**
+
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
+   iam-example-get-users
+   iam-example-add-user
+   iam-example-create-user-access-keys
+   iam-example-add-managed-policy
+   iam-example-create-role
 
-.. include:: about-aws.txt

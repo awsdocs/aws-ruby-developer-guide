@@ -8,29 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-iam-example-add-user:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+#################
+Adding a New User
+#################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example creates the IAM user :code:`my_groovy_user` in the :code:`us-west-2` region with the password :code:`REPLACE_ME`,
+and displays the user's account ID. If a user with that name already exists, it displays a message and does not create a new user.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/iam/iam-ruby-example-add-new-user.rb
+   :lines: 13-27
+   :dedent: 0
+   :language: ruby

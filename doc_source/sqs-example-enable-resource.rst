@@ -8,29 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-sqs-example-enable-resource:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+#########################################
+Enabling a Resource to Publish to a Queue
+#########################################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example enables the resource with the ARN :code:`my-resource-arn` to publish to the
+queue with the ARN :code:`my-queue-arn` and URL :code:`my-queue-url` in the :code:`us-west-2`
+region.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-enable-resource.rb
+   :lines: 13-40
+   :dedent: 0
+   :language: ruby

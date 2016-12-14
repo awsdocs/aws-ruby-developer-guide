@@ -8,29 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-sqs-example-create-queue:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+################
+Creating a Queue
+################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example creates the |SQS| queue :code:`MyGroovyQueue` in the :code:`us-west-2` region
+and displays its URL.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-create-queue.rb
+   :lines: 13-19
+   :dedent: 0
+   :language: ruby

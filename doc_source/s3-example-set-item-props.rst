@@ -8,29 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-s3-example-set-item-props:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+#########################################
+Changing the Properties for a Bucket Item
+#########################################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example adds public read-only access, sets server-side encryption to AES-256, and sets
+the storage class to Reduced Redundancy for the item :code-ruby:`my-item` in the bucket
+:code-ruby:`my-bucket` in the :code:`us-west-2` region.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/s3/s3-ruby-example-set-item-props.rb
+   :lines: 13-36
+   :dedent: 0
+   :language: ruby

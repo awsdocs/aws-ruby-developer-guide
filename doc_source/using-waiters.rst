@@ -16,7 +16,7 @@ Using Waiters
 
 Waiters are utility methods that poll for a particular state to occur on a client. Waiters can fail
 after a number of attempts at a polling interval defined for the service client. For an example of
-how a waiter is used, see :ref:`aws-ruby-sdk-dynamo-recipe-create-table`.
+how a waiter is used, see :ref:`aws-ruby-sdk-dynamo-example-create-table`.
 
 .. contents::
      :local:

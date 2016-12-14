@@ -8,29 +8,15 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _lambda-ruby-example-configure-function-for-notification:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+#####################################################
+Configuring a |LAM| Function to Receive Notifications
+#####################################################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example configures the |LAM| function :code:`my-notification-function` in the :code:`us-west-2` region to accept notifications from the resource with the ARN :code:`my-resource-arn`.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-configure-function-for-notification.rb
+   :lines: 13-24
+   :dedent: 0
+   :language: ruby

@@ -15,31 +15,31 @@ Release 2.16.7 Details
 This section lists the major changes to the |sdk-ruby-dg| (this document) for the 2.16.7 release in
 July 2016.
 
-:doc:`dynamo-recipes`
+:doc:`dynamo-examples`
 
-* Added :ref:`aws-ruby-sdk-dynamo-recipe-update-table`
+* Added :ref:`aws-ruby-sdk-dynamo-example-update-table`
 
-* Added :ref:`aws-ruby-sdk-dynamo-recipe-create-index`
+* Added :ref:`aws-ruby-sdk-dynamo-example-create-index`
 
-:doc:`ec2-recipes`
+:doc:`ec2-examples`
 
-* Added :ref:`aws-ruby-sdk-ec2-recipe-get-instance-by-tag`
+* Added :ref:`aws-ruby-sdk-ec2-example-get-instance-by-tag`
 
-:doc:`s3-recipes`
+:doc:`s3-examples`
 
-* Added :ref:`aws-ruby-sdk-s3-recipe-set-item-props`
+* Added :ref:`aws-ruby-sdk-s3-example-set-item-props`
 
-:doc:`sqs-recipes`
+:doc:`sqs-examples`
 
-* Updated :ref:`aws-ruby-sdk-sqs-recipe-show-queues` to include messages available and messages in
+* Updated :ref:`aws-ruby-sdk-sqs-example-show-queues` to include messages available and messages in
   flight for each queue.
 
-* Updated :ref:`aws-ruby-sdk-sqs-recipe-send-messages` to include sending batch messages.
+* Updated :ref:`aws-ruby-sdk-sqs-example-send-messages` to include sending batch messages.
 
-* Added :ref:`aws-ruby-sdk-sqs-recipe-get-messages-with-long-polling`.
+* Added :ref:`aws-ruby-sdk-sqs-example-get-messages-with-long-polling`.
 
-* Updated :ref:`aws-ruby-sdk-sqs-recipe-poll-messages` to include information on long polling and
+* Updated :ref:`aws-ruby-sdk-sqs-example-poll-messages` to include information on long polling and
   visibility timeout.
 
-* Added :ref:`aws-ruby-sdk-sqs-recipe-redirect-deadletters`.
+* Added :ref:`aws-ruby-sdk-sqs-example-redirect-deadletters`.
 

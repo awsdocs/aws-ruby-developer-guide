@@ -8,29 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-dynamo-example-create-index:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+#################
+Creating an Index
+#################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example adds a new index, :code-ruby:`air-mileage-index`, to the :code-ruby:`Users`
+table in the :code-ruby:`us-west-2` region.  Once the status of the index is :code-ruby:`ACTIVE`,
+you can search for items in the table based on the value of their :code-ruby:`airmiles`.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-add-index.rb
+   :lines: 13-47
+   :dedent: 0
+   :language: ruby

@@ -39,8 +39,8 @@ This guide contains the following sections:
 :doc:`programming`
     Provides general information about developing software with the |sdk-ruby|.
 
-:doc:`recipes`
-    Provides code samples that developers can copy to program AWS services with the |sdk-ruby|.
+:doc:`examples`
+    Provides code examples that developers can use to program AWS services with the |sdk-ruby|.
 
 :doc:`history`
     Describes the history of this document.

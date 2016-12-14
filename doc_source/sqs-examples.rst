@@ -8,29 +8,26 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+##############
+|SQS| Examples
+##############
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+You can use the following examples to access |SQSlong| (|SQS|) using the |sdk-ruby|. For more
+information about |SQS|, see the `Amazon SQS documentation
+<http://aws.amazon.com/documentation/sqs/>`_.
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
+**Examples**
+
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
+   sqs-example-show-queues
+   sqs-example-create-queue
+   sqs-example-send-messages
+   sqs-example-get-messages
+   sqs-example-get-messages-with-long-polling
+   sqs-example-poll-messages
+   sqs-example-redirect-deadletters
+   sqs-example-delete_queue
+   sqs-example-enable-resource
 
-.. include:: about-aws.txt

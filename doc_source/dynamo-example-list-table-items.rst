@@ -8,26 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-recipes:
+.. _aws-ruby-sdk-dynamo-example-list-table-items:
 
-##################
-|sdk-ruby| Recipes
-##################
+##############################################
+Getting Information about the Items in a Table
+##############################################
 
-This section provides recipes you can use to access AWS services by using the
-|sdk-ruby|.
+The following example lists up to 50 items from the :code-ruby:`Users` table in the
+:code-ruby:`us-west-2` region.
 
-.. toctree::
-   :maxdepth: 2
-
-   cw-recipes
-   dynamo-recipes
-   ec2-recipes
-   eb-recipes
-   iam-recipes
-   lambda-recipes
-   rds-recipes
-   s3-recipes
-   sns-recipes
-   sqs-recipes
-
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-50-users-table-items.rb
+   :lines: 13-30
+   :dedent: 0
+   :language: ruby

@@ -8,29 +8,15 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-ec2-example-terminate-instance:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+#######################
+Terminating an Instance
+#######################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example terminates the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-terminate-instance-i-123abc.rb
+   :lines: 13-26
+   :dedent: 0
+   :language: ruby

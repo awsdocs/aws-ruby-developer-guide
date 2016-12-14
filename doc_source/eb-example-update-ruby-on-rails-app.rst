@@ -8,29 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-eb-example-update-ruby-on-rails-app:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+####################################
+Updating a Ruby on Rails Application
+####################################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example updates the Ruby on Rails application :code:`MyRailsApp` in the :code-ruby:`us-west-2` region.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
+.. note:: You must be in the root of your Rails app to succesfully run the script.
 
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/elb/elb-ruby-example-update-myrailsapp.rb
+   :lines: 13-79
+   :dedent: 0
+   :language: ruby

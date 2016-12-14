@@ -8,29 +8,19 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+##############
+|LAM| Examples
+##############
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+You can use the following examples to access |LAMlong| (|LAM|) using the |sdk-ruby|. For
+more information about |LAM|, see the `Lambda documentation <http://aws.amazon.com/documentation/lambda/>`_.
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
+**Examples**
+
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
+   lambda-ruby-example-show-functions
+   lambda-ruby-example-create-function
+   lambda-ruby-example-configure-function-for-notification
 
-.. include:: about-aws.txt

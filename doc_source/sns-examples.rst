@@ -8,29 +8,23 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+##############
+|SNS| Examples
+##############
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+You can use the following examples to access |SNSlong| (|SNS|) using the |sdk-ruby|. For
+more information about |SNS|, see the `Amazon SNS documentation <http://aws.amazon.com/documentation/sns/>`_.
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
+**Examples**
+
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
+   sns-example-show-topics
+   sns-example-create-topic
+   sns-example-show-subscriptions
+   sns-example-create-subscription
+   sns-example-send-message
+   sns-example-enable-resource
 
-.. include:: about-aws.txt
+

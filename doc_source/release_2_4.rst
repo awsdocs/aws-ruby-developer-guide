@@ -15,11 +15,11 @@ Release 2.4 Details
 This section lists the major changes to the *Rubylong Developer Guide* (this document) for the 2.4
 release in June 2016.
 
-:doc:`s3-recipes`
+:doc:`s3-examples`
 
-* Added :ref:`aws-ruby-sdk-s3-recipe-get-bucket-item`
+* Added :ref:`aws-ruby-sdk-s3-example-get-bucket-item`
 
-:doc:`ec2-recipes`
+:doc:`ec2-examples`
 
 * Added :ref:`aws-ruby-sdk-ec2-create-vpc`
 
@@ -33,44 +33,44 @@ release in June 2016.
 
 * Added :ref:`aws-ruby-sdk-ec2-create-key-pair`
 
-* Added :ref:`aws-ruby-sdk-ec2-recipe-create-instance`
+* Added :ref:`aws-ruby-sdk-ec2-example-create-instance`
 
-:doc:`dynamo-recipes`
+:doc:`dynamo-examples`
 
-* Modified :ref:`aws-ruby-sdk-dynamo-recipe-create-table`
+* Modified :ref:`aws-ruby-sdk-dynamo-example-create-table`
 
-:doc:`iam-recipes`
+:doc:`iam-examples`
 
-* Added :ref:`aws-ruby-sdk-iam-recipe-add-user`
+* Added :ref:`aws-ruby-sdk-iam-example-add-user`
 
-* Added :ref:`aws-ruby-sdk-iam-recipe-create-user-access-keys`
+* Added :ref:`aws-ruby-sdk-iam-example-create-user-access-keys`
 
-* Added :ref:`aws-ruby-sdk-iam-recipe-add-managed-policy`
+* Added :ref:`aws-ruby-sdk-iam-example-add-managed-policy`
 
-* Added :ref:`aws-ruby-sdk-iam-recipe-create-role`
+* Added :ref:`aws-ruby-sdk-iam-example-create-role`
 
-:doc:`sns-recipes`
+:doc:`sns-examples`
 
-* Added :ref:`aws-ruby-sdk-sns-recipe-show-topics`
+* Added :ref:`aws-ruby-sdk-sns-example-show-topics`
 
-* Added :ref:`aws-ruby-sdk-sns-recipe-create-topic`
+* Added :ref:`aws-ruby-sdk-sns-example-create-topic`
 
-* Added :ref:`aws-ruby-sdk-sns-recipe-show-subscriptions`
+* Added :ref:`aws-ruby-sdk-sns-example-show-subscriptions`
 
-* Added :ref:`aws-ruby-sdk-sns-recipe-create-subscription`
+* Added :ref:`aws-ruby-sdk-sns-example-create-subscription`
 
-* Added :ref:`aws-ruby-sdk-sns-recipe-send-message`
+* Added :ref:`aws-ruby-sdk-sns-example-send-message`
 
-:doc:`sqs-recipes`
+:doc:`sqs-examples`
 
-* Added :ref:`aws-ruby-sdk-sqs-recipe-show-queues`
+* Added :ref:`aws-ruby-sdk-sqs-example-show-queues`
 
-* Added :ref:`aws-ruby-sdk-sqs-recipe-create-queue`
+* Added :ref:`aws-ruby-sdk-sqs-example-create-queue`
 
-* Added :ref:`aws-ruby-sdk-sqs-recipe-send-messages`
+* Added :ref:`aws-ruby-sdk-sqs-example-send-messages`
 
-* Added :ref:`aws-ruby-sdk-sqs-recipe-get-messages`
+* Added :ref:`aws-ruby-sdk-sqs-example-get-messages`
 
-* Added :ref:`aws-ruby-sdk-sqs-recipe-poll-messages`
+* Added :ref:`aws-ruby-sdk-sqs-example-poll-messages`
 
-* Added :ref:`aws-ruby-sdk-sqs-recipe-delete_queue`
+* Added :ref:`aws-ruby-sdk-sqs-example-delete_queue`

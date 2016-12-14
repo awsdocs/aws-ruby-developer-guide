@@ -8,29 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+#################
+|CWlong| Examples
+#################
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+You can use the following examples to access |CWlong| (|CW|) by using the |sdk-ruby|. For more
+information about |CW|, see the `CloudWatch Developer Guide <http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide>`_.
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
+**Examples**
+
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
+   cw-example-show_alarms
+   cw-example-create_alarm
 
-.. include:: about-aws.txt

@@ -8,29 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-sqs-example-get-messages-with-long-polling:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+#####################################
+Receiving Messages Using Long Polling
+#####################################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example waits up to 10 seconds to display the bodies of up to 10 messages in the |SQS|
+queue with the URL :code:`URL` in the :code:`us-west-2` region.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
+If you do not specify a wait time, the default value is **0** (|SQS| does not wait).
 
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-get-messages-with-long-polling.rb
+   :lines: 13-21
+   :dedent: 0
+   :language: ruby

@@ -8,29 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-rds-example-get-cluster-snapshots:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+##########################################################
+Getting Information about All Clusters and Their Snapshots
+##########################################################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example lists the name (ID) and status of all of your |RDS| clusters
+and the name (ID) and status of their snapshots in the :code:`us-west-2` region.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/rds/rds-ruby-example-list-cluster-snapshots.rb
+   :lines: 13-25
+   :dedent: 0
+   :language: ruby

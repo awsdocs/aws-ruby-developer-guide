@@ -380,3 +380,7 @@ if 'extlinks' not in vars():
 # http://docs.aws.amazon.com/sdkforruby/api/Aws/Waiters/Errors/FailureStateError.html:
 # so it shows the fully-qualified name of the class, Aws::Waiters::Errors::FailureStateError:
 #    :sdk-ruby-api:`Aws::Waiters::Errors::FailureStateError </Aws/Waiters/Errors/FailureStateError>`
+
+# These URLs make maintaining the extlinks easier.
+ruby_api_url = 'http://docs.aws.amazon.com/sdkforruby/api/'
+extlinks['ruby-sdk-api'] = (ruby_api_url + '%s', '')

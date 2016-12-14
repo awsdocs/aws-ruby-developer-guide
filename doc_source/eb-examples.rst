@@ -8,29 +8,22 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-eb-examples:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+##################
+|AEBlong| Examples
+##################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
+You can use the following examples to access |AEBlong| (|AEB|) using the |sdk-ruby|. For more
+information about |AEB|, see the `Elastic Beanstalk Developer Guide <http://docs.aws.amazon.com/elasticbeanstalk/latest/dg>`_.
+
+**Examples**
+
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
+   eb-example-get-apps
+   eb-example-get-app
+   eb-example-update-ruby-on-rails-app
 
-.. include:: about-aws.txt
+

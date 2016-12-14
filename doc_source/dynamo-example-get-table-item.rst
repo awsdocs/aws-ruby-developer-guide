@@ -8,29 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-dynamo-example-get-table-item:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+####################################################
+Getting Information about a Specific Item in a Table
+####################################################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example displays the first and last name of an item with an :code-ruby:`ID` of
+**123456** in the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-item-123456-users-table.rb
+   :lines: 13-27
+   :dedent: 0
+   :language: ruby

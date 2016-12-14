@@ -8,29 +8,26 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-examples:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+###################
+|sdk-ruby| Examples
+###################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
+This section provides examples you can use to access AWS services by using the
+|sdk-ruby|.
+
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
+   cw-examples
+   dynamo-examples
+   ec2-examples
+   eb-examples
+   iam-examples
+   lambda-examples
+   rds-examples
+   s3-examples
+   sns-examples
+   sqs-examples
 
-.. include:: about-aws.txt

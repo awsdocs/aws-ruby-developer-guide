@@ -8,29 +8,15 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-s3-example-create-buckets:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+#################
+Creating a Bucket
+#################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example creates a bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/s3/s3-ruby-example-create-bucket.rb
+   :lines: 13-16
+   :dedent: 0
+   :language: ruby

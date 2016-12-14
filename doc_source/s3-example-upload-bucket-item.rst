@@ -8,29 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-s3-example-upload-bucket-item:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+#############################
+Uploading an Item to a Bucket
+#############################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example uploads the item (file) :file:`C:\file.txt` to the bucket
+:code-ruby:`my-bucket` in the :code:`us-west-2` region.  Because :file:`C:\file.txt` is the fully
+qualified name of the file, the name of the item is set to the name of the file.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/s3/s3-ruby-example-upload-item.rb
+   :lines: 13-27
+   :dedent: 0
+   :language: ruby

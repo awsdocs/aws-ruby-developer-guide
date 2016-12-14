@@ -8,29 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _top:
+.. _aws-ruby-sdk-sqs-example-redirect-deadletters:
 
-#####################
-|sdk-ruby-dg| v2.16.8
-#####################
+########################
+Redirecting Dead Letters
+########################
 
-.. meta::
-    :description:
-        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
-        AWS infrastructure services with the |sdk-ruby|.
-    :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby examples
-    
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example redirects any dead letters from the queue with the URL :code:`URL` to the
+queue with the ARN :code:`ARN`.
 
-   welcome
-   getting-started
-   hello
-   programming
-   examples
-   tips-and-tricks
-   history
-
-.. include:: about-aws.txt
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-redirect-queue-deadletters.rb
+   :lines: 13-23
+   :dedent: 0
+   :language: ruby
