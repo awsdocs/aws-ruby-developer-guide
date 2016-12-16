@@ -382,5 +382,5 @@ if 'extlinks' not in vars():
 #    :sdk-ruby-api:`Aws::Waiters::Errors::FailureStateError </Aws/Waiters/Errors/FailureStateError>`
 
 # These URLs make maintaining the extlinks easier.
-ruby_api_url = 'http://docs.aws.amazon.com/sdkforruby/api/'
-extlinks['ruby-sdk-api'] = (ruby_api_url + '%s', '')
+ruby_sdk_url = 'https://github.com/aws/aws-sdk-ruby/'
+extlinks['ruby-sdk'] = (ruby_sdk_url + '%s', "")

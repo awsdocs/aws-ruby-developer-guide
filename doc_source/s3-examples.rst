@@ -18,7 +18,7 @@ more information about |S3|, see the `Amazon S3 documentation <http://aws.amazon
 **Examples**
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    s3-example-get-buckets
    s3-example-get-buckets-in-region

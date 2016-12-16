@@ -18,7 +18,7 @@ You can use the following examples to access |RDSlong| (|RDS|) using the |sdk-ru
 information about |RDS|, see the `Amazon Relational Datbase Service User Guide <http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/>`_.
 
 .. note:: Some of the following examples use methods that were introduced in the :code:`2.2.18` version of the
-    :code:`Aws::RDS::Resource`class. To run those examples, you must use that version or a later version of the :code:`aws-sdk` gem.
+    :code:`Aws::RDS::Resource` class. To run those examples, you must use that version or a later version of the :code:`aws-sdk` gem.
 
 **Examples**
 

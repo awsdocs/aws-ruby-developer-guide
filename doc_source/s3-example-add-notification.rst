@@ -33,7 +33,7 @@ You can configure the service to send a notification to:
 
 **To create a bucket notification**
 
-1. :ref:`Grant |S3| permission to publish an item to a queue or topic, or invoke a Lambda function
+1. :ref:`Grant Amazon S3 permission to publish an item to a queue or topic, or invoke a Lambda function
    <aws-ruby-sdk-s3-example-grant-s3-permission>`.
 
 2. :ref:`Set the bucket's Notification Configuration to point to the queue, topic, or function

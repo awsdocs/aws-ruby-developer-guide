@@ -15,7 +15,7 @@
 #####################
 
 This section provides some tips to help you the |sdk-ruby| with |EC2long| (|EC2|) services. For
-more information about |EC2|, see the `EC2-gsg`_.
+more information about |EC2|, see the |EC2-gsg|_.
 
 .. _aws-ruby-sdk-ec2-tip-switch-elastic-ips:
 
