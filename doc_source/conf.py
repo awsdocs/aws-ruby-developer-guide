@@ -384,3 +384,6 @@ if 'extlinks' not in vars():
 # These URLs make maintaining the extlinks easier.
 ruby_sdk_url = 'https://github.com/aws/aws-sdk-ruby/'
 extlinks['ruby-sdk'] = (ruby_sdk_url + '%s', "")
+
+ruby_api_url = 'http://docs.aws.amazon.com/sdkforruby/api/'
+extlinks['ruby-sdk-api'] = (ruby_api_url + '%s', '')
