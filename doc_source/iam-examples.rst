@@ -8,25 +8,23 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-iam-examples:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+##################
+|IAMlong| Examples
+##################
+
+You can use the following examples to access |IAMlong| (|IAM|) using the |sdk-ruby|. For more
+information about |IAM|, see the `IAM documentation <http://aws.amazon.com/documentation/iam/>`_.
+
+**Examples**
 
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
+   iam-example-get-users
+   iam-example-add-user
+   iam-example-create-user-access-keys
+   iam-example-add-managed-policy
+   iam-example-create-role
 

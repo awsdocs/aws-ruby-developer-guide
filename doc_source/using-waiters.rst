@@ -16,7 +16,7 @@ Using Waiters
 
 Waiters are utility methods that poll for a particular state to occur on a client. Waiters can fail
 after a number of attempts at a polling interval defined for the service client. For an example of
-how a waiter is used, see :ref:`aws-ruby-sdk-dynamo-recipe-create-table`.
+how a waiter is used, see :ref:`aws-ruby-sdk-dynamo-example-create-table`.
 
 .. contents::
      :local:
@@ -57,19 +57,19 @@ Wait Failures
 
 Waiters can fail with any of the following exceptions:
 
-`Aws::Waiters::Errors::FailureStateError </Aws/Waiters/Errors/FailureStateError.html>`_
+:sdk-ruby-api:`Aws::Waiters::Errors::FailureStateError </Aws/Waiters/Errors/FailureStateError>`
     A failure state was encountered while waiting.
 
-`Aws::Waiters::Errors::NoSuchWaiterError </Aws/Waiters/Errors/NoSuchWaiterError.html>`_
+:sdk-ruby-api:`Aws::Waiters::Errors::NoSuchWaiterError </Aws/Waiters/Errors/NoSuchWaiterError>`
     The specified waiter name is not defined for the client being used.
 
-`Aws::Waiters::Errors::TooManyAttemptsError </Aws/Waiters/Errors/TooManyAttemptsError.html>`_
+:sdk-ruby-api:`Aws::Waiters::Errors::TooManyAttemptsError </Aws/Waiters/Errors/TooManyAttemptsError>`
     The number of attempts exceeded the waiter's :code:`max_attempts` value.
 
-`Aws::Waiters::Errors::UnexpectedError </Aws/Waiters/Errors/UnexpectedError.html>`_
+:sdk-ruby-api:`Aws::Waiters::Errors::UnexpectedError </Aws/Waiters/Errors/UnexpectedError>`
     An unexpected error occurred while waiting.
 
-`Aws::Waiters::Errors::WaiterFailed </Aws/Waiters/Errors/WaiterFailed.html>`_
+:sdk-ruby-api:`Aws::Waiters::Errors::WaiterFailed </Aws/Waiters/Errors/WaiterFailed>`
     One of the wait states was exceeded or another failure occurred while waiting.
 
 All of these errors |mdash| except :code:`NoSuchWaiterError` |mdash| are based on

@@ -8,25 +8,15 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-rds-example-get-snapshots:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+#######################################
+Getting Information about All Snapshots
+#######################################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example lists the names (IDs) and status of all of your |RDS| (instance) snapshots in the :code:`us-west-2` region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/rds/rds-ruby-example-list-instance-snapshots.rb
+   :lines: 13-20
+   :dedent: 0
+   :language: ruby

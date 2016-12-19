@@ -8,25 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-dynamo-example-list-table-items:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+##############################################
+Getting Information about the Items in a Table
+##############################################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example lists up to 50 items from the :code-ruby:`Users` table in the
+:code-ruby:`us-west-2` region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-50-users-table-items.rb
+   :lines: 13-30
+   :dedent: 0
+   :language: ruby

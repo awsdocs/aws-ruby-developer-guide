@@ -87,7 +87,9 @@ language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns = ['cw-scenarios.rst', 'ec2-scenarios.rst',
+                    'iam-scenarios.rst', 's3-scenarios.rst',
+                    'sqs-scenarios.rst', 'scenarios.rst']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -374,5 +376,14 @@ highlight_language = 'ruby'
 if 'extlinks' not in vars():
     extlinks = {}
 
+# To link to the FailurStateError page,
+# http://docs.aws.amazon.com/sdkforruby/api/Aws/Waiters/Errors/FailureStateError.html:
+# so it shows the fully-qualified name of the class, Aws::Waiters::Errors::FailureStateError:
+#    :sdk-ruby-api:`Aws::Waiters::Errors::FailureStateError </Aws/Waiters/Errors/FailureStateError>`
+
 # These URLs make maintaining the extlinks easier.
+ruby_sdk_url = 'https://github.com/aws/aws-sdk-ruby/'
+extlinks['ruby-sdk'] = (ruby_sdk_url + '%s', "")
+
 ruby_api_url = 'http://docs.aws.amazon.com/sdkforruby/api/'
+extlinks['ruby-sdk-api'] = (ruby_api_url + '%s', '')

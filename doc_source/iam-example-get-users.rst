@@ -8,25 +8,15 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
+.. _aws-ruby-sdk-iam-example-get-users:
+
 ###################################
-Getting Started with the |sdk-ruby|
+Getting Information about All Users
 ###################################
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+The following example lists the groups, policies, and access key IDs of all IAM users in the :code:`us-west-2` region.
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
-
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/iam/iam-ruby-example-list-all-users.rb
+   :lines: 13-37
+   :dedent: 0
+   :language: ruby

@@ -8,25 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-dynamo-example-update-table:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+################
+Updating a Table
+################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example updates all the items in the :code-ruby:`Users` table in the :code-ruby:`us-west-2`
+region to include a new field, :code-ruby:`airmiles`, and sets the value to **10000**.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-update-users-table.rb
+   :lines: 13-33
+   :dedent: 0
+   :language: ruby

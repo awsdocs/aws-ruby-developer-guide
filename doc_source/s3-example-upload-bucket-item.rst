@@ -8,25 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-s3-example-upload-bucket-item:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+#############################
+Uploading an Item to a Bucket
+#############################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example uploads the item (file) :file:`C:\file.txt` to the bucket
+:code-ruby:`my-bucket` in the :code:`us-west-2` region.  Because :file:`C:\file.txt` is the fully
+qualified name of the file, the name of the item is set to the name of the file.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/s3/s3-ruby-example-upload-item.rb
+   :lines: 13-27
+   :dedent: 0
+   :language: ruby

@@ -7,26 +7,17 @@
    This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
+   
+.. _aws-ruby-sdk-dynamo-example-get-tables:
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+####################################
+Getting Information about All Tables
+####################################
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+The following example lists the names and number of items in each table in the
+:code-ruby:`us-west-2` region.
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
-
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-show-tables-names-and-item-count.rb
+   :lines: 13-20
+   :dedent: 0
+   :language: ruby

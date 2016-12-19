@@ -8,25 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-sns-example-enable-resource:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+#########################################
+Enabling a Resource to Publish to a Topic
+#########################################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example enables the resource with the ARN :code:`my-resource-arn` to publish to the
+topic with the :code:`ARN my-topic-arn` in the :code:`us-west-2` region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/sns/sns-ruby-example-enable-resource.rb
+   :lines: 13-38
+   :dedent: 0
+   :language: ruby

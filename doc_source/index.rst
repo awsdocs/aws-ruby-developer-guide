@@ -19,7 +19,7 @@
         Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
         AWS infrastructure services with the |sdk-ruby|.
     :keywords: ruby, sdk, aws, developer guide, AWS SDK for Ruby, aws.rb, aws-sdk-core gem, 
-               ruby recipes
+               ruby examples
     
 .. toctree::
    :titlesonly:
@@ -29,7 +29,7 @@
    getting-started
    hello
    programming
-   recipes
+   examples
    tips-and-tricks
    history
 

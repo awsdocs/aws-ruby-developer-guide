@@ -8,25 +8,14 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-ec2-attach-igw-vpc:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+Creating an Internet Gateway and Attaching It to a VPC
+======================================================
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example creates an Internet gateway :code:`MyGroovyIGW`, attaches it to a VPC that has ID :code:`VPC_ID`, and then displays the Internet gateway's ID.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-attach-igw-vpc.rb
+   :lines: 13-22
+   :dedent: 0
+   :language: ruby

@@ -8,25 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-sns-example-show-subscriptions:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+######################################################
+Getting Information about All Subscriptions in a Topic
+######################################################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example lists the email addresses of the SNS subscriptions for the topic with the ARN
+:code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic` in the :code:`us-west-2` region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/sns/sns-ruby-example-show-subscriptions.rb
+   :lines: 13-21
+   :dedent: 0
+   :language: ruby

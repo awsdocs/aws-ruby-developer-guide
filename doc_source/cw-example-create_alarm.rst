@@ -8,25 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-cw-example-create_alarm:
+            
+#################
+Creating an Alarm
+#################
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+The following example creates a |CW| alarm *my-alarm* that sends a message through the |SNS| topic with the ARN :code:`ARN`
+when the |S3| bucket *my-bucket* has more than 50 items in a 24-hour period.
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
-
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/cw/cw-ruby-example-create-alarm.rb
+   :lines: 13-52
+   :dedent: 0
+   :language: ruby

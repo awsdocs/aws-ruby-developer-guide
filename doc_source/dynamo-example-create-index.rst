@@ -8,25 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-dynamo-example-create-index:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+#################
+Creating an Index
+#################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example adds a new index, :code-ruby:`air-mileage-index`, to the :code-ruby:`Users`
+table in the :code-ruby:`us-west-2` region.  Once the status of the index is :code-ruby:`ACTIVE`,
+you can search for items in the table based on the value of their :code-ruby:`airmiles`.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-add-index.rb
+   :lines: 13-47
+   :dedent: 0
+   :language: ruby

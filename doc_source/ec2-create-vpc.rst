@@ -8,25 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-ec2-create-vpc:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+Creating a VPC
+======================================
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example creates the virtual private cloud (VPC) :code:`MyGroovyVPC` with the CIDR block :code:`10.200.0.0/16`, and then displays the VPC's ID.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
+The example creates a virtual network with 65,536 private IP addresses.
 
-
-
-
-
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-vpc.rb
+   :lines: 13-31
+   :dedent: 0
+   :language: ruby

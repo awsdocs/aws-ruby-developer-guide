@@ -8,25 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-s3-example-get-bucket-item:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+###############################################
+Downloading an Object from a Bucket into a File
+###############################################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example gets the contents of the item :code-ruby:`my-item` from the bucket
+:code-ruby:`my-bucket` in the :code:`us-west-2` region, and saves it to the :file:`my-item.txt` file
+in the :file:`./my-code` directory.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/s3/s3-ruby-example-get-item.rb
+   :lines: 13-21
+   :dedent: 0
+   :language: ruby

@@ -8,25 +8,15 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-s3-example-create-buckets:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+#################
+Creating a Bucket
+#################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example creates a bucket :code-ruby:`my-bucket` in the :code:`us-west-2` region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/s3/s3-ruby-example-create-bucket.rb
+   :lines: 13-16
+   :dedent: 0
+   :language: ruby

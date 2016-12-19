@@ -8,25 +8,14 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-ec2-create-key-pair:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+Creating a Key Pair
+===================
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+You need a key pair when you connect to your |EC2| instance. The following example creates an unencrypted, PEM-encoded RSA private key :file:`MyGroovyKeyPair.pem` in your home folder.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-key-pair.rb
+   :lines: 13-22
+   :dedent: 0
+   :language: ruby

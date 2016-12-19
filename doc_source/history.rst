@@ -23,13 +23,13 @@ Latest Changes
 
 This document had the following major changes, by section.
 
-:doc:`cw-recipes`
+:doc:`cw-examples`
 
-* Added :ref:`aws-ruby-sdk-cw-recipe-show_alarms`
+* Added :ref:`aws-ruby-sdk-cw-example-show_alarms`
 
-* Added :ref:`aws-ruby-sdk-cw-recipe-create_alarm`
+* Added :ref:`aws-ruby-sdk-cw-example-create_alarm`
 
-:doc:`lambda-recipes`
+:doc:`lambda-examples`
 
 * Added :ref:`lambda-ruby-example-show-functions`
 
@@ -37,21 +37,21 @@ This document had the following major changes, by section.
 
 * Added :ref:`lambda-ruby-example-configure-function-for-notification`
 
-:doc:`s3-recipes`
+:doc:`s3-examples`
 
-* Added :ref:`aws-ruby-sdk-s3-recipe-add-notification`
+* Added :ref:`aws-ruby-sdk-s3-example-add-notification`
 
-* Added :ref:`aws-ruby-sdk-s3-recipe-grant-s3-permission`
+* Added :ref:`aws-ruby-sdk-s3-example-grant-s3-permission`
 
-* Added :ref:`aws-ruby-sdk-s3-recipe-set-notification`
+* Added :ref:`aws-ruby-sdk-s3-example-set-notification`
 
-:doc:`sns-recipes`
+:doc:`sns-examples`
 
-* Added :ref:`aws-ruby-sdk-sns-recipe-enable-resource`
+* Added :ref:`aws-ruby-sdk-sns-example-enable-resource`
 
-:doc:`sqs-recipes`
+:doc:`sqs-examples`
 
-* Added :ref:`aws-ruby-sdk-sqs-recipe-enable-resource`
+* Added :ref:`aws-ruby-sdk-sqs-example-enable-resource`
 
 .. _aws-ruby-sdk-document-previous-versions:
 

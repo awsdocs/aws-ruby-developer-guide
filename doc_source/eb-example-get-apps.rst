@@ -8,25 +8,15 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-eb-example-get-apps:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+##########################################
+Getting Information about All Applications
+##########################################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example lists the names, descriptions, and URLs of all of your |AEB| applications in the :code-ruby:`us-west-2` region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/elb/elb-ruby-example-list-all-apps.rb
+   :lines: 13-26
+   :dedent: 0
+   :language: ruby

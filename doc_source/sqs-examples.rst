@@ -8,25 +8,26 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+##############
+|SQS| Examples
+##############
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+You can use the following examples to access |SQSlong| (|SQS|) using the |sdk-ruby|. For more
+information about |SQS|, see the `Amazon SQS documentation
+<http://aws.amazon.com/documentation/sqs/>`_.
+
+**Examples**
 
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
+   sqs-example-show-queues
+   sqs-example-create-queue
+   sqs-example-send-messages
+   sqs-example-get-messages
+   sqs-example-get-messages-with-long-polling
+   sqs-example-poll-messages
+   sqs-example-redirect-deadletters
+   sqs-example-delete_queue
+   sqs-example-enable-resource
 

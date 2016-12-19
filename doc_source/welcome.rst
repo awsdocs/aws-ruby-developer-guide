@@ -18,7 +18,8 @@ Welcome to the |sdk-ruby|.
 
 The |sdk-ruby| helps take the complexity out of coding by providing Ruby classes for almost all AWS
 services, including |S3long|, |EC2long|, and |DDBlong|. For a complete list of services supported by the
-|sdk-ruby|, see `the SDK readme file <#supported-services>`_.
+|sdk-ruby|, see the `Supporting Services <https://github.com/aws/aws-sdk-ruby/blob/master/README.md#supported-services>`_
+ section of the |sdk-ruby| Readme file.
 
 .. _aws-ruby-sdk-developer-guide-contents:
 
@@ -39,12 +40,11 @@ This guide contains the following sections:
 :doc:`programming`
     Provides general information about developing software with the |sdk-ruby|.
 
-:doc:`recipes`
-    Provides code samples that developers can copy to program AWS services with the |sdk-ruby|.
+:doc:`examples`
+    Provides code examples that developers can use to program AWS services with the |sdk-ruby|.
 
 :doc:`history`
     Describes the history of this document.
-
 
 .. _aws-ruby-sdk-additional-information:
 
@@ -53,7 +53,7 @@ Additional Documentation and Resources
 
 For more resources for |sdk-ruby| developers, see the following:
 
-* `AWS SDK for Ruby API Reference <http://docs.aws.amazon.com/sdkforruby/api/>`_
+* :sdk-ruby-api:`AWS SDK for Ruby API Reference <index.html>`
 * `Developer blog <http://ruby.awsblog.com/>`_
 * `Developer forums <https://forums.aws.amazon.com/forum.jspa?forumID=125>`_
   (you must have an AWS account to access the forums)
@@ -61,13 +61,13 @@ For more resources for |sdk-ruby| developers, see the following:
 * `@awsforruby <https://twitter.com/awsforruby>`_ on Twitter
 * On GitHub:
 
-  + `Releases <https://github.com/aws/aws-sdk-ruby/releases>`_ (includes source, gems, and documentation)
-  + `Source <https://github.com/aws/aws-sdk-ruby>`_
-  + `Change log <https://github.com/aws/aws-sdk-ruby/blob/master/CHANGELOG.md>`_
-  + `Migration Guide <https://github.com/aws/aws-sdk-ruby/blob/master/MIGRATING.md>`_
-  + `Issues <https://github.com/aws/aws-sdk-ruby/issues>`_
-  + `Feature requests <https://github.com/aws/aws-sdk-ruby/blob/master/FEATURE_REQUESTS.md>`_
-  + `Upgrading notes <https://github.com/aws/aws-sdk-ruby/blob/master/UPGRADING.md>`_
+  + :ruby-sdk:`Releases <releases>` (includes source, gems, and documentation)
+  + :ruby-sdk:`Source <>`
+  + :ruby-sdk:`Change log <blob/master/CHANGELOG.md>`
+  + :ruby-sdk:`Migration Guide <blob/master/MIGRATING.md>`
+  + :ruby-sdk:`Issues <issues>`
+  + :ruby-sdk:`Feature requests <blob/master/FEATURE_REQUESTS.md>`
+  + :ruby-sdk:`Upgrading notes <blob/master/UPGRADING.md>`
 
 .. _aws-ruby-sdk-deploying:
 
@@ -75,8 +75,7 @@ Deploying to the AWS Cloud
 --------------------------
 
 You can use AWS services such as |AEBlong|, |OPS|, and |ACD| to deploy your application to the AWS Cloud.
-For deploying Ruby applications with |AEB|, see
-`Working with Ruby <http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Ruby.html>`_
+For deploying Ruby applications with |AEB|, see :AEB-dg:`Working with Ruby <create_deploy_Ruby>`
 in the |AEB-dg|. For deploying a Ruby on Rails application with |OPS|, see
 `Deploying Ruby on Rails Applications to AWS OpsWorks <http://ruby.awsblog.com/post/Tx7FQMT084INCR/Deploying-Ruby-on-Rails-Applications-to-AWS-OpsWorks>`_.
 For an overview of AWS deployment services, see

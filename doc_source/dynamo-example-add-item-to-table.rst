@@ -8,25 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-dynamo-example-add-item-to-table:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+#########################
+Adding an Item to a Table
+#########################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example adds an item with the :code:`ID` value of **123456**, :code-ruby:`FirstName`
+value of **John**, and :code-ruby:`LastName` value of **Doe** to the :code-ruby:`Users` table in the
+:code-ruby:`us-west-2` region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-add-item-users-table.rb
+   :lines: 13-25
+   :dedent: 0
+   :language: ruby

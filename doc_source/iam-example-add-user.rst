@@ -8,25 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-iam-example-add-user:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+#################
+Adding a New User
+#################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example creates the IAM user :code:`my_groovy_user` in the :code:`us-west-2` region with the password :code:`REPLACE_ME`,
+and displays the user's account ID. If a user with that name already exists, it displays a message and does not create a new user.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/iam/iam-ruby-example-add-new-user.rb
+   :lines: 13-27
+   :dedent: 0
+   :language: ruby

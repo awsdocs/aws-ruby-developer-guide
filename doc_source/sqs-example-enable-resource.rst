@@ -8,25 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-sqs-example-enable-resource:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+#########################################
+Enabling a Resource to Publish to a Queue
+#########################################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example enables the resource with the ARN :code:`my-resource-arn` to publish to the
+queue with the ARN :code:`my-queue-arn` and URL :code:`my-queue-url` in the :code:`us-west-2`
+region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-enable-resource.rb
+   :lines: 13-40
+   :dedent: 0
+   :language: ruby

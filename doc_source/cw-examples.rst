@@ -8,25 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+#################
+|CWlong| Examples
+#################
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+You can use the following examples to access |CWlong| (|CW|) by using the |sdk-ruby|. For more
+information about |CW|, see the `CloudWatch Developer Guide <http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide>`_.
+
+**Examples**
 
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
+   cw-example-show_alarms
+   cw-example-create_alarm
 

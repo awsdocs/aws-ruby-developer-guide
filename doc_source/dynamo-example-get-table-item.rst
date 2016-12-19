@@ -8,25 +8,16 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-dynamo-example-get-table-item:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+####################################################
+Getting Information about a Specific Item in a Table
+####################################################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example displays the first and last name of an item with an :code-ruby:`ID` of
+**123456** in the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
-
-
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-item-123456-users-table.rb
+   :lines: 13-27
+   :dedent: 0
+   :language: ruby

@@ -8,25 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-eb-example-update-ruby-on-rails-app:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+####################################
+Updating a Ruby on Rails Application
+####################################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example updates the Ruby on Rails application :code:`MyRailsApp` in the :code-ruby:`us-west-2` region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
+.. note:: You must be in the root of your Rails app to succesfully run the script.
 
-
-
-
-
+.. literalinclude:: ./example_code/elb/elb-ruby-example-update-myrailsapp.rb
+   :lines: 13-79
+   :dedent: 0
+   :language: ruby

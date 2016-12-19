@@ -8,25 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-sqs-example-get-messages-with-long-polling:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+#####################################
+Receiving Messages Using Long Polling
+#####################################
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example waits up to 10 seconds to display the bodies of up to 10 messages in the |SQS|
+queue with the URL :code:`URL` in the :code:`us-west-2` region.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
+If you do not specify a wait time, the default value is **0** (|SQS| does not wait).
 
-
-
-
-
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-get-messages-with-long-polling.rb
+   :lines: 13-21
+   :dedent: 0
+   :language: ruby

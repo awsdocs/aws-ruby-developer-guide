@@ -8,25 +8,22 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-eb-examples:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+##################
+|AEBlong| Examples
+##################
+
+You can use the following examples to access |AEBlong| (|AEB|) using the |sdk-ruby|. For more
+information about |AEB|, see the `Elastic Beanstalk Developer Guide <http://docs.aws.amazon.com/elasticbeanstalk/latest/dg>`_.
+
+**Examples**
 
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
+   eb-example-get-apps
+   eb-example-get-app
+   eb-example-update-ruby-on-rails-app
 
 

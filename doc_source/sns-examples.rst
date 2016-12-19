@@ -8,25 +8,23 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+##############
+|SNS| Examples
+##############
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+You can use the following examples to access |SNSlong| (|SNS|) using the |sdk-ruby|. For
+more information about |SNS|, see the `Amazon SNS documentation <http://aws.amazon.com/documentation/sns/>`_.
+
+**Examples**
 
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
-
-
-
+   sns-example-show-topics
+   sns-example-create-topic
+   sns-example-show-subscriptions
+   sns-example-create-subscription
+   sns-example-send-message
+   sns-example-enable-resource
 
 

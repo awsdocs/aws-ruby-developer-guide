@@ -8,25 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###################################
-Getting Started with the |sdk-ruby|
-###################################
+.. _aws-ruby-sdk-ec2-create-subnet:
 
-If you're new to the |sdk-ruby|, you should start here. This section contains information about
-installing, setting up, and using the SDK to create a Ruby application to access |S3|.
+Creating a Public Subnet
+========================
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
+The following example creates a public subnet :code:`MyGroovySubnet` in the :code:`us-west-2` region
+and the Availablity Zone :code:`us-west-2a`. The example attaches the public subnet to a VPC with the ID :code:`VPC_ID` that uses the CIDR block :code:`10.200.10.0/24`, and then 
+displays the subnet's ID.
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
+The public subnet created in this example has 256 private IP addresses within the VPC.
 
-
-
-
-
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-subnet.rb
+   :lines: 13-24
+   :dedent: 0
+   :language: ruby
