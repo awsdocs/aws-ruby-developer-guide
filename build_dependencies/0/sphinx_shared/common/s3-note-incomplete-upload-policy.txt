@@ -1,0 +1,22 @@
+.. Copyright 2010-2016 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+   This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+   International License (the "License"). You may not use this file except in compliance with the
+   License. A copy of the License is located at http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+   This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+   either express or implied. See the License for the specific language governing permissions and
+   limitations under the License.
+
+.. admonition:: Best Practice
+
+    We recommend that you enable the :s3-api:`AbortIncompleteMultipartUpload
+    <RESTBucketPUTlifecycle>` lifecycle rule on your |S3| buckets.
+
+    This rule directs |S3| to abort multipart uploads that don't complete within a specified number of days
+    after being initiated. When the set time limit is exceeded, |S3| aborts the upload and then
+    deletes the incomplete upload data.
+
+    For more information, see :s3-ug:`Lifecycle Configuration for a Bucket with Versioning
+    <lifecycle-configuration-bucket-with-versioning>` in the |s3-ug|.
+

@@ -50,11 +50,11 @@ Creating a Bucket
 To store anything on |S3|, you'll need a bucket to put it in.
 
 Create an `Aws::S3::Bucket <http://docs.aws.amazon.com/sdkforruby/api/Aws/S3/Bucket.html>`_ object.
-The following example creates the bucket :code:`my_bucket` with the name :code:`my_bucket`.
+The following example creates the bucket :code:`my_bucket` with the name :code:`my-bucket`.
 
 .. code-block:: ruby
 
-    my_bucket = s3.bucket('my_bucket')
+    my_bucket = s3.bucket('my-bucket')
     my_bucket.create
 
 .. _aws-ruby-sdk-hello-world-add-to-bucket:
@@ -63,12 +63,12 @@ Adding a File to the Bucket
 ===========================
 
 Use the :code:`#upload_file` method to add a file to the bucket. The following example adds the file
-named :code:`my_file` to the bucket named :code:`my_bucket`.
+named :code:`my_file` to the bucket named :code:`my-bucket`.
 
 .. code-block:: ruby
 
     name = File.basename 'my_file'
-    obj = s3.bucket('my_bucket').object(name)
+    obj = s3.bucket('my-bucket').object(name)
     obj.upload_file('my_file')
 
 .. _aws-ruby-sdk-hello-world-list-bucket-contents:
@@ -78,7 +78,7 @@ Listing the Contents of a Bucket
 
 To list the contents of a bucket, use the `Aws::S3::Bucket:Objects
 <http://docs.aws.amazon.com/sdkforruby/api/Aws/S3/Bucket.html#objects-instance_method>`_ method. The
-following example lists up to 50 bucket items for the bucket :code:`my_bucket`.
+following example lists up to 50 bucket items for the bucket :code:`my-bucket`.
 
 .. code-block:: ruby
 
@@ -195,22 +195,22 @@ The following is the entire :code:`hello-s3.rb` program.
 Running the Program
 ===================
 
-To list the contents of a bucket, use either of the following commands, where :code:`bucket_name` is the
+To list the contents of a bucket, use either of the following commands, where :code:`bucket-name` is the
 name of the bucket to list. We don't have to include :code:`list` because it is the default operation.
 
 .. code-block:: sh
 
-    ruby hello-s3.rb bucket_name list
-    ruby hello-s3.rb bucket_name
+    ruby hello-s3.rb bucket-name list
+    ruby hello-s3.rb bucket-name
 
-To create a bucket, use the following command, where :code:`bucket_name` is the name of the bucket you
+To create a bucket, use the following command, where :code:`bucket-name` is the name of the bucket you
 want to create.
 
 .. code-block:: sh
 
-    ruby hello-s3.rb bucket_name create
+    ruby hello-s3.rb bucket-name create
 
-If |S3| already has a bucket named :code:`bucket_name`, the service issues an error message and does not
+If |S3| already has a bucket named :code:`bucket-name`, the service issues an error message and does not
 create another copy.
 
 After you create your bucket, you can upload an object to the bucket. The following command adds
@@ -218,7 +218,7 @@ After you create your bucket, you can upload an object to the bucket. The follow
 
 .. code-block:: sh
 
-    ruby hello-s3.rb bucket_name upload your_file.txt
+    ruby hello-s3.rb bucket-name upload your_file.txt
 
 .. _aws-ruby-sdk-hello-world-next-steps:
 

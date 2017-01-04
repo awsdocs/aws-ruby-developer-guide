@@ -1,0 +1,29 @@
+.. Copyright 2010-2016 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+   This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+   International License (the "License"). You may not use this file except in compliance with the
+   License. A copy of the License is located at http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+   This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+   either express or implied. See the License for the specific language governing permissions and
+   limitations under the License.
+
+.. Amazon SWF-specific includes
+
+.. |rbflow-default-domain| replace:: ``FlowDefault``
+.. |rbflow-samples| replace:: awslabs/aws-flow-ruby-samples
+.. |runner-cmd| replace:: :command:`aws-flow-ruby`
+.. |utility-cmd| replace:: :command:`aws-flow-utils`
+.. |console-swf| replace:: Amazon SWF Dashboard
+
+.. Some useful links
+
+.. _awsflow: http://aws.amazon.com/swf/details/flow/
+.. _rbflow: http://github.com/aws/aws-flow-ruby
+.. _rbflow-samples: http://github.com/awslabs/aws-flow-ruby-samples
+.. _aws-flow-ruby-samples: rbflow-samples_
+.. _console-swf: http://console.aws.amazon.com/swf
+.. _runner-cmd: cmd-aws-flow-ruby.html
+.. _utility-cmd: cmd-aws-flow-utils.html
+
+.. _sdk-js-swf-ref: http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SWF.html

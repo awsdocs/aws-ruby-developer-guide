@@ -1,0 +1,24 @@
+.. Copyright 2010-2016 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+   This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+   International License (the "License"). You may not use this file except in compliance with the
+   License. A copy of the License is located at http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+   This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+   either express or implied. See the License for the specific language governing permissions and
+   limitations under the License.
+
+About Amazon Web Services
+-------------------------
+
+*Amazon Web Services* (AWS) is a collection of digital infrastructure services that developers can
+leverage when developing their applications. The services include computing, storage, database, and
+application synchronization (messaging and queuing). AWS uses a pay-as-you-go service model: you are
+charged only for the services that you |mdash| or your applications |mdash| use. For new AWS users,
+a free usage tier is available. On this tier, services are free below a certain level of usage. For
+more information about AWS costs and the Free Tier, see `Use the AWS Free Tier`__.  To obtain an AWS
+account, visit the `AWS home page`__ and click **Create a Free Account**.
+
+.. __: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-free-tier.html
+.. __: https://aws.amazon.com/
+
