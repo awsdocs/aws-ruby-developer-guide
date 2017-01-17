@@ -10,13 +10,13 @@
 
 .. _aws-ruby-sdk-s3-example-set-bucket-permission:
 
-###########################################
-Manage Bucket and Object Access Permissions
-###########################################
+##################################################
+Managing |S3| Bucket and Object Access Permissions
+##################################################
 
 This example demonstrates how to use the |sdk-ruby| to:
 
-#. Set a predefined grant (also known as a :dfn:`canned ACL`) for a bucket in |S3long| (|S3|).
+#. Set a predefined grant (also known as a :dfn:`canned ACL`) for a bucket in |S3|.
 #. Add an object to the bucket.
 #. Set a canned ACL for an object in the bucket.
 #. Get the bucket's current ACL.
@@ -43,7 +43,7 @@ This example assumes you have set the credentials in the AWS credentials profile
 Configure the SDK
 =================
 
-To configure the SDK for this example, add a :code:`require` statement so you can use the classes and methods
+For this example, add a :code:`require` statement so that you can use the classes and methods
 provided by the |sdk-ruby| for |S3|. Then create an :ruby-sdk-api:`Aws::S3::Client <Aws/S3/Client.html>` object in the AWS Region where you want to
 create the bucket. This code creates the :code:`Aws::S3::Client` object in the :code:`us-west-2` region. This code also declares a variable representing the bucket.
 
@@ -57,7 +57,7 @@ create the bucket. This code creates the :code:`Aws::S3::Client` object in the :
 Set a Canned ACL for a Bucket
 =============================
 
-Call the :ruby-sdk-api:`put_bucket_acl <Aws/S3/Client.html#put_bucket_acl-instance_method>` method, specifying the names of the canned ACL and the bucket. This code 
+Call the :ruby-sdk-api:`put_bucket_acl <Aws/S3/Client.html#put_bucket_acl-instance_method>` method, specifying the names of the canned ACL and the bucket. This code
 sets the :code:`public-read` canned ACL on the bucket, which enables full control for the bucket's owner and read-only access for everyone else.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-access-permissions.rb
@@ -65,7 +65,8 @@ sets the :code:`public-read` canned ACL on the bucket, which enables full contro
    :dedent: 0
    :language: ruby
 
-For more information about canned ACLs, see the "Canned ACL" section of :S3-dg:`Access Control List (ACL) Overview <acl-overview>` in the |S3-dg|.
+For more information about canned ACLs, see **Canned ACL** in :S3-dg:`Access Control List (ACL)
+Overview <acl-overview>` in the |S3-dg|.
 
 To confirm this setting, call the Ruby :code:`Net::HTTP.get` method to attempt to get the bucket's content.
 
@@ -79,7 +80,8 @@ To confirm this setting, call the Ruby :code:`Net::HTTP.get` method to attempt t
 Upload an Object to a Bucket
 ============================
 
-Call the :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method, specifying the names of the bucket and object as well as the object's content.
+Call the :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method, specifying
+the names of the bucket and object and the object's content.
 This code declares a variable representing the object.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-access-permissions.rb
@@ -92,15 +94,17 @@ This code declares a variable representing the object.
 Set a Canned ACL for an Object
 ==============================
 
-If you attempt to get the contents of the object in the bucket, by default you cannot. To confirm this behavior, call the Ruby :code:`Net::HTTP.get` method to attempt to get the object's content.
+By default, you can't get the contents of the object in the bucket. To
+confirm this behavior, call the Ruby :code:`Net::HTTP.get` method to attempt to get the object's content.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-access-permissions.rb
    :lines: 39-41
    :dedent: 0
    :language: ruby
 
-To change this behavior, call the :ruby-sdk-api:`put_object_acl <Aws/S3/Client.html#put_object_acl-instance_method>` method, specifying the names of the canned ACL, the bucket, and the object. This code 
-sets the :code:`public-read` canned ACL on the object, which enables full control for the object's owner and read-only access for everyone else. After the call, try again to get the object's content.
+To change this behavior, call the :ruby-sdk-api:`put_object_acl <Aws/S3/Client.html#put_object_acl-instance_method>` method, specifying the names of the canned ACL, bucket, and object. This code
+sets the :code:`public-read` canned ACL on the object, which enables full control for the object's owner
+and read-only access for everyone else. After the call, try to get the object's content again.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-access-permissions.rb
    :lines: 44-50
@@ -112,8 +116,8 @@ sets the :code:`public-read` canned ACL on the object, which enables full contro
 Get a Bucket's Current ACL
 ==========================
 
-Call the :ruby-sdk-api:`get_bucket_acl <Aws/S3/Client.html#get_bucket_acl-instance_method>` method, specifying the name of the bucket. The :code:`get_bucket_acl` method returns an 
-instance of the :ruby-sdk-api:`Aws::S3::Types::GetBucketAclOutput <Aws/S3/Types/GetBucketAclOutput.html>` class. Use the :code:`grants` attribute of the 
+Call the :ruby-sdk-api:`get_bucket_acl <Aws/S3/Client.html#get_bucket_acl-instance_method>` method, specifying the name of the bucket. The :code:`get_bucket_acl` method returns an
+instance of the :ruby-sdk-api:`Aws::S3::Types::GetBucketAclOutput <Aws/S3/Types/GetBucketAclOutput.html>` class. Use the :code:`grants` attribute of the
 :code:`GetBucketAclOutput` class to list the bucket's current ACL.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-access-permissions.rb

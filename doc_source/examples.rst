@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-examples:
 
-###################
-|sdk-ruby| Examples
-###################
+########################
+|sdk-ruby| Code Examples
+########################
 
 This section provides examples you can use to access AWS services by using the
 |sdk-ruby|.
