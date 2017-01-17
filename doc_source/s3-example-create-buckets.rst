@@ -1,4 +1,4 @@
-.. Copyright 2010-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+.. Copyright 2010-2016 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
    This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
    International License (the "License"). You may not use this file except in compliance with the
@@ -84,7 +84,7 @@ Call the :ruby-sdk-api:`create_bucket <Aws/S3/Client.html#create_bucket-instance
 .. _aws-ruby-sdk-s3-example-create-buckets-upload:
 
 Upload an Object (a File) to a Bucket
-=====================================
+============================
 
 Call the :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method, specifying settings such as the bucket's name and the name of the file to create. 
 For the file's contents, you can specify either an instance of a Ruby :code:`File` class or, in this example, a string representing the file's data. 

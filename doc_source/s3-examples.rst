@@ -32,4 +32,6 @@ more information about |S3|, see the `Amazon S3 documentation <http://aws.amazon
    s3-example-add-notification
    s3-example-create-policy-template  
    s3-example-set-bucket-policy 
+   s3-example-bucket-cors
+   s3-example-set-bucket-permission
 
