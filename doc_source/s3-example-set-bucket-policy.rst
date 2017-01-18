@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-set-bucket-policy:
 
-########################
-Creating a Bucket Policy
-########################
+##################################
+Creating a Bucket Policy with Ruby
+##################################
 
 This example demonstrates how to use the |sdk-ruby| to:
 
