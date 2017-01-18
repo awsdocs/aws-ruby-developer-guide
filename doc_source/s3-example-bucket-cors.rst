@@ -38,8 +38,7 @@ Be sure the AWS credentials map to an |IAMlong| (|IAM|) entity with access to th
 
 This example assumes:
 
-* You have set the credentials in the AWS credentials profile file and named the file
-  :code:`david`.
+* You have set the credentials in the AWS credentials profile file and the profile is named :code:`david`.
 * Your bucket is named :code:`doc-sample-bucket`.
 
 .. _aws-ruby-sdk-s3-example-bucket-cors-config:
