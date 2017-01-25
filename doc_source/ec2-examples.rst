@@ -19,7 +19,7 @@ You can use the following examples to access |EC2long| (|EC2|) using the |sdk-ru
 **Examples**
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    ec2-create-vpc
    ec2-attach-igw-vpc
@@ -35,3 +35,4 @@ You can use the following examples to access |EC2long| (|EC2|) using the |sdk-ru
    ec2-example-start-instance
    ec2-example-reboot-instance
    ec2-example-terminate-instance
+   ec2-regions-availability-zones
