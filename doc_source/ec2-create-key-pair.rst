@@ -14,23 +14,23 @@
 Working with Key Pairs
 ######################
 
-These examples show how to use the |sdk-ruby| together with |EC2| to: 
+These examples show you how to use the |sdk-ruby| with |EC2| to:
 
 * Create a key pair.
 * Get information about key pairs.
 * Delete a key pair.
 
-For more information about key pairs, see :EC2-ug:`Amazon EC2 Key Pairs <ec2-key-pairs>` in the |EC2-ug| or 
+For more information about key pairs, see :EC2-ug:`Amazon EC2 Key Pairs <ec2-key-pairs>` in the |EC2-ug| or
 :EC2-ug-win:`Amazon EC2 Key Pairs and Windows Instances <ec2-key-pairs>` in the |EC2-ug-win|.
 
-For additional code that you can use to run these examples, see :ref:`aws-ruby-sdk-ec2-create-key-pair-code`. 
+For additional code that you can use to run these examples, see :ref:`aws-ruby-sdk-ec2-create-key-pair-code`.
 
 .. _aws-ruby-sdk-ec2-create-key-pair-create:
 
 Create a Key Pair
 =================
 
-Call the :ruby-sdk-api:`create_key_pair <Aws/EC2/Client.html#create_key_pair-instance_method>` method, specifying the name of the key pair to create. 
+Call the :ruby-sdk-api:`create_key_pair <Aws/EC2/Client.html#create_key_pair-instance_method>` method, specifying the name of the key pair to create.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-key-pairs.rb
    :lines: 26-28
@@ -41,9 +41,9 @@ In this code:
 
 * :code:`ec2` is a variable representing an :ruby-sdk-api:`Aws::EC2::Client <Aws/EC2/Client.html>` object.
 * :code:`key_pair_name` is a string variable representing the name of the key pair.
-* :code:`key_pair` is a variable representing an :ruby-sdk-api:`Aws::EC2::KeyPair <Aws/EC2/KeyPair.html>` object that is 
-  returned by calling the :code:`create_key_pair` method. 
-  
+* :code:`key_pair` is a variable representing an :ruby-sdk-api:`Aws::EC2::KeyPair <Aws/EC2/KeyPair.html>` object that is
+  returned by calling the :code:`create_key_pair` method.
+
 For more information, see :ref:`aws-ruby-sdk-ec2-create-key-pair-code`.
 
 .. _aws-ruby-sdk-ec2-create-key-pair-info:
@@ -55,7 +55,7 @@ To get information about a single key pair, use attributes such as:
 
 * :ruby-sdk-api:`key_name <Aws/EC2/KeyPair.html#key_name-instance_method>`, which gets the key pair's name.
 * :ruby-sdk-api:`key_fingerprint <Aws/EC2/KeyPair.html#key_fingerprint-instance_method>`, which gets the SHA-1 digest of the DER
-  encoded private key. 
+  encoded private key.
 * :ruby-sdk-api:`key_material <Aws/EC2/KeyPair.html#key_material-instance_method>`, which gets the unencrypted PEM encoded RSA private key.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-key-pairs.rb
@@ -63,7 +63,7 @@ To get information about a single key pair, use attributes such as:
    :dedent: 0
    :language: ruby
 
-In this code, :code:`key_pair` is a variable representing an :ruby-sdk-api:`Aws::EC2::KeyPair <Aws/EC2/KeyPair.html>` object, which is 
+In this code, :code:`key_pair` is a variable representing an :ruby-sdk-api:`Aws::EC2::KeyPair <Aws/EC2/KeyPair.html>` object, which is
 returned by calling the :ruby-sdk-api:`create_key_pair <Aws/EC2/Client.html#create_key_pair-instance_method>` method in the previous example.
 
 To get information about multiple key pairs, call the :ruby-sdk-api:`describe_key_pairs <Aws/EC2/Client.html#describe_key_pairs-instance_method>` method.
@@ -76,11 +76,11 @@ To get information about multiple key pairs, call the :ruby-sdk-api:`describe_ke
 In this code:
 
 * :code:`ec2` is a variable representing an :ruby-sdk-api:`Aws::EC2::Client <Aws/EC2/Client.html>` object.
-* :code:`key_pair_result` is a variable representing an :ruby-sdk-api:`Aws::EC2::Types::DescribeKeyPairsResult <Aws/EC2/Types/DescribeKeyPairsResult.html>` object 
+* :code:`key_pair_result` is a variable representing an :ruby-sdk-api:`Aws::EC2::Types::DescribeKeyPairsResult <Aws/EC2/Types/DescribeKeyPairsResult.html>` object
   that is returned by calling the :code:`describe_key_pairs` method.
-* Calling the :code:`Aws::EC2::Types::DescribeKeyPairsResult` object's :ruby-sdk-api:`key_pairs <Aws/EC2/Types/DescribeKeyPairsResult.html#key_pairs-instance_method>` method 
+* Calling the :code:`Aws::EC2::Types::DescribeKeyPairsResult` object's :ruby-sdk-api:`key_pairs <Aws/EC2/Types/DescribeKeyPairsResult.html#key_pairs-instance_method>` method
   returns an array of :ruby-sdk-api:`Aws::EC2::Types::KeyPairInfo <Aws/EC2/Types/KeyPairInfo.html>` objects, which represent the key pairs.
-  
+
 For more information, see :ref:`aws-ruby-sdk-ec2-create-key-pair-code`.
 
 .. _aws-ruby-sdk-ec2-create-key-pair-delete:
@@ -95,10 +95,10 @@ Call the :ruby-sdk-api:`delete_key_pair <Aws/EC2/Client.html#delete_key_pair-ins
    :dedent: 0
    :language: ruby
 
-In this code: 
+In this code:
 
 * :code:`ec2` is a variable representing an :ruby-sdk-api:`Aws::EC2::Client <Aws/EC2/Client.html>` object.
-* :code:`key_pair_name` is a string variable representing the name of the key pair. 
+* :code:`key_pair_name` is a string variable representing the name of the key pair.
 
 For more information, see :ref:`aws-ruby-sdk-ec2-create-key-pair-code`.
 
@@ -114,9 +114,9 @@ The following code, which you can adapt and run, combines the preceding examples
    :dedent: 0
    :language: ruby
 
-To run this code, you must: 
+To run this code, you must:
 
 #. Install the |sdk-ruby|. For more information, see :doc:`setup-install`.
 #. Set the AWS access credentials that the |sdk-ruby| will use to verify your access to AWS services and resources. For more information, see :doc:`setup-config`.
-   Be sure the AWS credentials map to an |IAMlong| (|IAM|) entity with access to the AWS actions and resources described in this example. This example assumes you 
+   Be sure the AWS credentials map to an |IAMlong| (|IAM|) entity with access to the AWS actions and resources described in this example. This example assumes you
    have set the credentials in the AWS credentials profile file or in the :envvar:`AWS_ACCESS_KEY_ID` and :envvar:`AWS_SECRET_ACCESS_KEY` environment variables on your local system.
