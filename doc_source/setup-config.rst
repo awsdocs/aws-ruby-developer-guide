@@ -8,12 +8,14 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
+.. _aws-ruby-sdk-setup-config:
+
 ##########################
 Configuring the |sdk-ruby|
 ##########################
 
-Learn how to configure the |sdk-ruby|. To use the SDK, you must set either 
-AWS credentials or create an AWS STS access token, and set the AWS Region you want 
+Learn how to configure the |sdk-ruby|. To use the SDK, you must set either
+AWS credentials or create an AWS STS access token, and set the AWS Region you want
 to use.
 
 .. _aws-ruby-sdk-setting-credentials:
@@ -36,7 +38,7 @@ The |sdk-ruby| searches for credentials in the following order:
 
 5. :ref:`aws-ruby-sdk-credentials-iam`
 
-The following sections describe the various ways you can set credentials, starting with 
+The following sections describe the various ways you can set credentials, starting with
 the most flexible approach. For more information about AWS credentials and recommended approaches
 for credential management, see `AWS Security Credentials
 <http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html>`_ in the |AWS-gr|.
@@ -235,4 +237,3 @@ object. The following example creates an |S3| resource object in the :code:`othe
 .. code-block:: ruby
 
     s3 = Aws::S3::Resource.new(endpoint: other_endpoint)
-
