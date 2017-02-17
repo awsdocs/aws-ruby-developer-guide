@@ -21,20 +21,20 @@ For more information about the Amazon EC2 security groups, see:
 * `Amazon EC2 Amazon Security Groups for Linux Instances <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html>`_
 * `Amazon EC2 Security Groups for Windows Instances <http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/using-network-security.html>`_
 
-In this example, we use the |sdk-ruby| together with |EC2| to:
+In this example, we use the |sdk-ruby| with |EC2| to:
 
 #. Create a security group.
 #. Add rules to the security group.
 #. Get information about security groups.
 #. Delete the security group.
 
-The full sample script containing all of the examples below is `available on GitHub <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ec2/ec2-ruby-example-security-group.rb>`_.
+The full sample script containing all of the following examples is `available on GitHub <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ec2/ec2-ruby-example-security-group.rb>`_.
 
 *************
 Prerequisites
 *************
 
-Before working with the code below, you'll need to install and configure the |sdk-ruby|, as described in:
+Before working with the code below, you need to install and configure the |sdk-ruby|. See the following:
 
 * :ref:`aws-ruby-sdk-setup-install`
 * :ref:`aws-ruby-sdk-setup-config`
@@ -45,14 +45,17 @@ You'll also need to `create a VPC <http://docs.aws.amazon.com/AmazonVPC/latest/G
 Configure the SDK
 *****************
 
-First we require the AWS SDK for Ruby and create an EC2 client. Then we provide a name for the security group we're going to create. We also need to provide the ID of our VPC, which is available in the console after the VPC has been created. **Make sure that you replace ``VPC-ID`` with your actual VPC ID.
+First we require the AWS SDK for Ruby and create an EC2 client. Then we provide a name for the security
+group we're going to create. We also need to provide the ID of our VPC, which is available in the console
+after the VPC is created. **Be sure that you replace ``VPC-ID`` with your actual VPC ID.**
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-security-group.rb
    :lines: 19-25
    :dedent: 0
    :language: ruby
 
-The ``security_group_created`` variable will be used later in the script to determine if a security group has been created and can therefore be deleted.
+We'll use the ``security_group_created`` variable later in the script to determine if a security
+group was created and can therefore be deleted.
 
 ***********************
 Create a Security Group
@@ -71,7 +74,7 @@ If the ``begin`` block executes without exception, we set ``security_group_creat
 Get Info about a Security Group
 *******************************
 
-Having created a security group, we output information about our existing security groups and their IP permissions:
+Having created a security group, we output information about our existing security groups and their IP permissions.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-security-group.rb
    :lines: 73-141
@@ -82,7 +85,8 @@ Having created a security group, we output information about our existing securi
 Delete a Security Group
 ***********************
 
-At the end of the script, assuming that a security group has been successfully created and the ``security_group_created`` flag set to true, we delete the security group:
+At the end of the script, assuming that a security group was successfully created and the ``security_group_created``
+flag set to ``true``, we delete the security group.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-security-group.rb
    :lines: 144-146
