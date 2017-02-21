@@ -10,33 +10,53 @@
 
 .. _aws-ruby-sdk-ec2-using-elastic-ip-addresses:
 
-########################################
-Using Elastic IP Addresses in Amazon EC2
-########################################
+###################################
+Using Elastic IP Addresses in |EC2|
+###################################
 
-An Elastic IP address is a static IP address designed for dynamic cloud computing. An Elastic IP address is associated with your AWS account. It is a public IP address, which is reachable from the Internet. If your instance does not have a public IP address, you can associate an Elastic IP address with your instance to enable communication with the Internet.
+.. meta::
+   :description:
+   :keywords: AWS SDK for Ruby code examples
 
-For more information about Elastic IP addresses in Amazon EC2, see `Elastic IP Addresses <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html>`_ in the Amazon EC2 User Guide for Linux Instances or `Elastic IP Addresses <http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-ip-addresses-eip.html>`_ in the Amazon EC2 User Guide for Windows Instances.
+An Elastic IP address is a static IP address, designed for dynamic cloud computing, that is
+associated with your AWS account. It's a public IP address, which is reachable from the Internet.
+If your instance doesn't have a public IP address, you can use an Elastic IP address with your instance
+so that it can communicate with the Internet.
 
-In this example, we use the |sdk-ruby| with |EC2| to:
+For more information about Elastic IP addresses in |EC2|, see :EC2-ug:`Elastic IP Addresses <elastic-ip-addresses-eip>`
+in the |EC2-ug| or :EC2-ug-win:`Elastic IP Addresses <elastic-ip-addresses-eip>`
+in the |EC2-ug-win|.
 
-#. Allocate an Elastic IP address, using `Aws::EC2::Client#allocate_address <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#allocate_address-instance_method>`_.
-#. Associate the address with an Amazon EC2 instance, using `Aws::EC2::Client#associate_address <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#associate_address-instance_method>`_.
-#. Get information about addresses associated with the instance, using `Aws::EC2::Client#describe_addresses <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#describe_addresses-instance_method>`_.
-#. Release the address, using `Aws::EC2::Client#release_address <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#release_address-instance_method>`_.
+In this example, you use the |sdk-ruby| with |EC2| to:
 
-The full sample script is `available on GitHub <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ec2/ec2-ruby-example-elastic-ips.rb>`_.
+#. Allocate an Elastic IP address by using the
+   `Aws::EC2::Client#allocate_address <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#allocate_address-instance_method>`_
+   method.
+#. Associate the address with an |EC2| instance by using the
+   `Aws::EC2::Client#associate_address <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#associate_address-instance_method>`_ method.
+#. Get information about addresses associated with the instance by using the
+   `Aws::EC2::Client#describe_addresses <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#describe_addresses-instance_method>`_ method.
+#. Release the address by using the
+   `Aws::EC2::Client#release_address <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#release_address-instance_method>`_ method.
+
+The `complete code <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ec2/ec2-ruby-example-elastic-ips.rb>`_
+for this example is available on GitHub.
 
 *************
 Prerequisites
 *************
 
-Before working with the code below, you need to install and configure the |sdk-ruby|, as described in:
+Before working with the example code, you need to install and configure the |sdk-ruby|, as described
+in:
 
 * :ref:`aws-ruby-sdk-setup-install`
 * :ref:`aws-ruby-sdk-setup-config`
 
-You'll also need to `launch an EC2 instance <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance_linux>`_ and note the instance ID. **NOTE:** Before running the code below, you'll need to replace the ``INSTANCE-ID`` string with your actual instance ID, which will be something like ``i-0a123456b7c8defg9``.
+You also need to :EC2-ug:`launch an EC2 instance <ec2-launch-instance_linux>`
+and note the instance ID.
+
+.. note:: Before you run the following code, you must replace the ``INSTANCE-ID`` string with
+          your actual instance ID. This will be something like ``i-0a123456b7c8defg9``.
 
 **************
 Example Script
