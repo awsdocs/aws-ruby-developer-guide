@@ -25,6 +25,7 @@ You can use the following examples to access |EC2long| (|EC2|) using the |sdk-ru
    ec2-attach-igw-vpc
    ec2-create-subnet
    ec2-create-route-table
+   ec2-using-elastic-ip-addresses
    ec2-create-security-group
    ec2-working-with-security-groups
    ec2-create-key-pair
