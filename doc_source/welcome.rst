@@ -14,12 +14,11 @@
 |sdk-ruby-dg|
 #############
 
-Welcome to the |sdk-ruby|. 
+Welcome to the |sdk-ruby|.
 
 The |sdk-ruby| helps take the complexity out of coding by providing Ruby classes for almost all AWS
 services, including |S3long|, |EC2long|, and |DDBlong|. For a complete list of services supported by the
-|sdk-ruby|, see the `Supporting Services <https://github.com/aws/aws-sdk-ruby/blob/master/README.md#supported-services>`_
- section of the |sdk-ruby| Readme file.
+|sdk-ruby|, see the `Supported Services <https://github.com/aws/aws-sdk-ruby/blob/master/README.md#supported-services>`_ section of the |sdk-ruby| Readme file.
 
 .. _aws-ruby-sdk-developer-guide-contents:
 
@@ -80,6 +79,3 @@ in the |AEB-dg|. For deploying a Ruby on Rails application with |OPS|, see
 `Deploying Ruby on Rails Applications to AWS OpsWorks <http://ruby.awsblog.com/post/Tx7FQMT084INCR/Deploying-Ruby-on-Rails-Applications-to-AWS-OpsWorks>`_.
 For an overview of AWS deployment services, see
 `Overview of Deployment Options on AWS <https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf>`_.
-
-
-

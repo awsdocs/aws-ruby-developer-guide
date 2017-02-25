@@ -79,7 +79,7 @@ Setting Credentials Using Environment Variables
 
 Set the :code:`AWS_ACCESS_KEY_ID` and :code:`AWS_SECRET_ACCESS_KEY` environment variables.
 
-Use the :code:`export` command to set these variables on a Unix-based systems, such as Linux or OS
+Use the :code:`export` command to set these variables on Unix-based systems, such as Linux or OS
 X. The following example sets the value of your access key to :code:`your_access_key_id` and the value of
 your secret access key to :code:`your_secret_access_key`.
 
