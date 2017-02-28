@@ -11,19 +11,20 @@
 .. _aws-ruby-sdk-cw-example-get-metrics-info:
 
 #################################
-Getting Info About Custom Metrics
+Getting Info about Custom Metrics
 #################################
 
 .. meta::
    :description:
    :keywords: AWS SDK for Ruby code examples
 
-A |CW| alarm watches a single metric over a time period you specify, and performs one or more actions based on the value of the metric relative to a given threshold over a number of time periods. For more information, see :CW-ug:`Creating Amazon CloudWatch Alarms <AlarmThatSendsEmail>`.
+A |CW| alarm watches a single metric over a time period you specify. The |CW| alarm performs
+one or more actions based on the value of the metric, relative to a given threshold over a number of time periods. For more information, see :CW-ug:`Creating Amazon CloudWatch Alarms <AlarmThatSendsEmail>`.
 
 In this example, you use the |sdk-ruby| with |CW| to:
 
-#. Send custom metrics to |CW|, using `Aws::CloudWatch::Client#put_metric_data <http://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html#put_metric_data-instance_method>`_.
-#. Get information about custom metrics, using `Aws::CloudWatch::Client#list_metrics-instance <http://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html#list_metrics-instance_method>`_.
+#. Send custom metrics to |CW| by using `Aws::CloudWatch::Client#put_metric_data <http://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html#put_metric_data-instance_method>`_.
+#. Get information about custom metrics by using `Aws::CloudWatch::Client#list_metrics-instance <http://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html#list_metrics-instance_method>`_.
 
 *************
 Prerequisites
