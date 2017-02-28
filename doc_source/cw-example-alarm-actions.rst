@@ -18,12 +18,14 @@ Enabling and Disabling Alarm Actions
    :description:
    :keywords: AWS SDK for Ruby code examples
 
-A |CW| alarm watches a single metric over a time period you specify, and performs one or more actions based on the value of the metric relative to a given threshold over a number of time periods. For more information, see :CW-ug:`Creating Amazon CloudWatch Alarms <AlarmThatSendsEmail>`.
+An |CWlong| alarm watches a single metric over a time period you specify. The |CW| alarm performs one
+or more actions based on the value of the metric, relative to a given threshold over a number of time
+periods. For more information, see :CW-ug:`Creating Amazon CloudWatch Alarms <AlarmThatSendsEmail>`.
 
 In this example, you use the |sdk-ruby| with |CW| to:
 
-#. Enable an action for an Amazon CloudWatch alarm, using `Aws::CloudWatch::Client#put_metric_alarm <https://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html#put_metric_alarm-instance_method>`_.
-#. Disable all actions for an alarm, using `Aws::CloudWatch::Client#disable_alarm_actions <https://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html#disable_alarm_actions-instance_method>`_.
+#. Enable an action for a |CW| alarm by using `Aws::CloudWatch::Client#put_metric_alarm <https://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html#put_metric_alarm-instance_method>`_.
+#. Disable all actions for an alarm by using `Aws::CloudWatch::Client#disable_alarm_actions <https://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html#disable_alarm_actions-instance_method>`_.
 
 The `complete code <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cw/cw-ruby-example-alarm-actions.rb>`_
 for this example is available on GitHub.
@@ -38,7 +40,7 @@ in:
 * :ref:`aws-ruby-sdk-setup-install`
 * :ref:`aws-ruby-sdk-setup-config`
 
-You'll also need to replace `arn:aws:sns:REGION-ID:ACCOUNT-ID:TOPIC-NAME` with the ARN for a valid Amazon SNS topic.
+You'll also need to replace `arn:aws:sns:REGION-ID:ACCOUNT-ID:TOPIC-NAME` with the ARN for a valid |SNS| topic.
 
 *******
 Example
