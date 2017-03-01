@@ -388,6 +388,5 @@ extlinks['ruby-sdk'] = (ruby_sdk_url + '%s', "")
 ruby_api_url = 'http://docs.aws.amazon.com/sdkforruby/api/'
 extlinks['ruby-sdk-api'] = (ruby_api_url + '%s', '')
 
-
 aws_ruby_cw_client = 'http://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html'
 extlinks['aws-ruby-cw-client-method'] = (aws_ruby_cw_client + '#%s-instance_method', 'Aws::CloudWatch::Client#')
