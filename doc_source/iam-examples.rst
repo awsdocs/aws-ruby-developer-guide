@@ -20,11 +20,15 @@ information about |IAM|, see the `IAM documentation <http://aws.amazon.com/docum
 **Examples**
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    iam-example-get-users
    iam-example-add-user
    iam-example-create-user-access-keys
    iam-example-add-managed-policy
    iam-example-create-role
-
+   iam-example-manage-users
+   iam-example-working-with-policies
+   iam-example-managing-iam-access-keys
+   iam-example-server-certificates
+   iam-example-managing-account-aliases

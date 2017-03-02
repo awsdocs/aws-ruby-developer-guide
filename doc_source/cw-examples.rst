@@ -18,7 +18,7 @@ information about |CW|, see the `CloudWatch Developer Guide <http://docs.aws.ama
 **Examples**
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    cw-example-show_alarms
    cw-example-create_alarm
