@@ -14,6 +14,10 @@
 |IAMlong| Examples
 ##################
 
+.. meta::
+   :description:
+   :keywords: AWS SDK for Ruby code examples
+
 You can use the following examples to access |IAMlong| (|IAM|) using the |sdk-ruby|. For more
 information about |IAM|, see the `IAM documentation <http://aws.amazon.com/documentation/iam/>`_.
 
