@@ -14,7 +14,11 @@
 Create a User's Access Keys
 ###########################
 
-The following example creates an access key and secret key for the IAM user :code:`my_groovy_user` in the :code-:`us-west-2` region.
+.. meta::
+   :description:
+   :keywords: AWS SDK for Ruby code examples
+
+The following example creates an access key and secret key for the |IAM| user :code:`my_groovy_user` in the :code-:`us-west-2` region.
 
 .. literalinclude:: ./example_code/iam/iam-ruby-example-create-user-access-keys.rb
    :lines: 13-26

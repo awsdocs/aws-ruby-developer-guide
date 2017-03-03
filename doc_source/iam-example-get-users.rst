@@ -14,7 +14,11 @@
 Getting Information about All Users
 ###################################
 
-The following example lists the groups, policies, and access key IDs of all IAM users in the :code:`us-west-2` region.
+.. meta::
+   :description:
+   :keywords: AWS SDK for Ruby code examples
+
+The following example lists the groups, policies, and access key IDs of all |IAM| users in the :code:`us-west-2` region.
 
 .. literalinclude:: ./example_code/iam/iam-ruby-example-list-all-users.rb
    :lines: 13-37

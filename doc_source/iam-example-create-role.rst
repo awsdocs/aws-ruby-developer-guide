@@ -14,7 +14,11 @@
 Creating a Role
 ###############
 
-The following example creates the role :code:`my_groovy_role` so that |EC2long| can access |S3| and |DDBlong| in the :code:`us-west-2` region.
+.. meta::
+   :description:
+   :keywords: AWS SDK for Ruby code examples
+
+The following example creates the role :code:`my_groovy_role` so that |EC2| can access |S3| and |DDBlong| in the :code:`us-west-2` region.
 
 .. literalinclude:: ./example_code/iam/iam-ruby-example-create-role.rb
    :lines: 13-44
