@@ -19,15 +19,18 @@ information about |SQS|, see the `Amazon SQS documentation
 **Examples**
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    sqs-example-show-queues
    sqs-example-create-queue
    sqs-example-send-messages
+   sqs-example-send-and-receive-messages
    sqs-example-get-messages
    sqs-example-get-messages-with-long-polling
+   sqs-example-enable-long-polling
    sqs-example-poll-messages
    sqs-example-redirect-deadletters
    sqs-example-delete_queue
    sqs-example-enable-resource
-
+   sqs-example-dead-letter-queue
+   sqs-example-message-visibility-timeout

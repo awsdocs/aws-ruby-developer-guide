@@ -393,3 +393,6 @@ extlinks['aws-ruby-cw-client-method'] = (aws_ruby_cw_client + '#%s-instance_meth
 
 aws_ruby_iam_client = ruby_api_url +'Aws/IAM/Client.html'
 extlinks['aws-ruby-iam-client-method'] = (aws_ruby_iam_client + '#%s-instance_method', 'Aws::IAM::Client#')
+
+aws_ruby_sqs_client = ruby_api_url +'Aws/SQS/Client.html'
+extlinks['aws-ruby-sqs-client-method'] = (aws_ruby_sqs_client + '#%s-instance_method', 'Aws::SQS::Client#')

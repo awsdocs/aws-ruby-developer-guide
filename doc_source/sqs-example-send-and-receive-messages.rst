@@ -1,0 +1,49 @@
+.. Copyright 2010-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+   This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+   International License (the "License"). You may not use this file except in compliance with the
+   License. A copy of the License is located at http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+   This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+   either express or implied. See the License for the specific language governing permissions and
+   limitations under the License.
+
+.. _aws-ruby-sdk-sqs-example-send-and-receive-messages:
+
+##############################
+Sending and Receiving Messages
+##############################
+
+.. meta::
+   :description:
+   :keywords: AWS SDK for Ruby code examples
+
+After you create a queue in |SQS|, you can send a message to it and then consume it. To learn more, see :SQS-dg:`Tutorial: Sending a Message to an Amazon SQS Queue <sqs-send-message>` and :SQS-dg:`Tutorial: Receiving and Deleting a Message from an Amazon SQS Queue <sqs-receive-delete-message>`.
+
+In this example, you use the |sdk-ruby| with |SQS| to:
+
+#. Send a message to a queue, using :aws-ruby-sqs-client-method:`send_message`.
+#. Receive the message in the queue, using :aws-ruby-sqs-client-method:`receive_message`.
+#. Display information about the message.
+#. Delete the message from the queue, using :aws-ruby-sqs-client-method:`delete_message`.
+
+*************
+Prerequisites
+*************
+
+Before running the example code, you need to install and configure the |sdk-ruby|, as described
+in:
+
+* :ref:`aws-ruby-sdk-setup-install`
+* :ref:`aws-ruby-sdk-setup-config`
+
+You will also need to create the queue `my-queue`, which you can do in the |SQS| console.
+
+*******
+Example
+*******
+
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-send-receive-messages.rb
+   :lines: 19-76
+   :dedent: 0
+   :language: ruby
