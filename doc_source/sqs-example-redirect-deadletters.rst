@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-sqs-example-redirect-deadletters:
 
-########################
-Redirecting Dead Letters
-########################
+#################################
+Redirecting Dead Letters in |SQS|
+#################################
 
 The following example redirects any dead letters from the queue with the URL :code:`URL` to the
 queue with the ARN :code:`ARN`.

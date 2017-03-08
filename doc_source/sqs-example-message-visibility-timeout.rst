@@ -10,21 +10,24 @@
 
 .. _aws-ruby-sdk-sqs-example-message-visibility-timeout:
 
-#########################################
-Specifying the Message Visibility Timeout
-#########################################
+##################################################
+Specifying the Message Visibility Timeout in |SQS|
+##################################################
 
 .. meta::
    :description:
    :keywords: AWS SDK for Ruby code examples
 
-In |SQS|, immediately after a message is received, it remains in the queue. To prevent other consumers from processing the message again, |SQS| sets a visibility timeout, a period of time during which Amazon SQS prevents other consuming components from receiving and processing the message. To learn more, see :SQS-dg:`Visibility Timeout <sqs-visibility-timeout>`.
+In |SQS|, immediately after a message is received, it remains in the queue. To prevent other consumers
+from processing the message again, |SQS| sets a visibility timeout. This is a period of time during which
+|SQS| prevents other consuming components from receiving and processing the message. To learn more, see
+:SQS-dg:`Visibility Timeout <sqs-visibility-timeout>`.
 
 In this example, you use the |sdk-ruby| with |SQS| to:
 
-#. Get the URL of an existing queue, using :aws-ruby-sqs-client-method:`get_queue_url`.
-#. Receive up to 10 messages, using :aws-ruby-sqs-client-method:`receive_message`.
-#. Specify the time interval during which messages are not visible after being received, using :aws-ruby-sqs-client-method:`change_message_visibility`.
+#. Get the URL of an existing queue by using :aws-ruby-sqs-client-method:`get_queue_url`.
+#. Receive up to 10 messages by using :aws-ruby-sqs-client-method:`receive_message`.
+#. Specify the time interval during which messages are not visible after they are received, by using :aws-ruby-sqs-client-method:`change_message_visibility`.
 
 *************
 Prerequisites
@@ -36,7 +39,7 @@ in:
 * :ref:`aws-ruby-sdk-setup-install`
 * :ref:`aws-ruby-sdk-setup-config`
 
-You will also need to create the queue `my-queue`, which you can do in the |SQS| console.
+You also need to create the queue `my-queue`, which you can do in the |SQS| console.
 
 *******
 Example

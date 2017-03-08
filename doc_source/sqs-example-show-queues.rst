@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-sqs-example-show-queues:
 
-####################################
-Getting Information about All Queues
-####################################
+#############################################
+Getting Information about All Queues in |SQS|
+#############################################
 
 The following example lists the URLs, ARNs, messages available, and messages in flight of your |SQS|
 queues in the :code:`us-west-2` region.

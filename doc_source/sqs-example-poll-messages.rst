@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-sqs-example-poll-messages:
 
-##############################################
-Receiving Messages Using the QueuePoller Class
-##############################################
+#######################################################
+Receiving Messages Using the QueuePoller Class in |SQS|
+#######################################################
 
 The following example uses the :code:`QueuePoller` utility class to display the body of all messages
 in the SQS queue with the URL :code:`URL` in the :code:`us-west-2` region, and deletes the message.

@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-sqs-example-send-messages:
 
-################
-Sending Messages
-################
+#########################
+Sending Messages in |SQS|
+#########################
 
 The following example sends the message "Hello world" through the |SQS| queue with the URL
 :code:`URL` in the :code:`us-west-2` region.

@@ -10,23 +10,25 @@
 
 .. _aws-ruby-sdk-sqs-example-dead-letter-queues:
 
-################################
-Working with a Dead Letter Queue
-################################
+#########################################
+Working with a Dead Letter Queue in |SQS|
+#########################################
 
 .. meta::
    :description:
    :keywords: AWS SDK for Ruby code examples
 
-|SQSlong| provides support for dead letter queues. A dead letter queue is a queue that other (source) queues can target for messages that can't be processed successfully. You can set aside and isolate these messages in the dead letter queue to determine why their processing did not succeed. For more information about dead letter queues, see :SQS-dg:`Using Amazon SQS Dead Letter Queues <sqs-dead-letter-queues>`.
+|SQS| provides support for dead letter queues. A dead letter queue is a queue that other (source) queues
+can target for messages that can't be processed successfully. You can set aside and isolate these messages
+in the dead letter queue to determine why their processing didn't succeed. For more information about dead letter queues, see :SQS-dg:`Using Amazon SQS Dead Letter Queues <sqs-dead-letter-queues>`.
 
 In this example, you use the |sdk-ruby| with |SQS| to:
 
-#. Create a queue representing a dead letter queue, using :aws-ruby-sqs-client-method:`create_queue`.
-#. Associate the dead letter queue with an existing queue, using :aws-ruby-sqs-client-method:`set_queue_attributes`.
-#. Send a message to the existing queue, using :aws-ruby-sqs-client-method:`send_message`.
-#. Poll the queue, using `Aws::SQS::QueuePoller <http://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/QueuePoller.html>`_.
-#. Receive messages in the dead letter queue, using :aws-ruby-sqs-client-method:`receive_message`.
+#. Create a queue that represents a dead letter queue by using :aws-ruby-sqs-client-method:`create_queue`.
+#. Associate the dead letter queue with an existing queue by using :aws-ruby-sqs-client-method:`set_queue_attributes`.
+#. Send a message to the existing queue by using :aws-ruby-sqs-client-method:`send_message`.
+#. Poll the queue by using `Aws::SQS::QueuePoller <http://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/QueuePoller.html>`_.
+#. Receive messages in the dead letter queue by using :aws-ruby-sqs-client-method:`receive_message`.
 
 *************
 Prerequisites
@@ -38,7 +40,7 @@ in:
 * :ref:`aws-ruby-sdk-setup-install`
 * :ref:`aws-ruby-sdk-setup-config`
 
-You will also need to use the AWS Console to create the existing queue, `my-queue`.
+You also need to use the |console| to create the existing queue, `my-queue`.
 
 *******
 Example
