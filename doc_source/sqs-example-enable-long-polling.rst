@@ -10,21 +10,22 @@
 
 .. _aws-ruby-sdk-sqs-example-enable-long-polling:
 
-#####################
-Enabling Long Polling
-#####################
+##############################
+Enabling Long Polling in |SQS|
+##############################
 
 .. meta::
    :description:
    :keywords: AWS SDK for Ruby code examples
 
-Long polling helps reduce your cost of using Amazon SQS by reducing the number of empty responses and eliminating false empty responses. For more information about long polling, see :SQS-dg:`Amazon SQS Long Polling <sqs-long-polling>`.
+Long polling helps lower your cost of using |SQS| by reducing the number of empty responses and eliminating
+false empty responses. For more information about long polling, see :SQS-dg:`Amazon SQS Long Polling <sqs-long-polling>`.
 
 In this example, you use the |sdk-ruby| with |SQS| to:
 
-#. Create a queue and set it for long polling, using :aws-ruby-sqs-client-method:`create_queue`.
-#. Set long polling for an existing queue, using :aws-ruby-sqs-client-method:`set_queue_attributes`.
-#. Set long polling when receiving messages for a queue, using :aws-ruby-sqs-client-method:`receive_message`.
+#. Create a queue and set it for long polling by using :aws-ruby-sqs-client-method:`create_queue`.
+#. Set long polling for an existing queue by using :aws-ruby-sqs-client-method:`set_queue_attributes`.
+#. Set long polling when receiving messages for a queue by using :aws-ruby-sqs-client-method:`receive_message`.
 
 *************
 Prerequisites
@@ -36,7 +37,7 @@ in:
 * :ref:`aws-ruby-sdk-setup-install`
 * :ref:`aws-ruby-sdk-setup-config`
 
-You will also need to create the queues `existing-queue` and `receive-queue`, which you can do in the |SQS| console.
+You also need to create the queues `existing-queue` and `receive-queue`, which you can do in the |SQS| console.
 
 *******
 Example

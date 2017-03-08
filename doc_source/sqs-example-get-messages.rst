@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-sqs-example-get-messages:
 
-##################
-Receiving Messages
-##################
+###########################
+Receiving Messages in |SQS|
+###########################
 
 The following example displays the body of up to 10 messages in the |SQS| queue with the URL
 :code:`URL` in the :code:`us-west-2` region.

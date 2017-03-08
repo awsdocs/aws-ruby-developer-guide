@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-sqs-example-send-and-receive-messages:
 
-##############################
-Sending and Receiving Messages
-##############################
+#######################################
+Sending and Receiving Messages in |SQS|
+#######################################
 
 .. meta::
    :description:
@@ -22,10 +22,10 @@ After you create a queue in |SQS|, you can send a message to it and then consume
 
 In this example, you use the |sdk-ruby| with |SQS| to:
 
-#. Send a message to a queue, using :aws-ruby-sqs-client-method:`send_message`.
-#. Receive the message in the queue, using :aws-ruby-sqs-client-method:`receive_message`.
+#. Send a message to a queue by using :aws-ruby-sqs-client-method:`send_message`.
+#. Receive the message in the queue by using :aws-ruby-sqs-client-method:`receive_message`.
 #. Display information about the message.
-#. Delete the message from the queue, using :aws-ruby-sqs-client-method:`delete_message`.
+#. Delete the message from the queue by using :aws-ruby-sqs-client-method:`delete_message`.
 
 *************
 Prerequisites
@@ -37,7 +37,7 @@ in:
 * :ref:`aws-ruby-sdk-setup-install`
 * :ref:`aws-ruby-sdk-setup-config`
 
-You will also need to create the queue `my-queue`, which you can do in the |SQS| console.
+You also need to create the queue `my-queue`, which you can do in the |SQS| console.
 
 *******
 Example

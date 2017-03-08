@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-sqs-example-create-queue:
 
-################
-Creating a Queue
-################
+#########################
+Creating a Queue in |SQS|
+#########################
 
 The following example creates the |SQS| queue :code:`MyGroovyQueue` in the :code:`us-west-2` region
 and displays its URL.

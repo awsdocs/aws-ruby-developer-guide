@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-sqs-example-get-messages-with-long-polling:
 
-#####################################
-Receiving Messages Using Long Polling
-#####################################
+##############################################
+Receiving Messages Using Long Polling in |SQS|
+##############################################
 
 The following example waits up to 10 seconds to display the bodies of up to 10 messages in the |SQS|
 queue with the URL :code:`URL` in the :code:`us-west-2` region.

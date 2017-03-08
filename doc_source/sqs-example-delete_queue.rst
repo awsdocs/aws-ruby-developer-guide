@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-sqs-example-delete_queue:
 
-################
-Deleting a Queue
-################
+#########################
+Deleting a Queue in |SQS|
+#########################
 
 The following example deletes the |SQS| queue with the URL :code:`URL` in the :code:`us-west-2`
 region.
