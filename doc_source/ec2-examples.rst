@@ -36,5 +36,6 @@ You can use the following examples to access |EC2long| (|EC2|) using the |sdk-ru
    ec2-example-stop-instance
    ec2-example-start-instance
    ec2-example-reboot-instance
+   ec2-example-managing-instances
    ec2-example-terminate-instance
    ec2-regions-availability-zones

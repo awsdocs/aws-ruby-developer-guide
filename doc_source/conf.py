@@ -396,3 +396,12 @@ extlinks['aws-ruby-iam-client-method'] = (aws_ruby_iam_client + '#%s-instance_me
 
 aws_ruby_sqs_client = ruby_api_url +'Aws/SQS/Client.html'
 extlinks['aws-ruby-sqs-client-method'] = (aws_ruby_sqs_client + '#%s-instance_method', 'Aws::SQS::Client#')
+
+aws_ruby_cwe_client = ruby_api_url +'Aws/CloudWatchEvents/Client.html'
+extlinks['aws-ruby-cwe-client-method'] = (aws_ruby_cwe_client + '#%s-instance_method', 'Aws::CloudWatchEvents::Client#')
+
+aws_ruby_cwl_client = ruby_api_url +'Aws/CloudWatchLogs/Client.html'
+extlinks['aws-ruby-cwl-client-method'] = (aws_ruby_cwl_client + '#%s-instance_method', 'Aws::CloudWatchLogs::Client#')
+
+aws_ruby_ec2_client = ruby_api_url +'Aws/EC2/Client.html'
+extlinks['aws-ruby-ec2-client-method'] = (aws_ruby_ec2_client + '#%s-instance_method', 'Aws::EC2::Client#')

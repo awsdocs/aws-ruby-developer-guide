@@ -24,3 +24,4 @@ information about |CW|, see the `CloudWatch Developer Guide <http://docs.aws.ama
    cw-example-create_alarm
    cw-example-alarm-actions
    cw-example-get-metrics-info
+   cw-example-send-events

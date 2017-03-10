@@ -23,6 +23,7 @@ information about |SQS|, see the `Amazon SQS documentation
 
    sqs-example-show-queues
    sqs-example-create-queue
+   sqs-example-use-queue
    sqs-example-send-messages
    sqs-example-send-and-receive-messages
    sqs-example-get-messages
