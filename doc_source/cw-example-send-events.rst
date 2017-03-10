@@ -39,11 +39,20 @@ in:
 
 You will also need to:
 
-#. Replace the placeholder value assigned to `lambda_function_arn` with an actual AWS Lambda function ARN.
-#. Replace the placeholder value assigned to `cwe_service_role_arn` with an appropriate AWS IAM service role ARN.
-#. Replace the placeholder value assigned to `instance_id` with an actual EC2 instance ID.
+* Replace the placeholder value assigned to `lambda_function_arn` with an actual AWS Lambda function ARN.
 
-For details, see the comments in the `example code on GitHub <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cw/cw-ruby-example-send-events-ec2.rb>`_.
+  #. Create a Lambda function, as described `here <http://docs.aws.amazon.com/AmazonCloudWatch/latest/events/LogEC2InstanceState.html#ec2-create-lambda-function>`_.
+  #. Name the function `LogEC2InstanceStateChange`.
+  #. For a Role, select **Choose an Existing Role**; for the existing role, select **lambda_basic_execution**.
+  #. After you've created the function, copy the ARN and paste it into your code.
+
+* Replace the placeholder value assigned to `cwe_service_role_arn` with an appropriate AWS IAM service role ARN.
+
+  #. In the |IAM| console, create a role and attach a policy that grants full access to CloudWatch Events.
+  #. Ensure that the role has a trust relationship to `events.amazonaws.com`. For an example policy and role, see the comments in the `example code on GitHub <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cw/cw-ruby-example-send-events-ec2.rb>`_.
+  #. After you've created the role, attached the policy, and established the trust relationship, copy the role ARN and paste it into your code.
+
+* Replace the placeholder value assigned to `instance_id` with an actual EC2 instance ID.
 
 *******
 Example
