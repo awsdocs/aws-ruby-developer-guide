@@ -42,7 +42,7 @@ in:
 
 You also need to use the |console| to create the existing queue, `my-queue`.
 
-**Note:** For the sake of simplicity, the example code below does not `apply permissions <http://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#add_permission-instance_method>`_ to queues. In a real-world scenario, you should always restrict access to actions such as SendMessage, ReceiveMessage, DeleteMessage, and DeleteQueue. Not doing so could cause information disclosure, denial of service, or injection of messages into your queues.
+**Note:** For the sake of simplicity, the example code below does not demonstrate :aws-ruby-sqs-client-method:`add_permission`. In a real-world scenario, you should always restrict access to actions such as SendMessage, ReceiveMessage, DeleteMessage, and DeleteQueue. Not doing so could cause information disclosure, denial of service, or injection of messages into your queues.
 
 *******
 Example
