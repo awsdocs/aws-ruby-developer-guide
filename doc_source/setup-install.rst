@@ -40,7 +40,7 @@ to add the |sdk-ruby| to your project.
 
 .. code-block:: none
 
-    gem aws-sdk
+    gem 'aws-sdk'
 
 If you don't use Bundler, the easiest way to install the SDK is to use `RubyGems
 <https://rubygems.org/gems/aws-sdk/>`_. To install the latest version of the SDK, use the following
