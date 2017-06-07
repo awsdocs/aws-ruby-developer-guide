@@ -25,22 +25,22 @@ services, including |S3long|, |EC2long|, and |DDBlong|. For a complete list of s
 About This Guide
 ================
 
-The |sdk-ruby-dg| provides information about how to install, set up, and use the |sdk-ruby| to
+The |sdk-ruby-dg| provides information about how to install, set up, and use the |Rubylong| to
 create Ruby applications that use AWS services.
 
 This guide contains the following sections:
 
 :doc:`getting-started`
-    Describes how to set up and use the |sdk-ruby|.
+    Describes how to set up and use the |Rubylong|.
 
 :doc:`hello`
-    Steps you through creating an application using the |sdk-ruby|.
+    Steps you through creating an application using the |Rubylong|.
 
 :doc:`programming`
-    Provides general information about developing software with the |sdk-ruby|.
+    Provides general information about developing software with the |Rubylong|.
 
 :doc:`examples`
-    Provides code examples that developers can use to program AWS services with the |sdk-ruby|.
+    Provides code examples that developers can use to program AWS services with the |Rubylong|.
 
 :doc:`history`
     Describes the history of this document.
@@ -50,7 +50,7 @@ This guide contains the following sections:
 Additional Documentation and Resources
 ======================================
 
-For more resources for |sdk-ruby| developers, see the following:
+For more resources for |Rubylong| developers, see the following:
 
 * :sdk-ruby-api:`AWS SDK for Ruby API Reference <index.html>`
 * `Developer blog <http://ruby.awsblog.com/>`_
