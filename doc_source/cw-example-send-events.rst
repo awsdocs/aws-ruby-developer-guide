@@ -25,8 +25,8 @@ In this example, you use the |sdk-ruby| with |CWE| to:
 #. Create a rule in |CWE| by using :aws-ruby-cwe-client-method:`put_rule`.
 #. Add a target to the rule by using :aws-ruby-cwe-client-method:`put_targets`.
 #. Send an event to |CWE| so that it can be matched to the rule.
-#. View the results in |CWLlong| and metrics by using :aws-ruby-cw-client-method:`get_metric_statistics`
-and :aws-ruby-cwl-client-method:`describe_log_streams`.
+#. View the results in |CWLlong| and metrics by using
+   :aws-ruby-cw-client-method:`get_metric_statistics` and :aws-ruby-cwl-client-method:`describe_log_streams`.
 
 *************
 Prerequisites
