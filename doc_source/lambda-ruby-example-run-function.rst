@@ -20,19 +20,19 @@ This function returns a list of items from a database and has three options:
 * The criteria for sorting the results: :code:`SortBy`. Our examples uses :code:`time`, 
   which means the returned items are sorted in the order in which they were added to the database.
   
-* The order of sorting: :code`SortOrder`. Our example uses :code`descending`, 
+* The order of sorting: :code:`SortOrder`. Our example uses :code:`descending`, 
   which means the most-recent item is last in the list.
 
-* The maximum number of items to retrieve: :code`Number`. Our example uses :code`10`,
+* The maximum number of items to retrieve: :code:`Number`. Our example uses :code:`10`,
   which means get the 10 most-recent items.
 
 The first step is to load the modules we use:
 
-* :code`aws-sdk` loads the AWS SDK for Ruby module we use to invoke the |lam| function.
+* :code:`aws-sdk` loads the AWS SDK for Ruby module we use to invoke the |lam| function.
 
-* :code`json` loads the JSON module we use to marshall and unmarshall the request and response payloads.
+* :code:`json` loads the JSON module we use to marshall and unmarshall the request and response payloads.
 
-* :code`os` loads the OS module we use to ensure we can run our Ruby application on Microsoft Windows.
+* :code:`os` loads the OS module we use to ensure we can run our Ruby application on Microsoft Windows.
   If you are on a different operating system, you can remove those lines.
 
 .. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-run-function.rb
@@ -47,7 +47,7 @@ We then create the |lam| client we use to invoke the |lam| function.
    :dedent: 0
    :language: ruby
 
-Next we create the hash for the request arguments and call :code`MyGetItemsFunction`.
+Next we create the hash for the request arguments and call :code:`MyGetItemsFunction`.
 
 .. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-run-function.rb
    :lines: 25-33
