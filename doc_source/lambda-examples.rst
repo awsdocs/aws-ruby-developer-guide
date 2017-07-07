@@ -22,5 +22,5 @@ more information about |LAM|, see the `Lambda documentation <http://aws.amazon.c
 
    lambda-ruby-example-show-functions
    lambda-ruby-example-create-function
+   lambda-ruby-example-run-function
    lambda-ruby-example-configure-function-for-notification
-
