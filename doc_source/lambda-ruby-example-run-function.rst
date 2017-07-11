@@ -15,16 +15,47 @@ Running a |LAM| Function
 ########################
 
 The following example rus the |LAM| function :code:`MyGetitemsFunction` in the :code:`us-west-2` region.
-This function returns a list of items from a database and has three options:
+This function returns a list of items from a database. The input JSON looks like:
 
-* The criteria for sorting the results: :code:`SortBy`. Our examples uses :code:`time`, 
+.. code-block:: json
+
+   {
+      "SortBy": "name|time",
+      "SortOrder": "ascending|descending",
+      "Number": 50
+   }
+
+where:
+
+* :code:`SortBy` is the criteria for sorting the results. Our examples uses :code:`time`,
   which means the returned items are sorted in the order in which they were added to the database.
-  
-* The order of sorting: :code:`SortOrder`. Our example uses :code:`descending`, 
+
+* :code:`SortOrder` is the order of sorting. Our example uses :code:`descending`,
   which means the most-recent item is last in the list.
 
-* The maximum number of items to retrieve: :code:`Number`. Our example uses :code:`10`,
-  which means get the 10 most-recent items.
+* :code:`Number` is the maximum number of items to retrieve (the default is 50).
+  Our example uses :code:`10`, which means get the 10 most-recent items.
+
+The output JSON looks like:
+
+.. code-block:: json
+
+   {
+      "statusCode": 200|...,
+      "body": {
+         "result": "'success' or 'failure'",
+         "error": "Error message if 'failure', '' otherwise"
+         "data": [{"item1"}, ..., {"itemN"}]
+      }
+   }
+
+where:
+
+* :code:`statusCode` is an HTTP status code, :code:`200` means the call was successful.
+* :code:`body` is the body of the returned JSON.
+* :code:`result` is the result of the call, either :code:`success` or :code:`failure`.
+* :code:`error` is an error message if :code:`result` is :code:`failure`, otherwise an empty string
+* :code:`data` is the returned results if :code:`result` is :code:`success`, otherwise nil.
 
 The first step is to load the modules we use:
 
