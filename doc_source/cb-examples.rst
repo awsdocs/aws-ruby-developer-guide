@@ -13,7 +13,7 @@
 ##############
 
 You can use the following examples to access |ACBlong| (|ACB|) using the |sdk-ruby|. For
-more information about |S3|, see the `Amazon CodeBuild documentation <http://aws.amazon.com/documentation/codebuild/>`_.
+more information about |ACB|, see the `Amazon CodeBuild documentation <http://aws.amazon.com/documentation/codebuild/>`_.
 
 **Examples**
 
