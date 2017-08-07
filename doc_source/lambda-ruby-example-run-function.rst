@@ -47,11 +47,11 @@ where:
 .. code-block:: json
 
    {
-      "statusCode": STATUS-CODE,
+      "statusCode": "STATUS-CODE",
       "body": {
-         "result": RESULT,
-         "error": ERROR,
-         "data": DATA
+         "result": "RESULT",
+         "error": "ERROR",
+         "data": "DATA"
       }
    }
 
