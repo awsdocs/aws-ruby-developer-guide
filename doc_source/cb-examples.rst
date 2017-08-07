@@ -8,9 +8,9 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-#############
+##############
 |ACB| Examples
-#############
+##############
 
 You can use the following examples to access |ACBlong| (|ACB|) using the |sdk-ruby|. For
 more information about |S3|, see the `Amazon CodeBuild documentation <http://aws.amazon.com/documentation/codebuild/>`_.
