@@ -36,26 +36,24 @@ where:
 * :code:`Number` is the maximum number of items to retrieve (the default is 50).
   Our example uses :code:`10`, which means get the 10 most-recent items.
 
-The output JSON looks like:
+The output JSON looks like the following,
+where:
+
+* :code:`STATUS-CODE` is an HTTP status code, :code:`200` means the call was successful.
+* :code:`RESULT` is the result of the call, either :code:`success` or :code:`failure`.
+* :code:`ERROR` is an error message if :code:`result` is :code:`failure`, otherwise an empty string
+* :code:`DATA` is an array of returned results if :code:`result` is :code:`success`, otherwise nil.
 
 .. code-block:: json
 
    {
-      "statusCode": 200|...,
+      "statusCode": STATUS-CODE,
       "body": {
-         "result": "'success' or 'failure'",
-         "error": "Error message if 'failure', '' otherwise"
-         "data": [{"item1"}, ..., {"itemN"}]
+         "result": RESULT,
+         "error": ERROR,
+         "data": DATA
       }
    }
-
-where:
-
-* :code:`statusCode` is an HTTP status code, :code:`200` means the call was successful.
-* :code:`body` is the body of the returned JSON.
-* :code:`result` is the result of the call, either :code:`success` or :code:`failure`.
-* :code:`error` is an error message if :code:`result` is :code:`failure`, otherwise an empty string
-* :code:`data` is the returned results if :code:`result` is :code:`success`, otherwise nil.
 
 The first step is to load the modules we use:
 

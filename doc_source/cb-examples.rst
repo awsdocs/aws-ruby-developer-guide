@@ -8,27 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-examples:
+#############
+|ACB| Examples
+#############
 
-########################
-|sdk-ruby| Code Examples
-########################
+You can use the following examples to access |ACBlong| (|ACB|) using the |sdk-ruby|. For
+more information about |S3|, see the `Amazon CodeBuild documentation <http://aws.amazon.com/documentation/codebuild/>`_.
 
-This section provides examples you can use to access AWS services by using the
-|sdk-ruby|.
+**Examples**
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   cb-examples
-   cw-examples
-   dynamo-examples
-   ec2-examples
-   eb-examples
-   iam-examples
-   lambda-examples
-   rds-examples
-   s3-examples
-   sns-examples
-   sqs-examples
-
+   cb-example-list-projects
+   cb-example-build-project
+   cb-example-list-builds
