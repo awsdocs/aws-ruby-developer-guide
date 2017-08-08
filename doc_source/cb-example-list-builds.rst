@@ -11,19 +11,19 @@
 .. _aws-ruby-sdk-cb-example-list-builds:
 
 ###########################
-Listing your Project Builds
+Listing Your Project Builds
 ###########################
 
-The following example displays information about your |ACBlong| project builds,
-including the name of the project, when the build started, and how long each
+The following example displays information about your |ACBlong| project builds.
+This information includes the name of the project, when the build started, and how long each
 phase of the build took, in seconds.
-Click the :code:`Copy` button and save it as :file:`cb_list_builds.rb`.
 
 .. literalinclude:: ./example_code/codebuild/aws-ruby-sdk-codebuild-example-list-builds.rb
-   :lines: 13-66
+   :lines: 13-25
    :dedent: 0
    :language: ruby
 
+Choose :code:`Copy` to save the code locally.
 See the `complete example
 <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/codebuild/aws-ruby-sdk-codebuild-example-list-builds.rb>`_
 on GitHub.

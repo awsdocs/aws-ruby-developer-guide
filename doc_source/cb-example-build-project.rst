@@ -16,13 +16,14 @@ Building a Project
 
 The following example builds the |ACBlong| project specified on the command line.
 If no command-line argument is supplied, it emits an error and quits.
-Click the :code:`Copy` button and save it as :file:`cb_build_project.rb`.
 
 .. literalinclude:: ./example_code/codebuild/aws-ruby-sdk-codebuild-example-build-project.rb
-   :lines: 13-38
+   :lines: 13-31
    :dedent: 0
    :language: ruby
 
+
+Choose :code:`Copy` to save the code locally.
 See the `complete example
 <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/codebuild/aws-ruby-sdk-codebuild-example-build-project.rb>`_
 on GitHub.
