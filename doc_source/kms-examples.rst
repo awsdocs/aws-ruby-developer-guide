@@ -14,6 +14,8 @@
 
 You can use the following examples to access |KMSlong| (|KMS|) using the |sdk-ruby|. For
 more information about |KMS|, see the `Amazon KMS documentation <http://aws.amazon.com/documentation/kms/>`_.
+For reference information about the |KMS| client, see
+:sdk-ruby-api:`Aws::KMS::Client </Aws/KMS/Client>`.
 
 **Examples**
 

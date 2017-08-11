@@ -14,14 +14,19 @@
 Re-encrypting a Data Blob
 #########################
 
-The following example re-encrypts the provided data blob
-and emits a readable version of the resulting re-encrypted blob.
+The following example uses the |sdk-ruby|
+`re_encrypt <http://docs.aws.amazon.com/sdkforruby/api/Aws/KMS/Client.html#re_encrypt-instance_method>`_ method,
+which implements the
+`ReEncrypt <http://docs.aws.amazon.com/kms/latest/APIReference/API_ReEncrypt.html>`_ operation,
+to decrypt encrypted data and then immediately re-encrypt data under a new customer master key (CMK).
+The operations are performed entirely on the server side within |KMS|,
+so they never expose your plaintext outside of |KMS|.
+The example displays a readable version of the resulting re-encrypted blob.
 
 .. literalinclude:: ./example_code/kms/aws-ruby-sdk-kms-example-encrypt-data.rb
    :lines: 13-32
    :dedent: 0
    :language: ruby
-
 
 Choose :code:`Copy` to save the code locally.
 See the `complete example

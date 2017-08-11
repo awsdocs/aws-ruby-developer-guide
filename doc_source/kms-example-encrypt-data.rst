@@ -14,15 +14,17 @@
 Encrypting Data
 ###############
 
-The following example encrypts the string "1234567890"
-and emits a readable version of the resulting encrypted blob.
-
+The following example uses the |sdk-ruby|
+`encrypt <http://docs.aws.amazon.com/sdkforruby/api/Aws/KMS/Client.html#encrypt-instance_method>`_ method,
+which implements the
+`Encrypt <http://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html>`_ operation,
+to encrypt the string "1234567890".
+The example displays a readable version of the resulting encrypted blob.
 
 .. literalinclude:: ./example_code/kms/aws-ruby-sdk-kms-example-encrypt-data.rb
    :lines: 13-31
    :dedent: 0
    :language: ruby
-
 
 Choose :code:`Copy` to save the code locally.
 See the `complete example

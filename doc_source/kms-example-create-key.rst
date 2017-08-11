@@ -14,7 +14,11 @@
 Creating a CMK
 ##############
 
-The following example creates a customer master key (CMK).
+The following example uses the |sdk-ruby|
+`create_key <http://docs.aws.amazon.com/sdkforruby/api/Aws/KMS/Client.html#create_key-instance_method>`_ method,
+which implements the
+`CreateKey <http://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html>`_ operation,
+to create a customer master key (CMK).
 Since the example only encrypts a small amount of data,
 a CMK is fine for our purposes.
 For larger amounts of data,
@@ -24,7 +28,6 @@ use the CMK to encrypt a data encryption key (DEK).
    :lines: 13-32
    :dedent: 0
    :language: ruby
-
 
 Choose :code:`Copy` to save the code locally.
 See the `complete example
