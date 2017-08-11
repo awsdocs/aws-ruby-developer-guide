@@ -14,7 +14,7 @@
 Decrypting a Data Blob
 ######################
 
-The following example uses the |sdk-ruby|
+The following example uses the |sdk-ruby| 
 `decrypt <http://docs.aws.amazon.com/sdkforruby/api/Aws/KMS/Client.html#decrypt-instance_method>`_ method,
 which implements the
 `Decrypt <http://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html>`_ operation,

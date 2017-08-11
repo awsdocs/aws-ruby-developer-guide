@@ -14,7 +14,7 @@
 Creating a CMK
 ##############
 
-The following example uses the |sdk-ruby|
+The following example uses the |sdk-ruby| 
 `create_key <http://docs.aws.amazon.com/sdkforruby/api/Aws/KMS/Client.html#create_key-instance_method>`_ method,
 which implements the
 `CreateKey <http://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html>`_ operation,

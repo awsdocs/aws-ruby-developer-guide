@@ -14,7 +14,7 @@
 Re-encrypting a Data Blob
 #########################
 
-The following example uses the |sdk-ruby|
+The following example uses the |sdk-ruby| 
 `re_encrypt <http://docs.aws.amazon.com/sdkforruby/api/Aws/KMS/Client.html#re_encrypt-instance_method>`_ method,
 which implements the
 `ReEncrypt <http://docs.aws.amazon.com/kms/latest/APIReference/API_ReEncrypt.html>`_ operation,

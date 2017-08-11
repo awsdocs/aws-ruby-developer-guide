@@ -14,7 +14,7 @@
 Encrypting Data
 ###############
 
-The following example uses the |sdk-ruby|
+The following example uses the |sdk-ruby| 
 `encrypt <http://docs.aws.amazon.com/sdkforruby/api/Aws/KMS/Client.html#encrypt-instance_method>`_ method,
 which implements the
 `Encrypt <http://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html>`_ operation,
