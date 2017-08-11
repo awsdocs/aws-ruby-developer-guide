@@ -8,9 +8,9 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-##############
-|LAM| Examples
-##############
+##################
+|LAMlong| Examples
+##################
 
 You can use the following examples to access |LAMlong| (|LAM|) using the |sdk-ruby|. For
 more information about |LAM|, see the `Lambda documentation <http://aws.amazon.com/documentation/lambda/>`_.
