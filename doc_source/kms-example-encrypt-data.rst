@@ -8,28 +8,23 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-examples:
+.. _aws-ruby-sdk-kms-example-encrypt-data:
 
-########################
-|sdk-ruby| Code Examples
-########################
+###############
+Encrypting Data
+###############
 
-This section provides examples you can use to access AWS services by using the
-|sdk-ruby|.
+The following example encrypts the string "1234567890"
+and emits a readable version of the resulting encrypted blob.
 
-.. toctree::
-   :maxdepth: 2
 
-   cb-examples
-   cw-examples
-   dynamo-examples
-   ec2-examples
-   eb-examples
-   iam-examples
-   kms-examples
-   lambda-examples
-   rds-examples
-   s3-examples
-   sns-examples
-   sqs-examples
+.. literalinclude:: ./example_code/kms/aws-ruby-sdk-kms-example-encrypt-data.rb
+   :lines: 13-31
+   :dedent: 0
+   :language: ruby
 
+
+Choose :code:`Copy` to save the code locally.
+See the `complete example
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/kms/aws-ruby-sdk-kms-example-encrypt-data.rb>`_
+on GitHub.

@@ -8,28 +8,19 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-examples:
+##############
+|KMS| Examples
+##############
 
-########################
-|sdk-ruby| Code Examples
-########################
+You can use the following examples to access |KMSlong| (|KMS|) using the |sdk-ruby|. For
+more information about |KMS|, see the `Amazon KMS documentation <http://aws.amazon.com/documentation/kms/>`_.
 
-This section provides examples you can use to access AWS services by using the
-|sdk-ruby|.
+**Examples**
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   cb-examples
-   cw-examples
-   dynamo-examples
-   ec2-examples
-   eb-examples
-   iam-examples
-   kms-examples
-   lambda-examples
-   rds-examples
-   s3-examples
-   sns-examples
-   sqs-examples
-
+   kms-example-create-key
+   kms-example-encrypt-data
+   kms-example-decrypt-blob
+   kms-example-re-encrypt-data
