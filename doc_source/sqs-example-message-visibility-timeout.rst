@@ -16,7 +16,9 @@ Specifying the Message Visibility Timeout in |SQS|
 
 .. meta::
    :description:
-   :keywords: AWS SDK for Ruby code examples
+       Specify a message's visibility timeout in Amazon SQS using this AWS SDK for Ruby code
+       example.
+   :keywords: AWS SDK for Ruby code examples, SQS
 
 In |SQS|, immediately after a message is received, it remains in the queue. To prevent other consumers
 from processing the message again, |SQS| sets a visibility timeout. This is a period of time during which

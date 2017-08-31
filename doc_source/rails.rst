@@ -14,6 +14,11 @@
 Using the SDK with Ruby on Rails
 ################################
 
+.. meta::
+    :description:
+
+    :keywords: AWS SDK for ruby code examples
+
 `Ruby on Rails <http://rubyonrails.org/>`_ provides a web development framework for Ruby that makes
 it easy to create websites with Ruby.
 

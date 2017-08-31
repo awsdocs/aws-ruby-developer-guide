@@ -14,7 +14,12 @@
 |EC2| Tips and Tricks
 #####################
 
-This section provides some tips to help you the |sdk-ruby| with |EC2long| (|EC2|) services. For
+.. meta::
+    :description:
+        Learn tips and tricks for using Amazon EC2 with the AWS SDK for Ruby.
+    :keywords: AWS SDK for Ruby, Amazon EC2
+
+This section provides some tips to help you use the |sdk-ruby| with |EC2long| (|EC2|) services. For
 more information about |EC2|, see the |EC2-gsg|_.
 
 .. _aws-ruby-sdk-ec2-tip-switch-elastic-ips:

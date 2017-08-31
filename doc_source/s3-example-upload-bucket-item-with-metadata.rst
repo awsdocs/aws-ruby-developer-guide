@@ -10,9 +10,15 @@
 
 .. _aws-ruby-sdk-s3-example-upload-bucket-item-with-metadata:
 
-###########################################
-Uploading an Item with Metadata to a Bucket
-###########################################
+#################################################
+Uploading an Item with Metadata to an |S3| Bucket
+#################################################
+
+.. meta::
+    :description:
+        Upload an item with metadata to an Amazon S3 bucket using this AWS SDK for Ruby code
+        example.
+    :keywords: AWS SDK for Ruby code examples
 
 The following example uploads the item (file) :file:`C:\file.txt` with the metadata key-value pair
 :code-ruby:`answer` and :code-ruby:`42` to the bucket :code-ruby:`my-bucket` in the

@@ -10,13 +10,19 @@
 
 .. _aws-ruby-sdk-ec2-working-with-security-groups:
 
-##########################################
-Working with Security Groups in Amazon EC2
-##########################################
+##################################
+Working with |EC2| Security Groups
+##################################
 
-An Amazon EC2 security group acts as a virtual firewall that controls the traffic for one or more instances. You add rules to each security group to allow traffic to or from its associated instances. You can modify the rules for a security group at any time; the new rules are automatically applied to all instances that are associated with the security group.
+.. meta::
+    :description:
+        Learn to work with Amazon EC2 security groups using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
-For more information about the Amazon EC2 security groups, see:
+An |EC2| security group acts as a virtual firewall that controls the traffic for one or more instances.
+You add rules to each security group to allow traffic to or from its associated instances. You can modify the rules for a security group at any time. The new rules are automatically applied to all instances that are associated with the security group.
+
+For more information about the |EC2| security groups, see:
 
 * `Amazon EC2 Amazon Security Groups for Linux Instances <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html>`_
 * `Amazon EC2 Security Groups for Windows Instances <http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/using-network-security.html>`_
@@ -45,8 +51,8 @@ You'll also need to `create a VPC <http://docs.aws.amazon.com/AmazonVPC/latest/G
 Configure the SDK
 *****************
 
-First we require the AWS SDK for Ruby and create an EC2 client. Then we provide a name for the security
-group we're going to create. We also need to provide the ID of our VPC, which is available in the console
+First you need the |sdk-ruby|, and you need to create an EC2 client. Then provide a name for the security
+group you'll create. You also need to provide the ID of our VPC, which is available in the console
 after the VPC is created. **Be sure that you replace ``VPC-ID`` with your actual VPC ID.**
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-security-group.rb
@@ -54,27 +60,29 @@ after the VPC is created. **Be sure that you replace ``VPC-ID`` with your actual
    :dedent: 0
    :language: ruby
 
-We'll use the ``security_group_created`` variable later in the script to determine if a security
+You use the ``security_group_created`` variable later in the script to determine if a security
 group was created and can therefore be deleted.
 
 ***********************
 Create a Security Group
 ***********************
 
-Next we create a security group that allows access over ports 22 (SSH) and 80 (HTTP) from all addresses (CIDR block ``0.0.0.0/0``).
+ Create a security group that allows access over ports 22 (SSH) and 80 (HTTP) from all addresses (CIDR
+ block ``0.0.0.0/0``).
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-security-group.rb
    :lines: 27-66
    :dedent: 0
    :language: ruby
 
-If the ``begin`` block executes without exception, we set ``security_group_created`` to ``true``.
+If the ``begin`` block executes without exception, set ``security_group_created`` to ``true``.
 
-*******************************
-Get Info about a Security Group
-*******************************
+**************************************
+Get Information about a Security Group
+**************************************
 
-Having created a security group, we output information about our existing security groups and their IP permissions.
+Having created a security group, you output information about your existing security groups and their IP
+permissions.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-security-group.rb
    :lines: 73-141
@@ -85,8 +93,8 @@ Having created a security group, we output information about our existing securi
 Delete a Security Group
 ***********************
 
-At the end of the script, assuming that a security group was successfully created and the ``security_group_created``
-flag set to ``true``, we delete the security group.
+At the end of the script, assuming that you successfully created a security group and the ``security_group_created``
+flag is set to ``true``, you delete the security group.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-security-group.rb
    :lines: 144-146

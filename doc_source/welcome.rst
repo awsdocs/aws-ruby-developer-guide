@@ -10,9 +10,15 @@
 
 .. _aws-ruby-sdk-about-ruby-sdk:
 
-#############
-|sdk-ruby-dg|
-#############
+################################
+AWS SDK for Ruby Developer Guide
+################################
+
+.. meta::
+    :description:
+        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
+        AWS infrastructure services with the |sdk-ruby|.
+    :keywords: AWS SDK for ruby, aws.rb, aws-sdk-core gem, ruby code examples
 
 Welcome to the |sdk-ruby|.
 
@@ -31,16 +37,19 @@ create Ruby applications that use AWS services.
 This guide contains the following sections:
 
 :doc:`getting-started`
-    Describes how to set up and use the |sdk-ruby|.
+    Describes how to install, configure, and use the |sdk-ruby|.
 
-:doc:`hello`
-    Steps you through creating an application using the |sdk-ruby|.
+:doc:`setup-config`
+    Steps you through how to configure the |sdk-ruby|.
 
 :doc:`programming`
-    Provides general information about developing software with the |sdk-ruby|.
+    Provides general information about developing applications with the |sdk-ruby|.
 
 :doc:`examples`
-    Provides code examples that developers can use to program AWS services with the |sdk-ruby|.
+    Provides code examples for programming AWS services with the |sdk-ruby|.
+
+:doc:`tips-and-tricks`
+    Provides helpful information for using the |sdk-ruby| with AWS services.
 
 :doc:`history`
     Describes the history of this document.

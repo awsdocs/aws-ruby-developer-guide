@@ -12,6 +12,12 @@
 Getting Started with the |sdk-ruby|
 ###################################
 
+.. meta::
+    :description:
+        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
+        AWS infrastructure services with the |sdk-ruby|.
+    :keywords: AWS SDK for ruby, aws.rb, aws-sdk-core gem, ruby code examples
+
 If you're new to the |sdk-ruby|, you should start here. This section contains information about
 installing, setting up, and using the SDK to create a Ruby application to access |S3|.
 
@@ -19,12 +25,9 @@ installing, setting up, and using the SDK to create a Ruby application to access
    :titlesonly:
    :maxdepth: 1
 
-   quick-start-guide
-   setup-install
-   setup-config
-   repl
-   rails
-   migrating-to-v2
+   Quick Start Guide <quick-start-guide>
+   Installing the SDK <setup-install>
+   Hello World Tutorial <hello>
 
 
 

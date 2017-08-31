@@ -15,10 +15,11 @@ Working with IAM Server Certificates
 ####################################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+    :description:
+        Learn to work with IAM server certificates using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, IAM
 
-To enable HTTPS connections to your website or application on AWS, you need an SSL/TLS server certificate. To use a certificate that you obtained from an external provider with your website or application on AWS, you must upload the certificate to IAM or import it into AWS Certificate Manager. For more information about server certificates, see :IAM-ug:`Working with Server Certificates <id_credentials_server-certs>`.
+To enable HTTPS connections to your website or application on AWS, you need an SSL/TLS server certificate. To use a certificate that you obtained from an external provider with your website or application on AWS, you must upload the certificate to |IAM| or import it into AWS Certificate Manager. For more information about server certificates, see :IAM-ug:`Working with Server Certificates <id_credentials_server-certs>`.
 
 In this example, you use the |sdk-ruby| with |IAM| to:
 
@@ -36,7 +37,8 @@ in:
 * :ref:`aws-ruby-sdk-setup-install`
 * :ref:`aws-ruby-sdk-setup-config`
 
-Note also that the server certificate must already exist, or the script will throw an `Aws::IAM::Errors::NoSuchEntity` error.
+.. note:: The server certificate must already exist, or the script will throw
+          an `Aws::IAM::Errors::NoSuchEntity` error.
 
 *******
 Example

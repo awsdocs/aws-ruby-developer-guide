@@ -15,10 +15,11 @@ Working with IAM Policies
 #########################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+    :description:
+        Learn to work with IAM policies using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, IAM
 
-An IAM policy is a document that specifies one or more permissions. For more information about IAM policies, see :IAM-ug:`Overview of IAM Policies <access_policies>`.
+An |IAM| policy is a document that specifies one or more permissions. For more information about IAM policies, see :IAM-ug:`Overview of IAM Policies <access_policies>`.
 
 In this example, you use the |sdk-ruby| with |IAM| to:
 

@@ -8,11 +8,17 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-##################
-|DDBlong| Examples
-##################
+#######################################
+|DDBlong| Examples Using the |sdk-ruby|
+#######################################
 
-You can use the following examples to access |DDBlong| services by using the |sdk-ruby|. For more
+.. meta::
+    :description:
+        AWS SDK for Ruby code examples for Amazon DynamoDB.
+    :keywords:
+
+|DDBlong| is a fully managed NoSQL database service that provides fast and predictable performance with
+seamless scalability. You can use the following examples to access |DDB| services by using the |sdk-ruby|. For more
 information about |DDB|, see the `Amazon DynamoDB documentation
 <http://aws.amazon.com/documentation/dynamodb>`_. Specifically, see `Ruby and DynamoDB
 <http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.Ruby.html>`_ to
@@ -27,8 +33,6 @@ learn how to:
 The topic also provides a link to a downloadable version of |DDB|, which includes an interactive web
 interface so you can experiment with |DDB| offline.
 
-**Examples**
-
 .. toctree::
    :maxdepth: 2
 
@@ -39,4 +43,4 @@ interface so you can experiment with |DDB| offline.
    dynamo-example-get-table-item
    dynamo-example-update-table
    dynamo-example-create-index
-   
+

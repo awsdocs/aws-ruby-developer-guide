@@ -14,22 +14,27 @@
 |sdk-ruby| Code Examples
 ########################
 
+.. meta::
+    :description:
+        Get examples of how to access AWS services using the AWS SDK for Ruby.
+    :keywords: AWS SDK for Ruby code examples
+
 This section provides examples you can use to access AWS services by using the
 |sdk-ruby|.
 
 .. toctree::
    :maxdepth: 2
 
-   cb-examples
-   cw-examples
-   dynamo-examples
-   ec2-examples
-   eb-examples
-   iam-examples
-   kms-examples
-   lambda-examples
-   rds-examples
-   s3-examples
-   sns-examples
-   sqs-examples
+   Amazon CloudWatch Examples <cw-examples>
+   AWS CodeBuild Examples <cb-examples>
+   Amazon DynamoDB Examples <dynamo-examples>
+   Amazon EC2 Examples <ec2-examples>
+   AWS Elastic Beanstalk Examples <eb-examples>
+   AWS Identity and Access Management (IAM) Examples <iam-examples>
+   AWS KMS Examples <kms-examples>
+   AWS Lambda Examples <lambda-examples>
+   Amazon RDS Examples <rds-examples>
+   Amazon S3 Examples <s3-examples>
+   Amazon SNS Examples <sns-examples>
+   Amazon SQS Examples <sqs-examples>
 

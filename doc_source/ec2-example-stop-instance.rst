@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-ec2-example-stop-instance:
 
-####################
-Stopping an Instance
-####################
+##########################
+Stopping an |EC2| Instance
+##########################
+
+.. meta::
+    :description:
+        Stop Amazon EC2 instances using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
 The following example stops the instance :code:`i-123abc` in the :code:`us-west-2` region.
 

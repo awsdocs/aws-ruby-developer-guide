@@ -14,6 +14,11 @@
 Stubbing Client Responses and Errors
 ####################################
 
+.. meta::
+    :description:
+        Learn how to stub client responses and client errors in an AWS SDK for Ruby application.
+    :keywords: AWS SDK for Ruby
+
 Learn how to stub client responses and client errors in an |sdk-ruby|
 application.
 
@@ -38,13 +43,13 @@ The following example returns stubbed names for the list of |S3| buckets.
 .. code-block:: ruby
 
     require 'aws-sdk'
-        
+
     s3 = Aws::S3::Client.new(stub_responses: true)
-      
+
     bucket_data = s3.stub_data(:list_buckets, :buckets => [{name:'aws-sdk'}, {name:'aws-sdk2'}])
     s3.stub_responses(:list_buckets, bucket_data)
     bucket_names = s3.list_buckets.buckets.map(&:name)
-    
+
     # List each bucket by name
     bucket_names.each do |name|
       puts name
@@ -86,12 +91,12 @@ You can also stub errors that the |sdk-ruby| raises for specific methods. The fo
 .. code-block:: ruby
 
     require 'aws-sdk'
-        
+
     s3 = Aws::S3::Client.new(stub_responses: true)
     s3.stub_responses(:head_bucket, Timeout::Error)
-        
+
     begin
       s3.head_bucket({bucket: 'aws-sdk'})
     rescue Exception => ex
-      puts "Caught #{ex.class} error calling 'head_bucket' on 'aws-sdk'" 
+      puts "Caught #{ex.class} error calling 'head_bucket' on 'aws-sdk'"
     end

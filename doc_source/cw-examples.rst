@@ -8,14 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-#################
-|CWlong| Examples
-#################
+######################################
+|CWlong| Examples Using the |sdk-ruby|
+######################################
 
-You can use the following examples to access |CWlong| (|CW|) by using the |sdk-ruby|. For more
-information about |CW|, see the `CloudWatch Developer Guide <http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide>`_.
+.. meta::
+    :description:
+        AWS SDK for Ruby code examples for Amazon CloudWatch.
+    :keywords:
 
-**Examples**
+|CWlong| (|CW|) is a monitoring service for AWS cloud resources and the applications you run on AWS. You
+can use the following examples to access |CW| by using the |sdk-ruby|. For more
+information about |CW|, see the `Amazon CloudWatch documentation <https://aws.amazon.com/documentation/cloudwatch/>`_.
 
 .. toctree::
    :maxdepth: 1

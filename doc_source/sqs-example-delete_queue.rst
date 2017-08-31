@@ -14,6 +14,10 @@
 Deleting a Queue in |SQS|
 #########################
 
+.. meta::
+   :description: Delete Amazon SQS queues using this AWS SDK for Ruby code example.
+   :keywords: AWS SDK for Ruby code examples, SQS
+
 The following example deletes the |SQS| queue with the URL :code:`URL` in the :code:`us-west-2`
 region.
 

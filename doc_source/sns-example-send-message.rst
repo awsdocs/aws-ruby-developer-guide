@@ -10,11 +10,16 @@
 
 .. _aws-ruby-sdk-sns-example-send-message:
 
-##########################################
-Sending a Message to All Topic Subscribers
-##########################################
+################################################
+Sending a Message to All |SNS| Topic Subscribers
+################################################
 
-The following example sends the message "Hello!" to all subscribers to the topic with the ARN
+.. meta::
+    :description:
+        Send messages to all Amazon SNS topic subscribers using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, SNS
+
+The following example sends the message "Hello!" to all subscribers to the |SNS| topic with the ARN
 :code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic`.
 
 .. literalinclude:: ./example_code/sns/sns-ruby-example-send-message.rb

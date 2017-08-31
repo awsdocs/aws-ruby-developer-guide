@@ -14,8 +14,14 @@
 Running a |LAM| Function
 ########################
 
-The following example rus the |LAM| function :code:`MyGetitemsFunction` in the :code:`us-west-2` region.
-This function returns a list of items from a database. The input JSON looks like:
+.. meta::
+    :description:
+        Run an AWS Lambda function using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Lambda
+
+The following example runs the |LAM| function named :code:`MyGetitemsFunction` in the :code:`us-west-2`
+region.
+This function returns a list of items from a database. The input JSON looks like the following.
 
 .. code-block:: json
 

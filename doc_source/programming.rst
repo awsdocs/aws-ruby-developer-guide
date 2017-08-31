@@ -8,9 +8,14 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###############################
-Programming with the |sdk-ruby|
-###############################
+####################
+Using the |sdk-ruby|
+####################
+
+.. meta::
+    :description:
+        Get programming and feature information to develop applications with the AWS SDK for Ruby.
+    :keywords: AWS SDK for Ruby
 
 This section provides information about developing software with the |sdk-ruby|, including how to
 use some of the SDK's advanced features.
@@ -19,6 +24,9 @@ use some of the SDK's advanced features.
    :titlesonly:
    :maxdepth: 1
 
+   Using the SDK for Ruby REPL Tool <repl>
+   rails
+   Migrating from Version 1 to Version 2 of the SDK <migrating-to-v2>debugging
    debugging
    stubbing
    paging-responses

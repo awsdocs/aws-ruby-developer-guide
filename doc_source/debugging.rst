@@ -14,6 +14,11 @@
 Debugging Tip: Getting Wire Trace Information from a Client
 ###########################################################
 
+.. meta::
+    :description:
+        Debugging information for getting client wire trace information using the AWS SDK for Ruby
+    :keywords: AWS SDK for Ruby
+
 You can get wire trace information from an AWS client when you create it by setting the :code:`http_wire_trace` option. This information helps differentiate client changes, service issues, and user errors. The following example creates an |S3| client with wire tracing enabled.
 
 .. code-block:: ruby
@@ -26,9 +31,9 @@ a bucket with that name exists.
 .. code-block:: ruby
 
     require 'aws-sdk'
-          
+
     s3 = Aws::S3::Resource.new(client: Aws::S3::Client.new(http_wire_trace: true))
-    
+
     if s3.bucket(ARGV[0]).exists?
       puts "Bucket #{ARGV[0]} exists"
     else
@@ -51,8 +56,8 @@ of your access key. (Returns were added to the :code:`HEAD` line for readability
        X-Amz-Date: 20160121T191751Z\r\n
        Host: bucket_name.s3-us-west-1.amazonaws.com\r\n
        X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\r\n
-       Authorization: AWS4-HMAC-SHA256 Credential=ACCESS_KEY/20160121/us-west-1/s3/aws4_request, 
-                      SignedHeaders=host;x-amz-content-sha256;x-amz-date, 
+       Authorization: AWS4-HMAC-SHA256 Credential=ACCESS_KEY/20160121/us-west-1/s3/aws4_request,
+                      SignedHeaders=host;x-amz-content-sha256;x-amz-date,
                       Signature=2ca8301c5e829700940d3cc3bca2a3e8d79d177f2c046c34a1a285770db63820\r\n
        Content-Length: 0\r\n
        Accept: */*\r\n

@@ -14,6 +14,12 @@
 Configuring the |sdk-ruby|
 ##########################
 
+.. meta::
+    :description:
+        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
+        AWS infrastructure services with the |sdk-ruby|.
+    :keywords: AWS SDK for ruby, aws.rb, aws-sdk-core gem, ruby code examples
+
 Learn how to configure the |sdk-ruby|. To use the SDK, you must set either
 AWS credentials or create an AWS STS access token, and set the AWS Region you want
 to use.
@@ -134,7 +140,7 @@ secret access key :code:`your_secret_access_key`.
 Setting Credentials Using IAM
 -----------------------------
 
-For an |EC2long| instance, create an |IAM| role, and then give your |EC2| instance access to that
+For an |EC2long| instance, create an |IAMlong| role, and then give your |EC2| instance access to that
 role. For more information, see :ec2-ug:`IAM Roles for Amazon EC2 <iam-roles-for-amazon-ec2>` in the
 |EC2-ug| or :ec2-ug-win:`IAM Roles for Amazon EC2 <iam-roles-for-amazon-ec2>` in the |EC2-ug-win|.
 
@@ -145,7 +151,7 @@ Creating an |STS| Access Token
 
 Use the
 `Aws::AssumeRoleCredentials <http://docs.aws.amazon.com/sdkforruby/api/Aws/AssumeRoleCredentials.html>`_
-method to create an |STS| access token.
+method to create an |STSlong| (|STS|) access token.
 
 The following example uses an access token to create an |S3| client object, where
 :code:`linked::account::arn` is the Amazon Resource Name (ARN) of the role to assume and

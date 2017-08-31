@@ -10,9 +10,15 @@
 
 .. _aws-ruby-sdk-s3-example-add-notification:
 
-###########################################################
-Triggering a Notification When an Item is Added to a Bucket
-###########################################################
+#################################################################
+Triggering a Notification When an Item is Added to an |S3| Bucket
+#################################################################
+
+.. meta::
+    :description:
+        Trigger a notification when items in an Amazon S3 bucket change using this AWS
+        SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon S3
 
 You can trigger a notification when there is a change in the objects in a bucket. These changes
 include:
@@ -29,9 +35,9 @@ You can configure the service to send a notification to:
 
 * An |SQS| queue
 
-* A |LAM| function
+* A |LAMlong| function
 
-**To create a bucket notification**
+.. topic:: To create a bucket notification
 
 1. :ref:`Grant Amazon S3 permission to publish an item to a queue or topic, or invoke a Lambda function
    <aws-ruby-sdk-s3-example-grant-s3-permission>`.
@@ -40,7 +46,7 @@ You can configure the service to send a notification to:
    <aws-ruby-sdk-s3-example-set-notification>`.
 
 After you do these steps, your application can respond to the information. For example,
-the |LAM| topic 
+the |LAM| topic
 :LAM-dg:`Programming Model <programming-model-v2>` describes how to use the various
 programming languages that |LAM| supports.
 
@@ -49,7 +55,7 @@ programming languages that |LAM| supports.
 Enabling |S3| to Send a Notification
 ------------------------------------
 
-Learn how to configure an |SNSlong| topic or |SQSlong| queue, or create a |LAM| function so that
+Learn how to configure an |SNS| topic or |SQS| queue, or create a |LAM| function so that
 |S3| can send a notification to them.
 
 * :ref:`aws-ruby-sdk-sns-example-enable-resource`
@@ -63,7 +69,7 @@ Learn how to configure an |SNSlong| topic or |SQSlong| queue, or create a |LAM| 
 Creating an |S3| Bucket Notification
 ------------------------------------
 
-The following example enables the |S3| bucket :code-ruby:`my-bucket` to send a notification to the
+This example enables the |S3| bucket :code-ruby:`my-bucket` to send a notification to the
 following when an item is added to the bucket:
 
 * The |SNS| topic with the ARN :code-ruby:`my-topic-arn`

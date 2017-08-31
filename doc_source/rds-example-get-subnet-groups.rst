@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-rds-example-get-subnet-groups:
 
-###########################################
-Getting Information about All Subnet Groups
-###########################################
+#################################################
+Getting Information about All |RDS| Subnet Groups
+#################################################
+
+.. meta::
+    :description:
+        Get information about Amazon RDS subnet groups using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, RDS
 
 The following example lists the name and status of all of your |RDS| subnet groups in the :code:`us-west-2` region.
 

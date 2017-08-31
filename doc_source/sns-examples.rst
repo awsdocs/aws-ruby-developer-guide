@@ -8,14 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-##############
-|SNS| Examples
-##############
+###################################
+|SNS| Examples Using the |sdk-ruby|
+###################################
 
-You can use the following examples to access |SNSlong| (|SNS|) using the |sdk-ruby|. For
+.. meta::
+    :description:
+        AWS SDK for Ruby code examples for Amazon SNS.
+    :keywords:
+
+|SNSlong| (|SNS|) is a web service that enables applications, end users, and devices to instantly send
+and receive notifications from the cloud. You can use the following examples to access |SNS| using the |sdk-ruby|. For
 more information about |SNS|, see the `Amazon SNS documentation <http://aws.amazon.com/documentation/sns/>`_.
-
-**Examples**
 
 .. toctree::
    :maxdepth: 2

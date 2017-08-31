@@ -14,6 +14,11 @@
 Creating and Using an |S3| Bucket
 #################################
 
+.. meta::
+    :description:
+        Learn to create and use Amazon S3 buckets through this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon S3
+
 This example demonstrates how to use the |sdk-ruby| to:
 
 #. Display a list of buckets in |S3|.
@@ -26,8 +31,8 @@ For the complete code for this example, see :ref:`aws-ruby-sdk-s3-example-create
 
 .. _aws-ruby-sdk-s3-example-create-buckets-prereqs:
 
-Prerequisite Tasks
-==================
+Prerequisites
+=============
 
 To set up and run this example, you must first:
 

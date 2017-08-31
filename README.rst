@@ -1,1 +1,95 @@
-This is the source for the AWS SDK for Ruby Developer Guide. It provides information about how to install, set up, and use the AWS SDK for Ruby to create Ruby applications that use AWS services.
+.. Copyright 2010-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+   This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+   International License (the "License"). You may not use this file except in compliance with the
+   License. A copy of the License is located at http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+   This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+   either express or implied. See the License for the specific language governing permissions and
+   limitations under the License.
+
+########################
+aws-ruby-developer-guide
+########################
+
+This repository contains the source for the official AWS SDK for Ruby Developer Guide. It provides information
+about how to install, set up, and use the AWS SDK for Ruby to create Ruby applications that use AWS services.
+
+The guide content is written in reStructuredText_ and built using Sphinx_. It relies on content
+that is provided in the AWS documentation team's `shared content`_ and `SDK examples`_
+repositories.
+
+Reporting issues
+================
+
+You can use the Issues_. section of this repository to report problems in the documentation. *When
+submitting an issue, please indicate*:
+
+* The page (a URL or file name is best) that the issue occurs on.
+
+* What the issue is, using as much detail as you can provide. For many issues, this might be as
+  simple as "The page has a typo; the word 'complie' in the third paragraph shoud be 'compile'." If
+  the issue is more complex, please describe it with enough detail that it's clear to the AWS
+  documentation team what the problem is.
+
+Contributing fixes and updates
+==============================
+
+To contribute your own documentation fixes or updates, please use the Github-standard procedures for
+`forking the repository`_ and submitting a `pull request`_.
+
+Note that many common substitutions_ and extlinks_ found in these docs are sourced from the `shared
+content`_ repository. If you see a substitution used that isn't declared at the top of the source
+file or in the ``_includes.txt`` file, then it's probably defined in the shared content.
+
+Building the documentation
+==========================
+
+If you're planning to contribute to the docs, you should build your changes and review them before
+submitting your pull request.
+
+**To build the docs**
+
+1. Be sure that you have downloaded and installed Sphinx_.
+2. Run the ``build_docs.py`` script in the repository's root directory.
+
+   ``build_docs.py`` can take any of the `available Sphinx builders`_ as its argument. For example,
+   to build the docs into a single HTML page, you can use the ``singlehtml`` target, like so::
+
+     python build_docs.py singlehtml
+
+The build process will automatically download a snapshot of its dependencies, combine them in the
+``doc_build`` directory, and then generate output into the ``doc_output`` directory.
+
+Code examples in the documentation
+==================================
+
+You can find the code examples featured in this documentation in a separate repository:
+`aws-doc-sdk-examples <https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/ruby>`_. Full
+code and build files are included, so you can build and run any of the provided examples yourself.
+
+In addition to examples in Ruby, you'll also find examples for each of the other AWS SDKs. If you
+find issues with any of the examples, you can submit issues or fork the repository and submit a pull
+request!
+
+The code examples are provided under the *Apache 2.0* open source license. See the example
+repository's `README <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/README.rst>`_ for
+more details.
+
+.. =====================================================================
+.. Links used in the README. Please keep this list sorted alphabetically
+.. =====================================================================
+
+.. _`available sphinx builders`: http://www.sphinx-doc.org/en/stable/builders.html
+.. _`aws ruby developer guide`: http://docs.aws.amazon.com/sdk-for-ruby/v2/developer-guide/welcome.html
+.. _`aws sdk for ruby`: https://aws.amazon.com/sdk-for-ruby/
+.. _`forking the repository`: https://help.github.com/articles/fork-a-repo/
+.. _`pull request`: https://help.github.com/articles/using-pull-requests/
+.. _`shared content`: https://github.com/awsdocs/aws-doc-shared-content
+.. _`sdk examples`: https://github.com/awsdocs/aws-doc-sdk-examples
+.. _extlinks: http://www.sphinx-doc.org/en/stable/ext/extlinks.html
+.. _issues: https://github.com/awsdocs/aws-ruby-developer-guide/issues
+.. _restructuredtext: http://docutils.sourceforge.net/rst.html
+.. _sphinx: http://www.sphinx-doc.org/en/stable/
+.. _substitutions: http://www.sphinx-doc.org/en/stable/rest.html#substitutions
+

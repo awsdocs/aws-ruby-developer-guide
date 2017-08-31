@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-s3-example-set-bucket-policy:
 
-##################################
-Creating a Bucket Policy with Ruby
-##################################
+########################################
+Creating an |S3| Bucket Policy with Ruby
+########################################
+
+.. meta::
+    :description:
+        Create an Amazon S3 bucket policy using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples
 
 This example demonstrates how to use the |sdk-ruby| to:
 
@@ -27,8 +32,8 @@ For the complete code for this example, see :ref:`aws-ruby-sdk-s3-example-bucket
 
 .. _aws-ruby-sdk-s3-example-bucket-policy-prereqs:
 
-Prerequisite Tasks
-==================
+Prerequisites
+=============
 
 To set up and run this example, you must first:
 

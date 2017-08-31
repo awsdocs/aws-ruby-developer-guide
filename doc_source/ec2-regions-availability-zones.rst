@@ -10,18 +10,24 @@
 
 .. _aws-ruby-sdk-ec2-regions-availability-zones:
 
-########################################################
-Getting Information about Regions and Availability Zones
-########################################################
+##################################################################
+Getting Information about Regions and Availability Zones for |EC2|
+##################################################################
 
-These examples show you how to use the |sdk-ruby| together with |EC2| to:
+.. meta::
+    :description:
+        Get information about AWS Regions and Availability Zones for Amazon EC2 using this        code
+        example for the AWS SDK for Ruby.
+   :keywords: AWS SDK for Ruby code examples, Amazon EC2
+
+The following examples show you how to use the |sdk-ruby| together with |EC2| to:
 
 * Get information about available |EC2| regions and their endpoints.
 * Get information about available |EC2| Availability Zones.
 
 For more information about |EC2| regions and Availability Zones, see :EC2-ug:`Regions and Availability Zones <using-regions-availability-zones>` in the |EC2-ug|.
 
-For additional code that you can use to run these examples, see :ref:`aws-ruby-sdk-ec2-regions-availability-zones-code`.
+For additional code that you can use to run these examples, see the :ref:`aws-ruby-sdk-ec2-regions-availability-zones-code`.
 
 .. _aws-ruby-sdk-ec2-regions-availability-zones-regions-endpoints:
 
@@ -37,7 +43,7 @@ To get information about available regions, call the :ruby-sdk-api:`describe_reg
    :language: ruby
 
 In this code, :code:`ec2` is a variable representing an :ruby-sdk-api:`Aws::EC2::Client <Aws/EC2/Client.html>` object. For more information,
-see :ref:`aws-ruby-sdk-ec2-regions-availability-zones-code`.
+see the :ref:`aws-ruby-sdk-ec2-regions-availability-zones-code`.
 
 To get the region names and endpoints:
 
@@ -58,7 +64,7 @@ To get the region names and endpoints:
 Get Information about Availability Zones
 ========================================
 
-To get information about availability zones, call the :ruby-sdk-api:`describe_availability_zones 
+To get information about Availability Zones, call the :ruby-sdk-api:`describe_availability_zones
 <Aws/EC2/Client.html#describe_availability_zones-instance_method>` method.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-regions-availability-zones.rb
@@ -72,9 +78,9 @@ The :code:`DescribeAvailabilityZonesResult` object is returned by the :code:`des
 method and represented in this code by the :code:`describe_availability_zones_result` variable.
 
 In this code, :code:`ec2` is a variable representing an :ruby-sdk-api:`Aws::EC2::Client <Aws/EC2/Client.html>` object. For more information,
-see :ref:`aws-ruby-sdk-ec2-regions-availability-zones-code`.
+see the :ref:`aws-ruby-sdk-ec2-regions-availability-zones-code`.
 
-To get the name and state of each availability zone, use the :code:`AvailabilityZone` object's
+To get the name and state of each Availability Zone, use the :code:`AvailabilityZone` object's
 :ruby-sdk-api:`zone_name <Aws/EC2/Types/AvailabilityZone.html#zone_name-instance_method>` and
 :ruby-sdk-api:`state <Aws/EC2/Types/AvailabilityZone.html#state-instance_method>` attributes.
 
@@ -83,7 +89,7 @@ To get the name and state of each availability zone, use the :code:`Availability
    :dedent: 0
    :language: ruby
 
-To get any messages about availability zones:
+To get any messages about Availability Zones:
 
 #. Use the :code:`AvailabilityZone` object's :ruby-sdk-api:`messages <Aws/EC2/Types/AvailabilityZone.html#messages-instance_method>` attribute, which
    returns an :ruby-sdk-api:`Aws::EC2::Types::AvailabilityZoneMessage <Aws/EC2/Types/AvailabilityZoneMessage.html>` array.

@@ -14,6 +14,11 @@
 Sending Messages in |SQS|
 #########################
 
+.. meta::
+    :description:
+        Learn how to send messages to Amazon SQS queues using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, SQS
+
 The following example sends the message "Hello world" through the |SQS| queue with the URL
 :code:`URL` in the :code:`us-west-2` region.
 

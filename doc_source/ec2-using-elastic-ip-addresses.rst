@@ -15,13 +15,13 @@ Using Elastic IP Addresses in |EC2|
 ###################################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+   :description: Learn to use Elastic IP addresses in Amazon EC2 using this AWS SDK for Ruby code example.
+   :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
 An Elastic IP address is a static IP address, designed for dynamic cloud computing, that is
-associated with your AWS account. It's a public IP address, which is reachable from the Internet.
+associated with your AWS account. It's a public IP address, which is reachable from the internet.
 If your instance doesn't have a public IP address, you can use an Elastic IP address with your instance
-so that it can communicate with the Internet.
+so that it can communicate with the internet.
 
 For more information about Elastic IP addresses in |EC2|, see :EC2-ug:`Elastic IP Addresses <elastic-ip-addresses-eip>`
 in the |EC2-ug| or :EC2-ug-win:`Elastic IP Addresses <elastic-ip-addresses-eip>`
@@ -58,9 +58,9 @@ and note the instance ID.
 .. note:: Before you run the following code, you must replace the ``INSTANCE-ID`` string with
           your actual instance ID. This will be something like ``i-0a123456b7c8defg9``.
 
-**************
-Example Script
-**************
+*******
+Example
+*******
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-elastic-ips.rb
    :lines: 19-74

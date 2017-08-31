@@ -10,10 +10,17 @@
 
 .. _aws-ruby-sdk-ec2-create-vpc:
 
-Creating a VPC
-======================================
+#####################
+Creating an |EC2| VPC
+#####################
 
-The following example creates the virtual private cloud (VPC) :code:`MyGroovyVPC` with the CIDR block :code:`10.200.0.0/16`, and then displays the VPC's ID.
+.. meta::
+    :description:
+        Create Amazon EC2 virtual private clouds (VPCs) using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon EC2
+
+The following example creates the virtual private cloud (VPC) :code:`MyGroovyVPC` with the CIDR block
+:code:`10.200.0.0/16`. Then it displays the VPC's ID.
 
 The example creates a virtual network with 65,536 private IP addresses.
 

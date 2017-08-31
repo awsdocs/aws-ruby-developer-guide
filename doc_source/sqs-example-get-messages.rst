@@ -14,6 +14,10 @@
 Receiving Messages in |SQS|
 ###########################
 
+.. meta::
+   :description: Receive messages in Amazon SQS using this AWS SDK for Ruby code example.
+   :keywords: AWS SDK for Ruby code examples, SQS
+
 The following example displays the body of up to 10 messages in the |SQS| queue with the URL
 :code:`URL` in the :code:`us-west-2` region.
 

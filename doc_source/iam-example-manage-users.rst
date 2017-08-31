@@ -10,13 +10,14 @@
 
 .. _aws-ruby-sdk-iam-example-manage-users:
 
-##################
-Managing IAM Users
-##################
+####################
+Managing |IAM| Users
+####################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+    :description:
+        Learn to manage IAM users with this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, IAM
 
 An |IAM| user represents a person or service that interacts with AWS. For more information about |IAM| users, see :IAM-ug:`IAM Users <id_users>`.
 

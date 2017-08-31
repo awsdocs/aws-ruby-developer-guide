@@ -10,11 +10,18 @@
 
 .. _aws-ruby-sdk-ec2-create-security-group:
 
-Creating a Security Group
-=========================
+################################
+Creating an |EC2| Security Group
+################################
 
-The following example creates a security group :code:`MyGroovySecurityGroup` in the :code:`us-west-2` region on a VPC with the ID :code:`VPC_ID`.
-In the example, the security group is allowed access over port 22 (SSH) from all addresses (CIDR block :code:`0.0.0.0/0`) and
+.. meta::
+    :description:
+        Create a security group for Amazon EC2 using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon EC2
+
+The following example creates a security group named :code:`MyGroovySecurityGroup` in the :code:`us-west-2`
+region on a VPC with the ID :code:`VPC_ID`.
+In the example, the security group is allowed access over port 22 (SSH) from all addresses (CIDR block :code:`0.0.0.0/0`), and
 is given the description "Security group for MyGroovyInstance". Then, the security group's ID is displayed.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-security-group.rb

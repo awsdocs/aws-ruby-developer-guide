@@ -10,13 +10,18 @@
 
 .. _aws-ruby-sdk-s3-example-bucket-cors:
 
-#############################################################
-Configuring a Bucket for Cross-Origin Resource Sharing (CORS)
-#############################################################
+###################################
+Configuring an |S3| Bucket for CORS
+###################################
+
+.. meta::
+    :description:
+        Configure an Amazon S3 bucket for CORS using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon S3
 
 This example demonstrates how to use the |sdk-ruby| to:
 
-#. Configure CORS settings for an |S3| bucket.
+#. Configure Cross-Origin Resource Sharing (CORS) settings for an |S3| bucket.
 #. Get the CORS settings for a bucket.
 
 For more information about CORS support in |S3|, see :S3-dg:`Cross-Origin Resource Sharing (CORS) <cors>` in the |S3-dg|.
@@ -25,8 +30,8 @@ For the complete code for this example, see :ref:`aws-ruby-sdk-s3-example-bucket
 
 .. _aws-ruby-sdk-s3-example-bucket-cors-prereqs:
 
-Prerequisite Tasks
-==================
+Prerequisites
+=============
 
 To set up and run this example, you must first:
 

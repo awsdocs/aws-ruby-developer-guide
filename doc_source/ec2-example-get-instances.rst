@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-ec2-example-get-instances:
 
-#######################################
-Getting Information about All Instances
-#######################################
+#############################################
+Getting Information about All |EC2| Instances
+#############################################
+
+.. meta::
+    :description:
+        Get EC2 instance information using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code example, Amazon EC2
 
 The following example lists the IDs and states (pending, running, shutting down, terminated, stopping, or stopped)
 for all of your |EC2| instances in the :code:`us-west-2` region.

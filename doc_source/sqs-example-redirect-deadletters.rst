@@ -14,6 +14,11 @@
 Redirecting Dead Letters in |SQS|
 #################################
 
+.. meta::
+   :description:
+        Redirect dead letters from one SQS queue to another using this AWS SDK for Ruby code example.
+   :keywords: AWS SDK for Ruby code examples, SQS
+
 The following example redirects any dead letters from the queue with the URL :code:`URL` to the
 queue with the ARN :code:`ARN`.
 
