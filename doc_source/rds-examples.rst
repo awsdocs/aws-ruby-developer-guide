@@ -10,17 +10,21 @@
 
 .. _aws-ruby-sdk-rds-examples:
 
-##################
-|RDSlong| Examples
-##################
+###################################
+|RDS| Examples Using the |sdk-ruby|
+###################################
 
-You can use the following examples to access |RDSlong| (|RDS|) using the |sdk-ruby|. For more
-information about |RDS|, see the `Amazon Relational Datbase Service User Guide <http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/>`_.
+.. meta::
+    :description:
+        AWS SDK for Ruby code examples for Amazon Relational Database Service (RDS).
+    :keywords:
+
+|RDSlong| (|RDS|) is a web service that makes it easier to set up, operate, and scale a relational
+database in the cloud. You can use the following examples to access |RDS| using the |sdk-ruby|. For more
+information about |RDS|, see the `Amazon Relational Datbase Service documentation <https://aws.amazon.com/documentation/rds/>`_.
 
 .. note:: Some of the following examples use methods that were introduced in the :code:`2.2.18` version of the
     :code:`Aws::RDS::Resource` class. To run those examples, you must use that version or a later version of the :code:`aws-sdk` gem.
-
-**Examples**
 
 .. toctree::
    :maxdepth: 2

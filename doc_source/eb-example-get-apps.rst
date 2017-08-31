@@ -10,9 +10,15 @@
 
 .. _aws-ruby-sdk-eb-example-get-apps:
 
-##########################################
-Getting Information about All Applications
-##########################################
+#######################################################
+Getting Information about All Applications in |AEBlong|
+#######################################################
+
+.. meta::
+    :description:
+        Get information about all AWS Elastic Beanstalk applications using this AWS SDK for Ruby code
+        example.
+    :keywords: AWS SDK for Ruby code examples, Elastic Beanstalk
 
 The following example lists the names, descriptions, and URLs of all of your |AEB| applications in the :code-ruby:`us-west-2` region.
 

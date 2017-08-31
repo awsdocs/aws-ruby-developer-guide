@@ -10,11 +10,16 @@
 
 .. _aws-ruby-sdk-ec2-example-terminate-instance:
 
-#######################
-Terminating an Instance
-#######################
+#############################
+Terminating an |EC2| Instance
+#############################
 
-The following example terminates the instance :code:`i-123abc` in the :code:`us-west-2` region.
+.. meta::
+    :description:
+        Learn how to terminate Amazon EC2 instances using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code example, Amazon EC2
+
+The following example terminates the |EC2| instance :code:`i-123abc` in the :code:`us-west-2` region.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-terminate-instance-i-123abc.rb
    :lines: 13-26

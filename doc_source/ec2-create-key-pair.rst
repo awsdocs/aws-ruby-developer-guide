@@ -10,11 +10,16 @@
 
 .. _aws-ruby-sdk-ec2-create-key-pair:
 
-######################
-Working with Key Pairs
-######################
+###############################
+Working with Key Pairs in |EC2|
+###############################
 
-These examples show you how to use the |sdk-ruby| with |EC2| to:
+.. meta::
+    :description:
+        Learn to work with key pairs in Amazon EC2 using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon EC2
+
+The following examples show you how to use the |sdk-ruby| with |EC2| to:
 
 * Create a key pair.
 * Get information about key pairs.
@@ -63,7 +68,8 @@ To get information about a single key pair, use attributes such as:
    :dedent: 0
    :language: ruby
 
-In this code, :code:`key_pair` is a variable representing an :ruby-sdk-api:`Aws::EC2::KeyPair <Aws/EC2/KeyPair.html>` object, which is
+In this code, :code:`key_pair` is a variable representing an :ruby-sdk-api:`Aws::EC2::KeyPair <Aws/EC2/KeyPair.html>`
+object. This is
 returned by calling the :ruby-sdk-api:`create_key_pair <Aws/EC2/Client.html#create_key_pair-instance_method>` method in the previous example.
 
 To get information about multiple key pairs, call the :ruby-sdk-api:`describe_key_pairs <Aws/EC2/Client.html#describe_key_pairs-instance_method>` method.

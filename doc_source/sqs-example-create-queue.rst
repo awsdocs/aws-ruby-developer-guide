@@ -14,7 +14,12 @@
 Creating a Queue in |SQS|
 #########################
 
-The following example creates the |SQS| queue :code:`MyGroovyQueue` in the :code:`us-west-2` region
+.. meta::
+    :description:
+        Create an Amazon SQS queue using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, SQS
+
+The following example creates the |SQS| queue named :code:`MyGroovyQueue` in the :code:`us-west-2` region
 and displays its URL.
 
 .. literalinclude:: ./example_code/sqs/sqs-ruby-example-create-queue.rb

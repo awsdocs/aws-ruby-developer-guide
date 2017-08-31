@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-s3-example-get-buckets:
 
-#####################################
-Getting Information about All Buckets
-#####################################
+##########################################
+Getting Information about All |S3| Buckets
+##########################################
+
+.. meta::
+    :description:
+        Get Amazon S3 bucket information using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon S3
 
 The following example lists the names of up to 50 of your |S3| buckets.  Copy the code and save it
 as :file:`buckets.rb`. Notice that although the :code:`Resource` object is created in the

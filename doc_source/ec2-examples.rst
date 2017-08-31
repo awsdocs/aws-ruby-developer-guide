@@ -10,13 +10,18 @@
 
 .. _aws-ruby-sdk-ec2-examples:
 
-##############
-|EC2| Examples
-##############
+###################################
+|EC2| Examples Using the |sdk-ruby|
+###################################
 
-You can use the following examples to access |EC2long| (|EC2|) using the |sdk-ruby|. For more information about |EC2|, see the `Amazon EC2 Documentation <http://aws.amazon.com/documentation/ec2/>`_.
+.. meta::
+    :description:
+        AWS SDK for Ruby code examples for Amazon EC2.
+    :keywords:
 
-**Examples**
+|EC2long| (|EC2|) is a web service that provides resizeable computing capacity |mdash| literally servers
+in Amazon's data centers |mdash| that you use to build and host your software systems. You can use the
+following examples to access |EC2| using the |sdk-ruby|. For more information about |EC2|, see the `Amazon EC2 Documentation <http://aws.amazon.com/documentation/ec2/>`_.
 
 .. toctree::
    :maxdepth: 1

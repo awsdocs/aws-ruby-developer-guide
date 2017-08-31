@@ -14,6 +14,12 @@
 QuickStart Guide to Using the |sdk-ruby|
 ########################################
 
+.. meta::
+    :description:
+        Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
+        AWS infrastructure services with the |sdk-ruby|.
+    :keywords: AWS SDK for ruby, aws.rb, aws-sdk-core gem, ruby code examples
+
 This section shows you how to use the |sdk-ruby| to create a simple Ruby application that lists your
 |S3| buckets.
 
@@ -52,7 +58,7 @@ Enter the following command to execute :code:`buckets.rb`.
 
 .. _aws-ruby-sdk-quick-start-windows:
 
-Note for Windows users
+Note for Windows Users
 ======================
 
 When you use SSL certificates on Windows and run your Ruby code, you will see an error similar to

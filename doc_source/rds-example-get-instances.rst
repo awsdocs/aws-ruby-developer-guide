@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-rds-example-get-instances:
 
-#######################################
-Getting Information about All Instances
-#######################################
+#############################################
+Getting Information about All |RDS| Instances
+#############################################
+
+.. meta::
+    :description:
+        Get information about Amazon RDS instances using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, RDS
 
 The following example lists the name (ID) and status of all of your |RDS| instances in the :code:`us-west-2` region.
 

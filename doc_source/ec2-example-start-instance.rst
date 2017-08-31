@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-ec2-example-start-instance:
 
-####################
-Starting an Instance
-####################
+##########################
+Starting an |EC2| Instance
+##########################
+
+.. meta::
+    :description:
+        Start an Amazon EC2 instance using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
 The following example starts the instance :code:`i-123abc` in the :code:`us-west-2` region.
 

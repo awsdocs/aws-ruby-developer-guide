@@ -10,12 +10,17 @@
 
 .. _aws-ruby-sdk-cb-example-build-project:
 
-##################
-Building a Project
-##################
+#############################
+Building an |ACBlong| Project
+#############################
+
+.. meta::
+    :description:
+        Build an AWS CodeBuild project using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, CodeBuild
 
 The following example builds the |ACBlong| project specified on the command line.
-If no command-line argument is supplied, it emits an error and quits.
+If no command line argument is supplied, it emits an error and quits.
 
 .. literalinclude:: ./example_code/codebuild/aws-ruby-sdk-codebuild-example-build-project.rb
    :lines: 13-31
@@ -23,7 +28,6 @@ If no command-line argument is supplied, it emits an error and quits.
    :language: ruby
 
 
-Choose :code:`Copy` to save the code locally.
-See the `complete example
+Choose :code:`Copy` to save the code locally. See the `complete example
 <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/codebuild/aws-ruby-sdk-codebuild-example-build-project.rb>`_
 on GitHub.

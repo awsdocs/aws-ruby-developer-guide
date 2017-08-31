@@ -15,10 +15,14 @@ Managing IAM Access Keys
 ########################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+    :description:
+        Learn to manage IAM access keys using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, IAM
 
-Users need their own access keys to make programmatic calls to AWS from the SDK for Ruby. To fill this need, you can create, modify, view, or rotate access keys (access key IDs and secret access keys) for IAM users. By default, when you create an access key, its status is Active, which means the user can use the access key for API calls. For more information about access keys, see :IAM-ug:`Managing Access Keys for IAM Users <id_credentials_access-keys>`.
+Users need their own access keys to make programmatic calls to AWS from the |sdk-ruby|. To fill this need,
+you can create, modify, view, or rotate access keys (access key IDs and secret access keys) for |IAM|
+users. By default, when you create an access key, its status is Active. This means the user can use the
+access key for API calls. For more information about access keys, see :IAM-ug:`Managing Access Keys for IAM Users <id_credentials_access-keys>`.
 
 In this example, you use the |sdk-ruby| with |IAM| to:
 

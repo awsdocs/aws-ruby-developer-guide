@@ -15,8 +15,8 @@ Enabling Long Polling in |SQS|
 ##############################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+   :description: Enable long polling in Amazon SQS using this AWS SDK for Ruby code example.
+   :keywords: AWS SDK for Ruby code examples, SQS
 
 Long polling helps lower your cost of using |SQS| by reducing the number of empty responses and eliminating
 false empty responses. For more information about long polling, see :SQS-dg:`Amazon SQS Long Polling <sqs-long-polling>`.

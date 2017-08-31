@@ -14,6 +14,11 @@
 Paging Response Data
 ####################
 
+.. meta::
+    :description:
+        Learn how to use paged responses to limit data returned for a response using the AWS SDK for Ruby.
+    :keywords: AWS SDK for Ruby
+
 Some AWS calls provide paged responses to limit the amount of data returned with each response. A
 page of data represents up to 1,000 items.
 
@@ -28,7 +33,7 @@ object, as shown in the following example.
 .. code-block:: ruby
 
     s3 = Aws::S3::Client.new
-          
+
     s3.list_objects(bucket:'aws-sdk').each do |response|
       puts response.contents.map(&:key)
     end
@@ -51,10 +56,10 @@ the next page of results, as shown in the following example.
 .. code-block:: ruby
 
     s3 = Aws::S3::Client.new
-          
+
     # Get the first page of data
     response = s3.list_objects(bucket:'aws-sdk')
-    
+
     # Get additional pages
     while response.next_page? do
       response = response.next_page

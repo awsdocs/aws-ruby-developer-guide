@@ -10,11 +10,16 @@
 
 .. _aws-ruby-sdk-sns-example-show-subscriptions:
 
-######################################################
-Getting Information about All Subscriptions in a Topic
-######################################################
+#############################################################
+Getting Information about All Subscriptions in an |SNS| Topic
+#############################################################
 
-The following example lists the email addresses of the SNS subscriptions for the topic with the ARN
+.. meta::
+    :description:
+        Get information about all Amazon SNS topic subscriptions using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, SNS
+
+The following example lists the email addresses of the |SNS| subscriptions for the topic with the ARN
 :code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic` in the :code:`us-west-2` region.
 
 .. literalinclude:: ./example_code/sns/sns-ruby-example-show-subscriptions.rb

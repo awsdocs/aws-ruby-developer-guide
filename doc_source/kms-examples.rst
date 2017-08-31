@@ -8,16 +8,19 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-##############
-|KMS| Examples
-##############
+#######################################
+|KMSlong| Examples Using the |sdk-ruby|
+#######################################
 
-You can use the following examples to access |KMSlong| (|KMS|) using the |sdk-ruby|. For
+.. meta::
+    :description:
+        AWS SDK for Ruby code examples for AWS Key Management Service (AWS KMS).
+    :keywords: AWS SDK for Ruby code examples, KMS
+
+|KMSlong| (|KMS|) is an encryption and key management service scaled for the cloud. You can use the following examples to access |KMS| using the |sdk-ruby|. For
 more information about |KMS|, see the `Amazon KMS documentation <http://aws.amazon.com/documentation/kms/>`_.
 For reference information about the |KMS| client, see
 :sdk-ruby-api:`Aws::KMS::Client </Aws/KMS/Client>`.
-
-**Examples**
 
 .. toctree::
    :maxdepth: 1

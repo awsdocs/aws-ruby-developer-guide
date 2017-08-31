@@ -10,13 +10,19 @@
 
 .. _aws-ruby-sdk-s3-example-create-policy-template:
 
-#######################################################
-Creating a Bucket LifeCycle Rule Configuration Template
-#######################################################
+###################################################################
+Creating a LifeCycle Rule Configuration Template for an |S3| Bucket
+###################################################################
+
+.. meta::
+    :description:
+        Create an Amazon S3 bucket lifecycle rule configuration template using this AWS SDK for Ruby code
+        example.
+    :keywords: AWS SDK for Ruby code examples, Amazon S3
 
 If you have (or plan to create) a non-trivial number of objects and want to specify when to move
 them to long-term storage or delete them, you can save a lot of time by creating a template for the
-lifecycle rules and applying that template to all of your buckets.
+lifecycle rules and applying that template to all of your |S3| buckets.
 
 The process includes these steps:
 
@@ -45,15 +51,15 @@ Run the following code to produce a JSON representation of that rule. Save the o
       rule.to_hash.to_json
     end
 
-The output should look like the following:
+The output should look like the following.
 
 .. code-block:: json
 
     [{"expiration":{"date":null,"days":425},"id":"default","prefix":"","status":"Enabled","transitions":[{"date":null,"days":30,"storage_class":"STANDARD_IA"},{"date":null,"days":60,"storage_class":"GLACIER"}],"noncurrent_version_transitions":[],"noncurrent_version_expiration":null}]
 
 Now that you have the JSON for a lifecycle rule, you can apply it to any other bucket using the
-following example, which takes the rule from :file:`default.json` and applies it to the bucket
-:code-ruby:`other_bucket`:
+following example. The example takes the rule from :file:`default.json` and applies it to the bucket
+:code-ruby:`other_bucket`.
 
 .. code-block:: ruby
 

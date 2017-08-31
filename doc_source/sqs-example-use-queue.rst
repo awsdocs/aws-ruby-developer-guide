@@ -15,8 +15,9 @@ Working with Queues in |SQS|
 ############################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+    :description:
+        Learn how to work with Amazon SQS queues using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, SQS
 
 |SQS| provides highly scalable hosted queues for storing messages as they travel between applications
 or microservices. To learn more about queues, see :SQS-dg:`How Amazon SQS Queues Work <sqs-how-it-works>`.

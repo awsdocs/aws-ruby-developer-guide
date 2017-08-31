@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-rds-example-create-cluster-snapshot:
 
-################################
-Creating a Snapshot of a Cluster
-################################
+#######################################
+Creating a Snapshot of an |RDS| Cluster
+#######################################
+
+.. meta::
+    :description:
+        Create snapshots of Amazon RDS clusters using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, RDS
 
 The following example creates a snapshot for the |RDS| cluster represented by *cluster_name* in the :code:`us-west-2` region.
 

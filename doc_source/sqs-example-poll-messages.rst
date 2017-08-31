@@ -14,8 +14,13 @@
 Receiving Messages Using the QueuePoller Class in |SQS|
 #######################################################
 
+.. meta::
+   :description:
+        Receive messages using the Amazon SQS QueuePoller class with this AWS SDK for Ruby code example.
+   :keywords: AWS SDK for Ruby code examples, SQS
+
 The following example uses the :code:`QueuePoller` utility class to display the body of all messages
-in the SQS queue with the URL :code:`URL` in the :code:`us-west-2` region, and deletes the message.
+in the |SQS| queue with the URL :code:`URL` in the :code:`us-west-2` region, and deletes the message.
 After approximately 15 seconds of inactivity, the script times out.
 
 .. literalinclude:: ./example_code/sqs/sqs-ruby-example-poll-messages.rb

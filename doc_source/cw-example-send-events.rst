@@ -15,11 +15,12 @@ Sending Events to |CWElong|
 ###########################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+   :description: Send events to Amazon CloudWatch Events using this AWS SDK for Ruby code example.
+   :keywords: AWS SDK for Ruby code examples, CloudWatch Events
 
 |CWE| delivers a near real-time stream of system events that describe changes in AWS resources to |LAMlong|
-functions or other targets. To learn more, see :CWE-dg:`What is Amazon CloudWatch Events? <WhatIsCloudWatchEvents>`.
+functions or other targets. See :CWE-dg:`What is Amazon CloudWatch Events? <WhatIsCloudWatchEvents>` to
+learn more.
 In this example, you use the |sdk-ruby| with |CWE| to:
 
 #. Create a rule in |CWE| by using :aws-ruby-cwe-client-method:`put_rule`.
@@ -47,7 +48,8 @@ You also need to:
   #. For a role, select **Choose an Existing Role**. For the existing role, select **lambda_basic_execution**.
   #. After you create the function, copy the ARN and paste it into your code.
 
-* Replace the placeholder value assigned to `cwe_service_role_arn` with an appropriate AWS |IAM| service role ARN.
+* Replace the placeholder value assigned to `cwe_service_role_arn` with an appropriate |IAMlong| service
+role ARN.
 
   #. In the |IAM| console, create a role and attach a policy that grants full access to |CWE|.
   #. Ensure that the role has a trust relationship to `events.amazonaws.com`. For an example policy and role, see the comments in the `example code on GitHub <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cw/cw-ruby-example-send-events-ec2.rb>`_.

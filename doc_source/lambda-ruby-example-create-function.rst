@@ -14,10 +14,16 @@
 Creating a |LAM| Function
 #########################
 
-The following example creates the |LAM| function :code:`my-notification-function` in the :code:`us-west-2` region using these values:
+.. meta::
+    :description:
+        Create an AWS Lambda function using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Lambda
+
+The following example creates the |LAM| function named :code:`my-notification-function` in the :code:`us-west-2`
+region using these values:
 
 * Role ARN: :code:`my-resource-arn`. In most cases, you need to attach only the :code:`AWSLambdaExecute` managed policy to the policy for this role.
-  
+
 * Function entry point: :code:`my-package.my-class`
 
 * Runtime: :code:`java8`

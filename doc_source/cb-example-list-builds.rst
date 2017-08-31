@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-cb-example-list-builds:
 
-###########################
-Listing Your Project Builds
-###########################
+################################
+Listing |ACBlong| Project Builds
+################################
+
+.. meta::
+    :description:
+        List AWS CodeBuild projects using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, CodeBuild
 
 The following example displays information about your |ACBlong| project builds.
 This information includes the name of the project, when the build started, and how long each

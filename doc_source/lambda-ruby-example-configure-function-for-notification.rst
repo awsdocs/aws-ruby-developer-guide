@@ -14,7 +14,14 @@
 Configuring a |LAM| Function to Receive Notifications
 #####################################################
 
-The following example configures the |LAM| function :code:`my-notification-function` in the :code:`us-west-2` region to accept notifications from the resource with the ARN :code:`my-resource-arn`.
+.. meta::
+    :description:
+        Learn how to configure an AWS Lambda function to get notifications using this AWS SDK for Ruby
+        code example.
+    :keywords: AWS SDK for Ruby code examples, Lambda
+
+The following example configures the |LAM| function named :code:`my-notification-function` in the :code:`us-west-2`
+region to accept notifications from the resource with the ARN :code:`my-resource-arn`.
 
 .. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-configure-function-for-notification.rb
    :lines: 13-24

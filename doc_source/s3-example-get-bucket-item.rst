@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-s3-example-get-bucket-item:
 
-###############################################
-Downloading an Object from a Bucket into a File
-###############################################
+#####################################################
+Downloading an Object from an |S3| Bucket into a File
+#####################################################
+
+.. meta::
+    :description:
+        Download an object from an Amazon S3 bucket to a file using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon S3
 
 The following example gets the contents of the item :code-ruby:`my-item` from the bucket
 :code-ruby:`my-bucket` in the :code:`us-west-2` region, and saves it to the :file:`my-item.txt` file

@@ -15,10 +15,14 @@ Managing IAM Account Aliases
 ############################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+    :description:
+        Learn to manage IAM account aliases using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, IAM
 
-If you want the URL for your sign-in page to contain your company name or other friendly identifier instead of your AWS account ID, you can create an alias for your AWS account ID. If you create an AWS account alias, your sign-in page URL changes to incorporate the alias. For more information about IAM account aliases, see :IAM-ug:`Your AWS Account ID and Its Alias <console_account-alias>`.
+If you want the URL for your sign-in page to contain your company name or other friendly identifier instead
+of your AWS account ID, you can create an |IAM| account alias for your AWS account ID.
+If you create an |IAM| account alias, your sign-in page URL changes to incorporate the alias. For more
+information about |IAM| account aliases, see :IAM-ug:`Your AWS Account ID and Its Alias <console_account-alias>`.
 
 In this example, you use the |sdk-ruby| with |IAM| to:
 

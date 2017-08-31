@@ -14,6 +14,10 @@
 Enabling a Resource to Publish to a Queue in |SQS|
 ##################################################
 
+.. meta::
+   :description: Enable resources to publish to Amazon SQS queues using this AWS SDK for Ruby.
+   :keywords: AWS SDK for Ruby code examples, SQS
+
 The following example enables the resource with the ARN :code:`my-resource-arn` to publish to the
 queue with the ARN :code:`my-queue-arn` and URL :code:`my-queue-url` in the :code:`us-west-2`
 region.

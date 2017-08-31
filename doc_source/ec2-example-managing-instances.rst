@@ -10,13 +10,13 @@
 
 .. _aws-ruby-sdk-ec2-example-managing-instances:
 
-#################################
-Managing |EC2| Instances in |EC2|
-#################################
+########################
+Managing |EC2| Instances
+########################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+   :description: Learn how to manage Amazon EC2 instances using this AWS SDK for Ruby code example.
+   :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
 
 In this example, you use the |sdk-ruby| with |EC2| to:

@@ -10,14 +10,19 @@
 
 .. _aws-ruby-sdk-eb-examples:
 
-##################
-|AEBlong| Examples
-##################
+#######################################
+|AEBlong| Examples Using the |sdk-ruby|
+#######################################
 
-You can use the following examples to access |AEBlong| (|AEB|) using the |sdk-ruby|. For more
-information about |AEB|, see the `Elastic Beanstalk Developer Guide <http://docs.aws.amazon.com/elasticbeanstalk/latest/dg>`_.
+.. meta::
+    :description:
+        AWS SDK for Ruby code examples for AWS Elastic Beanstalk.
+    :keywords:
 
-**Examples**
+|AEBlong| enables you to quickly deploy and manage applications in the AWS Cloud without worrying about
+the infrastructure that runs those applications.
+You can use the following examples to access |AEB| using the |sdk-ruby|. For more
+information about |AEB|, see the `AWS Elastic Beanstalk documentation <https://aws.amazon.com/documentation/elastic-beanstalk/>`_.
 
 .. toctree::
    :maxdepth: 2

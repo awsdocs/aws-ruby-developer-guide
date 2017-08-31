@@ -10,17 +10,18 @@
 
 .. _aws-ruby-sdk-cw-example-alarm-actions:
 
-####################################
-Enabling and Disabling Alarm Actions
-####################################
+#############################################
+Enabling and Disabling |CWlong| Alarm Actions
+#############################################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+   :description: Enable and disable Amazon CloudWatch alarm actions using this AWS SDK for Ruby code example.
+   :keywords: AWS SDK for Ruby code examples, CloudWatch alarms
 
 An |CWlong| alarm watches a single metric over a time period you specify. The |CW| alarm performs one
 or more actions based on the value of the metric, relative to a given threshold over a number of time
-periods. For more information, see :CW-ug:`Creating Amazon CloudWatch Alarms <AlarmThatSendsEmail>`.
+periods. For more information, see :CW-ug:`Creating Amazon CloudWatch Alarms <AlarmThatSendsEmail>` in
+the |CW-ug|.
 
 In this example, you use the |sdk-ruby| with |CW| to:
 
@@ -40,7 +41,7 @@ in:
 * :ref:`aws-ruby-sdk-setup-install`
 * :ref:`aws-ruby-sdk-setup-config`
 
-You'll also need to replace `arn:aws:sns:REGION-ID:ACCOUNT-ID:TOPIC-NAME` with the ARN for a valid |SNS| topic.
+You also need to replace `arn:aws:sns:REGION-ID:ACCOUNT-ID:TOPIC-NAME` with the ARN for a valid |SNS| topic.
 
 *******
 Example

@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-dynamo-example-add-item-to-table:
 
-#########################
-Adding an Item to a Table
-#########################
+####################################
+Adding an Item to an |DDBlong| Table
+####################################
+
+.. meta::
+    :description:
+        Add items to Amazony DynamoDB tables using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, DynamoDB
 
 The following example adds an item with the :code:`ID` value of **123456**, :code-ruby:`FirstName`
 value of **John**, and :code-ruby:`LastName` value of **Doe** to the :code-ruby:`Users` table in the

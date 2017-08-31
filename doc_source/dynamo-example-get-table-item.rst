@@ -10,9 +10,15 @@
 
 .. _aws-ruby-sdk-dynamo-example-get-table-item:
 
-####################################################
-Getting Information about a Specific Item in a Table
-####################################################
+###############################################################
+Getting Information about a Specific Item in an |DDBlong| Table
+###############################################################
+
+.. meta::
+    :description:
+        Get information about a specific item in an Amazon DynamoDB table using this AWS SDK for Ruby
+        code example.
+    :keywords: AWS SDK for Ruby code examples, DynamoDB
 
 The following example displays the first and last name of an item with an :code-ruby:`ID` of
 **123456** in the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.

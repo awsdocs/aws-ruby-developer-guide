@@ -10,14 +10,19 @@
 
 .. _aws-ruby-sdk-rds-example-get-security_groups:
 
-#############################################
-Getting Information about All Security Groups
-#############################################
+###################################################
+Getting Information about All |RDS| Security Groups
+###################################################
+
+.. meta::
+    :description:
+        Get information about Amazon RDS security groups using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, RDS
 
 The following example lists the names of all of your |RDS| security groups in the :code:`us-west-2` region.
 
-.. note:: |RDS| security groups are only applicable when you are using the |EC2| classic platform.
-   If you are using |EC2| VPC, use VPC security groups. Both are shown in the example.
+.. note:: |RDS| security groups are only applicable when you are using the |EC2|-Classic platform.
+   If you are using |EC2|-VPC, use VPC security groups. Both are shown in the example.
 
 .. literalinclude:: ./example_code/rds/rds-ruby-example-list-security-groups.rb
    :lines: 13-35
