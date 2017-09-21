@@ -16,6 +16,11 @@
 Using a |S3| Bucket to Host a Website
 #####################################
 
+.. meta::
+    :description:
+        Use an Amazon S3 bucket to host a website using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon S3
+
 This example demonstrates how to use the |sdk-ruby| to:
 
 #. Create an |S3| bucket.
@@ -32,8 +37,8 @@ For the complete code for this example, see :ref:`aws-ruby-sdk-s3-example-bucket
 
 .. _aws-ruby-sdk-s3-example-bucket-website-prereqs:
 
-Prerequisite Tasks
-==================
+Prerequisites
+=============
 
 To set up and run this example, you must first:
 
@@ -58,7 +63,7 @@ in the :code:`us-east-2` region.
 An additional variable is also declared for the bucket used in this example. To help ensure the bucket name is unique across all AWS accounts, an
 additional :code:`require` statement is added, and the :code:`SecureRandom` module's
 :code:`uuid` method is called to generate a unique identifier. This identifier is inserted into the
-name of the bucket to be created later in this sample.
+name of the bucket to be created later in this example.
 
 .. literalinclude:: ./example_code/s3/s3_ruby_bucket_website.rb
    :lines: 13-20

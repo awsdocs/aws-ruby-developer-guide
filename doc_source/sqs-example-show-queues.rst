@@ -14,6 +14,11 @@
 Getting Information about All Queues in |SQS|
 #############################################
 
+.. meta::
+    :description:
+        Get information about all Amazon SQS queues using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, SQS
+
 The following example lists the URLs, ARNs, messages available, and messages in flight of your |SQS|
 queues in the :code:`us-west-2` region.
 

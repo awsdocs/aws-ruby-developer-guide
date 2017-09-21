@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-cb-example-list-projects:
 
-######################################
-Getting Information about All Projects
-######################################
+################################################
+Getting Information about All |ACBlong| Projects
+################################################
+
+.. meta::
+    :description:
+        Get information about AWS CodeBuild projects using this AWS for Ruby SDK code example.
+    :keywords: AWS SDK for Ruby code examples, CodeBuild
 
 The following example lists the names of up to 100 of your |ACBlong| projects.
 
@@ -21,7 +26,6 @@ The following example lists the names of up to 100 of your |ACBlong| projects.
    :dedent: 0
    :language: ruby
 
-Choose :code:`Copy` to save the code locally.
-See the `complete example
+Choose :code:`Copy` to save the code locally. See the `complete example
 <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/codebuild/aws-ruby-sdk-codebuild-example-list-projects.rb>`_
 on GitHub.

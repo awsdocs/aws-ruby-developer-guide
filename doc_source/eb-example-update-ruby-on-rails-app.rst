@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-eb-example-update-ruby-on-rails-app:
 
-####################################
-Updating a Ruby on Rails Application
-####################################
+##################################################
+Updating a Ruby on Rails Application for |AEBlong|
+##################################################
+
+.. meta::
+    :description:
+        Update Ruby on Rails applications for AWS Elastic BeanStalk using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Elastic Beanstalk
 
 The following example updates the Ruby on Rails application :code:`MyRailsApp` in the :code-ruby:`us-west-2` region.
 

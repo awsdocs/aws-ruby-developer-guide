@@ -8,15 +8,19 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-##############
-|SQS| Examples
-##############
+###################################
+|SQS| Examples Using the |sdk-ruby|
+###################################
 
-You can use the following examples to access |SQSlong| (|SQS|) using the |sdk-ruby|. For more
+.. meta::
+    :description:
+        AWS SDK for Ruby code examples for Amazon SQS.
+    :keywords:
+
+|SQSlong| (|SQS|) is a fully managed message queuing service that makes it easy to decouple and scale microservices,
+distributed systems, and serverless applications. You can use the following examples to access |SQS| using the |sdk-ruby|. For more
 information about |SQS|, see the `Amazon SQS documentation
 <http://aws.amazon.com/documentation/sqs/>`_.
-
-**Examples**
 
 .. toctree::
    :maxdepth: 1

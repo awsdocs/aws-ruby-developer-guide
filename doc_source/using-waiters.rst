@@ -14,6 +14,11 @@
 Using Waiters
 #############
 
+.. meta::
+    :description:
+        Use waiters with the AWS SDK for Ruby to poll for specific states to occur on clients.
+    :keywords: AWS SDK for Ruby
+
 Waiters are utility methods that poll for a particular state to occur on a client. Waiters can fail
 after a number of attempts at a polling interval defined for the service client. For an example of
 how a waiter is used, see :ref:`aws-ruby-sdk-dynamo-example-create-table`.
@@ -29,7 +34,7 @@ waits until the instance :code:`i-12345678` is running before continuing.
 .. code-block:: ruby
 
     ec2 = Aws::EC2::Client.new
-          
+
     begin
       ec2.wait_until(:instance_running, instance_ids:['i-12345678'])
       puts "instance running"
@@ -50,7 +55,7 @@ using.
 Wait Failures
 =============
 
-Waiters can fail with any of the following exceptions:
+Waiters can fail with any of the following exceptions.
 
 :sdk-ruby-api:`Aws::Waiters::Errors::FailureStateError </Aws/Waiters/Errors/FailureStateError>`
     A failure state was encountered while waiting.
@@ -85,7 +90,7 @@ Configuring a Waiter
 Each waiter has a default polling interval and a maximum number of attempts it will make before
 returning control to your program. To set these values, use the :code:`max_attempts` and
 :code:`delay:` parameters in your :code:`#wait_until` call. The following example waits for up to 25
-seconds, polling every 5 seconds.
+seconds, polling every five seconds.
 
 .. code-block:: ruby
 
@@ -111,7 +116,7 @@ amount of time to wait on every attempt.
 .. code-block:: ruby
 
     ec2 = Aws::EC2::Client.new
-          
+
     ec2.wait_until(:instance_running, instance_ids:['i-12345678']) do |w|
       w.interval = 0 # disable normal sleep
       w.before_wait do |n, resp|
@@ -119,7 +124,7 @@ amount of time to wait on every attempt.
       end
     end
 
-The following example disables the maximum number of attempts, and instead waits for 1 hour (3600
+The following example disables the maximum number of attempts, and instead waits for one hour (3600
 seconds) before failing.
 
 .. code-block:: ruby
@@ -128,8 +133,8 @@ seconds) before failing.
     client.wait_until(...) do |w|
       # Disable max attempts
       w.max_attempts = nil
-    
-      # Poll for 1 hour, instead of a number of attempts
+
+      # Poll for one hour, instead of a number of attempts
       before_wait do |attempts, response|
         throw :failure if Time.now - started_at > 3600
       end

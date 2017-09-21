@@ -14,6 +14,11 @@
 Managing |S3| Bucket and Object Access Permissions
 ##################################################
 
+.. meta::
+    :description:
+        Manage access permissions for Amazon S3 buckets and objects using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples
+
 This example demonstrates how to use the |sdk-ruby| to:
 
 #. Set a predefined grant (also known as a :dfn:`canned ACL`) for a bucket in |S3|.
@@ -25,8 +30,8 @@ For the complete code for this example, see :ref:`aws-ruby-sdk-s3-example-set-bu
 
 .. _aws-ruby-sdk-s3-example-set-bucket-permission-prereqs:
 
-Prerequisite Tasks
-==================
+Prerequisites
+=============
 
 To set up and run this example, you must first:
 

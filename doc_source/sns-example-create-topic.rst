@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-sns-example-create-topic:
 
-################
-Creating a Topic
-################
+#######################
+Creating an |SNS| Topic
+#######################
+
+.. meta::
+    :description:
+        Create an Amazon SNS topic using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, SNS
 
 The following example creates the topic :code:`MyGroovyTopic` in the :code:`us-west-2` region and
 displays the resulting topic ARN.

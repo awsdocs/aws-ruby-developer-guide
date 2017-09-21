@@ -15,8 +15,8 @@ Working with a Dead Letter Queue in |SQS|
 #########################################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+   :description: Work with Amazon SQS dead letter queues using this AWS SDK for Ruby code example.
+   :keywords: AWS SDK for Ruby code examples, SQS
 
 |SQS| provides support for dead letter queues. A dead letter queue is a queue that other (source) queues
 can target for messages that can't be processed successfully. You can set aside and isolate these messages
@@ -42,7 +42,10 @@ in:
 
 You also need to use the |console| to create the existing queue, `my-queue`.
 
-**Note:** For the sake of simplicity, the example code below does not demonstrate :aws-ruby-sqs-client-method:`add_permission`. In a real-world scenario, you should always restrict access to actions such as SendMessage, ReceiveMessage, DeleteMessage, and DeleteQueue. Not doing so could cause information disclosure, denial of service, or injection of messages into your queues.
+.. note:: For the sake of simplicity, this example code doesn't demonstrate :aws-ruby-sqs-client-method:`add_permission`.
+          In a real-world scenario, you should always restrict access to actions such as SendMessage,
+          ReceiveMessage, DeleteMessage, and DeleteQueue. Not doing so could cause
+          information disclosure, denial of service, or injection of messages into your queues.
 
 *******
 Example

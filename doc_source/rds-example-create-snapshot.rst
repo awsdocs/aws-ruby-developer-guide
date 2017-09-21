@@ -10,13 +10,19 @@
 
 .. _aws-ruby-sdk-rds-example-create-snapshot:
 
-##################################
-Creating a Snapshot of an Instance
-##################################
+########################################
+Creating a Snapshot of an |RDS| Instance
+########################################
+
+.. meta::
+    :description:
+        Create snapshots of Amazon RDS instances using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples
 
 The following example creates a snapshot for the |RDS| instance represented by *instance_name* in the :code:`us-west-2` region.
 
-.. note:: If your instance is a member of a cluster, you can't create a snapshot of the instance, but instead must create a snapshot of the cluster (see :ref:`aws-ruby-sdk-rds-example-create-cluster-snapshot`).
+.. note:: If your instance is a member of a cluster, you can't create a snapshot of the instance.
+     Instead, you must create a snapshot of the cluster (see :ref:`aws-ruby-sdk-rds-example-create-cluster-snapshot`).
 
 .. literalinclude:: ./example_code/rds/rds-ruby-example-create-snapshot.rb
    :lines: 13-26

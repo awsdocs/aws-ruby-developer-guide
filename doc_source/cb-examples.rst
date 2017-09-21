@@ -8,14 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-##############
-|ACB| Examples
-##############
+###################################
+|ACB| Examples Using the |sdk-ruby|
+###################################
 
-You can use the following examples to access |ACBlong| (|ACB|) using the |sdk-ruby|. For
-more information about |ACB|, see the `Amazon CodeBuild documentation <http://aws.amazon.com/documentation/codebuild/>`_.
+.. meta::
+    :description:
+        AWS SDK for Ruby code examples for AWS CodeBuild.
+    :keywords:
 
-**Examples**
+|ACB| is a fully managed build service that compiles source code, runs tests, and produces
+software packages that are ready to deploy. You can use the following |sdk-ruby| code examples to access |ACBlong|. For
+more information about |ACB|, see the `AWS CodeBuild documentation <http://aws.amazon.com/documentation/codebuild/>`_.
 
 .. toctree::
    :maxdepth: 1

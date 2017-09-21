@@ -10,14 +10,19 @@
 
 .. _aws-ruby-sdk-dynamo-example-create-table:
 
-#################################################
-Creating a Simple Table with a Single Primary Key
-#################################################
+###########################################################
+Creating a Simple |DDBlong| Table with a Single Primary Key
+###########################################################
+
+.. meta::
+    :description:
+        Create a table with one primary key using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, DynamoDB
 
 The following example creates the table :code-ruby:`Users` with three attributes: :code-ruby:`ID`,
 :code-ruby:`FirstName`, and :code-ruby:`LastName` in the :code-ruby:`us-west-2` region.
 
-The :code-ruby:`wait_until` call blocks you from using the table until |DDB| has created it.  By
+The :code-ruby:`wait_until` call blocks you from using the table until |DDBlong| has created it.  By
 default, the |DDB| client's :code-ruby:`wait_until` method checks every 20 seconds, up to a maximum
 of 500 seconds, to see if the table was created.
 

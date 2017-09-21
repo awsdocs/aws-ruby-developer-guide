@@ -14,6 +14,11 @@
 Displaying Information about All |LAM| Functions
 ################################################
 
+.. meta::
+    :description:
+        Show information about all of your AWS Lambda functions using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, lambda
+
 The following example displays the name, ARN, and role of all of your |LAM| functions in the :code:`us-west-2` region.
 
 .. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-show-functions.rb

@@ -10,10 +10,16 @@
 
 .. _aws-ruby-sdk-ec2-attach-igw-vpc:
 
-Creating an Internet Gateway and Attaching It to a VPC
-======================================================
+###############################################################
+Creating an Internet Gateway and Attaching It to a VPC in |EC2|
+###############################################################
 
-The following example creates an Internet gateway :code:`MyGroovyIGW`, attaches it to a VPC that has ID :code:`VPC_ID`, and then displays the Internet gateway's ID.
+.. meta::
+    :description:
+        Create and attach an internet gateway to an Amazon EC2 VPC using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon EC2
+
+The following example creates an internet gateway :code:`MyGroovyIGW`, attaches it to a VPC that has ID :code:`VPC_ID`, and then displays the internet gateway's ID.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-attach-igw-vpc.rb
    :lines: 13-22

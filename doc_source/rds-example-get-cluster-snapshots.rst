@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-rds-example-get-cluster-snapshots:
 
-##########################################################
-Getting Information about All Clusters and Their Snapshots
-##########################################################
+################################################################
+Getting Information about All |RDS| Clusters and Their Snapshots
+################################################################
+
+.. meta::
+    :description:
+        Get information about Amazon RDS clusters and their snapshots using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, RDS
 
 The following example lists the name (ID) and status of all of your |RDS| clusters
 and the name (ID) and status of their snapshots in the :code:`us-west-2` region.

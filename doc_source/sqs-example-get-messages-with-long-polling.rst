@@ -14,6 +14,10 @@
 Receiving Messages Using Long Polling in |SQS|
 ##############################################
 
+.. meta::
+   :description: Receive messages using long polling in Amazon SQS using the AWS SDK for Ruby.
+   :keywords: AWS SDK for Ruby code examples, SQS
+
 The following example waits up to 10 seconds to display the bodies of up to 10 messages in the |SQS|
 queue with the URL :code:`URL` in the :code:`us-west-2` region.
 

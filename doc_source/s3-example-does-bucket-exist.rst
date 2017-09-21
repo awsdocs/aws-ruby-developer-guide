@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-s3-example-does-bucket-exist:
 
-###################################
-Determining Whether a Bucket Exists
-###################################
+#########################################
+Determining Whether an |S3| Bucket Exists
+#########################################
+
+.. meta::
+    :description:
+        Find out if an Amazon S3 bucket exists using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code example. Amazon S3
 
 There are two cases in which you would want to determine whether a bucket already exists. You
 perform these tests in lieu of receiving an exception if the condition fails:

@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-ec2-example-reboot-instance:
 
-#####################
-Rebooting an Instance
-#####################
+###########################
+Rebooting an |EC2| Instance
+###########################
+
+.. meta::
+    :description:
+        Reboot an Amazon EC2 instance using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
 The following example reboots the instance :code:`i-123abc` in the :code:`us-west-2` region.
 

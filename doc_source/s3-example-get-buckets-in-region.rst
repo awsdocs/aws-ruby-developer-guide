@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-s3-example-get-buckets-in-region:
 
-#################################################
-Getting Information about All Buckets in a Region
-#################################################
+######################################################
+Getting Information about All |S3| Buckets in a Region
+######################################################
+
+.. meta::
+    :description:
+        Get Amazon S3 bucket information for a specific region using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples
 
 The following example lists the names of the first 50 buckets for the :code:`us-west-2` region.
 If you don't specify a limit, |S3| lists all buckets in :code:`us-west-2`.

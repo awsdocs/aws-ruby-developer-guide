@@ -10,15 +10,20 @@
 
 .. _aws-ruby-sdk-kms-example-decrypt-blob:
 
-######################
-Decrypting a Data Blob
-######################
+###############################
+Decrypting a Data Blob in |KMS|
+###############################
 
-The following example uses the |sdk-ruby| 
+.. meta::
+    :description:
+        Decrypt data in AWS KMS using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code example, KMS
+
+The following example uses the |sdk-ruby|
 `decrypt <http://docs.aws.amazon.com/sdkforruby/api/Aws/KMS/Client.html#decrypt-instance_method>`_ method,
 which implements the
 `Decrypt <http://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html>`_ operation,
-to decrypt the provided string and emits the result.
+to decrypt the provided string and emit the result.
 
 .. literalinclude:: ./example_code/kms/aws-ruby-sdk-kms-example-decrypt-blob.rb
    :lines: 13-27

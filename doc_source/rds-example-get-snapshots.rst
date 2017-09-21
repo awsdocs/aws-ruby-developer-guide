@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-rds-example-get-snapshots:
 
-#######################################
-Getting Information about All Snapshots
-#######################################
+#############################################
+Getting Information about All |RDS| Snapshots
+#############################################
+
+.. meta::
+    :description:
+        Get information about all your Amazon RDS snapshots using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code example, RDS
 
 The following example lists the names (IDs) and status of all of your |RDS| (instance) snapshots in the :code:`us-west-2` region.
 

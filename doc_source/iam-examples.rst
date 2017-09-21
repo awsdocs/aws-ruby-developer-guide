@@ -10,18 +10,18 @@
 
 .. _aws-ruby-sdk-iam-examples:
 
-##################
-|IAMlong| Examples
-##################
+#############################################
+|IAMlong| (IAM) Examples Using the |sdk-ruby|
+#############################################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+    :description:
+        AWS SDK for Ruby code examples for IAM.
+    :keywords: AWS SDK for Ruby code examples
 
-You can use the following examples to access |IAMlong| (|IAM|) using the |sdk-ruby|. For more
+|IAMlong| (|IAM|) is a web service for securely controlling access to AWS services. You can use the following
+examples to access |IAM| using the |sdk-ruby|. For more
 information about |IAM|, see the `IAM documentation <http://aws.amazon.com/documentation/iam/>`_.
-
-**Examples**
 
 .. toctree::
    :maxdepth: 1

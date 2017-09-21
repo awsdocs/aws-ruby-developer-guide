@@ -15,8 +15,10 @@ Sending and Receiving Messages in |SQS|
 #######################################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+    :description:
+        Send and receive messages to Amazon SQS queues using this AWS SDK for Ruby
+        code example.
+    :keywords: AWS SDK for Ruby code examples, SQS
 
 After you create a queue in |SQS|, you can send a message to it and then consume it. To learn more, see :SQS-dg:`Tutorial: Sending a Message to an Amazon SQS Queue <sqs-send-message>` and :SQS-dg:`Tutorial: Receiving and Deleting a Message from an Amazon SQS Queue <sqs-receive-delete-message>`.
 

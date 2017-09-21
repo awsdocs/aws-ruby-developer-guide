@@ -10,13 +10,14 @@
 
 .. _aws-ruby-sdk-iam-example-get-users:
 
-###################################
-Getting Information about All Users
-###################################
+#########################################
+Getting Information about All |IAM| Users
+#########################################
 
 .. meta::
-   :description:
-   :keywords: AWS SDK for Ruby code examples
+    :description:
+        Get information about all IAM users with this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, IAM
 
 The following example lists the groups, policies, and access key IDs of all |IAM| users in the :code:`us-west-2` region.
 

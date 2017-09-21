@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-rds-example-get-parameter_groups:
 
-##############################################
-Getting Information about All Parameter Groups
-##############################################
+####################################################
+Getting Information about All |RDS| Parameter Groups
+####################################################
+
+.. meta::
+    :description:
+        Get information about Amazon RDS parameter groups using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, RDS
 
 The following example lists the names and descriptions of all of your |RDS| parameter groups in the :code:`us-west-2` region.
 

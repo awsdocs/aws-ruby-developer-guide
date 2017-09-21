@@ -10,11 +10,16 @@
 
 .. _aws-ruby-sdk-sns-example-show-topics:
 
-####################################
-Getting Information about All Topics
-####################################
+##########################################
+Getting Information about All |SNS| Topics
+##########################################
 
-The following example lists the ARNs of your SNS topics in the :code:`us-west-2` region.
+.. meta::
+    :description:
+        Get information about all Amazon SNS topics using this AWS SDK for Ruby code example.
+    :keywords: AWS SDK for Ruby code examples, SNS
+
+The following example lists the ARNs of your |SNS| topics in the :code:`us-west-2` region.
 
 .. literalinclude:: ./example_code/sns/sns-ruby-example-show-topics.rb
    :lines: 13-19

@@ -10,9 +10,14 @@
 
 .. _aws-ruby-sdk-sns-example-create-subscription:
 
-##################################
-Creating a Subscription in a Topic
-##################################
+#########################################
+Creating a Subscription in an |SNS| Topic
+#########################################
+
+.. meta::
+    :description:
+        Create a subscription in an Amazon SNS topic using the AWS SDK for Ruby.
+    :keywords: AWS SDK for Ruby code examples, SNS
 
 The following example creates a subscription for the topic with the ARN
 :code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic` for a user who has the email address

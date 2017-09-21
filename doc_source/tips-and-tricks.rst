@@ -17,6 +17,6 @@
 This section provides tips and tricks on using the |sdk-ruby| with AWS services.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    ec2-tips
