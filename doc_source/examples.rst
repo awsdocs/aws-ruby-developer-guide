@@ -32,4 +32,4 @@ This section provides examples you can use to access AWS services by using the
    s3-examples
    sns-examples
    sqs-examples
-
+   wd-examples
