@@ -35,7 +35,7 @@ Create a helper method to get the root folder of a user.
 
 Create a |WD| client.
 
-.. literalinclude:: ./example_code/workdocs/wd_list_users.rb
+.. literalinclude:: ./example_code/workdocs/wd_list_user_docs.rb
    :lines: 32
    :dedent: 0
    :language: ruby
