@@ -14,8 +14,7 @@
 Listing User Docs
 #################
 
-The following example lists the documents for the user whose name is specified
-on the command line.
+The following example lists the documents for a user.
 Choose :code:`Copy` to save the code locally, or see the link to the complete
 example at the end of this topic.
 
