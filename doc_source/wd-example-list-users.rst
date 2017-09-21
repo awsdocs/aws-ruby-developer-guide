@@ -14,8 +14,8 @@
 Listing Users
 #############
 
-The following example lists the names of all users, or lists additional details
-about a user if a user name is specified on the command line.
+The following example lists the names, email addresses,
+and root folders of all users in the organization.
 Choose :code:`Copy` to save the code locally, or see the link to the complete
 example at the end of this topic.
 
