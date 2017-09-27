@@ -35,6 +35,7 @@ This section provides examples you can use to access AWS services by using the
    AWS Lambda Examples <lambda-examples>
    Amazon RDS Examples <rds-examples>
    Amazon S3 Examples <s3-examples>
+   Amazon SES Examples <ses-examples>
    Amazon SNS Examples <sns-examples>
    Amazon SQS Examples <sqs-examples>
    Amazon WorkdDocs Examples <wd-examples>
