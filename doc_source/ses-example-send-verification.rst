@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-ses-example-send-verification:
 
-#####################################
-Verifying an Email Addresses in |SES|
-#####################################
+###################################
+Verifying an Email Address in |SES|
+###################################
 
 .. meta::
     :description:
