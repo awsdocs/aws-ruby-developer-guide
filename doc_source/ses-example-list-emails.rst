@@ -27,5 +27,5 @@ email addresses.
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses-example-list-emails.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses_list_emails.rb>`_
 on GitHub.

@@ -27,5 +27,5 @@ an |SES| email address.
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses-example-send-email.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses_send_email.rb>`_
 on GitHub.

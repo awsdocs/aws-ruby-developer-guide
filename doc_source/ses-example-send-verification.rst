@@ -27,5 +27,5 @@ email address.
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses-example-send-verification.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses_send_verification.rb>`_
 on GitHub.
