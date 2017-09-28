@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-ses-example-send-email:
 
-############################################
-Sending a Message to Email Address inn |SES|
-############################################
+##############################################
+Sending a Message to an Email Address in |SES|
+##############################################
 
 .. meta::
     :description:
