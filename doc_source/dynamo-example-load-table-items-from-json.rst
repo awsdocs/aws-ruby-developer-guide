@@ -27,5 +27,13 @@ to the :code-ruby:`movies` table in the :code-ruby:`us-west-2` region.
    :dedent: 0
    :language: ruby
 
+Here is an example of a JSON file that loads two movies.
+
+.. literalinclude:: ./example_code/dynamodb/movie_data.json
+   :lines: 1-35
+   :dedent: 0
+   :language: json
+
 See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/dynamodb_ruby_example_load_movies.rb>`_
+and the `JSON file <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/movie_data.json>`_
 on GitHub.
