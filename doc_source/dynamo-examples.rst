@@ -24,10 +24,9 @@ information about |DDB|, see the `Amazon DynamoDB documentation
 <http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.Ruby.html>`_ to
 learn how to:
 
-* Create a table and load sample data in JSON format.
-
-* Perform create, read, update, and delete operations on the table.
-
+* Create a table.
+* Load sample data in JSON format.
+* Perform create, read, update, and delete operations on a table item.
 * Run simple queries.
 
 The topic also provides a link to a downloadable version of |DDB|, which includes an interactive web
@@ -38,9 +37,8 @@ interface so you can experiment with |DDB| offline.
 
    dynamo-example-get-tables
    dynamo-example-create-table
-   dynamo-example-add-item-to-table
-   dynamo-example-list-table-items
-   dynamo-example-get-table-item
-   dynamo-example-update-table
-   dynamo-example-create-index
-
+   dynamo-example-create-table-item
+   dynamo-example-load-table-items-from-json
+   dynamo-example-read-table-item
+   dynamo-example-update-table-item
+   dynamo-example-delete-table-item
