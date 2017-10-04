@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-dynamo-example-update-table-item:
 
-###############################
-Updating n |DDBlong| Table Item
-###############################
+################################
+Updating an |DDBlong| Table Item
+################################
 
 .. meta::
     :description:

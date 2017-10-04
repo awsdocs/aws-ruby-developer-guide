@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-dynamo-example-delete-table-item:
 
-###############################
-Deleting n |DDBlong| Table Item
-###############################
+################################
+Deleting an |DDBlong| Table Item
+################################
 
 .. meta::
     :description:

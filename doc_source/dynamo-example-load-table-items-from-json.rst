@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-dynamo-example-load-table-items-from-json:
 
-#####################################################
-Loading Items from a JSON File into a |DDBlong| Table
-#####################################################
+######################################################
+Loading Items from a JSON File into an |DDBlong| Table
+######################################################
 
 .. meta::
     :description:

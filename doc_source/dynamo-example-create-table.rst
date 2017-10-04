@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-dynamo-example-create-table:
 
-##########################
-Creating a |DDBlong| Table
-##########################
+###########################
+Creating an |DDBlong| Table
+###########################
 
 .. meta::
     :description:
