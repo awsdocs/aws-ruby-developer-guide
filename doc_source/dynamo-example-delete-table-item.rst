@@ -28,5 +28,5 @@ from the :code-ruby:`Movies` table in the :code-ruby:`us-west-2` region.
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/dynamodb/dynamodb_ruby_example_delete_movies_item.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/dynamodb_ruby_example_delete_movies_item.rb>`_
 on GitHub.
