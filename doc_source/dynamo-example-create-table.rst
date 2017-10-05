@@ -28,7 +28,7 @@ By default, the |DDB| client's :code-ruby:`wait_until` method checks every 20
 seconds, up to a maximum of 500 seconds, to see if the table was created.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_create_movies_table.rb
-   :lines: 13-57
+   :lines: 13-56
    :dedent: 0
    :language: ruby
 
