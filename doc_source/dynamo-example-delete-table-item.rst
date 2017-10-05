@@ -19,8 +19,8 @@ Deleting an |DDBlong| Table Item
         Delete an Amazon DynamoDB table item using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example deletes item with the year
-:code-ruby:`2015` and title :code-ruby:`The Big New Movie`
+The following example deletes item with the :code:`year` **2015** and
+:code-ruby:`title`  **The Big New Movie**
 from the :code-ruby:`Movies` table in the :code-ruby:`us-west-2` region.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_delete_movies_item.rb
