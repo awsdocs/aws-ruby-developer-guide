@@ -34,15 +34,14 @@ credentials that the SDK will use to verify your access to AWS services and reso
 
 The |sdk-ruby| searches for credentials in the following order:
 
-1. :ref:`aws-ruby-sdk-credentials-client`
+1. :ref:`aws-ruby-sdk-credentials-environment`
+2. :ref:`aws-ruby-sdk-credentials-shared`
+3. :ref:`aws-ruby-sdk-credentials-iam`
 
-2. :ref:`aws-ruby-sdk-credentials-aws-config`
+You can override these settings in your code. The precedence is:
 
-3. :ref:`aws-ruby-sdk-credentials-environment`
-
-4. :ref:`aws-ruby-sdk-credentials-shared`
-
-5. :ref:`aws-ruby-sdk-credentials-iam`
+1. :ref:`aws-ruby-sdk-credentials-aws-config`
+2. :ref:`aws-ruby-sdk-credentials-client`
 
 The following sections describe the various ways you can set credentials, starting with
 the most flexible approach. For more information about AWS credentials and recommended approaches
