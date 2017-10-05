@@ -34,6 +34,6 @@ Here is an example of a JSON file that loads two movies.
    :dedent: 0
    :language: json
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/dynamodb_ruby_example_load_movies.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/dynamodb_ruby_example_load_movies>`_
 and the `JSON file <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/movie_data.json>`_
 on GitHub.
