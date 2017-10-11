@@ -20,7 +20,7 @@ Reading an Item in an |DDBlong| Table
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
 The following example displays information about the item with the :code:`year` **2015** and
-:code-ruby:`title`  **The Big New Movie** in the :code-ruby:`movies` table in the
+:code-ruby:`title`  **The Big New Movie** in the :code-ruby:`Movies` table in the
 :code-ruby:`us-west-2` region.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_read_movies_item.rb

@@ -20,7 +20,7 @@ Adding an Item to an |DDBlong| Table
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
 The following example adds an item with the :code:`year` **2015** and
-:code-ruby:`title`  **The Big New Movie** to the :code-ruby:`movies` table in the
+:code-ruby:`title`  **The Big New Movie** to the :code-ruby:`Movies` table in the
 :code-ruby:`us-west-2` region.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_create_movies_item.rb
