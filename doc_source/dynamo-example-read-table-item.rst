@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-dynamo-example-read-table-item:
 
-####################################
-Adding an Item to an |DDBlong| Table
-####################################
+#####################################
+Reading an Item in an |DDBlong| Table
+#####################################
 
 .. meta::
     :description:
