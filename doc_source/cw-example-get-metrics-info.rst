@@ -15,8 +15,7 @@ Getting Information about Custom Metrics for |CWlong|
 #####################################################
 
 .. meta::
-   :description: Get custom metrics information for Amazon CloudWatch using this AWS SDK for Ruby code
-   example.
+   :description: Get custom metrics information for Amazon CloudWatch using this AWS SDK for Ruby code example.
    :keywords: AWS SDK for Ruby code examples, CloudWatch
 
 A |CW| alarm watches a single metric over a time period you specify. The |CW| alarm performs

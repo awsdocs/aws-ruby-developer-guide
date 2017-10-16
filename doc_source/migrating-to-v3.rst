@@ -110,7 +110,7 @@ will have compatible interfaces after client construction. Some important differ
   * :code:`AWS::SimpleEmailService` has become :code:`Aws::SES`
 
 * Client configuration options |ndash| Some of the version 1 configuration options are renamed in
-version 2.
+  version 2.
   Others are removed or replaced. Here are the primary changes:
 
   * :code:`:use_ssl` has been removed. Version 2 uses SSL everywhere. To disable SSL you must configure an

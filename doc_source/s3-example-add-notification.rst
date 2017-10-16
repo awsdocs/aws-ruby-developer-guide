@@ -37,7 +37,7 @@ You can configure the service to send a notification to:
 
 * A |LAMlong| function
 
-.. topic:: To create a bucket notification
+To create a bucket notification, use the following procedure.
 
 1. :ref:`Grant Amazon S3 permission to publish an item to a queue or topic, or invoke a Lambda function
    <aws-ruby-sdk-s3-example-grant-s3-permission>`.

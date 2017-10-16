@@ -49,7 +49,7 @@ You also need to:
   #. After you create the function, copy the ARN and paste it into your code.
 
 * Replace the placeholder value assigned to `cwe_service_role_arn` with an appropriate |IAMlong| service
-role ARN.
+  role ARN.
 
   #. In the |IAM| console, create a role and attach a policy that grants full access to |CWE|.
   #. Ensure that the role has a trust relationship to `events.amazonaws.com`. For an example policy and role, see the comments in the `example code on GitHub <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cw/cw-ruby-example-send-events-ec2.rb>`_.

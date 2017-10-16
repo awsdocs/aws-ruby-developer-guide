@@ -29,8 +29,6 @@ Before you install the |sdk-ruby|, you need an AWS account and Ruby version 1.9 
 
 If you don't have an AWS account, use the following procedure to create one.
 
-.. topic:: To sign up for AWS
-
 1. Open http://aws.amazon.com/ and choose **Create an AWS Account**.
 
 2. Follow the online instructions.

@@ -15,9 +15,7 @@ Getting Information about Regions and Availability Zones for |EC2|
 ##################################################################
 
 .. meta::
-    :description:
-        Get information about AWS Regions and Availability Zones for Amazon EC2 using this        code
-        example for the AWS SDK for Ruby.
+   :description: Get information about AWS Regions and Availability Zones for Amazon EC2 using this code example for the AWS SDK for Ruby.
    :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
 The following examples show you how to use the |sdk-ruby| together with |EC2| to:
