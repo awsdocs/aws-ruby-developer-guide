@@ -8,27 +8,28 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _migrating-to-v2:
+.. _migrating-to-v3:
 
-#######################################################
-Migrating from Version 1 to Version 2 of the |sdk-ruby|
-#######################################################
+##########################################@@@@@@############
+Migrating from Version 1 or 2 to Version 3 of the |sdk-ruby|
+############################################################
 
 .. meta::
     :description:
-        Details about how to migrate from version 1 to version 2 of the AWS SDK for Ruby.
+        Details about how to migrate from version 1 or 2 to version 3 of the AWS SDK for Ruby.
     :keywords: AWS SDK for Ruby
 
-The purpose of this topic is to help you migrate from version 1 of the |sdk-ruby| to version 2.
+The purpose of this topic is to help you migrate from version 1 or 2 of the |sdk-ruby| to version 3.
 
 .. _side-by-side-usage:
 
 Side-by-Side Usage
 ==================
 
-It isn't necessary to replace the version 1 |sdk-ruby| with version 2. You can use them together in the
-same
-application.  See `this blog post <http://ruby.awsblog.com/post/TxFKSK2QJE6RPZ/Upcoming-Stable-Release-of-AWS-SDK-for-Ruby-Version-2>`_
+It isn't necessary to replace the version 1 or 2 of the |sdk-ruby| with
+version 3.
+You can use them together in the same application.
+See `this blog post <http://ruby.awsblog.com/post/TxFKSK2QJE6RPZ/Upcoming-Stable-Release-of-AWS-SDK-for-Ruby-Version-2>`_
 for more information.
 
 A quick example follows.
@@ -37,17 +38,23 @@ A quick example follows.
 
    require 'aws-sdk-v1' # version 1
    require 'aws-sdk'    # version 2
+   require 'aws-sdk-s3' # version 3
 
    s3 = AWS::S3::Client.new # version 1
-   s3 = Aws::S3::Client.new # version 2
+   s3 = Aws::S3::Client.new # version 2 or 3
 
-You don'o't need to rewrite existing working version 1 code to start using the version 2 SDK.
-A valid migration strategy is to only write new code against the version 2 SDK.
+You don't need to rewrite existing working version 1 or 2 code to start using
+the version 3 SDK.
+A valid migration strategy is to only write new code against the version 3 SDK.
 
 .. _general-differences:
 
 General Differences
 ===================
+
+Version 3 differs from version 2 in one important way.
+
+* Each service is available as a separate gem.
 
 Version 2 differs from version 1 in several important ways.
 
@@ -67,11 +74,12 @@ Version 2 differs from version 1 in several important ways.
      Aws::S3::Client.new(http_reed_timeout: 10)
      # => raises ArgumentError
 
-
 .. _client-differences:
 
 Client Differences
 ==================
+
+Their are no differences between the client classes in version 2 and version 3.
 
 Between version 1 and version 2, the client classes have the fewest external differences. Many service clients
 will have compatible interfaces after client construction. Some important differences:
@@ -118,6 +126,8 @@ version 2.
 
 Resource Differences
 ====================
+
+Their are no differences between the resource interfaces in version 2 and version 3.
 
 There are significant differences between the resource interfaces in version 1 and version 2. Version 1 was
 entirely hand-coded, where as version 2 resource interfaces are generated from a model. Version 2 resource

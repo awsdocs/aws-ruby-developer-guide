@@ -81,7 +81,7 @@ more details.
 .. =====================================================================
 
 .. _`available sphinx builders`: http://www.sphinx-doc.org/en/stable/builders.html
-.. _`aws ruby developer guide`: http://docs.aws.amazon.com/sdk-for-ruby/v2/developer-guide/welcome.html
+.. _`aws ruby developer guide`: http://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/welcome.html
 .. _`aws sdk for ruby`: https://aws.amazon.com/sdk-for-ruby/
 .. _`forking the repository`: https://help.github.com/articles/fork-a-repo/
 .. _`pull request`: https://help.github.com/articles/using-pull-requests/

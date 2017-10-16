@@ -24,9 +24,9 @@ use some of the SDK's advanced features.
    :titlesonly:
    :maxdepth: 1
 
-   Using the SDK for Ruby REPL Tool <repl>
+   repl
    rails
-   Migrating from Version 1 to Version 2 of the SDK <migrating-to-v2>debugging
+   migrating-to-v3
    debugging
    stubbing
    paging-responses

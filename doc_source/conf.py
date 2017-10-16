@@ -385,7 +385,8 @@ if 'extlinks' not in vars():
 ruby_sdk_url = 'https://github.com/aws/aws-sdk-ruby/'
 extlinks['ruby-sdk'] = (ruby_sdk_url + '%s', "")
 
-ruby_api_url = 'http://docs.aws.amazon.com/sdkforruby/api/'
+# v2: ruby_api_url = 'http://docs.aws.amazon.com/sdkforruby/api/'
+ruby_api_url = 'http://docs.aws.amazon.com/sdk-for-ruby/v3/api/'
 extlinks['ruby-sdk-api'] = (ruby_api_url + '%s', '')
 
 aws_ruby_cw_client = ruby_api_url + 'Aws/CloudWatch/Client.html'
