@@ -32,14 +32,14 @@ This section shows you how to use the |sdk-ruby| to create a simple Ruby applica
 Write the Code
 ==============
 
-The following example lists the names of up to 50 of your buckets.  Copy the code and save it as
-:file:`buckets.rb`.  Note that although the **Resource** object is created in the
-:code-ruby:`us-west-2` region, |S3| returns buckets to which you have access, regardless of the
+The following example lists the names of up to 50 of your buckets. Copy the code and save it as
+:file:`buckets.rb`. Note that although the **Resource** object is created in the
+:code:`us-west-2` region, |S3| returns buckets to which you have access, regardless of the
 region.
 
 .. code-block:: ruby
 
-   require 'aws-sdk'
+   require 'aws-sdk-s3'  # v2: require 'aws-sdk'
 
    s3 = Aws::S3::Resource.new(region: 'us-west-2')
 
@@ -83,3 +83,7 @@ call.
 
    Aws.use_bundled_cert!
 
+Note that if you are using just the :code:`aws-sdk-s3` gem in your Ruby
+program,
+you'll also need to add the :code:`aws-sdk-core` gem to use the bundled
+certificate.

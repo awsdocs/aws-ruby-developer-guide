@@ -23,8 +23,13 @@ AWS SDK for Ruby Developer Guide
 Welcome to the |sdk-ruby|.
 
 The |sdk-ruby| helps take the complexity out of coding by providing Ruby classes for almost all AWS
-services, including |S3long|, |EC2long|, and |DDBlong|. For a complete list of services supported by the
-|sdk-ruby|, see the `Supported Services <https://github.com/aws/aws-sdk-ruby/blob/master/README.md#supported-services>`_ section of the |sdk-ruby| Readme file.
+services, including |S3long|, |EC2long|, and |DDBlong|. 
+For a complete list of services supported by the
+|sdk-ruby|, see the `Supported Services
+<https://github.com/aws/aws-sdk-ruby/blob/master/README.md#supported-services>`_
+section of the |sdk-ruby| Readme file.
+This section also lists the gems that the |sdk-ruby| supports as version 3
+modularized the monolithic SDK gem into service-specific gems.
 
 .. _aws-ruby-sdk-developer-guide-contents:
 
@@ -71,7 +76,7 @@ For more resources for |sdk-ruby| developers, see the following:
 
   + :ruby-sdk:`Releases <releases>` (includes source, gems, and documentation)
   + :ruby-sdk:`Source <>`
-  + :ruby-sdk:`Change log <blob/master/CHANGELOG.md>`
+  + :ruby-sdk:`Change logs under each gem <blob/master/gems>`
   + :ruby-sdk:`Migration Guide <blob/master/MIGRATING.md>`
   + :ruby-sdk:`Issues <issues>`
   + :ruby-sdk:`Feature requests <blob/master/FEATURE_REQUESTS.md>`
