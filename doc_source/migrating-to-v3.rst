@@ -8,7 +8,7 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _migrating-to-v3:
+.. _aws-ruby-sdk-migrating-to-v3:
 
 ############################################################
 Migrating from Version 1 or 2 to Version 3 of the |sdk-ruby|
