@@ -66,7 +66,7 @@ Additional Documentation and Resources
 
 For more resources for |sdk-ruby| developers, see the following:
 
-* :sdk-ruby-api:`AWS SDK for Ruby API Reference <index.html>`
+* :sdk-ruby-api:`AWS SDK for Ruby API Reference - Version 3`
 * `Developer blog <http://ruby.awsblog.com/>`_
 * `Developer forums <https://forums.aws.amazon.com/forum.jspa?forumID=125>`_
   (you must have an AWS account to access the forums)
@@ -77,10 +77,11 @@ For more resources for |sdk-ruby| developers, see the following:
   + :ruby-sdk:`Releases <releases>` (includes source, gems, and documentation)
   + :ruby-sdk:`Source <>`
   + :ruby-sdk:`Change logs under each gem <blob/master/gems>`
-  + :ruby-sdk:`Migration Guide <blob/master/MIGRATING.md>`
+  + :ruby-sdk:`Moving from v1 to v2 <blob/master/MIGRATING.md>`
+  + :ruby-sdk:`Moving from v2 to v3 <blob/master/V3_UPGRADING_GUIDE.md>`
   + :ruby-sdk:`Issues <issues>`
   + :ruby-sdk:`Feature requests <blob/master/FEATURE_REQUESTS.md>`
-  + :ruby-sdk:`Upgrading notes <blob/master/UPGRADING.md>`
+  + :ruby-sdk:`Core upgrade notes <blob/master/UPGRADING.md>`
 
 .. _aws-ruby-sdk-deploying:
 
@@ -88,7 +89,8 @@ Deploying to the AWS Cloud
 --------------------------
 
 You can use AWS services such as |AEBlong|, |OPS|, and |ACD| to deploy your application to the AWS Cloud.
-For deploying Ruby applications with |AEB|, see :AEB-dg:`Working with Ruby <create_deploy_Ruby>`
+For deploying Ruby applications with |AEB|, see 
+:AEB-dg:`Deploying Elastic Beanstalk Applications in Ruby Using EB CLI and Git <create_deploy_Ruby>`
 in the |AEB-dg|. For deploying a Ruby on Rails application with |OPS|, see
 `Deploying Ruby on Rails Applications to AWS OpsWorks <http://ruby.awsblog.com/post/Tx7FQMT084INCR/Deploying-Ruby-on-Rails-Applications-to-AWS-OpsWorks>`_.
 For an overview of AWS deployment services, see
