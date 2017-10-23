@@ -25,6 +25,7 @@ This section provides examples you can use to access AWS services by using the
 .. toctree::
    :maxdepth: 2
 
+   AWS CloudTrail Examples <cloud-trail-examples>
    Amazon CloudWatch Examples <cw-examples>
    AWS CodeBuild Examples <cb-examples>
    Amazon DynamoDB Examples <dynamo-examples>
