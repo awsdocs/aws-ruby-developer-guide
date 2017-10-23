@@ -20,7 +20,7 @@ Listing the |CT| Trails
     :keywords: AWS SDK for Ruby code examples, CloudTrail
 
 This example uses the
-:sdk-ruby-api-deep:`DescribeTrails <service/cloudtrail/#CloudTrail.DescribeTrails>` operation
+:ruby-sdk-api:`describe_trails <Aws/CloudTrail/Client.html#describe_trails-instance_method>` method
 to list the names of the |CT| trails
 and the bucket in which |CT| stores information
 in the :code:`us-west-2` region.

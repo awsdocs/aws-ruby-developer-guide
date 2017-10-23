@@ -20,7 +20,7 @@ Creatng a |CT| Trail
     :keywords: AWS SDK for Ruby code examples, CloudTrail
 
 This example uses the
-:sdk-ruby-api-deep:`create_trail <service/cloudtrail/#CloudTrail.create_trail>` operation
+:ruby-sdk-api:`create_trail <Aws/CloudTrail/Client.html#create_trail-instance_method>` method
 to create a |CT| trail
 in the :code:`us-west-2` region.
 It requires two inputs, the name of the trail and the name of the bucket
@@ -50,14 +50,14 @@ and whether to attach the policy to the bucket.
 If either the trail name or bucket name is missing,
 display an error message and exit.
 
-.. literalinclude:: ./example_code/cloudtrail/create_trail.rb
+.. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-create-trail.rb
    :lines: 71-97
    :dedent: 0
    :language: ruby
 
 If the **-p** flag was specified, call **add_policy** to attach the policy to the bucket.
 
-.. literalinclude:: ./example_code/cloudtrail/create_trail.rb
+.. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-create-trail.rb
    :lines: 99-101
    :dedent: 0
    :language: ruby
@@ -66,7 +66,7 @@ Create the |CT| client and call **create_trail** to create the trail.
 If any errors occur, print the error and quit,
 otherwise print a success message.
 
-.. literalinclude:: ./example_code/cloudtrail/create_trail.rb
+.. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-create-trail.rb
    :lines: 104-117
    :dedent: 0
    :language: ruby

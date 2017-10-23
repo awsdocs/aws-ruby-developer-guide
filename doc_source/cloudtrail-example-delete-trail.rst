@@ -20,7 +20,7 @@ Deleting a |CT| Trail
     :keywords: AWS SDK for Ruby code examples, CloudTrail
 
 This example uses the
-:sdk-ruby-api-deep:`delete_trail <service/cloudtrail/#CloudTrail.delete_trail>` operation
+:ruby-sdk-api:`delete_trail <Aws/CloudTrail/Client.html#delete_trail-instance_method>` method
 to delete a |CT| trail
 in the :code:`us-west-2` region.
 It requires one input, the name of the trail.

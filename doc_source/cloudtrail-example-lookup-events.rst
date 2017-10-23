@@ -20,7 +20,7 @@ Listing |CT| Trail Events
     :keywords: AWS SDK for Ruby code examples, CloudTrail
 
 This example uses the
-:sdk-ruby-api-deep:`lookup_events <service/cloudtrail/#CloudTrail.lookup_events>` operation
+:ruby-sdk-api:`lookup_events <Aws/CloudTrail/Client.html#lookup_events-instance_method>` method
 to list the |CT| trail events
 in the :code:`us-west-2` region.
 
