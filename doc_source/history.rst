@@ -14,6 +14,7 @@
 Document History
 ################
 
-To view the list of changes to the |sdk-ruby| and its documentation, see the 
-`CHANGELOG.md <https://github.com/aws/aws-sdk-ruby/blob/master/CHANGELOG.md>`_ file in the 
+To view the list of changes to the |sdk-ruby| and its documentation, see the
+:ruby-sdk:`Change logs under each gem <blob/master/gems>`
+in the 
 :code:`aws/aws-sdk-ruby` repository in GitHub.
