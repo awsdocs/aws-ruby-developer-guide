@@ -23,13 +23,13 @@ The following example uses the
 `PKey <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/PKey.html>`_
 class to create a public/private RSA key pair that you can use to
 encrypt items on the client before you upload them to an |S3| bucket.
-You'll need these keys in the next two examples.
+You'll need these keys in the :doc:`s3-example-client-side-encryption-with-public-key` and :doc:`s3-example-client-side-decrypt-item-with-private-key` examples.
 
 Choose :code:`Copy` to save the code locally.
 
 Create the file *create_rsa_keys.rb*.
 
-Added the required OpenSSL gem.
+Add the required OpenSSL gem.
 
 .. literalinclude:: ./example_code/s3/create_rsa_keys.rb
    :lines: 13

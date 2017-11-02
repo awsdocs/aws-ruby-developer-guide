@@ -21,7 +21,7 @@ Encrypting an |S3| Bucket Item with a Client-Side |KMS| Key
 
 The following example uses the
 :ruby-sdk-api:`encrypt <Aws/KMS/Client.html#encrypt-instance_method>` method
-to encrypt an item with a |KMS| key and the
+to encrypt an item with an |KMS| key, and the
 :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
 to add the item :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region.
@@ -30,8 +30,9 @@ Choose :code:`Copy` to save the code locally.
 
 Create the file *encrypt_item_csekms.rb*.
 
-Added the required |S3| gem.
-Note how in V2 the |sdk-ruby| did not have service-specific gems.
+Add the required |S3| gem.
+
+.. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
    :lines: 13
@@ -39,14 +40,14 @@ Note how in V2 the |sdk-ruby| did not have service-specific gems.
    :language: ruby
 
 Set the region, bucket name, item name, and key value.
-See the :doc:`kms-example-create-key` example for information on creating a |KMS| key.
+See the :doc:`kms-example-create-key` example for information about creating an |KMS| key.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
    :lines: 15-18
    :dedent: 0
    :language: ruby
 
-Open the file, get it's contents, encrypt it with **encrypt**,
+Open the file, get its contents, encrypt it with :code:`encrypt`,
 and get the ciphered file contents.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
@@ -55,7 +56,7 @@ and get the ciphered file contents.
    :language: ruby
 
 
-Create an |S3| client, call **put_object** to upload the item to the bucket,
+Create an |S3| client, call :code:`put_object` to upload the item to the bucket,
 and display a success message.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb

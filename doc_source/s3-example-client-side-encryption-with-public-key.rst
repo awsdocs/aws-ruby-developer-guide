@@ -21,7 +21,7 @@ Encrypting an |S3| Bucket Item with a Client-Side Public Key
 
 The following example uses the
 `PKey <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/PKey.html>`_
-class to encrypt an item with a publi key and the
+class to encrypt an item with a public key and the
 :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
 to add the item :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region.
@@ -30,8 +30,9 @@ Choose :code:`Copy` to save the code locally.
 
 Create the file *encrypt_item_csepk.rb*.
 
-Added the required |S3|, Base64, and OpenSSL gems.
-Note how in V2 the |sdk-ruby| did not have service-specific gems.
+Add the required |S3|, Base64, and OpenSSL gems.
+
+.. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
 .. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
    :lines: 13-15
@@ -39,7 +40,7 @@ Note how in V2 the |sdk-ruby| did not have service-specific gems.
    :language: ruby
 
 Set the region, bucket name, item name, and name of the file containing the public key.
-See :doc:`s3-example-create-public-private-key` for information on creating a public key.
+See :doc:`s3-example-create-public-private-key` for information about creating a public key.
 
 .. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
    :lines: 17-20
@@ -54,7 +55,7 @@ using the public key.
    :dedent: 0
    :language: ruby
 
-Create an |S3| client, call **put_object** to upload the item to the bucket,
+Create an |S3| client, call :code:`put_object` to upload the item to the bucket,
 and display a success message.
 
 .. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb

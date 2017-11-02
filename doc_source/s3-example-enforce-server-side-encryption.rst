@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-enforce-server-side-encryption:
 
-##################################################################
-Requiring Server-Side |S3| Managed Key to Upload |S3| Bucket Items
-##################################################################
+####################################################################
+Requiring a Server-Side |S3| Managed Key to Upload |S3| Bucket Items
+####################################################################
 
 .. meta::
     :description:
@@ -23,15 +23,16 @@ The following example uses the
 :ruby-sdk-api:`put_bucket_policy <Aws/S3/Client.html#put_bucket_policy-instance_method>` method
 to require that items uploaded to an |S3| bucket have
 AES-256 encryption.
-Attempts to upload an item without AES-256 encryption enabled on the item,
+Attempts to upload an item without AES-256 encryption enabled on the item
 raise an :code:` Aws::S3::Errors::AccessDenied` exception.
 
 Choose :code:`Copy` to save the code locally.
 
 Create the file *add_sses3_policy.rb*.
 
-Added the required |S3| gem.
-Note how in V2 the |sdk-ruby| did not have service-specific gems.
+Add the required |S3| gem.
+
+.. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
 .. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
    :lines: 13
@@ -45,7 +46,7 @@ Set the region and bucket name.
    :dedent: 0
    :language: ruby
 
-Create an |S3| policy that requires server-side 256-bit AES cipher on items
+Create an |S3| policy that requires a server-side 256-bit AES cipher on items
 uploaded to the bucket.
 
 .. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
@@ -59,7 +60,7 @@ To require server-side KMS, change:
 
    's3:x-amz-server-side-encryption': 'AES256'
 
-To:
+to:
 
 .. code-block:: ruby
 
