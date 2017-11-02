@@ -27,7 +27,7 @@ in the :code:`us-west-2` region.
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *describe_trails.ruby* with the following code.
+Create the file *describe_trails.rb* with the following code.
 
 .. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-describe-trails.rb
    :lines: 13-41

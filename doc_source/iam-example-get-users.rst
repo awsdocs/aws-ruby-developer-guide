@@ -10,16 +10,22 @@
 
 .. _aws-ruby-sdk-iam-example-get-users:
 
-#########################################
-Getting Information about All |IAM| Users
-#########################################
+#####################################
+Getting Information about |IAM| Users
+#####################################
 
 .. meta::
     :description:
-        Get information about all IAM users with this AWS SDK for Ruby code example.
+        Get information about IAM users with this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, IAM
 
-The following example lists the groups, policies, and access key IDs of all |IAM| users in the :code:`us-west-2` region.
+The following example lists the groups, policies, and access key IDs of the
+|IAM| users in the :code:`us-west-2` region.
+If there are more than 100 users, :code:`iam.list_users.IsTruncated` is **true**
+and :code:`iam.list_users.Marker` contains a value you can use to get information
+about additional users.
+See the `Aws::IAM::Client.list_users <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/IAM/Client.html#list_users-instance_method>`_
+topic for further information.
 
 .. literalinclude:: ./example_code/iam/iam-ruby-example-list-all-users.rb
    :lines: 13-37

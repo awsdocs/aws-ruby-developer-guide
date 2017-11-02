@@ -31,5 +31,3 @@
    Code Examples <examples>
    Tips and Tricks <tips-and-tricks>
    history
-
-.. include:: about-aws.txt
