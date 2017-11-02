@@ -11,17 +11,17 @@
 .. _aws-ruby-sdk-s3-example-client-side-encryption-with-client-master-key:
 
 ############################################################
-Encrypting an |S3| Bucket Item with a Client-Side AES256 Key
+Encrypting an |S3| Bucket Item with a Client-Side Master Key
 ############################################################
 
 .. meta::
     :description:
-        Encrypt Amazon S3 bucket items with a client-side 256-bit AES key using this AWS SDK for Ruby code example.
+        Encrypt Amazon S3 bucket items with a client-side master key using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
 `Cipher <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/Cipher.html>`_
-class to encrypt an item with a |KMS| key and the
+class to encrypt an item with a 256-bit AES key and the
 :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
 to add the item :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region.
@@ -42,7 +42,7 @@ Set the region, bucket name, item name, and key value.
 See the :doc:`kms-example-create-key` example for information on creating a |KMS| key.
 
 .. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
-   :lines: 15-18
+   :lines: 16-19
    :dedent: 0
    :language: ruby
 

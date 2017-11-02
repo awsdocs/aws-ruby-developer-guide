@@ -20,7 +20,7 @@ Encrypting an |S3| Bucket Item with a Server-Side |KMS| Managed Key
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
-:ruby-sdk-api:`put_object <Aws/S3/Client.html#put-object-instance_method>` method
+:ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
 to add the item :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region
 with server-side encryption set to KMS.
@@ -52,8 +52,8 @@ Open the file and get just the filename to use as the bucket key.
    :language: ruby
 
 Create an |S3| client and call **put_object** to upload the item to the bucket.
-Note that the :code:`server_side_encryption` property is set to :code:`AES256`,
-indicating that |S3| encrypts the item using a 256-bit AES cipher.
+Note that the :code:`server_side_encryption` property is set to :code:`KMS`,
+indicating that |S3| encrypts the item KMS.
 
 .. literalinclude:: ./example_code/s3/s3_add_ssekms_encrypt_item.rb
    :lines: 26-34

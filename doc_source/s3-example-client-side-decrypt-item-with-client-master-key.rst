@@ -34,7 +34,7 @@ Create the file *decrypt_item_cseaes.rb*.
 Added the required |S3| and OpenSSL gems.
 Note how in V2 the |sdk-ruby| did not have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
+.. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
    :lines: 13-14
    :dedent: 0
    :language: ruby
@@ -49,7 +49,7 @@ Set the region, bucket name, item name, key, and initialization vector.
 Create an |S3| client, call **get_object**, and get the contents of the item as text.
 
 .. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
-   :lines: 22-27
+   :lines: 23-29
    :dedent: 0
    :language: ruby
 
@@ -57,7 +57,7 @@ Create an **AES256** object, decipher the contents of the item,
 and display the decrtyped text.
 
 .. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
-   :lines: 29-36
+   :lines: 32-39
    :dedent: 0
    :language: ruby
 

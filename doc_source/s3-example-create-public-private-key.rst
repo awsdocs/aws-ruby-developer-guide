@@ -31,7 +31,7 @@ Create the file *create_rsa_keys.rb*.
 
 Added the required OpenSSL gem.
 
-.. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
+.. literalinclude:: ./example_code/s3/create_rsa_keys.rb
    :lines: 13
    :dedent: 0
    :language: ruby
