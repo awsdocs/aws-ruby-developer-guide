@@ -29,8 +29,9 @@ Choose :code:`Copy` to save the code locally.
 
 Create the file *encrypt_item_sses3.rb*.
 
-Added the required |S3| gem.
-Note how in V2 the |sdk-ruby| did not have service-specific gems.
+Add the required |S3| gem.
+
+.. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
    :lines: 13
@@ -44,15 +45,15 @@ Set the region, bucket name, and item name.
    :dedent: 0
    :language: ruby
 
-Open the file and get just the filename to use as the bucket key.
+Open the file and get just the file name to use as the bucket key.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
    :lines: 20-23
    :dedent: 0
    :language: ruby
 
-Create an |S3| client and call **put_object** to upload the item to the bucket.
-Note that the :code:`server_side_encryption` property is set to :code:`AES256`,
+Create an |S3| client and call :code:`put_object` to upload the item to the bucket.
+Notice that the :code:`server_side_encryption` property is set to :code:`AES256`,
 indicating that |S3| encrypts the item using a 256-bit AES cipher.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb

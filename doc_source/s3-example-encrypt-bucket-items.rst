@@ -23,9 +23,8 @@ The :doc:`s3-example-set-item-props` example added a number of properties, inclu
 to a bucket item. The following examples demonstrate how to encrypt and decrypt
 bucket items using both server-side encryption as shown in that example, and
 client-side encryption.
-For more information about encryption in |S3|, see the
-`Protecting Data Using Encryption <http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html>`_
-topic.
+For more information about encryption in |S3|, see
+`Protecting Data Using Encryption <http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html>`_.
 
 .. toctree::
    :maxdepth: 1

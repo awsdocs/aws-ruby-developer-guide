@@ -21,7 +21,7 @@ Encrypting an |S3| Bucket Item with a Client-Side Master Key
 
 The following example uses the
 `Cipher <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/Cipher.html>`_
-class to encrypt an item with a 256-bit AES key and the
+class to encrypt an item with a 256-bit AES key, and the
 :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
 to add the item :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region.
@@ -30,8 +30,9 @@ Choose :code:`Copy` to save the code locally.
 
 Create the file *encrypt_item_cseaes.rb*.
 
-Added the required |S3| and OpenSSL gems.
-Note how in V2 the |sdk-ruby| did not have service-specific gems.
+Add the required |S3| and OpenSSL gems.
+
+.. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
 .. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
    :lines: 13-14
@@ -39,29 +40,29 @@ Note how in V2 the |sdk-ruby| did not have service-specific gems.
    :language: ruby
 
 Set the region, bucket name, item name, and key value.
-See the :doc:`kms-example-create-key` example for information on creating a |KMS| key.
+See the :doc:`kms-example-create-key` example for information about creating an |KMS| key.
 
 .. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
    :lines: 16-19
    :dedent: 0
    :language: ruby
 
-Create the cipher, random initialization vector, and key and display the value
-of the initialization vector as you need that value to decrypt the item.
+Create the cipher, random initialization vector, and key. Then display the value
+of the initialization vector, as you need that value to decrypt the item.
 
 .. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
    :lines: 22-33
    :dedent: 0
    :language: ruby
 
-Open the file, get it's contents, and encrypt it.
+Open the file, get its contents, and encrypt it.
 
 .. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
    :lines: 36-41
    :dedent: 0
    :language: ruby
 
-Create an |S3| client, call **put_object** to upload the item to the bucket,
+Create an |S3| client, call :code:`put_object` to upload the item to the bucket,
 and display a success message.
 
 .. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
