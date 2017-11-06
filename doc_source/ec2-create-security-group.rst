@@ -25,6 +25,6 @@ In the example, the security group is allowed access over port 22 (SSH) from all
 is given the description "Security group for MyGroovyInstance". Then, the security group's ID is displayed.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-security-group.rb
-   :lines: 13-33
+   :lines: 13-34
    :dedent: 0
    :language: ruby
