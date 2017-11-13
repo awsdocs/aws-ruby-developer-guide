@@ -29,8 +29,8 @@ For more information about encryption in |S3|, see
 .. toctree::
    :maxdepth: 1
 
-   s3-example-server-side-encryption-with-s3-managed-key
-   s3-example-server-side-encryption-with-kms-managed-key
+   s3-example-default-server-side-encryption
+   s3-example-server-side-encryption
    s3-example-enforce-server-side-encryption
    s3-example-client-side-encryption-with-kms-master-key
    s3-example-client-side-decrypt-item-with-kms-master-key
