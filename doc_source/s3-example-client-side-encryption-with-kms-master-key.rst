@@ -8,11 +8,11 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-s3-example-client-side-encryption-with-kms-master-key:
+.. _aws-ruby-sdk-s3-example-client-side-encryption-with-client-kms-key:
 
-###########################################################
-Encrypting an |S3| Bucket Item with a Client-Side |KMS| Key
-###########################################################
+#########################################################
+Encrypting an |S3| Bucket Item with a Client-Side KMS Key
+#########################################################
 
 .. meta::
     :description:
@@ -20,15 +20,13 @@ Encrypting an |S3| Bucket Item with a Client-Side |KMS| Key
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
-:ruby-sdk-api:`encrypt <Aws/KMS/Client.html#encrypt-instance_method>` method
-to encrypt an item with an |KMS| key, and the
 :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
 to add the item :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region.
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *encrypt_item_csekms.rb*.
+Create the file *encrypt_item_cseaes.rb*.
 
 Add the required |S3| gem.
 
@@ -39,28 +37,33 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Set the region, bucket name, item name, and key value.
-See the :doc:`kms-example-create-key` example for information about creating an |KMS| key.
+Set the bucket name, item filename, and key filename.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
-   :lines: 15-18
+   :lines: 15-17
    :dedent: 0
    :language: ruby
 
-Open the file, get its contents, encrypt it with :code:`encrypt`,
-and get the ciphered file contents.
+Read the contents of the file as a string.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
-   :lines: 21-33
+   :lines: 20
    :dedent: 0
    :language: ruby
 
+Get the KMS key from the file *my_item.key*.
+See :doc:`kms-example-create-key` for information on creating a KMS key.
 
-Create an |S3| client, call :code:`put_object` to upload the item to the bucket,
+.. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
+   :lines: 23
+   :dedent: 0
+   :language: ruby
+
+Create a |KMS| and |S3| encryption client, call :code:`put_object` to upload the item to the bucket,
 and display a success message.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
-   :lines: 35-43
+   :lines: 26-41
    :dedent: 0
    :language: ruby
 

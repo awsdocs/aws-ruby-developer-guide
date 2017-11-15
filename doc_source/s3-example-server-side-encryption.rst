@@ -38,17 +38,17 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Set the region, bucket name, and item name.
+Set the bucket and item name.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 15-17
+   :lines: 15-16
    :dedent: 0
    :language: ruby
 
-Open the file and get just the file name to use as the bucket key.
+Get the contents of the file as a string.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 20-23
+   :lines: 19
    :dedent: 0
    :language: ruby
 
@@ -57,14 +57,14 @@ Notice that the :code:`server_side_encryption` property is set to :code:`AES256`
 indicating that |S3| encrypts the item using a 256-bit AES cipher.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 26-34
+   :lines: 22-30
    :dedent: 0
    :language: ruby
 
-Finally, close the file and display a success message to the user.
+Display a success message to the user.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 37-39
+   :lines: 32
    :dedent: 0
    :language: ruby
 
@@ -82,7 +82,7 @@ To:
    ssekms_key_id: KEY,
 
 Where *KEY* is a KMS key ID as created in the :doc:`kms-example-create-key` example.
-      
+
 See the `complete example
 <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_sses3_encrypt_item.rb>`_
 on GitHub.

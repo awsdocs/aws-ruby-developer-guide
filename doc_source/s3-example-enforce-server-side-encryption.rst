@@ -24,7 +24,7 @@ The following example uses the
 to require that items uploaded to an |S3| bucket have
 AES-256 encryption.
 Attempts to upload an item without AES-256 encryption enabled on the item
-raise an :code:` Aws::S3::Errors::AccessDenied` exception.
+raise an :code:`Aws::S3::Errors::AccessDenied` exception.
 
 Choose :code:`Copy` to save the code locally.
 
@@ -39,10 +39,10 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Set the region and bucket name.
+Set the bucket name.
 
 .. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
-   :lines: 15-16
+   :lines: 15
    :dedent: 0
    :language: ruby
 
@@ -50,7 +50,7 @@ Create an |S3| policy that requires a server-side 256-bit AES cipher on items
 uploaded to the bucket.
 
 .. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
-   :lines: 24-53
+   :lines: 18-47
    :dedent: 0
    :language: ruby
 
@@ -64,12 +64,12 @@ to:
 
 .. code-block:: ruby
 
-   's3:x-amz-server-side-encryption': 'KMS'
+   's3:x-amz-server-side-encryption': 'aws:kms'
 
 Create the |S3| client, apply the policy to the bucket, and print a success message.
 
 .. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
-   :lines: 56-64
+   :lines: 50-58
    :dedent: 0
    :language: ruby
 

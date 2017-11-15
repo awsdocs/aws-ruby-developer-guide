@@ -16,14 +16,21 @@ Creating Public and Private RSA Keys to Encrypt Client-Side Bucket Items
 
 .. meta::
     :description:
-        Create public and private keys upload client-side encrypted items to Amazon S3 buckets using this AWS SDK for Ruby code example.
+        Create public and private keys to upload and download encrypted items to
+        Amazon S3 buckets using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
 `PKey <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/PKey.html>`_
-class to create a public/private RSA key pair that you can use to
-encrypt items on the client before you upload them to an |S3| bucket.
-You'll need these keys in the :doc:`s3-example-client-side-encryption-with-public-key` and :doc:`s3-example-client-side-decrypt-item-with-private-key` examples.
+class to create a public and private keys.
+Use the public key to encrypt items on the client before you upload them to an
+|S3| bucket.
+Use the private key and pass phrase to decrypt items on the client after you
+download them from an |S3| bucket.
+The
+:doc:`s3-example-client-side-encryption-with-public-key` and
+:doc:`s3-example-client-side-decrypt-item-with-private-key` examples
+use public and private keys, respectively.
 
 Choose :code:`Copy` to save the code locally.
 
@@ -36,18 +43,28 @@ Add the required OpenSSL gem.
    :dedent: 0
    :language: ruby
 
-Set the pass phrase to seed the key and create the key.
+Get the pass phrase,
+which is used to seed and create the key,
+from the command line.
 
 .. literalinclude:: ./example_code/s3/create_rsa_keys.rb
-   :lines: 15-16
+   :lines: 16-21
    :dedent: 0
    :language: ruby
 
-Save the public key as *public_key.pem* and the private
-key as *private_secure_key.pem*.
+Create the RSA key pairs.
+Save the public key as *public_key.pem*
+and the private key as *private_secure_key.pem*.
 
 .. literalinclude:: ./example_code/s3/create_rsa_keys.rb
-   :lines: 19-28
+   :lines: 22-37
+   :dedent: 0
+   :language: ruby
+
+Display the names of the key files and the pass phrase.
+
+.. literalinclude:: ./example_code/s3/create_rsa_keys.rb
+   :lines: 39-41
    :dedent: 0
    :language: ruby
 

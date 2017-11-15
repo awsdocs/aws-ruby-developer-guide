@@ -40,18 +40,24 @@ Add the required |S3|, Base64, and OpenSSL gems.
    :dedent: 0
    :language: ruby
 
-Set the region, bucket name, item name, name of the private key file, and
-pass phrase.
+Get the pass phrase from the command line.
 
 .. literalinclude:: ./example_code/s3/s3_get_cspk_decrypt_item.rb
-   :lines: 17-21
+   :lines: 18-23
+   :dedent: 0
+   :language: ruby
+
+Set the bucket name, item name, and name of the private key file.
+
+.. literalinclude:: ./example_code/s3/s3_get_cspk_decrypt_item.rb
+   :lines: 25-27
    :dedent: 0
    :language: ruby
 
 Create an |S3| client, call :code:`get_object`, and get the contents of the item as text.
 
 .. literalinclude:: ./example_code/s3/s3_get_cspk_decrypt_item.rb
-   :lines: 24-30
+   :lines: 30-36
    :dedent: 0
    :language: ruby
 
@@ -59,7 +65,7 @@ Create an **RSA** object, decipher the contents of the item using the private ke
 and display the resulting text.
 
 .. literalinclude:: ./example_code/s3/s3_get_cspk_decrypt_item.rb
-   :lines: 33-36
+   :lines: 39-42
    :dedent: 0
    :language: ruby
 

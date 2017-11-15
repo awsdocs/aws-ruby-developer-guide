@@ -24,7 +24,7 @@ The following example uses the
 to get the item :code-ruby:`my_item` from the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region,
 and decrypts the contents with the
-:ruby-sdk-api:`decrypt <Aws/KMS/Client.html#decrypt-instance_method>` method.
+KMS key in *my_key_file*.
 
 Choose :code:`Copy` to save the code locally.
 
@@ -39,25 +39,31 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Set the region, bucket name, and item name.
+Set the bucket name, item filename, and key filename.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
    :lines: 15-17
    :dedent: 0
    :language: ruby
 
-Create an |S3| client, call :code:`get_object`, and get the contents of the item.
+Get the key from *my_key_file*.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
-   :lines: 19-22
+   :lines: 20
    :dedent: 0
    :language: ruby
 
-Create an |KMS| client, call :code:`decrypt` to decrypt the contents of the item,
-and display the result.
+Create a |KMS| and |S3| client.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
-   :lines: 24-30
+   :lines: 23-29
+   :dedent: 0
+   :language: ruby
+
+Call :code:`get_object` to get the item and display the result.
+
+.. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
+   :lines: 32-34
    :dedent: 0
    :language: ruby
 

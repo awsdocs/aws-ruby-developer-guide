@@ -39,27 +39,32 @@ Add the required |S3|, Base64, and OpenSSL gems.
    :dedent: 0
    :language: ruby
 
-Set the region, bucket name, item name, and name of the file containing the public key.
+Set the bucket name, item name, and name of the file containing the public key.
 See :doc:`s3-example-create-public-private-key` for information about creating a public key.
 
 .. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
-   :lines: 17-20
+   :lines: 17-19
    :dedent: 0
    :language: ruby
 
-Open the file, get its contents as a string, and encrypt that string
-using the public key.
+Get the file contents as a string and encrypt that string using the public key.
 
 .. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
-   :lines: 23-29
+   :lines: 22-26
    :dedent: 0
    :language: ruby
 
-Create an |S3| client, call :code:`put_object` to upload the item to the bucket,
-and display a success message.
+Create an |S3| client and call :code:`put_object` to upload the item to the bucket.
 
 .. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
-   :lines: 32-41
+   :lines: 29-36
+   :dedent: 0
+   :language: ruby
+
+Display a message to the user about the results.
+
+.. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
+   :lines: 38-39
    :dedent: 0
    :language: ruby
 

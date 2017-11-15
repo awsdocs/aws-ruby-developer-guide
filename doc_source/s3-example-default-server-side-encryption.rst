@@ -20,8 +20,8 @@ Setting Default Server-Side Encryption for an |S3| Bucket
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
-:ruby-sdk-api:`put_object <Aws/S3/Client.html#put_bucket_encryption_method>` method
-to add default 256-bit AES server-side encryption to any items added to
+:ruby-sdk-api:`put_bucket_encryption <Aws/S3/Client.html#put_bucket_encryption-instance_method>`
+method to enable 256-bit AES server-side encryption on any items added to
 :code-ruby:`my_bucket` in the :code:`us-west-2` region.
 
 Choose :code:`Copy` to save the code locally.
@@ -41,7 +41,7 @@ Create an |S3| client and call :code:`put_bucket_encryption` to add
 default encryption to the bucket.
 
 .. literalinclude:: ./example_code/s3/s3_add_default_sse_encryption.rb
-   :lines: 16-31
+   :lines: 16-28
    :dedent: 0
    :language: ruby
 

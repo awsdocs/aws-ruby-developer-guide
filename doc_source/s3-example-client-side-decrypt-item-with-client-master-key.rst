@@ -23,42 +23,40 @@ The following example uses the
 :ruby-sdk-api:`get_object <Aws/S3/Client.html#get_object-instance_method>` method
 to get the item :code-ruby:`my_item` from the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region,
-and decrypts the contents using the
-`Cipher <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/Cipher.html>`_
-class.
+and decrypts the contents using the key in *aes_key.bin*.
 
 Choose :code:`Copy` to save the code locally.
 
 Create the file *decrypt_item_cseaes.rb*.
 
-Add the required |S3| and OpenSSL gems.
+Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
 .. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
-   :lines: 13-14
+   :lines: 13
    :dedent: 0
    :language: ruby
 
-Set the region, bucket name, item name, key, and initialization vector.
+Set the bucket name, item filename, and key filename.
 
 .. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
-   :lines: 16-20
+   :lines: 15-17
    :dedent: 0
    :language: ruby
 
-Create an |S3| client, call :code:`get_object`, and get the contents of the item as text.
+Get the key from *aes_key.bin*.
 
 .. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
-   :lines: 23-29
+   :lines: 20
    :dedent: 0
    :language: ruby
 
-Create an :code:`AES256` object, decipher the contents of the item,
-and display the decrypted text.
+Create an |S3| encryption client, call :code:`get_object`,
+and display the results.
 
 .. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
-   :lines: 32-39
+   :lines: 23-27
    :dedent: 0
    :language: ruby
 
