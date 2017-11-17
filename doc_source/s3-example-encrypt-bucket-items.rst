@@ -32,6 +32,7 @@ For more information about encryption in |S3|, see
    s3-example-default-server-side-encryption
    s3-example-server-side-encryption
    s3-example-enforce-server-side-encryption
+   s3-example-server-side-encryption-with-user-managed-key
    s3-example-client-side-encryption-with-client-master-key
    s3-example-client-side-decrypt-item-with-client-master-key
    s3-example-client-side-encryption-with-kms-master-key
