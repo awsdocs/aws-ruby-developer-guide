@@ -39,31 +39,25 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Set the bucket name, item filename, and key filename.
+Set the bucket name, item filename, and key ID.
+The key ID must be the same value you used to encrypt the item.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
    :lines: 15-17
    :dedent: 0
    :language: ruby
 
-Get the key from *my_key_file*.
-
-.. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
-   :lines: 20
-   :dedent: 0
-   :language: ruby
-
 Create a |KMS| and |S3| client.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
-   :lines: 23-29
+   :lines: 20-26
    :dedent: 0
    :language: ruby
 
 Call :code:`get_object` to get the item and display the result.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
-   :lines: 32-34
+   :lines: 29-31
    :dedent: 0
    :language: ruby
 
