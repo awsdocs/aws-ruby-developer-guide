@@ -59,7 +59,7 @@ Get the KMS key from the file *aes_key.bin*.
    :dedent: 0
    :language: ruby
 
-Create an |S3| client, call :code:`put_object` to upload the item to the bucket,
+Create an |S3| encryption client, call :code:`put_object` to upload the item to the bucket,
 and display a success message.
 
 .. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
