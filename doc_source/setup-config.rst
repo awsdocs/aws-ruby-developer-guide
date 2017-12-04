@@ -24,6 +24,13 @@ Learn how to configure the |sdk-ruby|. To use the SDK, you must set either
 AWS credentials or create an AWS STS access token, and set the AWS Region you want
 to use.
 
+.. _aws-ruby-sdk-getting-credentials:
+
+Get your AWS access keys
+========================
+
+.. include:: common/procedure-get-access-keys.txt
+
 .. _aws-ruby-sdk-setting-credentials:
 
 Setting AWS Credentials

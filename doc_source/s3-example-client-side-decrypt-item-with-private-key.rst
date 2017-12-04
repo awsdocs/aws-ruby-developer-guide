@@ -31,44 +31,44 @@ Choose :code:`Copy` to save the code locally.
 
 Create the file *decrypt_item_csepk.rb*.
 
-Add the required |S3|, Base64, and OpenSSL gems.
+Add the required |S3| and OpenSSL gems.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_get_cspk_decrypt_item.rb
-   :lines: 13-15
+.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+   :lines: 13-14
    :dedent: 0
    :language: ruby
 
 Get the pass phrase from the command line.
 
-.. literalinclude:: ./example_code/s3/s3_get_cspk_decrypt_item.rb
-   :lines: 18-23
+.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+   :lines: 16-21
    :dedent: 0
    :language: ruby
 
 Set the bucket name, item name, and name of the private key file.
 
-.. literalinclude:: ./example_code/s3/s3_get_cspk_decrypt_item.rb
-   :lines: 25-27
+.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+   :lines: 23-25
    :dedent: 0
    :language: ruby
 
-Create an |S3| client, call :code:`get_object`, and get the contents of the item as text.
+Create an RSA key from the contents of the key file and passphrase.
 
-.. literalinclude:: ./example_code/s3/s3_get_cspk_decrypt_item.rb
-   :lines: 30-36
+.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+   :lines: 28-29
    :dedent: 0
    :language: ruby
 
-Create an **RSA** object, decipher the contents of the item using the private key,
-and display the resulting text.
+Create an |S3| encryption client, call :code:`get_object`, get the contents of the item as text
+and print out the item contents.
 
-.. literalinclude:: ./example_code/s3/s3_get_cspk_decrypt_item.rb
-   :lines: 39-42
+.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+   :lines: 32-36
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_get_cspk_decrypt_item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3-ruby-example-get-cspk-item.rb>`_
 on GitHub.

@@ -30,44 +30,45 @@ Choose :code:`Copy` to save the code locally.
 
 Create the file *encrypt_item_csepk.rb*.
 
-Add the required |S3|, Base64, and OpenSSL gems.
+Add the required |S3| and OpenSSL gems.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
-   :lines: 13-15
+.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
+   :lines: 13-14
    :dedent: 0
    :language: ruby
 
 Set the bucket name, item name, and name of the file containing the public key.
 See :doc:`s3-example-create-public-private-key` for information about creating a public key.
 
-.. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
-   :lines: 17-19
+.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
+   :lines: 16-18
    :dedent: 0
    :language: ruby
 
-Get the file contents as a string and encrypt that string using the public key.
+Get the file contents as a string; get the public key from the file
+and create a new RSA key to encrypt the bucket item.
 
-.. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
-   :lines: 22-26
+.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
+   :lines: 21-24
    :dedent: 0
    :language: ruby
 
-Create an |S3| client and call :code:`put_object` to upload the item to the bucket.
+Create an |S3| encryption client and call :code:`put_object` to upload the item to the bucket.
 
-.. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
-   :lines: 29-36
+.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
+   :lines: 28-35
    :dedent: 0
    :language: ruby
 
 Display a message to the user about the results.
 
-.. literalinclude:: ./example_code/s3/s3_add_cspk_encrypt_item.rb
-   :lines: 38-39
+.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
+   :lines: 37
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_cspk_encrypt_item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3-ruby-example-add-cspk-item.rb>`_
 on GitHub.
