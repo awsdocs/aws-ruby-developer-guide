@@ -20,8 +20,6 @@ Encrypting an |S3| Bucket Item with a Client-Side Master Key
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
-`Cipher <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/Cipher.html>`_
-class to encrypt an item with a 256-bit AES key, and the
 :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
 to add the item :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region.
