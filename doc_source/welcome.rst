@@ -23,13 +23,24 @@ AWS SDK for Ruby Developer Guide
 Welcome to the |sdk-ruby|.
 
 The |sdk-ruby| helps take the complexity out of coding by providing Ruby classes for almost all AWS
-services, including |S3long|, |EC2long|, and |DDBlong|. 
+services, including |S3long|, |EC2long|, and |DDBlong|.
 For a complete list of services supported by the
 |sdk-ruby|, see the `Supported Services
 <https://github.com/aws/aws-sdk-ruby/blob/master/README.md#supported-services>`_
 section of the |sdk-ruby| Readme file.
 This section also lists the gems that the |sdk-ruby| supports as version 3
 modularized the monolithic SDK gem into service-specific gems.
+
+Using the AWS SDK for Ruby with AWS Cloud9
+==========================================
+
+AWS Cloud9 is a web-based integrated development environment (IDE) that
+contains a collection of tools that you use to code, build, run, test, debug,
+and release software in the cloud.
+
+The AWS Cloud9 documentation contains a topic on
+:AC9-ug:`running Ruby code <sample-ruby>`
+in the AWS Cloud9 environment, including how to install and configure the |sdk-ruby|.
 
 .. _aws-ruby-sdk-developer-guide-contents:
 
@@ -89,7 +100,7 @@ Deploying to the AWS Cloud
 --------------------------
 
 You can use AWS services such as |AEBlong|, |OPS|, and |ACD| to deploy your application to the AWS Cloud.
-For deploying Ruby applications with |AEB|, see 
+For deploying Ruby applications with |AEB|, see
 :AEB-dg:`Deploying Elastic Beanstalk Applications in Ruby Using EB CLI and Git <create_deploy_Ruby>`
 in the |AEB-dg|. For deploying a Ruby on Rails application with |OPS|, see
 `Deploying Ruby on Rails Applications to AWS OpsWorks <http://ruby.awsblog.com/post/Tx7FQMT084INCR/Deploying-Ruby-on-Rails-Applications-to-AWS-OpsWorks>`_.
