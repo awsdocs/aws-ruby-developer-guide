@@ -27,6 +27,7 @@ information about |IAM|, see the `IAM documentation <http://aws.amazon.com/docum
    :maxdepth: 1
 
    iam-example-get-users
+   iam-example-get-admins
    iam-example-add-user
    iam-example-create-user-access-keys
    iam-example-add-managed-policy
