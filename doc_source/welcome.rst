@@ -31,6 +31,8 @@ section of the |sdk-ruby| Readme file.
 This section also lists the gems that the |sdk-ruby| supports as version 3
 modularized the monolithic SDK gem into service-specific gems.
 
+.. _aws-ruby-sdk-developer-guide-cloud9:
+
 Using the AWS SDK for Ruby with AWS Cloud9
 ==========================================
 
