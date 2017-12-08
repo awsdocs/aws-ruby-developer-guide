@@ -28,7 +28,7 @@ Choose :code:`Copy` to save the code locally.
 
 Create the file *get_admins.rb*.
 
-Add the required |IAM| gem and the **os**, and use the latter to use the
+Add the required |IAM| gem and the **os** gem, and use the latter to use the
 bundled certificate if you are running on Microsoft Windows.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
@@ -78,7 +78,7 @@ has administrator privileges.
    :dedent: 0
    :language: ruby
 
-Create a method to determine the user has administrator privileges.
+Create a method to determine whether the user has administrator privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
    :lines: 87-93
@@ -103,10 +103,10 @@ and the string that identifies a policy that supplies adminstrator privileges.
    :dedent: 0
    :language: ruby
 
-Call **get_account_authorization_details** to get the details of the account
-and get the users for the account from **user_detail_list**.
+Call :code:`get_account_authorization_details` to get the details of the account
+and get the users for the account from :code:`user_detail_list`.
 Keep track of how many users we get,
-call **get_admin_count** to get the number of those users who have
+call :code:`get_admin_count` to get the number of those users who have
 administrator privileges,
 and keep track of the number of those.
 
@@ -115,7 +115,7 @@ and keep track of the number of those.
    :dedent: 0
    :language: ruby
 
-If the first call to **get_account_authorization_details** did not get
+If the first call to :code:`get_account_authorization_details` did not get
 all of the details, call it again and repeat the process of determining
 how many have administrator privileges.
 
