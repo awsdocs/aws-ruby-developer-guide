@@ -18,12 +18,12 @@ Using the |sdk-ruby| REPL Tool
     :description:
         Build Ruby applications on top of APIs that use the cost-effective, scalable, and reliable
         AWS infrastructure services with the |sdk-ruby|.
-    :keywords: AWS SDK for ruby, aws.rb, aws-sdk-core gem, ruby code examples
+    :keywords: AWS SDK for ruby, aws.rb, aws-v3.rb, aws-sdk-core gem, ruby code examples
 
-Developers can use :code:`aws.rb`, the interactive command line
+Developers can use :code:`aws-v3.rb` (formerly :code:`aws.rb`), the interactive command line
 read-evaluate-print loop (REPL) console tool that is part of the :code:`aws-sdk-core` gem.
 
-Although :code:`aws.rb` does work with the Interactive Ruby Shell (:code:`irb`), we recommend that
+Although :code:`aws-v3.rb` does work with the Interactive Ruby Shell (:code:`irb`), we recommend that
 you install :code:`pry`, which provides a more powerful REPL environment.
 
 Use the following command to install :code:`pry`.
@@ -32,13 +32,13 @@ Use the following command to install :code:`pry`.
 
     gem install pry
 
-To use :code:`aws.rb`, you invoke it in a console window using one of the following two command
+To use :code:`aws-v3.rb`, you invoke it in a console window using one of the following two command
 lines.
 
 .. code-block:: none
 
-    aws.rb
-    aws.rb -v
+    aws-v3.rb
+    aws-v3.rb -v
 
 The second command line invokes the REPL with extensive HTTP wire logging, which provides
 information about the communication between the |sdk-ruby| and AWS. Use this command line with
