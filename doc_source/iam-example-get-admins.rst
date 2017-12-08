@@ -21,7 +21,7 @@ Listing |IAM| Users who are Administrators
     :keywords: AWS SDK for Ruby code examples, IAM
 
 The following example uses the
-:ruby-sdk-api:`get_account_authorization_details <Aws/S3/Client.html#put_bucket_encryptionget_account_authorization_details-instance_method>`,
+:ruby-sdk-api:`get_account_authorization_details <Aws/IAM/Client.html#get_account_authorization_details-instance_method>`,
 method to get the list of users for the current account.
 
 Choose :code:`Copy` to save the code locally.
@@ -85,7 +85,7 @@ Create a method to determine the user has administrator privileges.
    :dedent: 0
    :language: ruby
 
-Create a method to loop through a list of users and return  
+Create a method to loop through a list of users and return
 how many of those users have administrator privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
