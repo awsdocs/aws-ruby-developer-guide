@@ -42,7 +42,7 @@ Create a method to determine whether the user has a policy with administrator
 privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 20-29
+   :lines: 20-30
    :dedent: 0
    :language: ruby
 
@@ -50,7 +50,7 @@ Create a method to determine whether the user has an attached policy with admini
 privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 31-41
+   :lines: 32-42
    :dedent: 0
    :language: ruby
 
@@ -58,7 +58,7 @@ Create a method to determine whether a group to which the user belongs
 has a policy with administrator privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 43-55
+   :lines: 44-56
    :dedent: 0
    :language: ruby
 
@@ -66,7 +66,7 @@ Create a method to determine whether a group to which the user belongs
 has an attached policy with administrator privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 57-69
+   :lines: 58-70
    :dedent: 0
    :language: ruby
 
@@ -74,14 +74,14 @@ Create a method to determine whether a group to which the user belongs
 has administrator privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 71-85
+   :lines: 72-90
    :dedent: 0
    :language: ruby
 
 Create a method to determine whether the user has administrator privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 87-93
+   :lines: 92-109
    :dedent: 0
    :language: ruby
 
@@ -89,7 +89,7 @@ Create a method to loop through a list of users and return
 how many of those users have administrator privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 95-107
+   :lines: 111-123
    :dedent: 0
    :language: ruby
 
@@ -99,7 +99,7 @@ number of users who have adminstrator privileges,
 and the string that identifies a policy that supplies adminstrator privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 110-114
+   :lines: 126-130
    :dedent: 0
    :language: ruby
 
@@ -111,7 +111,7 @@ administrator privileges,
 and keep track of the number of those.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 116-123
+   :lines: 132-139
    :dedent: 0
    :language: ruby
 
@@ -120,14 +120,14 @@ all of the details, call it again and repeat the process of determining
 how many have administrator privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 125-140
+   :lines: 141-156
    :dedent: 0
    :language: ruby
 
 Finally, display how many users have administrator privileges.
 
 .. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
-   :lines: 142-143
+   :lines: 158-159
    :dedent: 0
    :language: ruby
 
