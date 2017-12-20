@@ -10,25 +10,25 @@
 
 .. _aws-ruby-sdk-s3-example-server-side-encryption-with-user-managed-kms-key:
 
-##################################################
-Server-Side Encyrption with a User-Managed KMS Key
-##################################################
+#########################################################
+Encrypting an Amazon S3 Bucket Object with an AWS KMS Key
+#########################################################
 
 .. meta::
     :description:
-        Encrypt Amazon S3 bucket items with a user-managed KMS key using this AWS SDK for Ruby code example.
+        Encrypt Amazon S3 bucket objects with an AWS KMS key using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
 :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
-to add the item :code-ruby:`my_item` to the bucket
+to add the object :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region
-with server-side KMS encryption where you provide the key.
-See :doc:`kms-example-create-key` for information on creating a KMS key.
+with server-side AWS KMS encryption where you provide the key.
+See :doc:`kms-example-create-key` for information on creating an AWS KMS key.
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *encrypt_item_sseck.rb*.
+Create the file *encrypt_object_sseck.rb*.
 
 Add the required |S3| and **md5** gems.
 
@@ -56,9 +56,9 @@ Set the bucket and object names, and get the contents of the object from the fil
    :dedent: 0
    :language: ruby
 
-Create an |S3| client and call :code:`put_object` to upload the item to the bucket.
+Create an |S3| client and call :code:`put_object` to upload the object to the bucket.
 Notice that the :code:`server_side_encryption` property is set to :code:`aws:kms`,
-indicating that |S3| encrypts the item using the provided KMS key.
+indicating that |S3| encrypts the object using the provided AWS KMS key.
 Finally, display a success message to the user.
 
 .. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb

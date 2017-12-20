@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-enforce-server-side-encryption:
 
-#######################################
-Server-Side Encryption as a Requirement
-#######################################
+################################################################################
+Requiring a Server-Side Amazon S3 Managed Key to Upload Amazon S3 Bucket Objects
+################################################################################
 
 .. meta::
     :description:
@@ -21,9 +21,9 @@ Server-Side Encryption as a Requirement
 
 The following example uses the
 :ruby-sdk-api:`put_bucket_policy <Aws/S3/Client.html#put_bucket_policy-instance_method>` method
-to require that items uploaded to an |S3| bucket have
+to require that objects uploaded to an |S3| bucket have
 KMS encryption.
-Attempts to upload an item without KMS encryption enabled on the item
+Attempts to upload an object without KMS encryption enabled on the object
 raise an :code:`Aws::S3::Errors::AccessDenied` exception.
 
 Choose :code:`Copy` to save the code locally.
@@ -39,7 +39,7 @@ Add the required |S3| gem and set the bucket name.
    :dedent: 0
    :language: ruby
 
-Create an |S3| policy that requires server-side KMS encryption on items
+Create an |S3| policy that requires server-side KMS encryption on objects
 uploaded to the bucket.
 
 .. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb

@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-default-server-side-encryption:
 
-#################################
-Server-Side Encryption by Default
-#################################
+##############################################################
+Setting Default Server-Side Encryption for an Amazon S3 Bucket
+##############################################################
 
 .. meta::
     :description:

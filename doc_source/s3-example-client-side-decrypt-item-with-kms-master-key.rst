@@ -8,27 +8,27 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-s3-example-client-side-decrypt-item-with-kms-master-key:
+.. _aws-ruby-sdk-s3-example-client-side-decrypt-object-with-kms-master-key:
 
-#####################################
-Client-Side Decryption with a KMS Key
-#####################################
+#########################################################
+Decrypting an Amazon S3 Bucket Object with an AWS KMS Key
+#########################################################
 
 .. meta::
     :description:
-        Decrypt Amazon S3 bucket items with client-side KMS keys using this AWS SDK for Ruby code example.
+        Decrypt Amazon S3 bucket objects with client-side AWS KMS keys using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
 :ruby-sdk-api:`get_object <Aws/S3/Client.html#get_object-instance_method>` method
-to get the item :code-ruby:`my_item` from the bucket
+to get the object :code-ruby:`my_item` from the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region,
 and decrypts the contents with the
-KMS key in *my_key_file*.
+AWS KMS key in *my_key_file*.
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *decrypt_item_csekms.rb*.
+Create the file *decrypt_object_csekms.rb*.
 
 Add the required |S3| gem.
 
@@ -39,9 +39,9 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Get the KMS key from the command line,
-Where :code:`key` is a KMS key ID as created in the :doc:`kms-example-create-key` example
-and must be the same value you used to encrypt the item.
+Get the AWS KMS key from the command line,
+Where :code:`key` is an AWS KMS key ID as created in the :doc:`kms-example-create-key` example
+and must be the same value you used to encrypt the object.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
    :lines: 16-21
@@ -62,7 +62,7 @@ Create a |KMS| and |S3| client.
    :dedent: 0
    :language: ruby
 
-Call :code:`get_object` to get the item and display the result.
+Call :code:`get_object` to get the object and display the result.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
    :lines: 36,38

@@ -16,16 +16,16 @@ Creating Public and Private Asymmetric Keys
 
 .. meta::
     :description:
-        Create public and private keys to upload and download encrypted items to
+        Create public and private keys to upload and download encrypted objects to
         Amazon S3 buckets using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
 `PKey <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/PKey.html>`_
 class to create a public and private keys.
-Use the public key to encrypt items on the client before you upload them to an
+Use the public key to encrypt objects on the client before you upload them to an
 |S3| bucket.
-Use the private key and pass phrase to decrypt items on the client after you
+Use the private key and pass phrase to decrypt objects on the client after you
 download them from an |S3| bucket.
 The
 :doc:`s3-example-client-side-encryption-with-public-key` and

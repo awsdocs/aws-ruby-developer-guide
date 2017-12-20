@@ -10,18 +10,18 @@
 
 .. _aws-ruby-sdk-s3-example-server-side-encryption:
 
-######################
-Server-Side Encryption
-######################
+###################################################
+Encrypting an Amazon S3 Bucket Object on the Server
+###################################################
 
 .. meta::
     :description:
-        Encrypt Amazon S3 bucket items on the server using this AWS SDK for Ruby code example.
+        Encrypt Amazon S3 bucket objects on the server using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
 :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
-to add the item :code-ruby:`my_item` to the bucket
+to add the object :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region
 with server-side encryption set KMS.
 
@@ -30,7 +30,7 @@ is in that case, the objects are encrypted without you having to explicitly perf
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *encrypt_item_sse.rb*.
+Create the file *encrypt_object_sse.rb*.
 
 Add the required |S3| gem.
 
@@ -49,16 +49,16 @@ Where :code:`key` is a KMS key ID as created in the :doc:`kms-example-create-key
    :dedent: 0
    :language: ruby
 
-Set the bucket and item name and get the object from the file as a string.
+Set the bucket and object name and get the object from the file as a string.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
    :lines: 23-24, 27
    :dedent: 0
    :language: ruby
 
-Create an |S3| client and call :code:`put_object` to upload the item to the bucket.
+Create an |S3| client and call :code:`put_object` to upload the object to the bucket.
 Notice that the :code:`server_side_encryption` property is set to :code:`aws:kms`,
-indicating that |S3| encrypts the item using KMS.
+indicating that |S3| encrypts the object using KMS.
 Finally, display a success message to the user.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
