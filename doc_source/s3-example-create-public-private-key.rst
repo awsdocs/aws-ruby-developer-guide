@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-create-public-private-key:
 
-########################################################################
-Creating Public and Private RSA Keys to Encrypt Client-Side Bucket Items
-########################################################################
+###########################################
+Creating Public and Private Asymmetric Keys
+###########################################
 
 .. meta::
     :description:

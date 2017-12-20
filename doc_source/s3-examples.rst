@@ -17,9 +17,10 @@
         AWS SDK for Ruby code examples for Amazon S3.
     :keywords:
 
-|S3long| (|S3|) is storage for the internet. You can use the following examples to access |S3| using
-the |sdk-ruby|. For
-more information about |S3|, see the `Amazon S3 documentation <https://aws.amazon.com/documentation/s3/>`_.
+|S3long| (|S3|) is storage for the internet.
+You can use the following examples to access |S3| using the |sdk-ruby|.
+Learn more about |S3| at
+`Amazon S3 documentation <https://aws.amazon.com/documentation/s3/>`_.
 
 .. toctree::
    :maxdepth: 1
@@ -28,6 +29,7 @@ more information about |S3|, see the `Amazon S3 documentation <https://aws.amazo
    s3-example-get-buckets-in-region
    s3-example-create-buckets
    s3-example-does-bucket-exist
+   s3-example-add-bucket-versioning
    s3-example-get-bucket-items
    s3-example-upload-bucket-item
    s3-example-upload-bucket-item-with-metadata

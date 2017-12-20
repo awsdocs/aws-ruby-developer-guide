@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-client-side-decrypt-item-with-private-key:
 
-#############################################################
-Decrypting an |S3| Bucket Item with a Client-Side Private Key
-#############################################################
+#########################################
+Client-Side Decryption with a Private Key
+#########################################
 
 .. meta::
     :description:
@@ -58,15 +58,15 @@ Create an RSA key from the contents of the key file and passphrase.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
    :lines: 28-29
-   :dedent: 0
+   :dedent: 2
    :language: ruby
 
 Create an |S3| encryption client, call :code:`get_object`, get the contents of the item as text
 and print out the item contents.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
-   :lines: 32-36
-   :dedent: 0
+   :lines: 32,34,36
+   :dedent: 2
    :language: ruby
 
 See the `complete example

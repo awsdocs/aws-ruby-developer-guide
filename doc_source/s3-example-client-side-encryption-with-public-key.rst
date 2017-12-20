@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-client-side-encryption-with-public-key:
 
-############################################################
-Encrypting an |S3| Bucket Item with a Client-Side Public Key
-############################################################
+########################################
+Client-Side Encryption with a Public Key
+########################################
 
 .. meta::
     :description:
@@ -51,21 +51,15 @@ Get the file contents as a string; get the public key from the file
 and create a new RSA key to encrypt the bucket item.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
-   :lines: 21-24
+   :lines: 21,22,24
    :dedent: 0
    :language: ruby
 
 Create an |S3| encryption client and call :code:`put_object` to upload the item to the bucket.
+Finally, display a message to the user about the results.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
-   :lines: 28-35
-   :dedent: 0
-   :language: ruby
-
-Display a message to the user about the results.
-
-.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
-   :lines: 37
+   :lines: 28-37
    :dedent: 0
    :language: ruby
 

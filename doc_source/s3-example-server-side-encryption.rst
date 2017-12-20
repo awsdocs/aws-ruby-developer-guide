@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-server-side-encryption:
 
-############################################
-Encrypting an |S3| Bucket Item on the Server
-############################################
+######################
+Server-Side Encryption
+######################
 
 .. meta::
     :description:
@@ -23,7 +23,10 @@ The following example uses the
 :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
 to add the item :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region
-with server-side encryption set to 256-bit AES.
+with server-side encryption set KMS.
+
+Note that this differs from :doc:`s3-example-default-server-side-encryption`,
+is in that case, the objects are encrypted without you having to explicitly perform the operation.
 
 Choose :code:`Copy` to save the code locally.
 
@@ -38,50 +41,30 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Set the bucket and item name.
+Get the KMS key from the command line,
+Where :code:`key` is a KMS key ID as created in the :doc:`kms-example-create-key` example.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 15-16
+   :lines: 15-21
    :dedent: 0
    :language: ruby
 
-Get the contents of the file as a string.
+Set the bucket and item name and get the object from the file as a string.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 19
+   :lines: 23-24, 27
    :dedent: 0
    :language: ruby
 
 Create an |S3| client and call :code:`put_object` to upload the item to the bucket.
-Notice that the :code:`server_side_encryption` property is set to :code:`AES256`,
-indicating that |S3| encrypts the item using a 256-bit AES cipher.
+Notice that the :code:`server_side_encryption` property is set to :code:`aws:kms`,
+indicating that |S3| encrypts the item using KMS.
+Finally, display a success message to the user.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 22-30
+   :lines: 30-41
    :dedent: 0
    :language: ruby
-
-Display a success message to the user.
-
-.. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 32
-   :dedent: 0
-   :language: ruby
-
-You can also specify server-side KMS encryption by changing:
-
-.. code-block:: ruby
-
-   server_side_encryption: 'AES256',
-
-To:
-
-.. code-block:: ruby
-
-   server_side_encryption: 'aws:kms',
-   ssekms_key_id: KEY,
-
-Where *KEY* is a KMS key ID as created in the :doc:`kms-example-create-key` example.
 
 See the `complete example
 <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_sses3_encrypt_item.rb>`_

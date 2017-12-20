@@ -8,93 +8,63 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-s3-example-server-side-encryption-with-user-managed-key:
+.. _aws-ruby-sdk-s3-example-server-side-encryption-with-user-managed-kms-key:
 
-##################################################################
-Encrypting an |S3| Bucket Item with a Server-Side User Managed Key
-##################################################################
+##################################################
+Server-Side Encyrption with a User-Managed KMS Key
+##################################################
 
 .. meta::
     :description:
-        Encrypt Amazon S3 bucket items with a user-managed key using this AWS SDK for Ruby code example.
+        Encrypt Amazon S3 bucket items with a user-managed KMS key using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
 The following example uses the
 :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
 to add the item :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region
-with server-side AES encryption where you provide the key.
+with server-side KMS encryption where you provide the key.
+See :doc:`kms-example-create-key` for information on creating a KMS key.
 
 Choose :code:`Copy` to save the code locally.
 
 Create the file *encrypt_item_sseck.rb*.
 
-Add the required |S3| gem.
+Add the required |S3| and **md5** gems.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
 .. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
-   :lines: 13
+   :lines: 13-14
    :dedent: 0
    :language: ruby
 
-Set the bucket name, item name, key filename, MD5 filename.
-The MD5 hash is necessary to ensure the key value.
+Get the key from the command-line.
+If there is no command-line argument,
+print an error message and quit.
+Otherwise, create an MD5 hash of the key.
 
 .. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
-   :lines: 15-18
+   :lines: 17-23
    :dedent: 0
    :language: ruby
 
-Get the contents of the item, key file, and MD5 file.
+Set the bucket and object names, and get the contents of the object from the file as a string.
 
 .. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
-   :lines: 21-27
+   :lines: 25-26, 29
    :dedent: 0
    :language: ruby
 
 Create an |S3| client and call :code:`put_object` to upload the item to the bucket.
-Notice that the :code:`server_side_encryption` property is set to :code:`AES256`,
-indicating that |S3| encrypts the item using a 256-bit AES algorithm and your
-provided key (and MD5 hash).
+Notice that the :code:`server_side_encryption` property is set to :code:`aws:kms`,
+indicating that |S3| encrypts the item using the provided KMS key.
+Finally, display a success message to the user.
 
 .. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
-   :lines: 30-40
+   :lines: 32-44
    :dedent: 0
    :language: ruby
-
-Display a success message to the user.
-
-.. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
-   :lines: 42-44
-   :dedent: 0
-   :language: ruby
-
-You can also specify server-side KMS encryption by changing:
-
-.. code-block:: ruby
-
-   sse_customer_algorithm: 'AES256',
-
-To:
-
-.. code-block:: ruby
-
-   sse_customer_algorithm: 'aws:kms',
-
-And by changing:
-
-.. code-block:: ruby
-
-   key = File.binread(key_file)
-
-To:
-
-.. code-block:: ruby
-
-   key = File.read(key_file)
-
-As the KMS key is simply a text string.
 
 See the `complete example
 <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_sseck_encrypt_item.rb>`_

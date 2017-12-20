@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-client-side-encryption-with-client-master-key:
 
-############################################################
-Encrypting an |S3| Bucket Item with a Client-Side Master Key
-############################################################
+#############################################
+Client-Side Encryption with an AES Master Key
+#############################################
 
 .. meta::
     :description:
@@ -37,25 +37,26 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Set the bucket name, item filename, and AES key filename.
-We'll show you how to create an AES key in a bit.
+Get the key from the command-line.
+If there is no command-line argument,
+print an error message and quit.
 
 .. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
-   :lines: 15-17
+   :lines: 15-22
+   :dedent: 0
+   :language: ruby
+
+Set the bucket name and object filename.
+
+.. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
+   :lines: 24-25
    :dedent: 0
    :language: ruby
 
 Open the file and get its contents as a string.
 
 .. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
-   :lines: 20
-   :dedent: 0
-   :language: ruby
-
-Get the KMS key from the file *aes_key.bin*.
-
-.. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
-   :lines: 23
+   :lines: 28
    :dedent: 0
    :language: ruby
 
@@ -63,7 +64,7 @@ Create an |S3| encryption client, call :code:`put_object` to upload the item to 
 and display a success message.
 
 .. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
-   :lines: 26-35
+   :lines: 31-40
    :dedent: 0
    :language: ruby
 
@@ -71,13 +72,14 @@ See the `complete example
 <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_csaes_encrypt_item.rb>`_
 on GitHub.
 
-The following example creates a 256-bit AES key and saves it as *aes_key.bin*
+The following example creates a 256-bit AES key and displays the value as a string.
 
 .. literalinclude:: ./example_code/s3/s3_create_AES_key.rb
-   :lines: 13-21
+   :lines: 13-22
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_create_AES_key.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_create_AES_key.rb>`_,
+which includes the code you need to decode the encoded value,
 on GitHub.

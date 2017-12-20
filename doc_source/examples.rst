@@ -39,4 +39,4 @@ This section provides examples you can use to access AWS services by using the
    Amazon SES Examples <ses-examples>
    Amazon SNS Examples <sns-examples>
    Amazon SQS Examples <sqs-examples>
-   Amazon WorkdDocs Examples <wd-examples>
+   Amazon WorkDocs Examples <wd-examples>

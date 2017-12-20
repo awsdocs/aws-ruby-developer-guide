@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-client-side-decrypt-item-with-kms-master-key:
 
-###########################################################
-Decrypting an |S3| Bucket Item with a Client-Side |KMS| Key
-###########################################################
+#####################################
+Client-Side Decryption with a KMS Key
+#####################################
 
 .. meta::
     :description:
@@ -39,25 +39,33 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Set the bucket name, item filename, and key ID.
-The key ID must be the same value you used to encrypt the item.
+Get the KMS key from the command line,
+Where :code:`key` is a KMS key ID as created in the :doc:`kms-example-create-key` example
+and must be the same value you used to encrypt the item.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
-   :lines: 15-17
+   :lines: 16-21
+   :dedent: 0
+   :language: ruby
+
+Set the bucket name and object name.
+
+.. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
+   :lines: 23-24
    :dedent: 0
    :language: ruby
 
 Create a |KMS| and |S3| client.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
-   :lines: 20-26
+   :lines: 27, 30-33
    :dedent: 0
    :language: ruby
 
 Call :code:`get_object` to get the item and display the result.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
-   :lines: 29-31
+   :lines: 36,38
    :dedent: 0
    :language: ruby
 

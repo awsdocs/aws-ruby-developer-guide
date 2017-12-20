@@ -19,11 +19,29 @@ Encrypting |S3| Bucket Items
         Encrypt Amazon S3 bucket items using these AWS SDK for Ruby code examples.
     :keywords: AWS SDK for Ruby code examples
 
-The :doc:`s3-example-set-item-props` example added a number of properties, including server-side encryption,
-to a bucket item. The following examples demonstrate how to encrypt and decrypt
-bucket items using both server-side encryption as shown in that example, and
-client-side encryption.
-For more information about encryption in |S3|, see
+Amazon S3 supports encrypting Amazon S3 bucket objects on both the client and the server.
+To encrypt objects on the client, you perform the encryption yourself,
+either using keys that you create or keys that AWS Key Management Service (AWS KMS) manages for you.
+
+To encrypt objects on the server, you have more options.
+
+* You can have Amazon S3 automatically encrypt objects as you upload
+  them to a bucket. Once you configure a bucket with this option,
+  every object that you upload--from that point on--is encrypted.
+
+* You can have Amazon S3 encrypt an object when you upload it to a bucket.
+  The disadvantage with this approach is that you can still upload objects that
+  are not encrypted.
+
+* You can have Amazon S3 reject objects that are not encrypted when you attempt
+  to upload them to a bucket.
+
+The following examples describe these options,
+from the simplest example of specifying that all objects uploaded to a bucket
+are automatically encrypted, to the most complex example of using asymmetric
+public and private keys on the client.
+Don't worry, we'll explain these concepts as we go.
+Learn about encryption in |S3| at
 `Protecting Data Using Encryption <http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html>`_.
 
 .. toctree::
@@ -33,8 +51,6 @@ For more information about encryption in |S3|, see
    s3-example-server-side-encryption
    s3-example-enforce-server-side-encryption
    s3-example-server-side-encryption-with-user-managed-key
-   s3-example-client-side-encryption-with-client-master-key
-   s3-example-client-side-decrypt-item-with-client-master-key
    s3-example-client-side-encryption-with-kms-master-key
    s3-example-client-side-decrypt-item-with-kms-master-key
    s3-example-create-public-private-key

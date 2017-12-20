@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-client-side-encryption-with-client-kms-key:
 
-#########################################################
-Encrypting an |S3| Bucket Item with a Client-Side KMS Key
-#########################################################
+#####################################
+Client-Side Encryption with a KMS Key
+#####################################
 
 .. meta::
     :description:
@@ -37,18 +37,18 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Set the bucket name, item filename, and key ID.
-See :doc:`kms-example-create-key` for information on creating a KMS key.
+Get the KMS key from the command line,
+Where :code:`key` is a KMS key ID as created in the :doc:`kms-example-create-key` example.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
-   :lines: 15-17
+   :lines: 16-21
    :dedent: 0
    :language: ruby
 
-Read the contents of the file as a string.
+Set the bucket and object name and get the contents of the object from the file as a string.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
-   :lines: 20
+   :lines: 23,24,27
    :dedent: 0
    :language: ruby
 
@@ -56,7 +56,7 @@ Create a |KMS| and |S3| encryption client, call :code:`put_object` to upload the
 and display a success message.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
-   :lines: 23-38
+   :lines: 30-45
    :dedent: 0
    :language: ruby
 

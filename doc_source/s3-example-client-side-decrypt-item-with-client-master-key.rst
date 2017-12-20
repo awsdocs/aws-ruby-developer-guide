@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-client-side-decrypt-item-with-client-master-key:
 
-############################################################
-Decrypting an |S3| Bucket Item with a Client-Side Master Key
-############################################################
+#############################################
+Client-Side Decryption with an AES Master Key
+#############################################
 
 .. meta::
     :description:
@@ -38,17 +38,19 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Set the bucket name, item filename, and key filename.
+Get the key from the command-line.
+If there is no command-line argument,
+print an error message and quit.
 
 .. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
-   :lines: 15-17
+   :lines: 16-22
    :dedent: 0
    :language: ruby
 
-Get the key from *aes_key.bin*.
+Set the bucket name and object filename.
 
 .. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
-   :lines: 20
+   :lines: 24-25
    :dedent: 0
    :language: ruby
 
@@ -56,7 +58,7 @@ Create an |S3| encryption client, call :code:`get_object`,
 and display the results.
 
 .. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
-   :lines: 23-27
+   :lines: 28-32
    :dedent: 0
    :language: ruby
 

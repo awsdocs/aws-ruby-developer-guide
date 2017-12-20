@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-enforce-server-side-encryption:
 
-####################################################################
-Requiring a Server-Side |S3| Managed Key to Upload |S3| Bucket Items
-####################################################################
+#######################################
+Server-Side Encryption as a Requirement
+#######################################
 
 .. meta::
     :description:
@@ -22,49 +22,30 @@ Requiring a Server-Side |S3| Managed Key to Upload |S3| Bucket Items
 The following example uses the
 :ruby-sdk-api:`put_bucket_policy <Aws/S3/Client.html#put_bucket_policy-instance_method>` method
 to require that items uploaded to an |S3| bucket have
-AES-256 encryption.
-Attempts to upload an item without AES-256 encryption enabled on the item
+KMS encryption.
+Attempts to upload an item without KMS encryption enabled on the item
 raise an :code:`Aws::S3::Errors::AccessDenied` exception.
 
 Choose :code:`Copy` to save the code locally.
 
 Create the file *add_sses3_policy.rb*.
 
-Add the required |S3| gem.
+Add the required |S3| gem and set the bucket name.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
 .. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
-   :lines: 13
+   :lines: 13,15
    :dedent: 0
    :language: ruby
 
-Set the bucket name.
-
-.. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
-   :lines: 15
-   :dedent: 0
-   :language: ruby
-
-Create an |S3| policy that requires a server-side 256-bit AES cipher on items
+Create an |S3| policy that requires server-side KMS encryption on items
 uploaded to the bucket.
 
 .. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
    :lines: 18-47
    :dedent: 0
    :language: ruby
-
-To require server-side KMS, change:
-
-.. code-block:: ruby
-
-   's3:x-amz-server-side-encryption': 'AES256'
-
-to:
-
-.. code-block:: ruby
-
-   's3:x-amz-server-side-encryption': 'aws:kms'
 
 Create the |S3| client, apply the policy to the bucket, and print a success message.
 
