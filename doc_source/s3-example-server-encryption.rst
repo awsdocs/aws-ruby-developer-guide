@@ -8,22 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. _aws-ruby-sdk-s3-example-encrypt-bucket-items
+.. _aws-ruby-sdk-s3-example-server-encryption
 
-############################
-Encrypting |S3| Bucket Items
-############################
+######################
+Server-Side Encryption
+######################
 
 .. meta::
     :description:
-        Encrypt Amazon S3 bucket items using these AWS SDK for Ruby code examples.
+        Encrypt Amazon S3 bucket items on the server using these AWS SDK for Ruby code examples.
     :keywords: AWS SDK for Ruby code examples
 
-Amazon S3 supports encrypting Amazon S3 bucket objects on both the client and the server.
-To encrypt objects on the client, you perform the encryption yourself,
-either using keys that you create or keys that AWS Key Management Service (AWS KMS) manages for you.
-
-To encrypt objects on the server, you have more options.
+To encrypt objects on the server, you have the following options.
 
 * You can have Amazon S3 automatically encrypt objects as you upload
   them to a bucket. Once you configure a bucket with this option,
@@ -36,16 +32,13 @@ To encrypt objects on the server, you have more options.
 * You can have Amazon S3 reject objects that are not encrypted when you attempt
   to upload them to a bucket.
 
-The following examples describe these options,
-from the simplest example of specifying that all objects uploaded to a bucket
-are automatically encrypted, to the most complex example of using asymmetric
-public and private keys on the client.
-Don't worry, we'll explain these concepts as we go.
-Learn about encryption in |S3| at
-`Protecting Data Using Encryption <http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html>`_.
+Learn about service-side encryption in |S3| at
+`Protecting Data Using Server-Side Encryption <https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html>`_.
 
 .. toctree::
    :maxdepth: 1
 
-   s3-example-server-encryption
-   s3-example-client-encryption
+   s3-example-default-server-side-encryption
+   s3-example-server-side-encryption
+   s3-example-enforce-server-side-encryption
+   s3-example-server-side-encryption-with-user-managed-key
