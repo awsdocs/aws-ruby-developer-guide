@@ -10,9 +10,9 @@
 
 .. _aws-ruby-sdk-s3-example-enforce-server-side-encryption:
 
-################################################################################
-Requiring a Server-Side Amazon S3 Managed Key to Upload Amazon S3 Bucket Objects
-################################################################################
+#####################################################################
+Requiring Encryption on the Server to Upload Amazon S3 Bucket Objects
+#####################################################################
 
 .. meta::
     :description:
@@ -21,9 +21,8 @@ Requiring a Server-Side Amazon S3 Managed Key to Upload Amazon S3 Bucket Objects
 
 The following example uses the
 :ruby-sdk-api:`put_bucket_policy <Aws/S3/Client.html#put_bucket_policy-instance_method>` method
-to require that objects uploaded to an |S3| bucket have
-KMS encryption.
-Attempts to upload an object without KMS encryption enabled on the object
+to require that objects uploaded to an |S3| bucket have |S3| encrypt the object with an AWS KMS key.
+Attempts to upload an object without without specifying that |S3| encrypt the object with an AWS KMS key
 raise an :code:`Aws::S3::Errors::AccessDenied` exception.
 
 Avoid using this configuration option if you use default server-side encryption as described in
