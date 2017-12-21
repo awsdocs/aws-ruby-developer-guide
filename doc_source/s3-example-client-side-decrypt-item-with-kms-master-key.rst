@@ -22,9 +22,7 @@ Decrypting an Amazon S3 Bucket Object with an AWS KMS Key
 The following example uses the
 :ruby-sdk-api:`get_object <Aws/S3/Client.html#get_object-instance_method>` method
 to get the object :code-ruby:`my_item` from the bucket
-:code-ruby:`my_bucket` in the :code:`us-west-2` region,
-and decrypts the contents with the
-AWS KMS key in *my_key_file*.
+:code-ruby:`my_bucket` in the :code:`us-west-2` region.
 
 Choose :code:`Copy` to save the code locally.
 

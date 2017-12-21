@@ -26,7 +26,7 @@ to add the object :code-ruby:`my_item` to the bucket
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *encrypt_object_cseaes.rb*.
+Create the file *encrypt_object_csekms.rb*.
 
 Add the required |S3| gem.
 
