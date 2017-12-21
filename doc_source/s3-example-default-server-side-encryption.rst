@@ -24,6 +24,9 @@ The following example uses the
 method to enable KMS server-side encryption on any items added to
 :code-ruby:`my_bucket` in the :code:`us-west-2` region.
 
+The only exception is if the user configures their request to explicitly
+use server-side encryption. In that case, the specified encryption takes precedence.
+
 Choose :code:`Copy` to save the code locally.
 
 Create the file *add_default_sse_encryption.rb*.

@@ -38,7 +38,7 @@ Add the required |S3| gem.
    :language: ruby
 
 Get the AWS KMS key from the command line,
-Where :code:`key` is a AWS KMS key ID as created in the :doc:`kms-example-create-key` example.
+where :code:`key` is an AWS KMS key ID as created in the :doc:`kms-example-create-key` example.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
    :lines: 16-21

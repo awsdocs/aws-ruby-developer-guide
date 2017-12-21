@@ -26,6 +26,8 @@ to add the object :code-ruby:`my_item` to the bucket
 with server-side AWS KMS encryption where you provide the key.
 See :doc:`kms-example-create-key` for information on creating an AWS KMS key.
 
+Amazon S3 uses, but does not store, the AWS KMS key that you provide.
+
 Choose :code:`Copy` to save the code locally.
 
 Create the file *encrypt_object_sseck.rb*.
@@ -43,6 +45,7 @@ Get the key from the command-line.
 If there is no command-line argument,
 print an error message and quit.
 Otherwise, create an MD5 hash of the key.
+Amazon S3 uses the hash to ensure the integrity of the key.
 
 .. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
    :lines: 17-23

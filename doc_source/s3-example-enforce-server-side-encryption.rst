@@ -26,6 +26,10 @@ KMS encryption.
 Attempts to upload an object without KMS encryption enabled on the object
 raise an :code:`Aws::S3::Errors::AccessDenied` exception.
 
+Avoid using this configuration option if you use default server-side encryption as described in
+:doc:`s3-example-default-server-side-encryption` as they could conflict and result in unexpected
+results.
+
 Choose :code:`Copy` to save the code locally.
 
 Create the file *add_sses3_policy.rb*.
