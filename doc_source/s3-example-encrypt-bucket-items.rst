@@ -33,8 +33,9 @@ To encrypt objects on the server, you have more options.
   The disadvantage with this approach is that you can still upload objects that
   are not encrypted.
 
-* You can have Amazon S3 reject objects that are not encrypted when you attempt
-  to upload them to a bucket.
+* You can have Amazon S3 encrypt an object when you upload it to a bucket.
+  The disadvantage with this approach is that you can still upload objects that
+  are not encrypted.
 
 The following examples describe these options,
 from the simplest example of specifying that all objects uploaded to a bucket

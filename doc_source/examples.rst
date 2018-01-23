@@ -34,6 +34,7 @@ This section provides examples you can use to access AWS services by using the
    AWS Identity and Access Management (IAM) Examples <iam-examples>
    AWS KMS Examples <kms-examples>
    AWS Lambda Examples <lambda-examples>
+   Amazon Polly Examples <polly-examples>
    Amazon RDS Examples <rds-examples>
    Amazon S3 Examples <s3-examples>
    Amazon SES Examples <ses-examples>
