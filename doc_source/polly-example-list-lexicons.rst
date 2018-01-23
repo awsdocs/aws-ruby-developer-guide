@@ -20,8 +20,8 @@ Getting a List of Lexicons
     :keywords: AWS SDK for Ruby code examples, Amazon Polly
 
 This example uses the
-:sdk-ruby-api-deep:`ListLexicons <service/polly/#Polly.ListLexicons>` operation
-to get the list of lexicons in the :code:`us-west-2` region.
+:ruby-sdk-api:`list_lexicons <Aws/Polly/Client.html#list_lexicons-instance_method>`
+method to get the list of lexicons in the :code:`us-west-2` region.
 
 Choose :code:`Copy` to save the code locally.
 
@@ -51,5 +51,5 @@ Display the name, alphabet, and language code of each lexicon.
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/go/example_code/polly/polly_list_lexicons.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/polly/polly_list_lexicons.rb>`_
 on GitHub.

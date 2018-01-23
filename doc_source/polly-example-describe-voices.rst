@@ -20,9 +20,8 @@ Getting a List of Voices
     :keywords: AWS SDK for Ruby code examples, Amazon Polly
 
 This example uses the
-:sdk-ruby-api-deep:`describe_voices <service/polly/#polly.describe_voices>` operation
-to get the list of US English voices
-in the :code:`us-west-2` region.
+:ruby-sdk-api:`describe_voices <Aws/Polly/Client.html#describe_voices-instance_method>`
+method to get the list of US English voices in the :code:`us-west-2` region.
 
 Choose :code:`Copy` to save the code locally.
 

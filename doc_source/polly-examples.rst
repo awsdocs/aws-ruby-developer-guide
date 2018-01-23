@@ -24,10 +24,11 @@ Learn more about Amazon Polly at
 `Amazon Polly documentation <https://aws.amazon.com/documentation/polly/>`_.
 The examples assume you have already set up and configured the SDK
 (that is, you've imported all required packages and set your credentials and region).
-For more information, see :doc:`setting-up` and :doc:`configuring-sdk`.
+For more information, see :doc:`setup-install` and :doc:`setup-config`.
 
 You can download complete versions of these example files from the
-:doc-examples-ruby:`aws-doc-sdk-examples <polly>` repository on GitHub.
+`aws-ruby-developer-guide <https://github.com/awsdocs/aws-ruby-developer-guide>`_
+repository on GitHub.
 
 .. toctree::
    :titlesonly:

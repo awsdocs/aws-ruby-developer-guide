@@ -20,8 +20,8 @@ Synthesizing Speech
     :keywords: AWS SDK for Ruby code examples, Amazon Polly
 
 This example uses the
-:sdk-ruby-api-deep:`SynthesizeSpeech <service/polly/#Polly.SynthesizeSpeech>` operation
-to get the text from a file and produce an MP3 file containing the synthesized speech.
+:ruby-sdk-api:`synthesize_speech <Aws/Polly/Client.html#synthesize_speech-instance_method>`
+method to get the text from a file and produce an MP3 file containing the synthesized speech.
 
 Choose :code:`Copy` to save the code locally.
 
