@@ -27,6 +27,7 @@
    welcome
    Getting Started <getting-started>
    Configuring the SDK <setup-config>
+   Using Cloud9 with the SDK <cloud9-ruby>
    Using the SDK <programming>
    Code Examples <examples>
    Tips and Tricks <tips-and-tricks>
