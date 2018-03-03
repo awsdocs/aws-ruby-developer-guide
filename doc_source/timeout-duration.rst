@@ -23,9 +23,11 @@ The following example creates an |S3| client in the region :code:`us-west-2`, an
 wait five seconds between two retries on every client operation.
 
 By default, the |sdk-ruby| performs up to three retries, with 15 seconds between retries,
-for a total of up to four attempts. Therefore, an operation could take 60 seconds to time out,
-so the example could take 15 seconds to time out.
+for a total of up to four attempts. Therefore, an operation could take up to 60 seconds to time out,
+so the example could take up to 15 seconds to time out.
 
 .. code-block:: ruby
 
-    s3 = Aws::S3::Client.new(region: 'us-west-2', retry_limit: 2, http_open_timeout: 5)
+    s3 = Aws::S3::Client.new(region: 'us-west-2',
+                             retry_limit: 2,
+			     retry_backoff: lambda { |c| 5)
