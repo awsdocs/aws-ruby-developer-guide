@@ -25,7 +25,7 @@ Therefore, an operation could take up to 60 seconds to time out.
 
 The following example creates an |S3| client in the region :code:`us-west-2`, and specifies to
 wait five seconds between two retries on every client operation.
-Therefore, operations could take up to 15 seconds to time out.
+Therefore, |S3| client operations could take up to 15 seconds to time out.
 
 .. code-block:: ruby
 
