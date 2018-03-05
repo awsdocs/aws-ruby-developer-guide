@@ -16,15 +16,16 @@ Specifying a Client Timeout Duration
 
 .. meta::
     :description:
-        Learn how to specify client timeout duractions using the AWS SDK for Ruby.
+        Learn how to specify client timeout durations using the AWS SDK for Ruby.
     :keywords: AWS SDK for Ruby
+
+By default, the |sdk-ruby| performs up to three retries, with 15 seconds between retries,
+for a total of up to four attempts.
+Therefore, an operation could take up to 60 seconds to time out.
 
 The following example creates an |S3| client in the region :code:`us-west-2`, and specifies to
 wait five seconds between two retries on every client operation.
-
-By default, the |sdk-ruby| performs up to three retries, with 15 seconds between retries,
-for a total of up to four attempts. Therefore, an operation could take up to 60 seconds to time out,
-so the example could take up to 15 seconds to time out.
+Therefore, operations could take up to 15 seconds to time out.
 
 .. code-block:: ruby
 
