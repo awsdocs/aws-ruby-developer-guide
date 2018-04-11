@@ -55,6 +55,10 @@ the most flexible approach. For more information about AWS credentials and recom
 for credential management, see `AWS Security Credentials
 <http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html>`_ in the |AWS-gr|.
 
+Note that the shared configuration is loaded only a single time,
+and credentials are provided statically at client creation time.
+Shared credentials do not refresh.
+
 .. _aws-ruby-sdk-credentials-shared:
 
 Setting Shared Credentials

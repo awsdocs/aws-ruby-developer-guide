@@ -31,4 +31,4 @@ Therefore, |S3| client operations could take up to 15 seconds to time out.
 
     s3 = Aws::S3::Client.new(region: 'us-west-2',
                              retry_limit: 2,
-			     retry_backoff: lambda { |c| sleep 5)
+			     retry_backoff: lambda { |c| sleep 5) }
