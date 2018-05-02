@@ -30,6 +30,10 @@ The following example sends the message "Hello world" through the |SQS| queue wi
 The following example sends the messages "Hello world" and "How is the weather?" through the |SQS|
 queue with the URL :code:`URL` in the :code:`us-west-2` region.
 
+.. note:: If your queue is a FIFO queue, you must include a
+	  :code:`message_group_id` parameter in addition to the
+          :code:`id` and :code:`message_body` parameters.
+
 .. literalinclude:: ./example_code/sqs/sqs-ruby-example-send-message-batch.rb
    :lines: 13-29
    :dedent: 0
