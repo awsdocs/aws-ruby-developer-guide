@@ -19,7 +19,7 @@ Stubbing Client Responses and Errors
         Learn how to stub client responses and client errors in an AWS SDK for Ruby application.
     :keywords: AWS SDK for Ruby
 
-Learn how to stub client responses and client errors in an |sdk-ruby|
+Learn how to stub client responses and client errors in an |sdk-ruby| 
 application.
 
 .. _aws-ruby-sdk-stubbing-clients:
