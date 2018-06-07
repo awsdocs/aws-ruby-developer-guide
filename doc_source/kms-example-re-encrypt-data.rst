@@ -28,7 +28,7 @@ The operations are performed entirely on the server side within |KMS|,
 so they never expose your plaintext outside of |KMS|.
 The example displays a readable version of the resulting re-encrypted blob.
 
-.. literalinclude:: ./example_code/kms/aws-ruby-sdk-kms-example-encrypt-data.rb
+.. literalinclude:: ./example_code/kms/aws-ruby-sdk-kms-example-re-encrypt-data.rb
    :lines: 13-32
    :dedent: 0
    :language: ruby
