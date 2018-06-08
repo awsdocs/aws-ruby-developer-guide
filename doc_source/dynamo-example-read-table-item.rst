@@ -24,7 +24,7 @@ The following example displays information about the item with the :code:`year` 
 :code-ruby:`us-west-2` region.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_read_movies_item.rb
-   :lines: 13-47
+   :lines: 13-42
    :dedent: 0
    :language: ruby
 
