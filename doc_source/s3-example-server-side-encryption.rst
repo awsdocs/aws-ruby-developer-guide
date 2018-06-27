@@ -41,18 +41,10 @@ Add the required |S3| gem.
    :dedent: 0
    :language: ruby
 
-Get the KMS key from the command line,
-Where :code:`key` is a KMS key ID as created in the :doc:`kms-example-create-key` example.
-
-.. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 15-21
-   :dedent: 0
-   :language: ruby
-
 Set the bucket and object name and get the object from the file as a string.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 23-24, 27
+   :lines: 15,16,19
    :dedent: 0
    :language: ruby
 
@@ -62,7 +54,7 @@ indicating that |S3| encrypts the object using KMS.
 Finally, display a success message to the user.
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
-   :lines: 30-41
+   :lines: 22,23,25-32
    :dedent: 0
    :language: ruby
 
