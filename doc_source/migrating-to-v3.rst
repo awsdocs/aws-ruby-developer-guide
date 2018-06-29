@@ -79,7 +79,7 @@ Version 2 differs from version 1 in several important ways.
 Client Differences
 ==================
 
-Their are no differences between the client classes in version 2 and version 3.
+There are no differences between the client classes in version 2 and version 3.
 
 Between version 1 and version 2, the client classes have the fewest external differences. Many service clients
 will have compatible interfaces after client construction. Some important differences:
@@ -127,7 +127,7 @@ will have compatible interfaces after client construction. Some important differ
 Resource Differences
 ====================
 
-Their are no differences between the resource interfaces in version 2 and version 3.
+There are no differences between the resource interfaces in version 2 and version 3.
 
 There are significant differences between the resource interfaces in version 1 and version 2. Version 1 was
 entirely hand-coded, where as version 2 resource interfaces are generated from a model. Version 2 resource
