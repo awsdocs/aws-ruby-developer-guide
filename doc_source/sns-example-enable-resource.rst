@@ -16,13 +16,13 @@ Enabling a Resource to Publish to an |SNS| Topic
 
 .. meta::
     :description:
-        Enable a resource to publish to an Amazon SNS topic using this AWS SDK for Ruby code example.
+        Enable a resource to publish to an SNS topic with the ARN  using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, SNS
 
 The following example enables the resource with the ARN :code:`my-resource-arn` to publish to the
-topic with the :code:`ARN my-topic-arn` in the :code:`us-west-2` region.
+topic with the ARN :code:`my-topic-arn` in the :code:`us-west-2` region.
 
 .. literalinclude:: ./example_code/sns/sns-ruby-example-enable-resource.rb
-   :lines: 13-38
+   :lines: 13-
    :dedent: 0
    :language: ruby
