@@ -52,7 +52,7 @@ You also need to:
   role ARN.
 
   #. In the |IAM| console, create a role and attach a policy that grants full access to |CWE|.
-  #. Ensure that the role has a trust relationship to `events.amazonaws.com`. For an example policy and role, see the comments in the `example code on GitHub <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cw/cw-ruby-example-send-events-ec2.rb>`_.
+  #. Ensure that the role has a trust relationship to `events.amazonaws.com`. For an example policy and role, see the comments in the `example code on GitHub <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cloudwatch/cw-ruby-example-send-events-ec2.rb>`_.
   #. After you create the role, attach the policy, and establish the trust relationship, copy the role ARN and paste it into your code.
 
 * Replace the placeholder value assigned to `instance_id` with an actual |EC2| instance ID.
@@ -61,7 +61,7 @@ You also need to:
 Example
 *******
 
-.. literalinclude:: ./example_code/cw/cw-ruby-example-send-events-ec2.rb
+.. literalinclude:: ./example_code/cloudwatch/cw-ruby-example-send-events-ec2.rb
    :lines: 68-189
    :dedent: 0
    :language: ruby
