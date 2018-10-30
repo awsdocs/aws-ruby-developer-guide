@@ -76,7 +76,7 @@ def copy_dir_contents_with_overwrite(input_dir_name, output_dir_name):
             shutil.copyfile(input_path, output_path)
 
 
-def clone_and_copy_dependency(git_url, dep, subdir = ''):
+def clone_and_copy_dependency(git_url, dep, subdir = '')://hi
     print("Getting content from dependency: " + git_url)
     try:
         subprocess.check_call(['git', 'clone', '--depth', '1', git_url,
