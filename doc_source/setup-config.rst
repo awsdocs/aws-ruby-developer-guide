@@ -128,6 +128,21 @@ will use these credentials.
        credentials: Aws::Credentials.new('your_access_key_id', 'your_secret_access_key')
     })
 
+.. _aws-ruby-sdk-credentials-move:
+
+Changing your Credentials Location
+----------------------------------
+
+You can also use **Aws.config** to store your credentials in a non-standard location.
+
+The following example updates your configuration to store your credentials
+at *my-path*.
+
+.. code-block:: ruby
+
+    shared_creds = Aws::SharedCredentials.new(path: 'my_path')
+    Aws.config.update(credentials: shared_creds)
+
 .. _aws-ruby-sdk-credentials-client:
 
 Setting Credentials in a Client Object
