@@ -17,7 +17,7 @@
         AWS SDK for Ruby code examples for AWS CloudTrail.
     :keywords:
 
-|CT| is
+|CT| is an AWS service that you can use to monitor your AWS deployments in the cloud by getting a history of AWS API calls for your account.
 You can use the following |sdk-ruby| code examples to access |CTlong|.
 For more information about |CT|, see the
 `AWS CloudTrail documentation <http://aws.amazon.com/documentation/cloudtrail/>`_.
