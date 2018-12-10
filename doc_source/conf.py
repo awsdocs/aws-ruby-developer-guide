@@ -130,7 +130,7 @@ html_theme = 'alabaster'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {'service_name_long' : 'AWS SDK for Ruby'}
+html_theme_options = {'service_name_long' : 'AWS SDK for Ruby'}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = ['../../../AWSDocsSphinxTheme/aws_sphinx_theme']
@@ -407,5 +407,6 @@ extlinks['aws-ruby-cwl-client-method'] = (aws_ruby_cwl_client + '#%s-instance_me
 aws_ruby_ec2_client = ruby_api_url +'Aws/EC2/Client.html'
 extlinks['aws-ruby-ec2-client-method'] = (aws_ruby_ec2_client + '#%s-instance_method', 'Aws::EC2::Client#')
 
-feedback_folder_id = u'ec3ce67f-14bf-4d51-a7f7-ac623933ef43'
+# No longer used. See html_theme_options on line 133
+# feedback_folder_id = u'ec3ce67f-14bf-4d51-a7f7-ac623933ef43'
 # https://issues.amazon.com/folders/ec3ce67f-14bf-4d51-a7f7-ac623933ef43
