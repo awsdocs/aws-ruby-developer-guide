@@ -341,9 +341,11 @@ Then create a role using |CreateRole|.
 Finally, attach the policy you created to your new role with |AttachRolePolicy|.
 
 .. literalinclude:: example_code/iam/iam_ruby_example_create_csm_role.rb
+   :lines: 12-
    :language: ruby
-   :start-after: snippet-start:[iam.ruby.create_csm_role]
-   :end-before: snippet-end:[iam.ruby.create_csm_role]
+
+.. :start-after: snippet-start:[iam.ruby.create_csm_role]
+.. :end-before: snippet-end:[iam.ruby.create_csm_role]
 
 .. _csm_setup_console:
                 
