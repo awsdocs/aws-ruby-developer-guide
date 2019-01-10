@@ -269,3 +269,8 @@ object. The following example creates an |S3| resource object in the :code:`othe
 
     s3 = Aws::S3::Resource.new(endpoint: other_endpoint)
 
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   SDK Metrics <sdk-metrics>
