@@ -39,8 +39,72 @@ Finally, attach the policy you created to your new role with |AttachRolePolicy|.
 .. replace with iam.ruby.create_csm_role once we release
 
 .. code-block:: ruby
+    require 'aws-sdk-iam' # v2: require 'aws-sdk'
 
-    
+    role_name = 'AmazonCSM'
+
+    client = Aws::IAM::Client.new(region: 'us-west-2')
+
+    csm_policy = {
+        'Version': '2012-10-17',
+        'Statement': [
+            {
+                'Effect': 'Allow',
+                'Action': [
+                    'sdkmetrics:*'
+                ],
+                'Resource': '*'
+            },
+            {
+                'Effect': 'Allow',
+                'Action': [
+                    'ssm:GetParameter'
+                ],
+                'Resource': 'arn:aws:ssm:*:*:parameter/AmazonCSM*'
+            }
+        ]
+    }
+
+    # Create policy
+    resp = client.create_policy({
+                                    policy_name: role_name,
+                                    policy_document: csm_policy.to_json,
+                                })
+
+    policy_arn = resp.policy.arn
+
+    puts 'Created policy with ARN: ' + policy_arn
+
+    policy_doc = {
+        Version: '2012-10-17',
+        Statement: [
+            {
+                Effect: 'Allow',
+                Principal: {
+                    Service: 'ec2.amazonaws.com'
+                },
+                Action: 'sts:AssumeRole'
+            },]
+    }
+
+    # Create role
+    client.create_role(
+        {
+            role_name: role_name,
+            description: 'An instance role that has permission for AWS Systems Manager and SDK Metric Monitoring.',
+            assume_role_policy_document: policy_doc.to_json,
+        })
+
+    puts 'Created role ' + role_name
+
+    # Attach policy to role
+    client.attach_role_policy(
+        {
+            policy_arn: policy_arn,
+            role_name: role_name,
+        })
+
+    puts 'Attached policy ' + role_name + 'policy to role: ' + role_name
 
 .. _setup_access_permissions_console:
 
