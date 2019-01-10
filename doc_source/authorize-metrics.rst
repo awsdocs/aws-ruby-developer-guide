@@ -39,6 +39,7 @@ Finally, attach the policy you created to your new role with |AttachRolePolicy|.
 .. replace with iam.ruby.create_csm_role once we release
 
 .. code-block:: ruby
+                
     require 'aws-sdk-iam' # v2: require 'aws-sdk'
 
     role_name = 'AmazonCSM'
