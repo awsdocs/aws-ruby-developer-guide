@@ -135,7 +135,7 @@ seconds) before failing.
       w.max_attempts = nil
 
       # Poll for one hour, instead of a number of attempts
-      before_wait do |attempts, response|
+      w.before_wait do |attempts, response|
         throw :failure if Time.now - started_at > 3600
       end
     end
