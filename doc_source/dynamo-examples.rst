@@ -42,3 +42,5 @@ interface so you can experiment with |DDB| offline.
    dynamo-example-read-table-item
    dynamo-example-update-table-item
    dynamo-example-delete-table-item
+   dynamo-example-delete-table
+   
