@@ -24,13 +24,15 @@ After you create a queue in |SQS|, you can send a message to it and then consume
 
 In this example, you use the |sdk-ruby| with |SQS| to:
 
-#. Send a message to a queue by using :aws-ruby-sqs-client-method:`send_message`.
-   .. note:: If your queue is a FIFO queue, you must include a
-	  :code:`message_group_id` parameter in addition to the
-          :code:`id` and :code:`message_body` parameters.
-#. Receive the message in the queue by using :aws-ruby-sqs-client-method:`receive_message`.
-#. Display information about the message.
-#. Delete the message from the queue by using :aws-ruby-sqs-client-method:`delete_message`.
+1. Send a message to a queue by using :aws-ruby-sqs-client-method:`send_message`.
+   
+.. note:: If your queue is a FIFO queue, you must include a
+   :code:`message_group_id` parameter in addition to the
+   :code:`id` and :code:`message_body` parameters.
+                
+2. Receive the message in the queue by using :aws-ruby-sqs-client-method:`receive_message`.
+3. Display information about the message.
+4. Delete the message from the queue by using :aws-ruby-sqs-client-method:`delete_message`.
 
 *************
 Prerequisites

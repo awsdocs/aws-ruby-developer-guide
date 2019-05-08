@@ -1,0 +1,23 @@
+<h1 id="sending-and-receiving-messages-in-sqs">Sending and Receiving Messages in |SQS|</h1>
+<p>After you create a queue in |SQS|, you can send a message to it and then consume it. To learn more, see Tutorial: Sending a Message to an Amazon SQS Queue &lt;sqs-send-message&gt; and Tutorial: Receiving and Deleting a Message from an Amazon SQS Queue &lt;sqs-receive-delete-message&gt;.</p>
+<p>In this example, you use the |sdk-ruby| with |SQS| to:</p>
+<ol style="list-style-type: decimal">
+<li>Send a message to a queue by using send_message.</li>
+</ol>
+<blockquote>
+<p><strong>note</strong></p>
+<p>If your queue is a FIFO queue, you must include a <code class="sourceCode">message_group_id</code> parameter in addition to the <code class="sourceCode">id</code> and <code class="sourceCode">message_body</code> parameters.</p>
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Receive the message in the queue by using receive_message.</li>
+<li>Display information about the message.</li>
+<li>Delete the message from the queue by using delete_message.</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before running the example code, you need to install and configure the |sdk-ruby|, as described in:</p>
+<ul>
+<li>aws-ruby-sdk-setup-install</li>
+<li>aws-ruby-sdk-setup-config</li>
+</ul>
+<p>You also need to create the queue my-queue, which you can do in the |SQS| console.</p>
+<h2 id="example">Example</h2>
