@@ -1,4 +1,4 @@
-.. Copyright 2010-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+.. Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
    This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
    International License (the "License"). You may not use this file except in compliance with the
@@ -63,6 +63,8 @@ This guide contains the following sections:
 
 :doc:`examples`
     Provides code examples for programming AWS services with the |sdk-ruby|.
+    You can browse the |sdk-ruby| examples in the
+   `AWS Code Sample Catalog <https://docs.aws.amazon.com/code-samples/latest/catalog/code-catalog-ruby.html>`_.
 
 :doc:`tips-and-tricks`
     Provides helpful information for using the |sdk-ruby| with AWS services.
