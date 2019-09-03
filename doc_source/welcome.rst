@@ -64,7 +64,7 @@ This guide contains the following sections:
 :doc:`examples`
     Provides code examples for programming AWS services with the |sdk-ruby|.
     You can browse the |sdk-ruby| examples in the
-   `AWS Code Sample Catalog <https://docs.aws.amazon.com/code-samples/latest/catalog/code-catalog-ruby.html>`_.
+    `AWS Code Sample Catalog <https://docs.aws.amazon.com/code-samples/latest/catalog/code-catalog-ruby.html>`_.
 
 :doc:`tips-and-tricks`
     Provides helpful information for using the |sdk-ruby| with AWS services.
