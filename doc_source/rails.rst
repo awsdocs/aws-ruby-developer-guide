@@ -22,7 +22,7 @@ it easy to create websites with Ruby.
 
 AWS provides the :code:`aws-sdk-rails` gem to enable easy integration with Rails.
 You can use |AEBlong|, |OPSlong|, |ACDlong|, or the
-`AWS Rails Provisioner<https://github.com/awslabs/aws-rails-provisioner>`_
+`AWS Rails Provisioner <https://github.com/awslabs/aws-rails-provisioner>`_
 to deploy and run your Rails applications in the AWS Cloud.
 
 For information on installing and using the :code:`aws-sdk-rails` gem,
