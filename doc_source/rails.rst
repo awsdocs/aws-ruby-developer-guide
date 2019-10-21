@@ -17,7 +17,7 @@ Using the SDK with Ruby on Rails
 .. meta::
     :description: Using the AWS SDK for Ruby with Ruby on Rails
 
-`Ruby on Rails <http://rubyonrails.org/>`_ provides a web development framework for Ruby that makes
+`Ruby on Rails <http://rubyonrails.org/>`_ provides a web development framework that makes
 it easy to create websites with Ruby.
 
 AWS provides the :code:`aws-sdk-rails` gem to enable easy integration with Rails.
