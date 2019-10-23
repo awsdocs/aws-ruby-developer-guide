@@ -93,7 +93,6 @@ For more resources for |sdk-ruby| developers, see the following:
   + :ruby-sdk:`Moving from v1 to v2 <blob/master/MIGRATING.md>`
   + :ruby-sdk:`Moving from v2 to v3 <blob/master/V3_UPGRADING_GUIDE.md>`
   + :ruby-sdk:`Issues <issues>`
-  + :ruby-sdk:`Feature requests <blob/master/FEATURE_REQUESTS.md>`
   + :ruby-sdk:`Core upgrade notes <blob/master/UPGRADING.md>`
 
 .. _aws-ruby-sdk-deploying:
