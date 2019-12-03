@@ -125,12 +125,12 @@ todo_include_todos = False
 # a list of builtin themes.
 # basic alabaster classic sphinxdoc scrolls agogo nature pyramid haiku traditional epub bizstyle
 #html_theme = 'aws_sphinx_theme'
-html_theme = 'alabaster'
+html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {'service_name_long' : 'AWS SDK for Ruby'}
+# html_theme_options = {'service_name_long' : 'AWS SDK for Ruby'}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = ['../../../AWSDocsSphinxTheme/aws_sphinx_theme']

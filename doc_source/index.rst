@@ -31,4 +31,5 @@
    Using the SDK <programming>
    Code Examples <examples>
    Tips and Tricks <tips-and-tricks>
+   Security <security>
    history
