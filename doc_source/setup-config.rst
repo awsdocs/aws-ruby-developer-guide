@@ -175,7 +175,7 @@ Creating an |STS| Access Token
 ==============================
 
 Use the
-`Aws::AssumeRoleCredentials <http://docs.aws.amazon.com/sdkforruby/api/Aws/AssumeRoleCredentials.html>`_
+`Aws::AssumeRoleCredentials <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/AssumeRoleCredentials.html>`_
 method to create an |STSlong| (|STS|) access token.
 
 The following example uses an access token to create an |S3| client object, where

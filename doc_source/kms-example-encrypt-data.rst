@@ -20,7 +20,7 @@ Encrypting Data in |KMS|
     :keywords: AWS SDK for Ruby code examples, KMS
 
 The following example uses the |sdk-ruby| 
-`encrypt method <http://docs.aws.amazon.com/sdkforruby/api/Aws/KMS/Client.html#encrypt-instance_method>`_,
+`encrypt method <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/KMS/Client.html#encrypt-instance_method>`_,
 which implements the
 `Encrypt operation <http://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html>`_,
 to encrypt the string "1234567890".

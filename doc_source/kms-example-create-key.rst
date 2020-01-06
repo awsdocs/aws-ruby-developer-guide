@@ -19,7 +19,7 @@ Creating a CMK in |KMS|
         Create an AWS KMS customer master key (CMK) using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, KMS
 
-The following example uses the |sdk-ruby| `create_key <http://docs.aws.amazon.com/sdkforruby/api/Aws/KMS/Client.html#create_key-instance_method>`_
+The following example uses the |sdk-ruby| `create_key <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/KMS/Client.html#create_key-instance_method>`_
 method,
 which implements the
 `CreateKey <http://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html>`_ operation

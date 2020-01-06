@@ -30,14 +30,14 @@ in the |EC2-ug-win|.
 In this example, you use the |sdk-ruby| with |EC2| to:
 
 #. Allocate an Elastic IP address by using the
-   `Aws::EC2::Client#allocate_address <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#allocate_address-instance_method>`_
+   `Aws::EC2::Client#allocate_address <https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/EC2/Client.html#allocate_address-instance_method>`_
    method.
 #. Associate the address with an |EC2| instance by using the
-   `Aws::EC2::Client#associate_address <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#associate_address-instance_method>`_ method.
+   `Aws::EC2::Client#associate_address <https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/EC2/Client.html#associate_address-instance_method>`_ method.
 #. Get information about addresses associated with the instance by using the
-   `Aws::EC2::Client#describe_addresses <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#describe_addresses-instance_method>`_ method.
+   `Aws::EC2::Client#describe_addresses <https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/EC2/Client.html#describe_addresses-instance_method>`_ method.
 #. Release the address by using the
-   `Aws::EC2::Client#release_address <https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/Client.html#release_address-instance_method>`_ method.
+   `Aws::EC2::Client#release_address <https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/EC2/Client.html#release_address-instance_method>`_ method.
 
 The `complete code <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ec2/ec2-ruby-example-elastic-ips.rb>`_
 for this example is available on GitHub.

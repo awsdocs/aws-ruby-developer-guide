@@ -68,7 +68,7 @@ the next page of results, as shown in the following example.
 
 .. note:: If you call the :code:`next_page` method and there are no more pages to retrieve, the SDK raises an
     `Aws::PageableResponse::LastPageError
-    <http://docs.aws.amazon.com/sdkforruby/api/Aws/PageableResponse/LastPageError.html>`_ exception.
+    <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/PageableResponse/LastPageError.html>`_ exception.
 
 .. _aws-ruby-sdk-paged-data-classes:
 
@@ -76,7 +76,7 @@ Paged Data Classes
 ==================
 
 Paged data in the |sdk-ruby| is handled by the `Aws::PageableResponse
-<http://docs.aws.amazon.com/sdkforruby/api/Aws/PageableResponse.html>`_ class, which is included
+<http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/PageableResponse.html>`_ class, which is included
 with `Seahorse::Client::Response
-<http://docs.aws.amazon.com/sdkforruby/api/Seahorse/Client/Response.html>`_ to provide access to
+<http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Seahorse/Client/Response.html>`_ to provide access to
 paged data.

@@ -23,8 +23,8 @@ one or more actions based on the value of the metric, relative to a given thresh
 
 In this example, you use the |sdk-ruby| with |CW| to:
 
-#. Send custom metrics to |CW| by using `Aws::CloudWatch::Client#put_metric_data <http://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html#put_metric_data-instance_method>`_.
-#. Get information about custom metrics by using `Aws::CloudWatch::Client#list_metrics-instance <http://docs.aws.amazon.com/sdkforruby/api/Aws/CloudWatch/Client.html#list_metrics-instance_method>`_.
+#. Send custom metrics to |CW| by using `Aws::CloudWatch::Client#put_metric_data <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CloudWatch/Client.html#put_metric_data-instance_method>`_.
+#. Get information about custom metrics by using `Aws::CloudWatch::Client#list_metrics-instance <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CloudWatch/Client.html#list_metrics-instance_method>`_.
 
 *************
 Prerequisites

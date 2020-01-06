@@ -38,7 +38,7 @@ Creating an |S3| Resource
 =========================
 
 Create an
-`Aws::S3::Resource <http://docs.aws.amazon.com/sdkforruby/api/Aws/S3/Resource.html>`_
+`Aws::S3::Resource <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Resource.html>`_
 object in the appropriate region.
 The following example creates an |S3| resource object in the :code:`us-west-2` region.
 Note that the region is not important because |S3| resources are not specific to a region.
@@ -54,7 +54,7 @@ Creating a Bucket
 
 To store anything on |S3|, you need a bucket to put it in.
 
-Create an `Aws::S3::Bucket <http://docs.aws.amazon.com/sdkforruby/api/Aws/S3/Bucket.html>`_ object.
+Create an `Aws::S3::Bucket <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Bucket.html>`_ object.
 The following example creates the bucket :code:`my_bucket` with the name :code:`my-bucket`.
 
 .. code-block:: ruby
@@ -82,7 +82,7 @@ Listing the Contents of a Bucket
 ================================
 
 To list the contents of a bucket, use the `Aws::S3::Bucket:Objects
-<http://docs.aws.amazon.com/sdkforruby/api/Aws/S3/Bucket.html#objects-instance_method>`_ method. The
+<http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Bucket.html#objects-instance_method>`_ method. The
 following example lists up to 50 bucket items for the bucket :code:`my-bucket`.
 
 .. code-block:: ruby
@@ -233,8 +233,8 @@ Next Steps
 Now that you've completed your first |sdk-ruby| application, here are some suggestions to extend the
 code you just wrote:
 
-* Use the :code:`buckets` collection from the `Aws::S3::Resource <http://docs.aws.amazon.com/sdkforruby/api/Aws/S3/Resource.html>`_ class to get a list of buckets.
+* Use the :code:`buckets` collection from the `Aws::S3::Resource <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Resource.html>`_ class to get a list of buckets.
 
-* Use :code:`#get` method from the `Bucket <http://docs.aws.amazon.com/sdkforruby/api/Aws/S3/Bucket.html>`_ class to download an object from the bucket.
+* Use :code:`#get` method from the `Bucket <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Bucket.html>`_ class to download an object from the bucket.
 
 * Use the code in :ref:`aws-ruby-sdk-hello-world-add-to-bucket` to confirm the item exists in the bucket, and then update that bucket item.

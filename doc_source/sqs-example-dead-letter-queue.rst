@@ -27,7 +27,7 @@ In this example, you use the |sdk-ruby| with |SQS| to:
 #. Create a queue that represents a dead letter queue by using :aws-ruby-sqs-client-method:`create_queue`.
 #. Associate the dead letter queue with an existing queue by using :aws-ruby-sqs-client-method:`set_queue_attributes`.
 #. Send a message to the existing queue by using :aws-ruby-sqs-client-method:`send_message`.
-#. Poll the queue by using `Aws::SQS::QueuePoller <http://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/QueuePoller.html>`_.
+#. Poll the queue by using `Aws::SQS::QueuePoller <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/SQS/QueuePoller.html>`_.
 #. Receive messages in the dead letter queue by using :aws-ruby-sqs-client-method:`receive_message`.
 
 *************
