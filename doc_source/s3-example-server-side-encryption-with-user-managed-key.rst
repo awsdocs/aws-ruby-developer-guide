@@ -36,7 +36,7 @@ Add the required |S3| and **md5** gems.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_sseck_encrypt_item.rb
    :lines: 13-14
    :dedent: 0
    :language: ruby
@@ -47,14 +47,14 @@ print an error message and quit.
 Otherwise, create an MD5 hash of the key.
 Amazon S3 uses the hash to ensure the integrity of the key.
 
-.. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_sseck_encrypt_item.rb
    :lines: 17-23
    :dedent: 0
    :language: ruby
 
 Set the bucket and object names, and get the contents of the object from the file as a string.
 
-.. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_sseck_encrypt_item.rb
    :lines: 25-26, 29
    :dedent: 0
    :language: ruby
@@ -64,11 +64,11 @@ Notice that the :code:`server_side_encryption` property is set to :code:`aws:kms
 indicating that |S3| encrypts the object using the provided AWS KMS key.
 Finally, display a success message to the user.
 
-.. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_sseck_encrypt_item.rb
    :lines: 32-44
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_sseck_encrypt_item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_add_sseck_encrypt_item.rb>`_
 on GitHub.

@@ -23,10 +23,10 @@ The following example updates the rating to **0.1** for the item with the :code:
 :code-ruby:`title`  **The Big New Movie**
 in the :code-ruby:`Movies` table in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_update_movies_item.rb
+.. literalinclude:: ./dynamodb/dynamodb_ruby_example_update_movies_item.rb
    :lines: 13-35
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/dynamodb_ruby_example_update_movies_item.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/dynamodb/dynamodb_ruby_example_update_movies_item.rb>`_
 on GitHub.

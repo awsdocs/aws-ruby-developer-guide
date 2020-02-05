@@ -32,7 +32,7 @@ Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_csaes_encrypt_item.rb
    :lines: 13
    :dedent: 0
    :language: ruby
@@ -41,21 +41,21 @@ Get the key from the command-line.
 If there is no command-line argument,
 print an error message and quit.
 
-.. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_csaes_encrypt_item.rb
    :lines: 15-22
    :dedent: 0
    :language: ruby
 
 Set the bucket name and object filename.
 
-.. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_csaes_encrypt_item.rb
    :lines: 24-25
    :dedent: 0
    :language: ruby
 
 Open the file and get its contents as a string.
 
-.. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_csaes_encrypt_item.rb
    :lines: 28
    :dedent: 0
    :language: ruby
@@ -63,23 +63,23 @@ Open the file and get its contents as a string.
 Create an |S3| encryption client, call :code:`put_object` to upload the item to the bucket,
 and display a success message.
 
-.. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_csaes_encrypt_item.rb
    :lines: 31-40
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_csaes_encrypt_item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_add_csaes_encrypt_item.rb>`_
 on GitHub.
 
 The following example creates a 256-bit AES key and displays the value as a string.
 
-.. literalinclude:: ./example_code/s3/s3_create_AES_key.rb
+.. literalinclude:: ./s3/s3_create_AES_key.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_create_AES_key.rb>`_,
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_create_AES_key.rb>`_,
 which includes the code you need to decode the encoded value,
 on GitHub.

@@ -22,7 +22,7 @@ Sending Messages in |SQS|
 The following example sends the message "Hello world" through the |SQS| queue with the URL
 :code:`URL` in the :code:`us-west-2` region.
 
-.. literalinclude:: ./example_code/sqs/sqs-ruby-example-send-message.rb
+.. literalinclude:: ./sqs/sqs-ruby-example-send-message.rb
    :lines: 13-17
    :dedent: 0
    :language: ruby
@@ -34,7 +34,7 @@ queue with the URL :code:`URL` in the :code:`us-west-2` region.
 	  :code:`message_group_id` parameter in addition to the
           :code:`id` and :code:`message_body` parameters.
 
-.. literalinclude:: ./example_code/sqs/sqs-ruby-example-send-message-batch.rb
+.. literalinclude:: ./sqs/sqs-ruby-example-send-message-batch.rb
    :lines: 13-29
    :dedent: 0
    :language: ruby

@@ -33,7 +33,7 @@ Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
+.. literalinclude:: ./s3/s3_get_csaes_decrypt_item.rb
    :lines: 13
    :dedent: 0
    :language: ruby
@@ -42,14 +42,14 @@ Get the key from the command-line.
 If there is no command-line argument,
 print an error message and quit.
 
-.. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
+.. literalinclude:: ./s3/s3_get_csaes_decrypt_item.rb
    :lines: 16-22
    :dedent: 0
    :language: ruby
 
 Set the bucket name and object filename.
 
-.. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
+.. literalinclude:: ./s3/s3_get_csaes_decrypt_item.rb
    :lines: 24-25
    :dedent: 0
    :language: ruby
@@ -57,11 +57,11 @@ Set the bucket name and object filename.
 Create an |S3| encryption client, call :code:`get_object`,
 and display the results.
 
-.. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
+.. literalinclude:: ./s3/s3_get_csaes_decrypt_item.rb
    :lines: 28-32
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_get_csaes_decrypt_item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_get_csaes_decrypt_item.rb>`_
 on GitHub.

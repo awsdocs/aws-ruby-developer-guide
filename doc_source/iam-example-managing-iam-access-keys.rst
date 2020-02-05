@@ -48,7 +48,7 @@ You will also need to create the user (`my-user`) specified in the script. You c
 Example
 *******
 
-.. literalinclude:: ./example_code/iam/iam-ruby-example-access-keys.rb
+.. literalinclude:: ./iam/iam-ruby-example-access-keys.rb
    :lines: 20-92
    :dedent: 0
    :language: ruby

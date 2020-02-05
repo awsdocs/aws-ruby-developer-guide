@@ -25,12 +25,12 @@ which implements the
 `Decrypt operation <http://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html>`_,
 to decrypt the provided string and emit the result.
 
-.. literalinclude:: ./example_code/kms/aws-ruby-sdk-kms-example-decrypt-blob.rb
+.. literalinclude:: ./kms/aws-ruby-sdk-kms-example-decrypt-blob.rb
    :lines: 13-27
    :dedent: 0
    :language: ruby
 
 Choose :code:`Copy` to save the code locally.
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/kms/aws-ruby-sdk-kms-example-decrypt-blob.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/kms/aws-ruby-sdk-kms-example-decrypt-blob.rb>`_
 on GitHub.

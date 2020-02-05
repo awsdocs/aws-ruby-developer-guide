@@ -21,7 +21,7 @@ Getting Information about All |RDS| Parameter Groups
 
 The following example lists the names and descriptions of all of your |RDS| parameter groups in the :code:`us-west-2` region.
 
-.. literalinclude:: ./example_code/rds/rds-ruby-example-list-parameter-groups.rb
+.. literalinclude:: ./rds/rds-ruby-example-list-parameter-groups.rb
    :lines: 13-20
    :dedent: 0
    :language: ruby

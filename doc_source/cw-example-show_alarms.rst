@@ -21,10 +21,10 @@ Getting Information about All |CWlong| Alarms
 
 The following example displays information about your |CWlong| alarms.
 
-.. literalinclude:: ./example_code/cloudwatch/cw-ruby-example-show-alarms.rb
+.. literalinclude:: ./cloudwatch/cw-ruby-example-show-alarms.rb
    :lines: 13-41
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cloudwatch/cw-ruby-example-show-alarms.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/cloudwatch/cw-ruby-example-show-alarms.rb>`_
 on GitHub.

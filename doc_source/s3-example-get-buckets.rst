@@ -24,7 +24,7 @@ as :file:`buckets.rb`. Notice that although the :code:`Resource` object is creat
 :code:`us-west-2` region, |S3| returns buckets to which you have access, regardless of the region
 they are in.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-show-50-buckets.rb
+.. literalinclude:: ./s3/s3-ruby-example-show-50-buckets.rb
    :lines: 13-20
    :dedent: 0
    :language: ruby

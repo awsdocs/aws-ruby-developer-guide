@@ -43,7 +43,7 @@ You also need to create the queues `existing-queue` and `receive-queue`, which y
 Example
 *******
 
-.. literalinclude:: ./example_code/sqs/sqs-ruby-example-enable-long-polling.rb
+.. literalinclude:: ./sqs/sqs-ruby-example-enable-long-polling.rb
    :lines: 18-93
    :dedent: 0
    :language: ruby

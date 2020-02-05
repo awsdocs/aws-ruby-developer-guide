@@ -23,7 +23,7 @@ Getting Information about a Specific Item in an |DDBlong| Table
 The following example displays the first and last name of an item with an :code-ruby:`ID` of
 **123456** in the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-item-123456-users-table.rb
+.. literalinclude:: ./dynamodb/dynamodb-ruby-example-list-item-123456-users-table.rb
    :lines: 13-27
    :dedent: 0
    :language: ruby

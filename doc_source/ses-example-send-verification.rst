@@ -22,10 +22,10 @@ Verifying an Email Address in |SES|
 The following example demonstrates how to use the |sdk-ruby| to verify an |SES|
 email address.
 
-.. literalinclude:: ./example_code/ses/ses_send_verification.rb
+.. literalinclude:: ./ses/ses_send_verification.rb
    :lines: 13-38
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses_send_verification.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/ses/ses_send_verification.rb>`_
 on GitHub.

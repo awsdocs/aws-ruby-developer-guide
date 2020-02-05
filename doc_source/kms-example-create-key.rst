@@ -28,12 +28,12 @@ Because the example only encrypts a small amount of data,
 a CMK is fine for our purposes. For larger amounts of data,
 use the CMK to encrypt a data encryption key (DEK).
 
-.. literalinclude:: ./example_code/kms/aws-ruby-sdk-kms-example-create-key.rb
+.. literalinclude:: ./kms/aws-ruby-sdk-kms-example-create-key.rb
    :lines: 13-32
    :dedent: 0
    :language: ruby
 
 Choose :code:`Copy` to save the code locally.
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/kms/aws-ruby-sdk-kms-example-create-key.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/kms/aws-ruby-sdk-kms-example-create-key.rb>`_
 on GitHub.

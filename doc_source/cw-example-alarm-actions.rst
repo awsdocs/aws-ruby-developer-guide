@@ -28,7 +28,7 @@ In this example, you use the |sdk-ruby| with |CW| to:
 #. Enable an action for a |CW| alarm by using `Aws::CloudWatch::Client#put_metric_alarm <https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CloudWatch/Client.html#put_metric_alarm-instance_method>`_.
 #. Disable all actions for an alarm by using `Aws::CloudWatch::Client#disable_alarm_actions <https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CloudWatch/Client.html#disable_alarm_actions-instance_method>`_.
 
-The `complete code <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cloudwatch/cw-ruby-example-alarm-actions.rb>`_
+The `complete code <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/cloudwatch/cw-ruby-example-alarm-actions.rb>`_
 for this example is available on GitHub.
 
 *************
@@ -47,7 +47,7 @@ You also need to replace `arn:aws:sns:REGION-ID:ACCOUNT-ID:TOPIC-NAME` with the 
 Example
 *******
 
-.. literalinclude:: ./example_code/cloudwatch/cw-ruby-example-alarm-actions.rb
+.. literalinclude:: ./cloudwatch/cw-ruby-example-alarm-actions.rb
    :lines: 17-57
    :dedent: 0
    :language: ruby

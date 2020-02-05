@@ -32,7 +32,7 @@ Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
+.. literalinclude:: ./s3/s3_get_cskms_decrypt_item.rb
    :lines: 13
    :dedent: 0
    :language: ruby
@@ -41,32 +41,32 @@ Get the AWS KMS key from the command line,
 Where :code:`key` is an AWS KMS key ID as created in the :doc:`kms-example-create-key` example
 and must be the same value you used to encrypt the object.
 
-.. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
+.. literalinclude:: ./s3/s3_get_cskms_decrypt_item.rb
    :lines: 16-21
    :dedent: 0
    :language: ruby
 
 Set the bucket name and object name.
 
-.. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
+.. literalinclude:: ./s3/s3_get_cskms_decrypt_item.rb
    :lines: 23-24
    :dedent: 0
    :language: ruby
 
 Create a |KMS| and |S3| client.
 
-.. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
+.. literalinclude:: ./s3/s3_get_cskms_decrypt_item.rb
    :lines: 27, 30-33
    :dedent: 0
    :language: ruby
 
 Call :code:`get_object` to get the object and display the result.
 
-.. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
+.. literalinclude:: ./s3/s3_get_cskms_decrypt_item.rb
    :lines: 36,38
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_get_cskms_decrypt_item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_get_cskms_decrypt_item.rb>`_
 on GitHub.

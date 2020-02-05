@@ -25,7 +25,7 @@ The following example creates a subscription for the topic with the ARN
 Initially the ARN value is pending confirmation. When the user confirms their email address, this
 value becomes a true ARN.
 
-.. literalinclude:: ./example_code/sns/sns-ruby-example-create-subscription.rb
+.. literalinclude:: ./sns/sns-ruby-example-create-subscription.rb
    :lines: 13-24
    :dedent: 0
    :language: ruby

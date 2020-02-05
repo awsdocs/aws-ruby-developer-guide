@@ -21,7 +21,7 @@ Getting Information about All |RDS| Snapshots
 
 The following example lists the names (IDs) and status of all of your |RDS| (instance) snapshots in the :code:`us-west-2` region.
 
-.. literalinclude:: ./example_code/rds/rds-ruby-example-list-instance-snapshots.rb
+.. literalinclude:: ./rds/rds-ruby-example-list-instance-snapshots.rb
    :lines: 13-20
    :dedent: 0
    :language: ruby

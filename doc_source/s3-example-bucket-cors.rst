@@ -57,7 +57,7 @@ create the bucket and the specified AWS profile. This code creates the :code:`Aw
 in the :code:`us-east-1` region.
 An additional variable is also declared for the bucket used in this example.
 
-.. literalinclude:: ./example_code/s3/s3_ruby_bucket_cors.rb
+.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby
@@ -69,7 +69,7 @@ Configure CORS for a Bucket
 
 Call the :ruby-sdk-api:`put_bucket_cors <Aws/S3/Client.html#put_bucket_cors-instance_method>` method, providing the name of the bucket and the CORS configuration settings.
 
-.. literalinclude:: ./example_code/s3/s3_ruby_bucket_cors.rb
+.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
    :lines: 59-62
    :dedent: 0
    :language: ruby
@@ -78,14 +78,14 @@ For the CORS configuration settings, declare an :ruby-sdk-api:`Aws::S3::Types::C
 that the specified origins are allowed to execute (:code:`allowed_methods`), the origins you want customers to be able to access the bucket from (:code:`allowed_origins`), and
 the headers in the response you want customers to be able to access from their applications (for example, from a JavaScript :code:`XMLHttpRequest` object, shown here in :code:`expose_headers`).
 
-.. literalinclude:: ./example_code/s3/s3_ruby_bucket_cors.rb
+.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
    :lines: 48-56
    :dedent: 0
    :language: ruby
 
 For the HTTP methods that the specified origins are allowed to execute, you could specify them inline or, as shown here, you could get them from the user at the command line.
 
-.. literalinclude:: ./example_code/s3/s3_ruby_bucket_cors.rb
+.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
    :lines: 27-45
    :dedent: 0
    :language: ruby
@@ -106,7 +106,7 @@ Call the :ruby-sdk-api:`get_bucket_cors <Aws/S3/Client.html#get_bucket_cors-inst
 :ruby-sdk-api:`Aws::S3::Types::GetBucketCorsOutput <Aws/S3/Types/GetBucketCorsOutput.html>` object. This object's :code:`cors_rules` attribute returns an array of
 :ruby-sdk-api:`Aws::S3::Types::CORSRule <Aws/S3/Types/CORSRule.html>` objects, which represent the bucket's CORS settings.
 
-.. literalinclude:: ./example_code/s3/s3_ruby_bucket_cors.rb
+.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
    :lines: 65-66
    :dedent: 0
    :language: ruby
@@ -118,7 +118,7 @@ Complete Example
 
 Here is the complete code for this example.
 
-.. literalinclude:: ./example_code/s3/s3_ruby_bucket_cors.rb
+.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
    :lines: 13-69
    :dedent: 0
    :language: ruby

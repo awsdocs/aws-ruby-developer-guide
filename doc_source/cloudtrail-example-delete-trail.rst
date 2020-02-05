@@ -29,11 +29,11 @@ Choose :code:`Copy` to save the code locally.
 
 Create the file *delete_trail.rb* with the following code.
 
-.. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-delete-trail.rb
+.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-delete-trail.rb
    :lines: 13-35
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-delete-trail.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/cloudtrail/aws-ruby-sdk-cloudtrail-example-delete-trail.rb>`_
 on GitHub.

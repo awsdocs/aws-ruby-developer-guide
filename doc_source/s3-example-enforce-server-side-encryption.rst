@@ -37,7 +37,7 @@ Add the required |S3| gem and set the bucket name.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
+.. literalinclude:: ./s3/s3_add_bucket_sses3_encryption_policy.rb
    :lines: 13,15
    :dedent: 0
    :language: ruby
@@ -45,18 +45,18 @@ Add the required |S3| gem and set the bucket name.
 Create an |S3| policy that requires server-side KMS encryption on objects
 uploaded to the bucket.
 
-.. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
+.. literalinclude:: ./s3/s3_add_bucket_sses3_encryption_policy.rb
    :lines: 18-47
    :dedent: 0
    :language: ruby
 
 Create the |S3| client, apply the policy to the bucket, and print a success message.
 
-.. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
+.. literalinclude:: ./s3/s3_add_bucket_sses3_encryption_policy.rb
    :lines: 50-58
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_bucket_sses3_encryption_policy.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_add_bucket_sses3_encryption_policy.rb>`_
 on GitHub.

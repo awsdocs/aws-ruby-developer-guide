@@ -36,14 +36,14 @@ Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_sses3_encrypt_item.rb
    :lines: 13
    :dedent: 0
    :language: ruby
 
 Set the bucket and object name and get the object from the file as a string.
 
-.. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_sses3_encrypt_item.rb
    :lines: 15,16,19
    :dedent: 0
    :language: ruby
@@ -53,11 +53,11 @@ Notice that the :code:`server_side_encryption` property is set to :code:`aws:kms
 indicating that |S3| encrypts the object using KMS.
 Finally, display a success message to the user.
 
-.. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_sses3_encrypt_item.rb
    :lines: 22,23,25-32
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_sses3_encrypt_item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_add_sses3_encrypt_item.rb>`_
 on GitHub.

@@ -35,7 +35,7 @@ Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_add_default_sse_encryption.rb
+.. literalinclude:: ./s3/s3_add_default_sse_encryption.rb
    :lines: 13
    :dedent: 0
    :language: ruby
@@ -43,7 +43,7 @@ Add the required |S3| gem.
 Get the KMS key from the command line,
 Where :code:`key` is a KMS key ID as created in the :doc:`kms-example-create-key` example.
 
-.. literalinclude:: ./example_code/s3/s3_add_default_sse_encryption.rb
+.. literalinclude:: ./s3/s3_add_default_sse_encryption.rb
    :lines: 16-21
    :dedent: 0
    :language: ruby
@@ -51,7 +51,7 @@ Where :code:`key` is a KMS key ID as created in the :doc:`kms-example-create-key
 Create an |S3| client and call :code:`put_bucket_encryption` to add
 default encryption to the bucket.
 
-.. literalinclude:: ./example_code/s3/s3_add_default_sse_encryption.rb
+.. literalinclude:: ./s3/s3_add_default_sse_encryption.rb
    :lines: 27-37
    :dedent: 0
    :language: ruby
@@ -59,5 +59,5 @@ default encryption to the bucket.
 
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_default_sse_encryption.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_add_default_sse_encryption.rb>`_
 on GitHub.

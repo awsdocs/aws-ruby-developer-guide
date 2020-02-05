@@ -39,7 +39,7 @@ In this example, you use the |sdk-ruby| with |EC2| to:
 #. Release the address by using the
    `Aws::EC2::Client#release_address <https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/EC2/Client.html#release_address-instance_method>`_ method.
 
-The `complete code <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ec2/ec2-ruby-example-elastic-ips.rb>`_
+The `complete code <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/ec2/ec2-ruby-example-elastic-ips.rb>`_
 for this example is available on GitHub.
 
 *************
@@ -62,7 +62,7 @@ and note the instance ID.
 Example
 *******
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-elastic-ips.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-elastic-ips.rb
    :lines: 19-74
    :dedent: 0
    :language: ruby

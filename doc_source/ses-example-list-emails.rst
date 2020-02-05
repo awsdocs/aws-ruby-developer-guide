@@ -22,10 +22,10 @@ Listing Valid |SES| Email Addresses
 The following example demonstrates how to use the |sdk-ruby| to list the valid |SES|
 email addresses.
 
-.. literalinclude:: ./example_code/ses/ses_list_emails.rb
+.. literalinclude:: ./ses/ses_list_emails.rb
    :lines: 13-33
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses_list_emails.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/ses/ses_list_emails.rb>`_
 on GitHub.

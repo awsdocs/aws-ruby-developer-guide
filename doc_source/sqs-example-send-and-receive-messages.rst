@@ -50,7 +50,7 @@ You also need to create the queue `my-queue`, which you can do in the |SQS| cons
 Example
 *******
 
-.. literalinclude:: ./example_code/sqs/sqs-ruby-example-send-receive-messages.rb
+.. literalinclude:: ./sqs/sqs-ruby-example-send-receive-messages.rb
    :lines: 19-76
    :dedent: 0
    :language: ruby

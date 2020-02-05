@@ -23,12 +23,12 @@ The following example displays information about your |ACBlong| project builds.
 This information includes the name of the project, when the build started, and how long each
 phase of the build took, in seconds.
 
-.. literalinclude:: ./example_code/codebuild/aws-ruby-sdk-codebuild-example-list-builds.rb
+.. literalinclude:: ./codebuild/aws-ruby-sdk-codebuild-example-list-builds.rb
    :lines: 13-25
    :dedent: 0
    :language: ruby
 
 Choose :code:`Copy` to save the code locally.
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/codebuild/aws-ruby-sdk-codebuild-example-list-builds.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/codebuild/aws-ruby-sdk-codebuild-example-list-builds.rb>`_
 on GitHub.

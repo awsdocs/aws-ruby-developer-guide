@@ -33,7 +33,7 @@ bundled certificate if you are running on Microsoft Windows.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 13-18
    :dedent: 0
    :language: ruby
@@ -41,7 +41,7 @@ bundled certificate if you are running on Microsoft Windows.
 Create a method to determine whether the user has a policy with administrator
 privileges.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 20-30
    :dedent: 0
    :language: ruby
@@ -49,7 +49,7 @@ privileges.
 Create a method to determine whether the user has an attached policy with administrator
 privileges.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 32-42
    :dedent: 0
    :language: ruby
@@ -57,7 +57,7 @@ privileges.
 Create a method to determine whether a group to which the user belongs
 has a policy with administrator privileges.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 44-56
    :dedent: 0
    :language: ruby
@@ -65,7 +65,7 @@ has a policy with administrator privileges.
 Create a method to determine whether a group to which the user belongs
 has an attached policy with administrator privileges.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 58-70
    :dedent: 0
    :language: ruby
@@ -73,14 +73,14 @@ has an attached policy with administrator privileges.
 Create a method to determine whether a group to which the user belongs
 has administrator privileges.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 72-90
    :dedent: 0
    :language: ruby
 
 Create a method to determine whether the user has administrator privileges.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 92-109
    :dedent: 0
    :language: ruby
@@ -88,7 +88,7 @@ Create a method to determine whether the user has administrator privileges.
 Create a method to loop through a list of users and return
 how many of those users have administrator privileges.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 111-123
    :dedent: 0
    :language: ruby
@@ -98,7 +98,7 @@ Create an IAM client and variables to store the number of users,
 number of users who have adminstrator privileges,
 and the string that identifies a policy that supplies adminstrator privileges.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 126-130
    :dedent: 0
    :language: ruby
@@ -110,7 +110,7 @@ call :code:`get_admin_count` to get the number of those users who have
 administrator privileges,
 and keep track of the number of those.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 132-139
    :dedent: 0
    :language: ruby
@@ -119,18 +119,18 @@ If the first call to :code:`get_account_authorization_details` did not get
 all of the details, call it again and repeat the process of determining
 how many have administrator privileges.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 141-156
    :dedent: 0
    :language: ruby
 
 Finally, display how many users have administrator privileges.
 
-.. literalinclude:: ./example_code/iam/iam_ruby_example_show_admins.rb
+.. literalinclude:: ./iam/iam_ruby_example_show_admins.rb
    :lines: 158-159
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/iam/iam_ruby_example_show_admins.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/iam/iam_ruby_example_show_admins.rb>`_
 on GitHub.

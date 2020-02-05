@@ -22,10 +22,10 @@ Sending a Message to an Email Address in |SES|
 The following example demonstrates how to use the |sdk-ruby| to send a message to
 an |SES| email address.
 
-.. literalinclude:: ./example_code/ses/ses_send_email.rb
+.. literalinclude:: ./ses/ses_send_email.rb
    :lines: 13-83
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses_send_email.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/ses/ses_send_email.rb>`_
 on GitHub.

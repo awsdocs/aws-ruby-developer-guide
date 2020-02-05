@@ -22,7 +22,7 @@ Getting Information about All |RDS| Clusters and Their Snapshots
 The following example lists the name (ID) and status of all of your |RDS| clusters
 and the name (ID) and status of their snapshots in the :code:`us-west-2` region.
 
-.. literalinclude:: ./example_code/rds/rds-ruby-example-list-cluster-snapshots.rb
+.. literalinclude:: ./rds/rds-ruby-example-list-cluster-snapshots.rb
    :lines: 13-25
    :dedent: 0
    :language: ruby
