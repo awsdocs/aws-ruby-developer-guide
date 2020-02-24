@@ -47,8 +47,8 @@ The |sdk-ruby| searches for credentials in the following order:
 
 You can override these settings in your code. The precedence is:
 
-1. :ref:`aws-ruby-sdk-credentials-aws-config`
-2. :ref:`aws-ruby-sdk-credentials-client`
+1. :ref:`aws-ruby-sdk-credentials-client`
+2. :ref:`aws-ruby-sdk-credentials-aws-config`
 
 The following sections describe the various ways you can set credentials, starting with
 the most flexible approach. For more information about AWS credentials and recommended approaches
