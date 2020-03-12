@@ -23,9 +23,9 @@ All versions of SSL, and versions of TLS prior to 1.2, have vulnerabilities that
 with |AWS|. For this reason, you should make sure that you are using the |sdk-ruby| with a version of Ruby that supports TLS 
 v1.2 or later.
 
-Ruby uses the OpenSSL library to secure HTTP connections. OpenSSL 1.0.1 and later prefer TLS 1.2. Supported versions of 
-Ruby (that is, 1.9.3 and later, as required by the |sdk-ruby|) installed through system `package managers`_ 
-(``yum``, ``apt``, ``etc``.), an `official installer`_, or Ruby `managers`_ (rbenv, RVM, etc.) should already meet this requirement.
+Ruby uses the OpenSSL library to secure HTTP connections. Supported versions of Ruby (1.9.3 and later) installed through
+system `package managers`_  (``yum``, ``apt``, ``etc``.), an `official installer`_, or Ruby `managers`_ (rbenv, RVM, etc.)
+typically incorporate  OpenSSL 1.0.1 or later, which supports TLS 1.2.
 
 .. _package managers: https://www.ruby-lang.org/en/documentation/installation/#package-management-systems
 .. _official installer: https://www.ruby-lang.org/en/documentation/installation/#installers
@@ -38,7 +38,7 @@ of SSL or TLS supported by both the client and server, which is always at least 
 Checking OpenSSL version
 ========================
 
-To check which version of OpenSSL is being used by your installation of Ruby, enter this command:
+To make sure your installation of Ruby is using OpenSSL 1.0.1 or later, enter this command:
 
 .. code-block:: none
 
@@ -59,12 +59,15 @@ this path.  To check the version of OpenSSL, enter the following commands.
    cd /path/to/openssl
    bin/openssl version
 
+This latter method may not work with all installations of Ruby.
+
 Upgrading TLS Support
 =====================
 
-If the version of OpenSSL used by Ruby is less than 1.0.1, upgrade your Ruby or OpenSSL installation using your system package
-manager, Ruby installer, or Ruby manager as described in the installation guide. If you are installing Ruby `from source`_, install 
-the `latest OpenSSL`_ first, and pass ``--with-openssl-dir=/path/to/upgraded/openssl`` to ``./configure``.
+If the version of OpenSSL used by your Ruby is less than 1.0.1, upgrade your Ruby or OpenSSL installation using your system package
+manager, Ruby installer, or Ruby manager as described in Ruby's `installation guide`_. If you are installing Ruby `from source`_, 
+install the `latest OpenSSL`_ first, and pass ``--with-openssl-dir=/path/to/upgraded/openssl`` when running ``./configure``.
 
+.. _installation guide: https://www.ruby-lang.org/en/documentation/installation/
 .. _from source: https://www.ruby-lang.org/en/documentation/installation/#building-from-source
 .. _latest OpenSSL: https://www.openssl.org/source/
