@@ -1,0 +1,70 @@
+.. Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+   This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+   International License (the "License"). You may not use this file except in compliance with the
+   License. A copy of the License is located at http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+   This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+   either express or implied. See the License for the specific language governing permissions and
+   limitations under the License.
+
+###################################
+Using TLS 1.2 in |SERVICENAMETITLE|
+###################################
+
+.. meta::
+   :description: Learn how how to use TLS 1.2 or later to ensure the security of communication with |AWS| services.
+   :keywords:
+
+.. include:: common/_security-includes.txt
+
+Communication between |sdk-ruby| and |AWS| is secured using Secure Sockets Layer (SSL) or Transport Layer Security (TLS). 
+All versions of SSL, and versions of TLS prior to 1.2, have vulnerabilities that can compromise the security of your communication
+with |AWS|. For this reason, you should make sure that you are using the |sdk-ruby| with a version of Ruby that supports TLS 
+v1.2 or later.
+
+Ruby uses the OpenSSL library to secure HTTP connections. OpenSSL 1.0.1 and later prefer TLS 1.2. Supported versions of 
+Ruby (that is, 1.9.3 and later, as required by the |sdk-ruby|) installed through system `package managers`_ 
+(``yum``, ``apt``, ``etc``.), an `official installer`_, or Ruby `managers`_ (rbenv, RVM, etc.) should already meet this requirement.
+
+.. _package managers: https://www.ruby-lang.org/en/documentation/installation/#package-management-systems
+.. _official installer: https://www.ruby-lang.org/en/documentation/installation/#installers
+.. _managers: https://www.ruby-lang.org/en/documentation/installation/#managers
+
+When used with a supported version of Ruby with OpenSSL 1.0.1 or later, |sdk-ruby| prefers TLS 1.2, and uses the highest version 
+of SSL or TLS supported by both the client and server, which is always at least TLS 1.2 for AWS services.  (The SDK uses the Ruby 
+``Net::HTTP`` class with ``use_ssl=true``.) 
+
+Checking OpenSSL version
+========================
+
+To check which version of OpenSSL is being used by your installation of Ruby, enter this command:
+
+.. code-block:: none
+
+   ruby -r openssl -e 'puts OpenSSL::OPENSSL_VERSION'
+
+An alternative way to get the OpenSSL version is to query the ``openssl`` executable directly.  First, locate the appropriate
+executable using the following command.
+
+.. code-block:: none
+
+   ruby -r rbconfig -e 'puts RbConfig::CONFIG["configure_args"]'
+
+The output should have ``--with-openssl-dir=/path/to/openssl`` indicating the location of the OpenSSL installation. Make a note of
+this path.  To check the version of OpenSSL, enter the following commands.
+
+.. code-block:: none
+
+   cd /path/to/openssl
+   bin/openssl version
+
+Upgrading TLS Support
+=====================
+
+If the version of OpenSSL used by Ruby is less than 1.0.1, upgrade your Ruby or OpenSSL installation using your system package
+manager, Ruby installer, or Ruby manager as described in the installation guide. If you are installing Ruby `from source`_, install 
+the `latest OpenSSL`_ first, and pass ``--with-openssl-dir=/path/to/upgraded/openssl`` to ``./configure``.
+
+.. _from source: https://www.ruby-lang.org/en/documentation/installation/#building-from-source
+.. _latest OpenSSL: https://www.openssl.org/source/

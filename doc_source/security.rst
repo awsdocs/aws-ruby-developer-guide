@@ -29,3 +29,4 @@ Security for |SERVICENAMETITLE|
    Compliance Validation <common/compliance-validation>
    Resilience <common/disaster-recovery-resiliency>
    Infrastructure Security <common/infrastructure-security>
+   Using TLS 1.2 <tls-version>
