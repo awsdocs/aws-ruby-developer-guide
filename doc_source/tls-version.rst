@@ -1,4 +1,4 @@
-.. Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+.. Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
    This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
    International License (the "License"). You may not use this file except in compliance with the
@@ -18,27 +18,27 @@ Using TLS 1.2 in |SERVICENAMETITLE|
 
 .. include:: common/_security-includes.txt
 
-Communication between |sdk-ruby| and |AWS| is secured using Secure Sockets Layer (SSL) or Transport Layer Security (TLS). 
-All versions of SSL, and versions of TLS prior to 1.2, have vulnerabilities that can compromise the security of your communication
-with |AWS|. For this reason, you should make sure that you are using the |sdk-ruby| with a version of Ruby that supports TLS 
-v1.2 or later.
+Communication between the |sdk-ruby| and |AWS| is secured using Secure Sockets Layer (SSL) or Transport Layer Security (TLS). 
+All versions of SSL, and versions of TLS earlier than 1.2, have vulnerabilities that can compromise the security of your communication
+with |AWS|. For this reason, you should make sure that you're using the |sdk-ruby| with a version of Ruby that supports TLS 
+version 1.2 or later.
 
 Ruby uses the OpenSSL library to secure HTTP connections. Supported versions of Ruby (1.9.3 and later) installed through
-system `package managers`_  (``yum``, ``apt``, ``etc``.), an `official installer`_, or Ruby `managers`_ (rbenv, RVM, etc.)
+system `package managers`_  (``yum``, ``apt``, and others), an `official installer`_, or Ruby `managers`_ (rbenv, RVM, and others)
 typically incorporate  OpenSSL 1.0.1 or later, which supports TLS 1.2.
 
 .. _package managers: https://www.ruby-lang.org/en/documentation/installation/#package-management-systems
 .. _official installer: https://www.ruby-lang.org/en/documentation/installation/#installers
 .. _managers: https://www.ruby-lang.org/en/documentation/installation/#managers
 
-When used with a supported version of Ruby with OpenSSL 1.0.1 or later, |sdk-ruby| prefers TLS 1.2, and uses the highest version 
-of SSL or TLS supported by both the client and server, which is always at least TLS 1.2 for AWS services.  (The SDK uses the Ruby 
+When used with a supported version of Ruby with OpenSSL 1.0.1 or later, the |sdk-ruby| prefers TLS 1.2, and uses the latest version 
+of SSL or TLS supported by both the client and server. This is always at least TLS 1.2 for AWS services.  (The SDK uses the Ruby 
 ``Net::HTTP`` class with ``use_ssl=true``.) 
 
-Checking OpenSSL version
-========================
+Checking the OpenSSL version
+============================
 
-To make sure your installation of Ruby is using OpenSSL 1.0.1 or later, enter this command:
+To make sure your installation of Ruby is using OpenSSL 1.0.1 or later, enter the following command.
 
 .. code-block:: none
 
@@ -59,14 +59,14 @@ this path.  To check the version of OpenSSL, enter the following commands.
    cd /path/to/openssl
    bin/openssl version
 
-This latter method may not work with all installations of Ruby.
+This latter method might not work with all installations of Ruby.
 
-Upgrading TLS Support
+Upgrading TLS support
 =====================
 
-If the version of OpenSSL used by your Ruby is less than 1.0.1, upgrade your Ruby or OpenSSL installation using your system package
-manager, Ruby installer, or Ruby manager as described in Ruby's `installation guide`_. If you are installing Ruby `from source`_, 
-install the `latest OpenSSL`_ first, and pass ``--with-openssl-dir=/path/to/upgraded/openssl`` when running ``./configure``.
+If the version of OpenSSL used by your Ruby installation is earlier than 1.0.1, upgrade your Ruby or OpenSSL installation using your system package
+manager, Ruby installer, or Ruby manager, as described in Ruby's `installation guide`_. If you're installing Ruby `from source`_, 
+install the `latest OpenSSL`_ first, and then pass ``--with-openssl-dir=/path/to/upgraded/openssl`` when running ``./configure``.
 
 .. _installation guide: https://www.ruby-lang.org/en/documentation/installation/
 .. _from source: https://www.ruby-lang.org/en/documentation/installation/#building-from-source
