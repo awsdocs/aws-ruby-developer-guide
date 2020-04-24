@@ -40,7 +40,7 @@ effect on the result.
 
 The following example sets ``bucket_exists`` to ``true`` if the bucket with the
 name ``my-bucket`` exists and you have access to the bucket.
-Again, the ``region`` parameter to ``Client`` has no effect on the result.
+In this case, the ``region`` parameter to ``Client`` has an effect on the result.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-head-bucket.rb
    :lines: 13-22
