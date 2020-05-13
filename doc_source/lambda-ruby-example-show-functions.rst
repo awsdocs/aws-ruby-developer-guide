@@ -22,6 +22,6 @@ Displaying Information about All |LAM| Functions
 The following example displays the name, ARN, and role of all of your |LAM| functions in the :code:`us-west-2` region.
 
 .. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-show-functions.rb
-   :lines: 13-21
+   :lines: 13-22
    :dedent: 0
    :language: ruby
