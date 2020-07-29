@@ -21,7 +21,7 @@ Create User Access Keys for an |IAM| User
 
 The following example creates an access key and secret key for the |IAM| user :code:`my_groovy_user` in the :code:`us-west-2` region.
 
-.. literalinclude:: ./example_code/iam/iam-ruby-example-create-user-access-keys.rb
+.. literalinclude:: ./iam/iam-ruby-example-create-user-access-keys.rb
    :lines: 13-26
    :dedent: 0
    :language: ruby

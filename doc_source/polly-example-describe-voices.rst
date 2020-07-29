@@ -31,25 +31,25 @@ Add the required gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/polly/polly_describe_voices.rb
+.. literalinclude:: ./polly/polly_describe_voices.rb
    :lines: 13
    :dedent: 0
    :language: ruby
 
 Create an Amazon Polly client and call :code:`describe_voices` for US English.
 
-.. literalinclude:: ./example_code/polly/polly_describe_voices.rb
+.. literalinclude:: ./polly/polly_describe_voices.rb
    :lines: 19, 22
    :dedent: 2
    :language: ruby
 
 Display the name and gender of the voices.
 
-.. literalinclude:: ./example_code/polly/polly_describe_voices.rb
+.. literalinclude:: ./polly/polly_describe_voices.rb
    :lines: 24-28
    :dedent: 2
    :language: ruby
 	      
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/polly/polly_describe_voices.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/polly/polly_describe_voices.rb>`_
 on GitHub.

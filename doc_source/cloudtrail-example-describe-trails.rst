@@ -29,11 +29,11 @@ Choose :code:`Copy` to save the code locally.
 
 Create the file *describe_trails.rb* with the following code.
 
-.. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-describe-trails.rb
+.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-describe-trails.rb
    :lines: 13-41
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-describe-trails.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/cloudtrail/aws-ruby-sdk-cloudtrail-example-describe-trails.rb>`_
 on GitHub.

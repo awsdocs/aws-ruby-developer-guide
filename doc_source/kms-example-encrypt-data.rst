@@ -26,12 +26,12 @@ which implements the
 to encrypt the string "1234567890".
 The example displays a readable version of the resulting encrypted blob.
 
-.. literalinclude:: ./example_code/kms/aws-ruby-sdk-kms-example-encrypt-data.rb
+.. literalinclude:: ./kms/aws-ruby-sdk-kms-example-encrypt-data.rb
    :lines: 13-31
    :dedent: 0
    :language: ruby
 
 Choose :code:`Copy` to save the code locally.
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/kms/aws-ruby-sdk-kms-example-encrypt-data.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/kms/aws-ruby-sdk-kms-example-encrypt-data.rb>`_
 on GitHub.

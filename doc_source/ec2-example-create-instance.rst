@@ -27,7 +27,7 @@ with the ID :code:`SUBNET_ID`. Then it displays the instance's ID and public IP 
 
 .. note:: In the empty script value, you can add instructions that your |EC2| instance executes when it starts.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-instance.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-create-instance.rb
    :lines: 13-47
    :dedent: 0
    :language: ruby

@@ -44,7 +44,7 @@ in:
 Example
 *******
 
-.. literalinclude:: ./example_code/iam/iam-ruby-example-server-certificates.rb
+.. literalinclude:: ./iam/iam-ruby-example-server-certificates.rb
    :lines: 18-51
    :dedent: 0
    :language: ruby

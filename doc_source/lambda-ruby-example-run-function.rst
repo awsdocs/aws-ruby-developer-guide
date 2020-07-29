@@ -70,32 +70,32 @@ The first step is to load the modules we use:
 * :code:`os` loads the OS module we use to ensure we can run our Ruby application on Microsoft Windows.
   If you are on a different operating system, you can remove those lines.
 
-.. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-run-function.rb
+.. literalinclude:: ./lambda/aws-ruby-sdk-lambda-example-run-function.rb
    :lines: 13-20
    :dedent: 0
    :language: ruby
 
 We then create the |lam| client we use to invoke the |lam| function.
 
-.. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-run-function.rb
+.. literalinclude:: ./lambda/aws-ruby-sdk-lambda-example-run-function.rb
    :lines: 22
    :dedent: 0
    :language: ruby
 
 Next we create the hash for the request arguments and call :code:`MyGetItemsFunction`.
 
-.. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-run-function.rb
+.. literalinclude:: ./lambda/aws-ruby-sdk-lambda-example-run-function.rb
    :lines: 25-33
    :dedent: 0
    :language: ruby
 
 Finally we parse the response, and if are successful, we print out the items.
 
-.. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-run-function.rb
+.. literalinclude:: ./lambda/aws-ruby-sdk-lambda-example-run-function.rb
    :lines: 35-46
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/lambda/aws-ruby-sdk-lambda-example-run-function.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/lambda/aws-ruby-sdk-lambda-example-run-function.rb>`_
 on GitHub.

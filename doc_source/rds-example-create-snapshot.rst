@@ -24,7 +24,7 @@ The following example creates a snapshot for the |RDS| instance represented by *
 .. note:: If your instance is a member of a cluster, you can't create a snapshot of the instance.
      Instead, you must create a snapshot of the cluster (see :ref:`aws-ruby-sdk-rds-example-create-cluster-snapshot`).
 
-.. literalinclude:: ./example_code/rds/rds-ruby-example-create-snapshot.rb
+.. literalinclude:: ./rds/rds-ruby-example-create-snapshot.rb
    :lines: 13-26
    :dedent: 0
    :language: ruby

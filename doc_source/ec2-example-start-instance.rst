@@ -21,7 +21,7 @@ Starting an |EC2| Instance
 
 The following example starts the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-start-instance-i-123abc.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-start-instance-i-123abc.rb
    :lines: 13-30
    :dedent: 0
    :language: ruby

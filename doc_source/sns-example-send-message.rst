@@ -22,7 +22,7 @@ Sending a Message to All |SNS| Topic Subscribers
 The following example sends the message "Hello!" to all subscribers to the |SNS| topic with the ARN
 :code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic`.
 
-.. literalinclude:: ./example_code/sns/sns-ruby-example-send-message.rb
+.. literalinclude:: ./sns/sns-ruby-example-send-message.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby

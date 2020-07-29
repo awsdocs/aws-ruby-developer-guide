@@ -29,14 +29,14 @@ Choose :code:`Copy` to save the code locally.
 Create the file *lookup_events.rb*.
 Add the following statement to use the **CloudTrail** gem of the |sdk-ruby|.
 
-.. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-lookup-events.rb
+.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-lookup-events.rb
    :lines: 13
    :dedent: 0
    :language: ruby
 
 Create a function to display information about each event.
 
-.. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-lookup-events.rb
+.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-lookup-events.rb
    :lines: 15-28
    :dedent: 0
    :language: ruby
@@ -45,11 +45,11 @@ Create a |CT| client in :code:`us-west-2`,
 call **lookup_events**,
 and use the **show_event** function to display information about each event.
 
-.. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-lookup-events.rb
+.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-lookup-events.rb
    :lines: 31-41
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-lookup-events.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/cloudtrail/aws-ruby-sdk-cloudtrail-example-lookup-events.rb>`_
 on GitHub.

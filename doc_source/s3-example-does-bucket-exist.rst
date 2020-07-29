@@ -33,7 +33,7 @@ The following example sets :code-ruby:`bucket_exists` to :code:`true` if a bucke
 :code-ruby:`my-bucket` already exists.  The :code:`region:` parameter to :code:`Resource` has no
 effect on the result.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-bucket-exists.rb
+.. literalinclude:: ./s3/s3-ruby-example-bucket-exists.rb
    :lines: 13-16
    :dedent: 0
    :language: ruby
@@ -42,7 +42,7 @@ The following example sets ``bucket_exists`` to ``true`` if the bucket with the
 name ``my-bucket`` exists and you have access to the bucket.
 In this case, the ``region`` parameter to ``Client`` has an effect on the result.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-head-bucket.rb
+.. literalinclude:: ./s3/s3-ruby-example-head-bucket.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby

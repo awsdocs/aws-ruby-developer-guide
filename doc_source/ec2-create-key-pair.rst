@@ -37,7 +37,7 @@ Create a Key Pair
 
 Call the :ruby-sdk-api:`create_key_pair <Aws/EC2/Client.html#create_key_pair-instance_method>` method, specifying the name of the key pair to create.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-key-pairs.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-key-pairs.rb
    :lines: 26-28
    :dedent: 0
    :language: ruby
@@ -63,7 +63,7 @@ To get information about a single key pair, use attributes such as:
   encoded private key.
 * :ruby-sdk-api:`key_material <Aws/EC2/KeyPair.html#key_material-instance_method>`, which gets the unencrypted PEM encoded RSA private key.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-key-pairs.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-key-pairs.rb
    :lines: 29-33
    :dedent: 0
    :language: ruby
@@ -74,7 +74,7 @@ returned by calling the :ruby-sdk-api:`create_key_pair <Aws/EC2/Client.html#crea
 
 To get information about multiple key pairs, call the :ruby-sdk-api:`describe_key_pairs <Aws/EC2/Client.html#describe_key_pairs-instance_method>` method.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-key-pairs.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-key-pairs.rb
    :lines: 39-46
    :dedent: 0
    :language: ruby
@@ -96,7 +96,7 @@ Delete a Key Pair
 
 Call the :ruby-sdk-api:`delete_key_pair <Aws/EC2/Client.html#delete_key_pair-instance_method>` method, specifying the name of the key pair to delete.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-key-pairs.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-key-pairs.rb
    :lines: 49-51
    :dedent: 0
    :language: ruby
@@ -115,7 +115,7 @@ Complete Example
 
 The following code, which you can adapt and run, combines the preceding examples into a single example.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-key-pairs.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-key-pairs.rb
    :lines: 18-51
    :dedent: 0
    :language: ruby

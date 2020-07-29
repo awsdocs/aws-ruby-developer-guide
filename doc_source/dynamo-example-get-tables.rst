@@ -22,7 +22,7 @@ Getting Information about All |DDBlong| Tables
 The following example lists the names and number of items in each table in the
 :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-show-tables-names-and-item-count.rb
+.. literalinclude:: ./dynamodb/dynamodb-ruby-example-show-tables-names-and-item-count.rb
    :lines: 13-20
    :dedent: 0
    :language: ruby

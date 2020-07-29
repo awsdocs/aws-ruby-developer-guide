@@ -78,7 +78,7 @@ following when an item is added to the bucket:
 
 * The |LAM| function with the ARN :code-ruby:`my-function-arn`
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-add-notification.rb
+.. literalinclude:: ./s3/s3-ruby-example-add-notification.rb
    :lines: 13-58
    :dedent: 0
    :language: ruby

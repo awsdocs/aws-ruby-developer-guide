@@ -38,7 +38,7 @@ Create the file *create_rsa_keys.rb*.
 
 Add the required OpenSSL gem.
 
-.. literalinclude:: ./example_code/s3/create_rsa_keys.rb
+.. literalinclude:: ./s3/create_rsa_keys.rb
    :lines: 13
    :dedent: 0
    :language: ruby
@@ -47,7 +47,7 @@ Get the pass phrase,
 which is used to seed and create the key,
 from the command line.
 
-.. literalinclude:: ./example_code/s3/create_rsa_keys.rb
+.. literalinclude:: ./s3/create_rsa_keys.rb
    :lines: 16-21
    :dedent: 0
    :language: ruby
@@ -56,18 +56,18 @@ Create the RSA key pairs.
 Save the public key as *public_key.pem*
 and the private key as *private_secure_key.pem*.
 
-.. literalinclude:: ./example_code/s3/create_rsa_keys.rb
+.. literalinclude:: ./s3/create_rsa_keys.rb
    :lines: 22-37
    :dedent: 0
    :language: ruby
 
 Display the names of the key files and the pass phrase.
 
-.. literalinclude:: ./example_code/s3/create_rsa_keys.rb
+.. literalinclude:: ./s3/create_rsa_keys.rb
    :lines: 39-41
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/create_rsa_keys.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/create_rsa_keys.rb>`_
 on GitHub.

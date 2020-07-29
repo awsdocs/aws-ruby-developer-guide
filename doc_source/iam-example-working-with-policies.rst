@@ -45,7 +45,7 @@ You will also need to create the role (`my-role`) specified in the script. You c
 Example
 *******
 
-.. literalinclude:: ./example_code/iam/iam-ruby-example-manage-policies.rb
+.. literalinclude:: ./iam/iam-ruby-example-manage-policies.rb
   :lines: 20-73
   :dedent: 0
   :language: ruby

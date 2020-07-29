@@ -34,7 +34,7 @@ region using these values:
 
 * Key: :code:`my-zip-file`
 
-.. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-create-function.rb
+.. literalinclude:: ./lambda/aws-ruby-sdk-lambda-example-create-function.rb
    :lines: 13-32
    :dedent: 0
    :language: ruby

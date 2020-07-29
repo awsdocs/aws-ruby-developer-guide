@@ -33,21 +33,21 @@ Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_add_ssekms_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_ssekms_encrypt_item.rb
    :lines: 13
    :dedent: 0
    :language: ruby
 
 Set the region, bucket name, and item name.
 
-.. literalinclude:: ./example_code/s3/s3_add_ssekms_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_ssekms_encrypt_item.rb
    :lines: 15-17
    :dedent: 0
    :language: ruby
 
 Open the file and get just the file name to use as the bucket key.
 
-.. literalinclude:: ./example_code/s3/s3_add_ssekms_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_ssekms_encrypt_item.rb
    :lines: 20-23
    :dedent: 0
    :language: ruby
@@ -56,18 +56,18 @@ Create an |S3| client and call :code:`put_object` to upload the item to the buck
 Notice that the :code:`server_side_encryption` property is set to :code:`aws:kms`,
 indicating that |S3| encrypts the item using |KMS|.
 
-.. literalinclude:: ./example_code/s3/s3_add_ssekms_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_ssekms_encrypt_item.rb
    :lines: 26-34
    :dedent: 0
    :language: ruby
 
 Finally, close the file and display a success message to the user.
 
-.. literalinclude:: ./example_code/s3/s3_add_ssekms_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_ssekms_encrypt_item.rb
    :lines: 37-39
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_ssekms_encrypt_item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_add_ssekms_encrypt_item.rb>`_
 on GitHub.

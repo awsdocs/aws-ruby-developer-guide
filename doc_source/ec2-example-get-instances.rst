@@ -22,7 +22,7 @@ Getting Information about All |EC2| Instances
 The following example lists the IDs and states (pending, running, shutting down, terminated, stopping, or stopped)
 for all of your |EC2| instances in the :code:`us-west-2` region.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-get-all-instance-info.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-get-all-instance-info.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby

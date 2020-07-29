@@ -22,7 +22,7 @@ Getting Information about a Specific Application in |AEBlong|
 
 The following example lists the name, description, and URL of the :code:`MyRailsApp` application in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./example_code/elasticbeanstalk/elb-ruby-example-list-name-description-url-myrailsapp.rb
+.. literalinclude:: ./elasticbeanstalk/elb-ruby-example-list-name-description-url-myrailsapp.rb
    :lines: 13-25
    :dedent: 0
    :language: ruby

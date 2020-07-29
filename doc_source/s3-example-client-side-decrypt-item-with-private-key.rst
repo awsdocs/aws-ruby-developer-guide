@@ -35,28 +35,28 @@ Add the required |S3| and OpenSSL gems.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+.. literalinclude:: ./s3/s3-ruby-example-get-cspk-item.rb
    :lines: 13-14
    :dedent: 0
    :language: ruby
 
 Get the pass phrase from the command line.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+.. literalinclude:: ./s3/s3-ruby-example-get-cspk-item.rb
    :lines: 16-21
    :dedent: 0
    :language: ruby
 
 Set the bucket name, object name, and name of the private key file.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+.. literalinclude:: ./s3/s3-ruby-example-get-cspk-item.rb
    :lines: 23-25
    :dedent: 0
    :language: ruby
 
 Create an RSA key from the contents of the key file and passphrase.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+.. literalinclude:: ./s3/s3-ruby-example-get-cspk-item.rb
    :lines: 28-29
    :dedent: 2
    :language: ruby
@@ -64,11 +64,11 @@ Create an RSA key from the contents of the key file and passphrase.
 Create an |S3| encryption client, call :code:`get_object`, get the contents of the object as text
 and print out the object's contents.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+.. literalinclude:: ./s3/s3-ruby-example-get-cspk-item.rb
    :lines: 32,34,36
    :dedent: 2
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3-ruby-example-get-cspk-item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3-ruby-example-get-cspk-item.rb>`_
 on GitHub.

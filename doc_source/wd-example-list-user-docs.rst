@@ -20,28 +20,28 @@ example at the end of this topic.
 
 Require the |sdk-ruby| module.
 
-.. literalinclude:: ./example_code/workdocs/wd_list_user_docs.rb
+.. literalinclude:: ./workdocs/wd_list_user_docs.rb
    :lines: 13
    :dedent: 0
    :language: ruby
 
 Create a helper method to get the root folder of a user.
 
-.. literalinclude:: ./example_code/workdocs/wd_list_user_docs.rb
+.. literalinclude:: ./workdocs/wd_list_user_docs.rb
    :lines: 15-30
    :dedent: 0
    :language: ruby
 
 Create a |WD| client.
 
-.. literalinclude:: ./example_code/workdocs/wd_list_user_docs.rb
+.. literalinclude:: ./workdocs/wd_list_user_docs.rb
    :lines: 32
    :dedent: 0
    :language: ruby
 
 Get the root folder for that user.
 
-.. literalinclude:: ./example_code/workdocs/wd_list_user_docs.rb
+.. literalinclude:: ./workdocs/wd_list_user_docs.rb
    :lines: 34-40
    :dedent: 0
    :language: ruby
@@ -49,7 +49,7 @@ Get the root folder for that user.
 Call :code:`describe_folder_contents` to get the contents of the folder
 in ascending order.
 
-.. literalinclude:: ./example_code/workdocs/wd_list_user_docs.rb
+.. literalinclude:: ./workdocs/wd_list_user_docs.rb
    :lines: 47-51
    :dedent: 0
    :language: ruby
@@ -57,11 +57,11 @@ in ascending order.
 Display the name, size (in bytes), last modified date, document ID and version
 ID for each document in the user's root folder.
 
-.. literalinclude:: ./example_code/workdocs/wd_list_user_docs.rb
+.. literalinclude:: ./workdocs/wd_list_user_docs.rb
    :lines: 53-62
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/workdocs/wd_list_user_docs.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/workdocs/wd_list_user_docs.rb>`_
 on GitHub.

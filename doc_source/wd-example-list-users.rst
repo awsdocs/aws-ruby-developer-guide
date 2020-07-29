@@ -21,7 +21,7 @@ example at the end of this topic.
 
 Require the |sdk-ruby| module and create a |WD| client.
 
-.. literalinclude:: ./example_code/workdocs/wd_list_users.rb
+.. literalinclude:: ./workdocs/wd_list_users.rb
    :lines: 13-15
    :dedent: 0
    :language: ruby
@@ -29,18 +29,18 @@ Require the |sdk-ruby| module and create a |WD| client.
 Call :code:`describe_users` with your organization ID, and get all of the user
 names in ascending order.
 
-.. literalinclude:: ./example_code/workdocs/wd_list_users.rb
+.. literalinclude:: ./workdocs/wd_list_users.rb
    :lines: 17-25
    :dedent: 0
    :language: ruby
 
 Display the information about the users.
 
-.. literalinclude:: ./example_code/workdocs/wd_list_users.rb
+.. literalinclude:: ./workdocs/wd_list_users.rb
    :lines: 27-33
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/workdocs/wd_list_users.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/workdocs/wd_list_users.rb>`_
 on GitHub.

@@ -34,7 +34,7 @@ Add the required |S3| and OpenSSL gems.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
+.. literalinclude:: ./s3/s3-ruby-example-add-cspk-item.rb
    :lines: 13-14
    :dedent: 0
    :language: ruby
@@ -42,7 +42,7 @@ Add the required |S3| and OpenSSL gems.
 Set the bucket name, object name, and name of the file containing the public key.
 See :doc:`s3-example-create-public-private-key` for information about creating a public key.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
+.. literalinclude:: ./s3/s3-ruby-example-add-cspk-item.rb
    :lines: 16-18
    :dedent: 0
    :language: ruby
@@ -50,7 +50,7 @@ See :doc:`s3-example-create-public-private-key` for information about creating a
 Get the file contents as a string; get the public key from the file
 and create a new RSA key to encrypt the bucket object.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
+.. literalinclude:: ./s3/s3-ruby-example-add-cspk-item.rb
    :lines: 21,22,24
    :dedent: 0
    :language: ruby
@@ -58,11 +58,11 @@ and create a new RSA key to encrypt the bucket object.
 Create an |S3| encryption client and call :code:`put_object` to upload the object to the bucket.
 Finally, display a message to the user about the results.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
+.. literalinclude:: ./s3/s3-ruby-example-add-cspk-item.rb
    :lines: 28-37
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3-ruby-example-add-cspk-item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3-ruby-example-add-cspk-item.rb>`_
 on GitHub.

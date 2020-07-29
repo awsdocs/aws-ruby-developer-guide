@@ -21,11 +21,11 @@ Getting Information about All |ACBlong| Projects
 
 The following example lists the names of up to 100 of your |ACBlong| projects.
 
-.. literalinclude:: ./example_code/codebuild/aws-ruby-sdk-codebuild-example-list-projects.rb
+.. literalinclude:: ./codebuild/aws-ruby-sdk-codebuild-example-list-projects.rb
    :lines: 13-24
    :dedent: 0
    :language: ruby
 
 Choose :code:`Copy` to save the code locally. See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/codebuild/aws-ruby-sdk-codebuild-example-list-projects.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/codebuild/aws-ruby-sdk-codebuild-example-list-projects.rb>`_
 on GitHub.

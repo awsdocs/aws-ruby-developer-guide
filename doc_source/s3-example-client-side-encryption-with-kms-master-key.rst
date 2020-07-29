@@ -32,7 +32,7 @@ Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_cskms_encrypt_item.rb
    :lines: 13
    :dedent: 0
    :language: ruby
@@ -40,14 +40,14 @@ Add the required |S3| gem.
 Get the AWS KMS key from the command line,
 where :code:`key` is an AWS KMS key ID as created in the :doc:`kms-example-create-key` example.
 
-.. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_cskms_encrypt_item.rb
    :lines: 16-21
    :dedent: 0
    :language: ruby
 
 Set the bucket and object name and get the contents of the object from the file as a string.
 
-.. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_cskms_encrypt_item.rb
    :lines: 23,24,27
    :dedent: 0
    :language: ruby
@@ -55,11 +55,11 @@ Set the bucket and object name and get the contents of the object from the file 
 Create a |KMS| and |S3| encryption client, call :code:`put_object` to upload the object to the bucket,
 and display a success message.
 
-.. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
+.. literalinclude:: ./s3/s3_add_cskms_encrypt_item.rb
    :lines: 30-45
    :dedent: 0
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_add_cskms_encrypt_item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_add_cskms_encrypt_item.rb>`_
 on GitHub.

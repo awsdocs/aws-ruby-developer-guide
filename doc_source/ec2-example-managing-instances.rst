@@ -43,7 +43,7 @@ You also need to replace `INSTANCE-ID` in the code with the instance ID of an ex
 Example
 *******
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-manage-instances.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-manage-instances.rb
    :lines: 20-93
    :dedent: 0
    :language: ruby

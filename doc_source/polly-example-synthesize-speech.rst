@@ -31,35 +31,35 @@ Add the required gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./example_code/polly/polly_synthesize_speech.rb
+.. literalinclude:: ./polly/polly_synthesize_speech.rb
    :lines: 13
    :dedent: 0
    :language: ruby
 
 Get the name of the text file from the command line.
 
-.. literalinclude:: ./example_code/polly/polly_synthesize_speech.rb
+.. literalinclude:: ./polly/polly_synthesize_speech.rb
    :lines: 17-22
    :dedent: 2
    :language: ruby
 
 Open the text file and read the contents as a string.
 
-.. literalinclude:: ./example_code/polly/polly_synthesize_speech.rb
+.. literalinclude:: ./polly/polly_synthesize_speech.rb
    :lines: 26
    :dedent: 4
    :language: ruby
 
 Create an Amazon Polly client and call :code:`synthesize_speech`.
 
-.. literalinclude:: ./example_code/polly/polly_synthesize_speech.rb
+.. literalinclude:: ./polly/polly_synthesize_speech.rb
    :lines: 35, 37-41
    :dedent: 2
    :language: ruby
 
 Save the resulting synthesized speech as an MP3 file.
 
-.. literalinclude:: ./example_code/polly/polly_synthesize_speech.rb
+.. literalinclude:: ./polly/polly_synthesize_speech.rb
    :lines: 46, 49-53
    :dedent: 2
    :language: ruby
@@ -67,5 +67,5 @@ Save the resulting synthesized speech as an MP3 file.
 .. note:: The resulting MP3 file is in the MPEG-2 format.
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/polly/polly_synthesize_speech.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/polly/polly_synthesize_speech.rb>`_
 on GitHub.

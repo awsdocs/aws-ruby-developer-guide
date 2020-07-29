@@ -22,7 +22,7 @@ Getting Information about All |S3| Buckets in a Region
 The following example lists the names of the first 50 buckets for the :code:`us-west-2` region.
 If you don't specify a limit, |S3| lists all buckets in :code:`us-west-2`.
 
-.. literalinclude:: ./example_code/s3/s3-ruby-example-show-buckets-in-region.rb
+.. literalinclude:: ./s3/s3-ruby-example-show-buckets-in-region.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby

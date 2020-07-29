@@ -23,7 +23,7 @@ queue with the URL :code:`URL` in the :code:`us-west-2` region.
 
 If you do not specify a wait time, the default value is **0** (|SQS| does not wait).
 
-.. literalinclude:: ./example_code/sqs/sqs-ruby-example-get-messages-with-long-polling.rb
+.. literalinclude:: ./sqs/sqs-ruby-example-get-messages-with-long-polling.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby

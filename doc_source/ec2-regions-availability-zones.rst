@@ -35,7 +35,7 @@ Get Information about Regions and Endpoints
 To get information about available regions, call the :ruby-sdk-api:`describe_regions
 <Aws/EC2/Client.html#describe_regions-instance_method>` method.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-regions-availability-zones.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-regions-availability-zones.rb
    :lines: 21
    :dedent: 0
    :language: ruby
@@ -52,7 +52,7 @@ To get the region names and endpoints:
 #. Get each region's name and endpoint by using the :code:`Region` object's :ruby-sdk-api:`region_name <Aws/EC2/Types/Region.html#region_name-instance_method>` and
    :ruby-sdk-api:`endpoint <Aws/EC2/Types/Region.html#endpoint-instance_method>` attributes.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-regions-availability-zones.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-regions-availability-zones.rb
    :lines: 23-25
    :dedent: 0
    :language: ruby
@@ -65,7 +65,7 @@ Get Information about Availability Zones
 To get information about Availability Zones, call the :ruby-sdk-api:`describe_availability_zones
 <Aws/EC2/Client.html#describe_availability_zones-instance_method>` method.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-regions-availability-zones.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-regions-availability-zones.rb
    :lines: 28
    :dedent: 0
    :language: ruby
@@ -82,7 +82,7 @@ To get the name and state of each Availability Zone, use the :code:`Availability
 :ruby-sdk-api:`zone_name <Aws/EC2/Types/AvailabilityZone.html#zone_name-instance_method>` and
 :ruby-sdk-api:`state <Aws/EC2/Types/AvailabilityZone.html#state-instance_method>` attributes.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-regions-availability-zones.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-regions-availability-zones.rb
    :lines: 30-37
    :dedent: 0
    :language: ruby
@@ -101,7 +101,7 @@ Complete Example
 
 The following code, which you can adapt and run, combines the preceding examples into a single example.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-regions-availability-zones.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-regions-availability-zones.rb
    :lines: 16-37
    :dedent: 0
    :language: ruby

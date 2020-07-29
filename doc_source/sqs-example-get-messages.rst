@@ -26,7 +26,7 @@ The following example displays the body of up to 10 messages in the |SQS| queue 
    <http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/DistributedQueues.html>`_),
    and by default does not delete the message.
 
-.. literalinclude:: ./example_code/sqs/sqs-ruby-example-get-messages.rb
+.. literalinclude:: ./sqs/sqs-ruby-example-get-messages.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby

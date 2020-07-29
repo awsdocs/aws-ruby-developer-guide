@@ -21,7 +21,7 @@ Creating a Snapshot of an |RDS| Cluster
 
 The following example creates a snapshot for the |RDS| cluster represented by *cluster_name* in the :code:`us-west-2` region.
 
-.. literalinclude:: ./example_code/rds/rds-ruby-example-create-cluster-snapshot.rb
+.. literalinclude:: ./rds/rds-ruby-example-create-cluster-snapshot.rb
    :lines: 13-26
    :dedent: 0
    :language: ruby

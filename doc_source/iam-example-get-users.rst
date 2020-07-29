@@ -27,7 +27,7 @@ about additional users.
 See the `Aws::IAM::Client.list_users <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/IAM/Client.html#list_users-instance_method>`_
 topic for further information.
 
-.. literalinclude:: ./example_code/iam/iam-ruby-example-list-all-users.rb
+.. literalinclude:: ./iam/iam-ruby-example-list-all-users.rb
    :lines: 13-37
    :dedent: 0
    :language: ruby

@@ -47,7 +47,7 @@ You also need to create the queue `my-queue`, which you can do in the |SQS| cons
 Example
 *******
 
-.. literalinclude:: ./example_code/sqs/sqs-ruby-example-message-visibility-timeout.rb
+.. literalinclude:: ./sqs/sqs-ruby-example-message-visibility-timeout.rb
    :lines: 15-48
    :dedent: 0
    :language: ruby

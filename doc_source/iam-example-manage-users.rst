@@ -42,7 +42,7 @@ in:
 Example
 *******
 
-.. literalinclude:: ./example_code/iam/iam-ruby-example-manage-users.rb
+.. literalinclude:: ./iam/iam-ruby-example-manage-users.rb
    :lines: 19-65
    :dedent: 0
    :language: ruby

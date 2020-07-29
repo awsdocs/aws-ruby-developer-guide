@@ -21,10 +21,10 @@ Deleting an |DDBlong| Table
 
 The following example deletes the :code-ruby:`Movies` table in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_delete_movies_table.rb
+.. literalinclude:: ./dynamodb/dynamodb_ruby_example_delete_movies_table.rb
    :lines: 13-
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/dynamodb_ruby_example_delete_movies_table.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/dynamodb/dynamodb_ruby_example_delete_movies_table.rb>`_
 on GitHub.

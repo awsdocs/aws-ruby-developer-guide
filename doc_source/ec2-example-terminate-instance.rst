@@ -21,7 +21,7 @@ Terminating an |EC2| Instance
 
 The following example terminates the |EC2| instance :code:`i-123abc` in the :code:`us-west-2` region.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-terminate-instance-i-123abc.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-terminate-instance-i-123abc.rb
    :lines: 13-26
    :dedent: 0
    :language: ruby

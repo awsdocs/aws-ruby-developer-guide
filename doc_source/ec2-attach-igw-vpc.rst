@@ -21,7 +21,7 @@ Creating an Internet Gateway and Attaching It to a VPC in |EC2|
 
 The following example creates an internet gateway :code:`MyGroovyIGW`, attaches it to a VPC that has ID :code:`VPC_ID`, and then displays the internet gateway's ID.
 
-.. literalinclude:: ./example_code/ec2/ec2-ruby-example-attach-igw-vpc.rb
+.. literalinclude:: ./ec2/ec2-ruby-example-attach-igw-vpc.rb
    :lines: 13-22
    :dedent: 0
    :language: ruby

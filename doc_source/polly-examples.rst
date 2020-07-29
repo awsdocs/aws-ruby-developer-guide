@@ -27,7 +27,7 @@ The examples assume you have already set up and configured the SDK
 For more information, see :doc:`setup-install` and :doc:`setup-config`.
 
 You can download complete versions of these example files from the
-`aws-doc-sdk-examples <https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/ruby/example_code/polly>`_
+`aws-doc-sdk-examples <https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/ruby/polly>`_
 repository on GitHub.
 
 .. toctree::

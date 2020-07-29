@@ -23,10 +23,10 @@ The following example demonstrates how to use the |sdk-ruby| to get statistics
 about |SES|. Use this information to avoid damaging your reputation when emails
 are bounced or rejected.
 
-.. literalinclude:: ./example_code/ses/ses_get_statistics.rb
+.. literalinclude:: ./ses/ses_get_statistics.rb
    :lines: 13-40
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses_get_statistics.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/ses/ses_get_statistics.rb>`_
 on GitHub.

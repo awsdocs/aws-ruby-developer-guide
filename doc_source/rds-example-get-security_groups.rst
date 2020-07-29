@@ -24,7 +24,7 @@ The following example lists the names of all of your |RDS| security groups in th
 .. note:: |RDS| security groups are only applicable when you are using the |EC2|-Classic platform.
    If you are using |EC2|-VPC, use VPC security groups. Both are shown in the example.
 
-.. literalinclude:: ./example_code/rds/rds-ruby-example-list-security-groups.rb
+.. literalinclude:: ./rds/rds-ruby-example-list-security-groups.rb
    :lines: 13-35
    :dedent: 0
    :language: ruby

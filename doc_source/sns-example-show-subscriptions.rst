@@ -22,7 +22,7 @@ Getting Information about All Subscriptions in an |SNS| Topic
 The following example lists the email addresses of the |SNS| subscriptions for the topic with the ARN
 :code:`arn:aws:sns:us-west-2:123456789:MyGroovyTopic` in the :code:`us-west-2` region.
 
-.. literalinclude:: ./example_code/sns/sns-ruby-example-show-subscriptions.rb
+.. literalinclude:: ./sns/sns-ruby-example-show-subscriptions.rb
    :lines: 13-21
    :dedent: 0
    :language: ruby
