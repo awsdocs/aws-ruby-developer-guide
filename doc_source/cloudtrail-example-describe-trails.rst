@@ -34,6 +34,5 @@ q
    :dedent: 0
    :language: ruby
 
-See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-describe-trails.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-describe-trails.rb>`_
 on GitHub.
