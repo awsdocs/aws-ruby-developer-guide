@@ -34,5 +34,5 @@ Create the file *delete_trail.rb* with the following code.
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/cloudtrail/aws-ruby-sdk-cloudtrail-example-delete-trail.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-delete-trail.rb>`_
 on GitHub.
