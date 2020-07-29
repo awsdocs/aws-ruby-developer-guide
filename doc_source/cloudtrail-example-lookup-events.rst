@@ -50,6 +50,5 @@ and use the **show_event** function to display information about each event.
    :dedent: 0
    :language: ruby
 
-See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/cloudtrail/aws-ruby-sdk-cloudtrail-example-lookup-events.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/cloudtrail/aws-ruby-sdk-cloudtrail-example-lookup-events.rb>`_
 on GitHub.
