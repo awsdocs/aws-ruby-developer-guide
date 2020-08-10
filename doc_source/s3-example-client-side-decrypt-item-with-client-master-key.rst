@@ -25,40 +25,20 @@ to get the item :code-ruby:`my_item` from the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region,
 and decrypts the contents using the key in *aes_key.bin*.
 
-Choose :code:`Copy` to save the code locally.
+1. Create the file *decrypt_item_cseaes.rb*.
 
-Create the file *decrypt_item_cseaes.rb*.
-
-Add the required |S3| gem.
+2. Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./s3/s3_get_csaes_decrypt_item.rb
-   :lines: 13
-   :dedent: 0
-   :language: ruby
+3. Get the key from the command-line.
 
-Get the key from the command-line.
-If there is no command-line argument,
-print an error message and quit.
+4. Set the bucket name and object filename.
 
-.. literalinclude:: ./s3/s3_get_csaes_decrypt_item.rb
-   :lines: 16-22
-   :dedent: 0
-   :language: ruby
-
-Set the bucket name and object filename.
-
-.. literalinclude:: ./s3/s3_get_csaes_decrypt_item.rb
-   :lines: 24-25
-   :dedent: 0
-   :language: ruby
-
-Create an |S3| encryption client, call :code:`get_object`,
+5. Create an |S3| encryption client, call :code:`get_object`,
 and display the results.
 
-.. literalinclude:: ./s3/s3_get_csaes_decrypt_item.rb
-   :lines: 28-32
+.. literalinclude:: ./example_code/s3/s3_get_csaes_decrypt_item.rb
    :dedent: 0
    :language: ruby
 

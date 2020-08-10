@@ -70,29 +70,13 @@ The first step is to load the modules we use:
 * :code:`os` loads the OS module we use to ensure we can run our Ruby application on Microsoft Windows.
   If you are on a different operating system, you can remove those lines.
 
-.. literalinclude:: ./lambda/aws-ruby-sdk-lambda-example-run-function.rb
-   :lines: 13-20
-   :dedent: 0
-   :language: ruby
+* We then create the |lam| client we use to invoke the |lam| function.
 
-We then create the |lam| client we use to invoke the |lam| function.
+* Next we create the hash for the request arguments and call :code:`MyGetItemsFunction`.
 
-.. literalinclude:: ./lambda/aws-ruby-sdk-lambda-example-run-function.rb
-   :lines: 22
-   :dedent: 0
-   :language: ruby
+* Finally we parse the response, and if are successful, we print out the items.
 
-Next we create the hash for the request arguments and call :code:`MyGetItemsFunction`.
-
-.. literalinclude:: ./lambda/aws-ruby-sdk-lambda-example-run-function.rb
-   :lines: 25-33
-   :dedent: 0
-   :language: ruby
-
-Finally we parse the response, and if are successful, we print out the items.
-
-.. literalinclude:: ./lambda/aws-ruby-sdk-lambda-example-run-function.rb
-   :lines: 35-46
+.. literalinclude:: ./example_code/lambda/aws-ruby-sdk-lambda-example-run-function.rb
    :dedent: 0
    :language: ruby
 

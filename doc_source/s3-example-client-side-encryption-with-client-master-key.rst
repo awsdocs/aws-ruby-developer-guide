@@ -26,45 +26,22 @@ to add the item :code-ruby:`my_item` to the bucket
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *encrypt_item_cseaes.rb*.
+1. Create the file *encrypt_item_cseaes.rb*.
 
-Add the required |S3| gem.
+2. Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./s3/s3_add_csaes_encrypt_item.rb
-   :lines: 13
-   :dedent: 0
-   :language: ruby
+3. Get the key from the command-line.
 
-Get the key from the command-line.
-If there is no command-line argument,
-print an error message and quit.
+4. Set the bucket name and object filename.
 
-.. literalinclude:: ./s3/s3_add_csaes_encrypt_item.rb
-   :lines: 15-22
-   :dedent: 0
-   :language: ruby
+5. Open the file and get its contents as a string.
 
-Set the bucket name and object filename.
-
-.. literalinclude:: ./s3/s3_add_csaes_encrypt_item.rb
-   :lines: 24-25
-   :dedent: 0
-   :language: ruby
-
-Open the file and get its contents as a string.
-
-.. literalinclude:: ./s3/s3_add_csaes_encrypt_item.rb
-   :lines: 28
-   :dedent: 0
-   :language: ruby
-
-Create an |S3| encryption client, call :code:`put_object` to upload the item to the bucket,
+6. Create an |S3| encryption client, call :code:`put_object` to upload the item to the bucket,
 and display a success message.
 
-.. literalinclude:: ./s3/s3_add_csaes_encrypt_item.rb
-   :lines: 31-40
+.. literalinclude:: ./example_code/s3/s3_add_csaes_encrypt_item.rb
    :dedent: 0
    :language: ruby
 
@@ -74,8 +51,7 @@ on GitHub.
 
 The following example creates a 256-bit AES key and displays the value as a string.
 
-.. literalinclude:: ./s3/s3_create_AES_key.rb
-   :lines: 13-22
+.. literalinclude:: ./example_code/s3/s3_create_AES_key.rb
    :dedent: 0
    :language: ruby
 

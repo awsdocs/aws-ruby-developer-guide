@@ -25,7 +25,6 @@ The following example uploads the item (file) :file:`C:\file.txt` with the metad
 :code:`us-west-2` region.  Because :file:`C:\file.txt` is the fully qualified name of the file, the
 name of the item is set to the file name.
 
-.. literalinclude:: ./s3/s3-ruby-example-upload-item-with-metadata.rb
-   :lines: 13-30
+.. literalinclude:: ./example_code/s3/s3-ruby-example-upload-item-with-metadata.rb
    :dedent: 0
    :language: ruby

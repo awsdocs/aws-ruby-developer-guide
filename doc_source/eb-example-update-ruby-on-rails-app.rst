@@ -23,7 +23,6 @@ The following example updates the Ruby on Rails application :code:`MyRailsApp` i
 
 .. note:: You must be in the root of your Rails app to succesfully run the script.
 
-.. literalinclude:: ./elasticbeanstalk/elb-ruby-example-update-myrailsapp.rb
-   :lines: 13-79
+.. literalinclude:: ./example_code/elasticbeanstalk/elb-ruby-example-update-myrailsapp.rb
    :dedent: 0
    :language: ruby

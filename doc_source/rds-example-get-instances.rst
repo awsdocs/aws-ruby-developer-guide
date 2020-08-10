@@ -21,7 +21,6 @@ Getting Information about All |RDS| Instances
 
 The following example lists the name (ID) and status of all of your |RDS| instances in the :code:`us-west-2` region.
 
-.. literalinclude:: ./rds/rds-ruby-example-list-all-instances.rb
-   :lines: 13-21
+.. literalinclude:: ./example_code/rds/rds-ruby-example-list-all-instances.rb
    :dedent: 0
    :language: ruby

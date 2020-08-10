@@ -28,44 +28,27 @@ See :doc:`kms-example-create-key` for information on creating an AWS KMS key.
 
 Amazon S3 uses, but does not store, the AWS KMS key that you provide.
 
-Choose :code:`Copy` to save the code locally.
+1. Create the file *encrypt_object_sseck.rb*.
 
-Create the file *encrypt_object_sseck.rb*.
-
-Add the required |S3| and **md5** gems.
+2. Add the required |S3| and **md5** gems.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./s3/s3_add_sseck_encrypt_item.rb
-   :lines: 13-14
-   :dedent: 0
-   :language: ruby
-
-Get the key from the command-line.
+3. Get the key from the command-line.
 If there is no command-line argument,
 print an error message and quit.
 Otherwise, create an MD5 hash of the key.
 Amazon S3 uses the hash to ensure the integrity of the key.
 
-.. literalinclude:: ./s3/s3_add_sseck_encrypt_item.rb
-   :lines: 17-23
-   :dedent: 0
-   :language: ruby
+4. Set the bucket and object names, and get the contents of the object from the file as a string.
 
-Set the bucket and object names, and get the contents of the object from the file as a string.
-
-.. literalinclude:: ./s3/s3_add_sseck_encrypt_item.rb
-   :lines: 25-26, 29
-   :dedent: 0
-   :language: ruby
-
-Create an |S3| client and call :code:`put_object` to upload the object to the bucket.
+5. Create an |S3| client and call :code:`put_object` to upload the object to the bucket.
 Notice that the :code:`server_side_encryption` property is set to :code:`aws:kms`,
 indicating that |S3| encrypts the object using the provided AWS KMS key.
-Finally, display a success message to the user.
 
-.. literalinclude:: ./s3/s3_add_sseck_encrypt_item.rb
-   :lines: 32-44
+6.Finally, display a success message to the user.
+
+.. literalinclude:: ./example_code/s3/s3_add_sseck_encrypt_item.rb
    :dedent: 0
    :language: ruby
 

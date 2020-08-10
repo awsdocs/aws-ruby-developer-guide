@@ -46,7 +46,6 @@ In the example code, change the `my-account-alias` string to something that will
 Example
 *******
 
-.. literalinclude:: ./iam/iam-ruby-example-account-alias.rb
-   :lines: 18-54
+.. literalinclude:: ./example_code/iam/iam-ruby-example-account-alias.rb
    :dedent: 0
    :language: ruby

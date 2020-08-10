@@ -56,11 +56,6 @@ create the bucket and the specified AWS profile. This code creates the :code:`Aw
 in the :code:`us-east-1` region.
 Additional variables are also declared for the two buckets used in this example.
 
-.. literalinclude:: ./s3/s3_ruby_create_bucket.rb
-   :lines: 13-24
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-create-buckets-list:
 
 Get a List of Buckets
@@ -70,11 +65,6 @@ Call the :ruby-sdk-api:`list_buckets <Aws/S3/Client.html#list_buckets-instance_m
 :ruby-sdk-api:`Aws::S3::Types::ListBucketsOutput <Aws/S3/Types/ListBucketsOutput.html>` class, which represents the list of buckets.
 Then use the :code:`buckets` attribute of the :code:`ListBucketsOutput` class to access the buckets' properties, such as :code:`name` for each bucket's name.
 
-.. literalinclude:: ./s3/s3_ruby_create_bucket.rb
-   :lines: 27-30
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-create-buckets-create:
 
 Create a Bucket
@@ -83,11 +73,6 @@ Create a Bucket
 Call the :ruby-sdk-api:`create_bucket <Aws/S3/Client.html#create_bucket-instance_method>` method, specifying the bucket's name.
 
 .. note:: Bucket names must be unique across |S3| |mdash| not just unique to your AWS account.
-
-.. literalinclude:: ./s3/s3_ruby_create_bucket.rb
-   :lines: 33
-   :dedent: 0
-   :language: ruby
 
 .. _aws-ruby-sdk-s3-example-create-buckets-upload:
 
@@ -101,11 +86,6 @@ To confirm whether the file was uploaded successfully, call the :ruby-sdk-api:`l
 of the :ruby-sdk-api:`Aws::S3::Types::ListObjectsV2Output <Aws/S3/Types/ListObjectsV2Output.html>` class, which represents the bucket's objects. Then use the :code:`contents` method of the
 :code:`ListObjectsV2Output` class to access the objects' properties, such as :code:`key` for each object's name.
 
-.. literalinclude:: ./s3/s3_ruby_create_bucket.rb
-   :lines: 36-42
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-create-buckets-copy:
 
 Copy Files between Buckets
@@ -118,11 +98,6 @@ In this example, the name of the bucket containing the objects to copy over is :
 :code:`test_file` in the :code:`david-cloud` bucket is renamed :code:`file2` in the :code:`doc-sample-bucket` bucket, and :code:`test_file1` in the :code:`david-cloud` bucket is renamed
 :code:`file3` in the :code:`doc-sample-bucket` bucket.
 
-.. literalinclude:: ./s3/s3_ruby_create_bucket.rb
-   :lines: 45-50
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-create-buckets-delete:
 
 Delete Files from a Bucket
@@ -134,11 +109,6 @@ Call the :ruby-sdk-api:`delete_objects <Aws/S3/Client.html#delete_objects-instan
 To confirm whether the files were deleted successfully, call the :code:`list_objects_v2` method as before. This time, when you use the :code:`contents` method of the
 class, the deleted file names (represented here by :code:`key`) should not be displayed.
 
-.. literalinclude:: ./s3/s3_ruby_create_bucket.rb
-   :lines: 53-71
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-create-buckets-code:
 
 Complete Example
@@ -146,8 +116,7 @@ Complete Example
 
 Here is the complete code for this example.
 
-.. literalinclude:: ./s3/s3_ruby_create_bucket.rb
-   :lines: 13-71
+.. literalinclude:: ./example_code/s3/s3_ruby_create_bucket.rb
    :dedent: 0
    :language: ruby
 
@@ -159,7 +128,9 @@ Alternative Approaches
 The following example creates a bucket named :code-ruby:`my-bucket` in the :code:`us-west-2` region. This example uses an instance of the
 :ruby-sdk-api:`Aws::S3::Resource <Aws/S3/Resource.html>` class instead of the :code:`Aws::S3::Client` class.
 
-.. literalinclude:: ./s3/s3-ruby-example-create-bucket.rb
-   :lines: 13-16
-   :dedent: 0
-   :language: ruby
+.. code-block:: Ruby
+
+  require 'aws-sdk-s3'  # v2: require 'aws-sdk'
+
+  s3 = Aws::S3::Resource.new(region: 'us-west-2')
+  s3.create_bucket(bucket: 'my-bucket')

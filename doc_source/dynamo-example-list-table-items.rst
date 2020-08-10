@@ -22,7 +22,6 @@ Getting Information about the Items in an |DDBlong| Table
 The following example lists up to 50 items from the :code-ruby:`Users` table in the
 :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./dynamodb/dynamodb-ruby-example-list-50-users-table-items.rb
-   :lines: 13-30
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-50-users-table-items.rb
    :dedent: 0
    :language: ruby

@@ -22,7 +22,6 @@ Enabling a Resource to Publish to an |SNS| Topic
 The following example enables the resource with the ARN :code:`my-resource-arn` to publish to the
 topic with the ARN :code:`my-topic-arn` in the :code:`us-west-2` region.
 
-.. literalinclude:: ./sns/sns-ruby-example-enable-resource.rb
-   :lines: 13-
+.. literalinclude:: ./example_code/sns/sns-ruby-example-enable-resource.rb
    :dedent: 0
    :language: ruby

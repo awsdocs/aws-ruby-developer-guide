@@ -22,7 +22,6 @@ Creating an |SNS| Topic
 The following example creates the topic :code:`MyGroovyTopic` in the :code:`us-west-2` region and
 displays the resulting topic ARN.
 
-.. literalinclude:: ./sns/sns-ruby-example-create-topic.rb
-   :lines: 13-18
+.. literalinclude:: ./example_code/sns/sns-ruby-example-create-topic.rb
    :dedent: 0
    :language: ruby

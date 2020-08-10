@@ -34,37 +34,7 @@ use public and private keys, respectively.
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *create_rsa_keys.rb*.
-
-Add the required OpenSSL gem.
-
-.. literalinclude:: ./s3/create_rsa_keys.rb
-   :lines: 13
-   :dedent: 0
-   :language: ruby
-
-Get the pass phrase,
-which is used to seed and create the key,
-from the command line.
-
-.. literalinclude:: ./s3/create_rsa_keys.rb
-   :lines: 16-21
-   :dedent: 0
-   :language: ruby
-
-Create the RSA key pairs.
-Save the public key as *public_key.pem*
-and the private key as *private_secure_key.pem*.
-
-.. literalinclude:: ./s3/create_rsa_keys.rb
-   :lines: 22-37
-   :dedent: 0
-   :language: ruby
-
-Display the names of the key files and the pass phrase.
-
-.. literalinclude:: ./s3/create_rsa_keys.rb
-   :lines: 39-41
+.. literalinclude:: ./example_code/s3/create_rsa_keys.rb
    :dedent: 0
    :language: ruby
 

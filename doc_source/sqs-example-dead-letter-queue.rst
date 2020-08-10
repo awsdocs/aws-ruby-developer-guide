@@ -51,7 +51,6 @@ You also need to use the |console| to create the existing queue, `my-queue`.
 Example
 *******
 
-.. literalinclude:: ./sqs/sqs-ruby-example-dead-letter-queue.rb
-   :lines: 17-95
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-dead-letter-queue.rb
    :dedent: 0
    :language: ruby

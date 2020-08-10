@@ -22,8 +22,7 @@ Verifying an Email Address in |SES|
 The following example demonstrates how to use the |sdk-ruby| to verify an |SES|
 email address.
 
-.. literalinclude:: ./ses/ses_send_verification.rb
-   :lines: 13-38
+.. literalinclude:: ./example_code/ses/ses_send_verification.rb
    :dedent: 0
    :language: ruby
 

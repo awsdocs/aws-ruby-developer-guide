@@ -21,7 +21,6 @@ Getting Information about a Specific |EC2| Instance
 
 The following example lists the state of an instance :code:`i-123abc` in the :code:`us-west-2` region.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-list-state-instance-i-123abc.rb
-   :lines: 13-21
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-list-state-instance-i-123abc.rb
    :dedent: 0
    :language: ruby

@@ -21,7 +21,6 @@ Deleting a Queue in |SQS|
 The following example deletes the |SQS| queue with the URL :code:`URL` in the :code:`us-west-2`
 region.
 
-.. literalinclude:: ./sqs/sqs-ruby-example-delete-queue.rb
-   :lines: 13-17
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-delete-queue.rb
    :dedent: 0
    :language: ruby

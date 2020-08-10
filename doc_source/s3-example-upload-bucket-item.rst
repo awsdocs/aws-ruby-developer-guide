@@ -23,7 +23,6 @@ The following example uploads the item (file) :file:`C:\file.txt` to the bucket
 :code-ruby:`my-bucket` in the :code:`us-west-2` region.  Because :file:`C:\file.txt` is the fully
 qualified name of the file, the name of the item is set to the name of the file.
 
-.. literalinclude:: ./s3/s3-ruby-example-upload-item.rb
-   :lines: 13-27
+.. literalinclude:: ./example_code/s3/s3-ruby-example-upload-item.rb
    :dedent: 0
    :language: ruby

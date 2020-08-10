@@ -23,8 +23,7 @@ The following example displays information about the item with the :code:`year` 
 :code-ruby:`title`  **The Big New Movie** in the :code-ruby:`Movies` table in the
 :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./dynamodb/dynamodb_ruby_example_read_movies_item.rb
-   :lines: 13-42
+.. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_read_movies_item.rb
    :dedent: 0
    :language: ruby
 

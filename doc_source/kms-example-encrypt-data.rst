@@ -19,15 +19,14 @@ Encrypting Data in |KMS|
         Encrypt data in AWS KMS using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, KMS
 
-The following example uses the |sdk-ruby| 
+The following example uses the |sdk-ruby|
 `encrypt method <http://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/KMS/Client.html#encrypt-instance_method>`_,
 which implements the
 `Encrypt operation <http://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html>`_,
 to encrypt the string "1234567890".
 The example displays a readable version of the resulting encrypted blob.
 
-.. literalinclude:: ./kms/aws-ruby-sdk-kms-example-encrypt-data.rb
-   :lines: 13-31
+.. literalinclude:: ./example_code/kms/aws-ruby-sdk-kms-example-encrypt-data.rb
    :dedent: 0
    :language: ruby
 

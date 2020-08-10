@@ -22,7 +22,6 @@ Getting Information about All Queues in |SQS|
 The following example lists the URLs, ARNs, messages available, and messages in flight of your |SQS|
 queues in the :code:`us-west-2` region.
 
-.. literalinclude:: ./sqs/sqs-ruby-example-show-queues.rb
-   :lines: 13-42
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-show-queues.rb
    :dedent: 0
    :language: ruby

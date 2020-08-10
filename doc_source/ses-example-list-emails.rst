@@ -22,8 +22,7 @@ Listing Valid |SES| Email Addresses
 The following example demonstrates how to use the |sdk-ruby| to list the valid |SES|
 email addresses.
 
-.. literalinclude:: ./ses/ses_list_emails.rb
-   :lines: 13-33
+.. literalinclude:: ./example_code/ses/ses_list_emails.rb
    :dedent: 0
    :language: ruby
 

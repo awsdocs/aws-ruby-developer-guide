@@ -21,8 +21,7 @@ Deleting an |DDBlong| Table
 
 The following example deletes the :code-ruby:`Movies` table in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./dynamodb/dynamodb_ruby_example_delete_movies_table.rb
-   :lines: 13-
+.. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_delete_movies_table.rb
    :dedent: 0
    :language: ruby
 

@@ -23,7 +23,6 @@ The following example adds public read-only access, sets server-side encryption 
 the storage class to Reduced Redundancy for the item :code-ruby:`my-item` in the bucket
 :code-ruby:`my-bucket` in the :code:`us-west-2` region.
 
-.. literalinclude:: ./s3/s3-ruby-example-set-item-props.rb
-   :lines: 13-36
+.. literalinclude:: ./example_code/s3/s3-ruby-example-set-item-props.rb
    :dedent: 0
    :language: ruby

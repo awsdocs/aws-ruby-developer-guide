@@ -25,7 +25,6 @@ displays the subnet's ID.
 
 The public subnet created in this example has 256 private IP addresses within the VPC.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-create-subnet.rb
-   :lines: 13-24
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-subnet.rb
    :dedent: 0
    :language: ruby

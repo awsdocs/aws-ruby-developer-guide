@@ -27,46 +27,23 @@ decrypts the contents with the
 `PKey <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/PKey.html>`_
 class.
 
-Choose :code:`Copy` to save the code locally.
+1. Create the file *decrypt_object_csepk.rb*.
 
-Create the file *decrypt_object_csepk.rb*.
-
-Add the required |S3| and OpenSSL gems.
+2. Add the required |S3| and OpenSSL gems.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./s3/s3-ruby-example-get-cspk-item.rb
-   :lines: 13-14
-   :dedent: 0
-   :language: ruby
+3. Get the pass phrase from the command line.
 
-Get the pass phrase from the command line.
+4. Set the bucket name, object name, and name of the private key file.
 
-.. literalinclude:: ./s3/s3-ruby-example-get-cspk-item.rb
-   :lines: 16-21
-   :dedent: 0
-   :language: ruby
+5. Create an RSA key from the contents of the key file and passphrase.
 
-Set the bucket name, object name, and name of the private key file.
-
-.. literalinclude:: ./s3/s3-ruby-example-get-cspk-item.rb
-   :lines: 23-25
-   :dedent: 0
-   :language: ruby
-
-Create an RSA key from the contents of the key file and passphrase.
-
-.. literalinclude:: ./s3/s3-ruby-example-get-cspk-item.rb
-   :lines: 28-29
-   :dedent: 2
-   :language: ruby
-
-Create an |S3| encryption client, call :code:`get_object`, get the contents of the object as text
+6. Create an |S3| encryption client, call :code:`get_object`, get the contents of the object as text
 and print out the object's contents.
 
-.. literalinclude:: ./s3/s3-ruby-example-get-cspk-item.rb
-   :lines: 32,34,36
-   :dedent: 2
+.. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
+   :dedent: 0
    :language: ruby
 
 See the `complete example

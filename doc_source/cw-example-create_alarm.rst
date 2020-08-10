@@ -23,8 +23,7 @@ The following example creates a |CW| alarm named *my-alarm* that sends a message
 with the ARN named :code:`ARN`
 when the |S3| bucket named *my-bucket* has more than 50 items in a 24-hour period.
 
-.. literalinclude:: ./cloudwatch/cw-ruby-example-create-alarm.rb
-   :lines: 13-52
+.. literalinclude:: ./example_code/cloudwatch/cw-ruby-example-create-alarm.rb
    :dedent: 0
    :language: ruby
 

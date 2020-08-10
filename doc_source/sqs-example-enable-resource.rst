@@ -22,7 +22,6 @@ The following example enables the resource with the ARN :code:`my-resource-arn` 
 queue with the ARN :code:`my-queue-arn` and URL :code:`my-queue-url` in the :code:`us-west-2`
 region.
 
-.. literalinclude:: ./sqs/sqs-ruby-example-enable-resource.rb
-   :lines: 13-40
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-enable-resource.rb
    :dedent: 0
    :language: ruby

@@ -35,10 +35,9 @@ Get Information about Regions and Endpoints
 To get information about available regions, call the :ruby-sdk-api:`describe_regions
 <Aws/EC2/Client.html#describe_regions-instance_method>` method.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-regions-availability-zones.rb
-   :lines: 21
-   :dedent: 0
-   :language: ruby
+.. code-block:: Ruby
+
+  describe_regions_result = ec2.describe_regions()
 
 In this code, :code:`ec2` is a variable representing an :ruby-sdk-api:`Aws::EC2::Client <Aws/EC2/Client.html>` object. For more information,
 see the :ref:`aws-ruby-sdk-ec2-regions-availability-zones-code`.
@@ -52,10 +51,11 @@ To get the region names and endpoints:
 #. Get each region's name and endpoint by using the :code:`Region` object's :ruby-sdk-api:`region_name <Aws/EC2/Types/Region.html#region_name-instance_method>` and
    :ruby-sdk-api:`endpoint <Aws/EC2/Types/Region.html#endpoint-instance_method>` attributes.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-regions-availability-zones.rb
-   :lines: 23-25
-   :dedent: 0
-   :language: ruby
+.. code-block:: Ruby
+
+   describe_regions_result.regions.each do |region|
+     puts "#{region.region_name} (#{region.endpoint})"
+   end
 
 .. _aws-ruby-sdk-ec2-regions-availability-zones-availability-zones:
 
@@ -65,10 +65,9 @@ Get Information about Availability Zones
 To get information about Availability Zones, call the :ruby-sdk-api:`describe_availability_zones
 <Aws/EC2/Client.html#describe_availability_zones-instance_method>` method.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-regions-availability-zones.rb
-   :lines: 28
-   :dedent: 0
-   :language: ruby
+.. code-block:: Ruby
+
+  describe_availability_zones_result = ec2.describe_availability_zones()
 
 The :ruby-sdk-api:`Aws::EC2::Types::DescribeAvailabilityZonesResult <Aws/EC2/Types/DescribeAvailabilityZonesResult.html>` object contains an array of
 :ruby-sdk-api:`Aws::EC2::Types::AvailabilityZone <Aws/EC2/Types/AvailabilityZone.html>` objects representing the Availability Zones.
@@ -82,10 +81,16 @@ To get the name and state of each Availability Zone, use the :code:`Availability
 :ruby-sdk-api:`zone_name <Aws/EC2/Types/AvailabilityZone.html#zone_name-instance_method>` and
 :ruby-sdk-api:`state <Aws/EC2/Types/AvailabilityZone.html#state-instance_method>` attributes.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-regions-availability-zones.rb
-   :lines: 30-37
-   :dedent: 0
-   :language: ruby
+.. code-block:: Ruby
+
+ describe_availability_zones_result.availability_zones.each do |zone|
+ puts "#{zone.zone_name} is #{zone.state}"
+ if zone.messages.count > 0
+   zone.messages.each do |message|
+     puts "  #{message.message}"
+   end
+ end
+ end
 
 To get any messages about Availability Zones:
 
@@ -101,8 +106,7 @@ Complete Example
 
 The following code, which you can adapt and run, combines the preceding examples into a single example.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-regions-availability-zones.rb
-   :lines: 16-37
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-regions-availability-zones.rb
    :dedent: 0
    :language: ruby
 

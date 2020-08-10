@@ -22,8 +22,7 @@ Building an |ACBlong| Project
 The following example builds the |ACBlong| project specified on the command line.
 If no command line argument is supplied, it emits an error and quits.
 
-.. literalinclude:: ./codebuild/aws-ruby-sdk-codebuild-example-build-project.rb
-   :lines: 13-31
+.. literalinclude:: ./example_code/codebuild/aws-ruby-sdk-codebuild-example-build-project.rb
    :dedent: 0
    :language: ruby
 

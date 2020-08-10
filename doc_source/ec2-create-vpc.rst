@@ -24,7 +24,6 @@ The following example creates the virtual private cloud (VPC) :code:`MyGroovyVPC
 
 The example creates a virtual network with 65,536 private IP addresses.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-create-vpc.rb
-   :lines: 13-31
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-vpc.rb
    :dedent: 0
    :language: ruby

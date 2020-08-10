@@ -23,7 +23,6 @@ The following example adds a new index, :code-ruby:`air-mileage-index`, to the :
 table in the :code-ruby:`us-west-2` region.  Once the status of the index is :code-ruby:`ACTIVE`,
 you can search for items in the table based on the value of their :code-ruby:`airmiles`.
 
-.. literalinclude:: ./dynamodb/dynamodb-ruby-example-add-index.rb
-   :lines: 13-47
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-add-index.rb
    :dedent: 0
    :language: ruby

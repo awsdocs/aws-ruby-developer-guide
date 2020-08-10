@@ -55,11 +55,6 @@ First you need the |sdk-ruby|, and you need to create an EC2 client. Then provid
 group you'll create. You also need to provide the ID of our VPC, which is available in the console
 after the VPC is created. **Be sure that you replace ``VPC-ID`` with your actual VPC ID.**
 
-.. literalinclude:: ./ec2/ec2-ruby-example-security-group.rb
-   :lines: 19-25
-   :dedent: 0
-   :language: ruby
-
 You use the ``security_group_created`` variable later in the script to determine if a security
 group was created and can therefore be deleted.
 
@@ -67,13 +62,8 @@ group was created and can therefore be deleted.
 Create a Security Group
 ***********************
 
- Create a security group that allows access over ports 22 (SSH) and 80 (HTTP) from all addresses (CIDR
- block ``0.0.0.0/0``).
-
-.. literalinclude:: ./ec2/ec2-ruby-example-security-group.rb
-   :lines: 27-66
-   :dedent: 0
-   :language: ruby
+Create a security group that allows access over ports 22 (SSH) and 80 (HTTP) from all addresses (CIDR
+block ``0.0.0.0/0``).
 
 If the ``begin`` block executes without exception, set ``security_group_created`` to ``true``.
 
@@ -84,11 +74,6 @@ Get Information about a Security Group
 Having created a security group, you output information about your existing security groups and their IP
 permissions.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-security-group.rb
-   :lines: 73-141
-   :dedent: 0
-   :language: ruby
-
 ***********************
 Delete a Security Group
 ***********************
@@ -96,7 +81,6 @@ Delete a Security Group
 At the end of the script, assuming that you successfully created a security group and the ``security_group_created``
 flag is set to ``true``, you delete the security group.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-security-group.rb
-   :lines: 144-146
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-security-group.rb
    :dedent: 0
    :language: ruby

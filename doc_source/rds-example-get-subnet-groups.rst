@@ -21,7 +21,6 @@ Getting Information about All |RDS| Subnet Groups
 
 The following example lists the name and status of all of your |RDS| subnet groups in the :code:`us-west-2` region.
 
-.. literalinclude:: ./rds/rds-ruby-example-list-subnet-groups.rb
-   :lines: 13-20
+.. literalinclude:: ./example_code/rds/rds-ruby-example-list-subnet-groups.rb
    :dedent: 0
    :language: ruby

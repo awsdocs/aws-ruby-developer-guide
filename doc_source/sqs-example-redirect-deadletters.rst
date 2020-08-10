@@ -22,7 +22,6 @@ Redirecting Dead Letters in |SQS|
 The following example redirects any dead letters from the queue with the URL :code:`URL` to the
 queue with the ARN :code:`ARN`.
 
-.. literalinclude:: ./sqs/sqs-ruby-example-redirect-queue-deadletters.rb
-   :lines: 13-23
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-redirect-queue-deadletters.rb
    :dedent: 0
    :language: ruby

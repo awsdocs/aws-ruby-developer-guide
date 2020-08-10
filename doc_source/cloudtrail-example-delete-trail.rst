@@ -27,10 +27,7 @@ It requires one input, the name of the trail.
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *delete_trail.rb* with the following code.
-
-.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-delete-trail.rb
-   :lines: 13-35
+.. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-delete-trail.rb
    :dedent: 0
    :language: ruby
 

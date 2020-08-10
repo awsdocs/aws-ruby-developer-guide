@@ -27,7 +27,6 @@ The following example lists the names and presigned URLs of the first 50 items o
 :code-ruby:`my-bucket` in the :code:`us-west-2` region.  If a limit is not specified, |S3| lists up
 to 1,000 items.
 
-.. literalinclude:: ./s3/s3-ruby-example-list-bucket-items.rb
-   :lines: 13-23
+.. literalinclude:: ./example_code/s3/s3-ruby-example-list-bucket-items.rb
    :dedent: 0
    :language: ruby

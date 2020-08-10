@@ -40,7 +40,6 @@ in:
 Example
 *******
 
-.. literalinclude:: ./cloudwatch/cw-ruby-example-metrics-basics.rb
-   :lines: 17-80
+.. literalinclude:: ./example_code/cloudwatch/cw-ruby-example-metrics-basics.rb
    :dedent: 0
    :language: ruby

@@ -22,15 +22,13 @@ Loading Items from a JSON File into an |DDBlong| Table
 The following example adds the items from the JSON file *movie_data.json*
 to the :code-ruby:`Movies` table in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./dynamodb/dynamodb_ruby_example_load_movies.rb
-   :lines: 13-36
+.. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_load_movies.rb
    :dedent: 0
    :language: ruby
 
 Here is an example of a JSON file that loads two movies.
 
-.. literalinclude:: ./dynamodb/movie_data.json
-   :lines: 1-35
+.. literalinclude:: ./example_code/dynamodb/movie_data.json
    :dedent: 0
    :language: json
 

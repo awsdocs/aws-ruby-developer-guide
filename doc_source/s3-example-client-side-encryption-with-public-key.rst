@@ -26,40 +26,22 @@ class to encrypt an object with a public key and the
 to add the object :code-ruby:`my_item` to the bucket
 :code-ruby:`my_bucket` in the :code:`us-west-2` region.
 
-Choose :code:`Copy` to save the code locally.
+1. Create the file *encrypt_object_csepk.rb*.
 
-Create the file *encrypt_object_csepk.rb*.
-
-Add the required |S3| and OpenSSL gems.
+2. Add the required |S3| and OpenSSL gems.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./s3/s3-ruby-example-add-cspk-item.rb
-   :lines: 13-14
-   :dedent: 0
-   :language: ruby
-
-Set the bucket name, object name, and name of the file containing the public key.
+3. Set the bucket name, object name, and name of the file containing the public key.
 See :doc:`s3-example-create-public-private-key` for information about creating a public key.
 
-.. literalinclude:: ./s3/s3-ruby-example-add-cspk-item.rb
-   :lines: 16-18
-   :dedent: 0
-   :language: ruby
-
-Get the file contents as a string; get the public key from the file
+4. Get the file contents as a string; get the public key from the file
 and create a new RSA key to encrypt the bucket object.
 
-.. literalinclude:: ./s3/s3-ruby-example-add-cspk-item.rb
-   :lines: 21,22,24
-   :dedent: 0
-   :language: ruby
-
-Create an |S3| encryption client and call :code:`put_object` to upload the object to the bucket.
+5. Create an |S3| encryption client and call :code:`put_object` to upload the object to the bucket.
 Finally, display a message to the user about the results.
 
-.. literalinclude:: ./s3/s3-ruby-example-add-cspk-item.rb
-   :lines: 28-37
+.. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
    :dedent: 0
    :language: ruby
 

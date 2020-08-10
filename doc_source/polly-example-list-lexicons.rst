@@ -31,24 +31,10 @@ Add the required gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./polly/polly_list_lexicons.rb
-   :lines: 13
+.. literalinclude:: ./example_code/polly/polly_list_lexicons.rb
    :dedent: 0
    :language: ruby
 
-Create an Amazon Polly client and call :code:`list_lexicons`.
-
-.. literalinclude:: ./polly/polly_list_lexicons.rb
-   :lines: 19, 21
-   :dedent: 2
-   :language: ruby
-
-Display the name, alphabet, and language code of each lexicon.
-
-.. literalinclude:: ./polly/polly_list_lexicons.rb
-   :lines: 23-28 
-   :dedent: 2
-   :language: ruby
 
 See the `complete example
 <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/polly/polly_list_lexicons.rb>`_

@@ -30,46 +30,10 @@ include the **-p** flag to attach the correct policy to the bucket.
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *create_trail.rb*.
-Add the following statements to use the **CloudTrail**, **STS**, and **S3** gems of the |sdk-ruby|.
-
-.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-create-trail.rb
-   :lines: 13-15
+.. literalinclude:: ./example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-create-trail.rb
    :dedent: 0
    :language: ruby
 
-Create a function to add a policy to the bucket that gives |CT| permission to save data to the bucket.
-
-.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-create-trail.rb
-   :lines: 18-68
-   :dedent: 0
-   :language: ruby
-
-Get the names of the trail and bucket,
-and whether to attach the policy to the bucket.
-If either the trail name or bucket name is missing,
-display an error message and exit.
-
-.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-create-trail.rb
-   :lines: 71-97
-   :dedent: 0
-   :language: ruby
-
-If the **-p** flag was specified, call **add_policy** to attach the policy to the bucket.
-
-.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-create-trail.rb
-   :lines: 99-101
-   :dedent: 0
-   :language: ruby
-
-Create the |CT| client and call **create_trail** to create the trail.
-If any errors occur, print the error and quit,
-otherwise print a success message.
-
-.. literalinclude:: ./cloudtrail/aws-ruby-sdk-cloudtrail-example-create-trail.rb
-   :lines: 104-117
-   :dedent: 0
-   :language: ruby
 
 See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/cloudtrail/aws-ruby-sdk-cloudtrail-example-create-trail.rb>`_
 on GitHub.

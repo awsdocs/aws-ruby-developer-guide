@@ -22,7 +22,6 @@ Getting Information about All Applications in |AEBlong|
 
 The following example lists the names, descriptions, and URLs of all of your |AEB| applications in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./elasticbeanstalk/elb-ruby-example-list-all-apps.rb
-   :lines: 13-26
+.. literalinclude:: ./example_code/elasticbeanstalk/elb-ruby-example-list-all-apps.rb
    :dedent: 0
    :language: ruby

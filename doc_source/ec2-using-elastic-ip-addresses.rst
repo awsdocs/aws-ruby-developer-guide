@@ -62,7 +62,6 @@ and note the instance ID.
 Example
 *******
 
-.. literalinclude:: ./ec2/ec2-ruby-example-elastic-ips.rb
-   :lines: 19-74
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-elastic-ips.rb
    :dedent: 0
    :language: ruby

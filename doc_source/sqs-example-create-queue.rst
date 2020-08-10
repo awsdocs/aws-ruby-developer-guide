@@ -22,7 +22,6 @@ Creating a Queue in |SQS|
 The following example creates the |SQS| queue named :code:`MyGroovyQueue` in the :code:`us-west-2` region
 and displays its URL.
 
-.. literalinclude:: ./sqs/sqs-ruby-example-create-queue.rb
-   :lines: 13-19
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-create-queue.rb
    :dedent: 0
    :language: ruby

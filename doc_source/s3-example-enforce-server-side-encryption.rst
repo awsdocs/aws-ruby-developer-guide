@@ -31,29 +31,18 @@ results.
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *add_sses3_policy.rb*.
+1. Create the file *add_sses3_policy.rb*.
 
-Add the required |S3| gem and set the bucket name.
+2. Add the required |S3| gem and set the bucket name.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./s3/s3_add_bucket_sses3_encryption_policy.rb
-   :lines: 13,15
-   :dedent: 0
-   :language: ruby
-
-Create an |S3| policy that requires server-side KMS encryption on objects
+3. Create an |S3| policy that requires server-side KMS encryption on objects
 uploaded to the bucket.
 
-.. literalinclude:: ./s3/s3_add_bucket_sses3_encryption_policy.rb
-   :lines: 18-47
-   :dedent: 0
-   :language: ruby
+4. Create the |S3| client, apply the policy to the bucket, and print a success message.
 
-Create the |S3| client, apply the policy to the bucket, and print a success message.
-
-.. literalinclude:: ./s3/s3_add_bucket_sses3_encryption_policy.rb
-   :lines: 50-58
+.. literalinclude:: ./example_code/s3/s3_add_bucket_sses3_encryption_policy.rb
    :dedent: 0
    :language: ruby
 

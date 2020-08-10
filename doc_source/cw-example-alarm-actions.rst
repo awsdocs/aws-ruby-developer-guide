@@ -47,7 +47,6 @@ You also need to replace `arn:aws:sns:REGION-ID:ACCOUNT-ID:TOPIC-NAME` with the 
 Example
 *******
 
-.. literalinclude:: ./cloudwatch/cw-ruby-example-alarm-actions.rb
-   :lines: 17-57
+.. literalinclude:: ./example_code/cloudwatch/cw-ruby-example-alarm-actions.rb
    :dedent: 0
    :language: ruby

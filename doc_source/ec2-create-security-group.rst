@@ -24,7 +24,6 @@ region on a VPC with the ID :code:`VPC_ID`.
 In the example, the security group is allowed access over port 22 (SSH) from all addresses (CIDR block :code:`0.0.0.0/0`), and
 is given the description "Security group for MyGroovyInstance". Then, the security group's ID is displayed.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-create-security-group.rb
-   :lines: 13-34
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-security-group.rb
    :dedent: 0
    :language: ruby

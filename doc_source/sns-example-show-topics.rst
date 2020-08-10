@@ -21,7 +21,6 @@ Getting Information about All |SNS| Topics
 
 The following example lists the ARNs of your |SNS| topics in the :code:`us-west-2` region.
 
-.. literalinclude:: ./sns/sns-ruby-example-show-topics.rb
-   :lines: 13-19
+.. literalinclude:: ./example_code/sns/sns-ruby-example-show-topics.rb
    :dedent: 0
    :language: ruby

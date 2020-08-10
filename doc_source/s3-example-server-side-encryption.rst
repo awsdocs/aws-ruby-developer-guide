@@ -28,33 +28,21 @@ with server-side encryption set KMS.
 Note that this differs from :doc:`s3-example-default-server-side-encryption`,
 is in that case, the objects are encrypted without you having to explicitly perform the operation.
 
-Choose :code:`Copy` to save the code locally.
+1. Create the file *encrypt_object_sse.rb*.
 
-Create the file *encrypt_object_sse.rb*.
-
-Add the required |S3| gem.
+2. Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./s3/s3_add_sses3_encrypt_item.rb
-   :lines: 13
-   :dedent: 0
-   :language: ruby
+3. Set the bucket and object name and get the object from the file as a string.
 
-Set the bucket and object name and get the object from the file as a string.
-
-.. literalinclude:: ./s3/s3_add_sses3_encrypt_item.rb
-   :lines: 15,16,19
-   :dedent: 0
-   :language: ruby
-
-Create an |S3| client and call :code:`put_object` to upload the object to the bucket.
+4. Create an |S3| client and call :code:`put_object` to upload the object to the bucket.
 Notice that the :code:`server_side_encryption` property is set to :code:`aws:kms`,
 indicating that |S3| encrypts the object using KMS.
-Finally, display a success message to the user.
 
-.. literalinclude:: ./s3/s3_add_sses3_encrypt_item.rb
-   :lines: 22,23,25-32
+5. Finally, display a success message to the user.
+
+.. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
    :dedent: 0
    :language: ruby
 

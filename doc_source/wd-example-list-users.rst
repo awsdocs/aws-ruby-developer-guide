@@ -19,25 +19,14 @@ and root folders of all users in the organization.
 Choose :code:`Copy` to save the code locally, or see the link to the complete
 example at the end of this topic.
 
-Require the |sdk-ruby| module and create a |WD| client.
+1. Require the |sdk-ruby| module and create a |WD| client.
 
-.. literalinclude:: ./workdocs/wd_list_users.rb
-   :lines: 13-15
-   :dedent: 0
-   :language: ruby
-
-Call :code:`describe_users` with your organization ID, and get all of the user
+2. Call :code:`describe_users` with your organization ID, and get all of the user
 names in ascending order.
 
-.. literalinclude:: ./workdocs/wd_list_users.rb
-   :lines: 17-25
-   :dedent: 0
-   :language: ruby
+3. Display the information about the users.
 
-Display the information about the users.
-
-.. literalinclude:: ./workdocs/wd_list_users.rb
-   :lines: 27-33
+.. literalinclude:: ./example_code/workdocs/wd_list_users.rb
    :dedent: 0
    :language: ruby
 

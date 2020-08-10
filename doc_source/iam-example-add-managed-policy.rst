@@ -21,7 +21,6 @@ Adding a Managed Policy to an |IAM| User
 
 The following example adds the managed policy :code:`AmazonS3FullAccess` to the |IAM| user :code:`my_groovy_user` in the :code:`us-west-2` region.
 
-.. literalinclude:: ./iam/iam-ruby-example-add-managed-policy.rb
-   :lines: 13-26
+.. literalinclude:: ./example_code/iam/iam-ruby-example-add-managed-policy.rb
    :dedent: 0
    :language: ruby

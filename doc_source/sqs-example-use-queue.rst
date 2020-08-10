@@ -43,7 +43,6 @@ in:
 Example
 *******
 
-.. literalinclude:: ./sqs/sqs-ruby-example-using-queues.rb
-   :lines: 19-49
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-using-queues.rb
    :dedent: 0
    :language: ruby

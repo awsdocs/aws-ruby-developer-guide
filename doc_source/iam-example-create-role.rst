@@ -21,7 +21,6 @@ Creating an |IAM| Role
 
 The following example creates the role :code:`my_groovy_role` so that |EC2| can access |S3| and |DDBlong| in the :code:`us-west-2` region.
 
-.. literalinclude:: ./iam/iam-ruby-example-create-role.rb
-   :lines: 13-44
+.. literalinclude:: ./example_code/iam/iam-ruby-example-create-role.rb
    :dedent: 0
    :language: ruby

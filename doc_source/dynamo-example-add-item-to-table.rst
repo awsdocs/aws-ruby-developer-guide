@@ -23,7 +23,6 @@ The following example adds an item with the :code:`ID` value of **123456**, :cod
 value of **John**, and :code-ruby:`LastName` value of **Doe** to the :code-ruby:`Users` table in the
 :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./dynamodb/dynamodb-ruby-example-add-item-users-table.rb
-   :lines: 13-25
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-add-item-users-table.rb
    :dedent: 0
    :language: ruby

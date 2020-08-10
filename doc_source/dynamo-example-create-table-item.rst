@@ -23,8 +23,7 @@ The following example adds an item with the :code:`year` **2015** and
 :code-ruby:`title`  **The Big New Movie** to the :code-ruby:`Movies` table in the
 :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./dynamodb/dynamodb_ruby_example_create_movies_item.rb
-   :lines: 13-37
+.. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_create_movies_item.rb
    :dedent: 0
    :language: ruby
 

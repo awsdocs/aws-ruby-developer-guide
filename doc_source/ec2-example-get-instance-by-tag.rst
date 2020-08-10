@@ -24,7 +24,6 @@ of an |EC2| instance with the tag :code:`Group` and tag value :code:`MyGroovyGro
 
 .. note:: The tag name and value are case-sensitive.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-get-instance-info-by-tag.rb
-   :lines: 13-22
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-get-instance-info-by-tag.rb
    :dedent: 0
    :language: ruby

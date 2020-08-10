@@ -21,8 +21,7 @@ Getting Information about All |CWlong| Alarms
 
 The following example displays information about your |CWlong| alarms.
 
-.. literalinclude:: ./cloudwatch/cw-ruby-example-show-alarms.rb
-   :lines: 13-41
+.. literalinclude:: ./example_code/cloudwatch/cw-ruby-example-show-alarms.rb
    :dedent: 0
    :language: ruby
 

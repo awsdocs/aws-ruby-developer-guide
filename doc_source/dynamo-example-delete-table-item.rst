@@ -23,8 +23,7 @@ The following example deletes item with the :code:`year` **2015** and
 :code-ruby:`title`  **The Big New Movie**
 from the :code-ruby:`Movies` table in the :code-ruby:`us-west-2` region.
 
-.. literalinclude:: ./dynamodb/dynamodb_ruby_example_delete_movies_item.rb
-   :lines: 13-32
+.. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_delete_movies_item.rb
    :dedent: 0
    :language: ruby
 

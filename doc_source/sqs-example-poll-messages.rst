@@ -23,8 +23,7 @@ The following example uses the :code:`QueuePoller` utility class to display the 
 in the |SQS| queue with the URL :code:`URL` in the :code:`us-west-2` region, and deletes the message.
 After approximately 15 seconds of inactivity, the script times out.
 
-.. literalinclude:: ./sqs/sqs-ruby-example-poll-messages.rb
-   :lines: 13-21
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-poll-messages.rb
    :dedent: 0
    :language: ruby
 
@@ -32,8 +31,7 @@ The following example loops through the |SQS| queue with the URL :code:`URL`, an
 
 You can get the correct URL by executing the |SQS| example in :ref:`aws-ruby-sdk-sqs-example-show-queues`.
 
-.. literalinclude:: ./sqs/sqs-ruby-example-long-polling.rb
-   :lines: 13-21
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-long-polling.rb
    :dedent: 0
    :language: ruby
 
@@ -41,8 +39,7 @@ The following example loops through the |SQS| queue with the URL :code:`URL`, an
 the visibility *timeout* seconds to process the message, represented by the method
 :code:`do_something`.
 
-.. literalinclude:: ./sqs/sqs-ruby-example-visibility-timeout.rb
-   :lines: 13-26
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-visibility-timeout.rb
    :dedent: 0
    :language: ruby
 
@@ -50,7 +47,6 @@ The following example loops through the |SQS| queue with the URL :code:`URL`, an
 visibility *timeout* seconds, for any message that needs additional processing by the method
 :code:`do_something2`.
 
-.. literalinclude:: ./sqs/sqs-ruby-example-visibility-timeout2.rb
-   :lines: 13-36
+.. literalinclude:: ./example_code/sqs/sqs-ruby-example-visibility-timeout2.rb
    :dedent: 0
    :language: ruby

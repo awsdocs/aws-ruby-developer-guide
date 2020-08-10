@@ -21,7 +21,6 @@ Rebooting an |EC2| Instance
 
 The following example reboots the instance :code:`i-123abc` in the :code:`us-west-2` region.
 
-.. literalinclude:: ./ec2/ec2-ruby-example-reboot-instance-i-123abc.rb
-   :lines: 13-26
+.. literalinclude:: ./example_code/ec2/ec2-ruby-example-reboot-instance-i-123abc.rb
    :dedent: 0
    :language: ruby

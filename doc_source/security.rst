@@ -30,3 +30,4 @@ Security for |SERVICENAMETITLE|
    Resilience <common/disaster-recovery-resiliency>
    Infrastructure Security <common/infrastructure-security>
    Using TLS 1.2 <tls-version>
+   S3 Encryption Client Migration <s3-encryption-migration>

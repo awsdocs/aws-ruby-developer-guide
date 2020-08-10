@@ -52,12 +52,7 @@ Configure the SDK
 
 To configure the SDK for this example, add a :code:`require` statement so you can use the classes and methods
 provided by the |sdk-ruby| for |S3|. Then create an :ruby-sdk-api:`Aws::S3::Client <Aws/S3/Client.html>` object in the AWS Region where you want to
-create the bucket. This code creates the :code:`Aws::S3::Client` object in the :code:`us-west-2` region.
-
-.. literalinclude:: ./s3/s3-ruby-example-bucket-policy.rb
-   :lines: 21-23
-   :dedent: 0
-   :language: ruby
+create the bucket.
 
 .. _aws-ruby-sdk-s3-example-bucket-policy-create-bucket:
 
@@ -72,11 +67,6 @@ bucket's name.
 
 If you already have a bucket you want to use, you don't have to call :code:`create_bucket`.
 
-.. literalinclude:: ./s3/s3-ruby-example-bucket-policy.rb
-   :lines: 25-27
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-bucket-policy-define-policy:
 
 Define a Bucket Policy
@@ -87,10 +77,25 @@ hash to convert it to a JSON object. This code uses a variable named :code:`poli
 allows the specified user to have full control over the :code:`example-bucket-name` (represented by :code:`#{bucket}`).
 Substitute :code:`arn:aws:iam::111122223333:user/Alice` with the |ARNlong| (ARN) of the |IAMlong| (|IAM|) user you want to use.
 
-.. literalinclude:: ./s3/s3-ruby-example-bucket-policy.rb
-   :lines: 29-45
-   :dedent: 0
-   :language: ruby
+.. code-block:: ruby
+
+ policy = {
+  "Version" => "2012-10-17",
+  "Statement" => [
+    {
+      "Effect" => "Allow",
+      "Principal" => {
+        "AWS" => [
+          "arn:aws:iam::111122223333:user/Alice"
+        ]
+      },
+      "Action" => "s3:*",
+      "Resource" => [
+        "arn:aws:s3:::#{bucket}"
+      ]
+    }
+  ]
+ }.to_json
 
 For examples of the types of policies you can define, see :S3-dg:`Bucket Policy Examples <example-bucket-policies>` in the |S3-dg|.
 
@@ -102,10 +107,12 @@ Add the Policy to the Bucket
 Call the :ruby-sdk-api:`put_bucket_policy <Aws/S3/Client.html#put_bucket_policy-instance_method>`
 method, specifying the name of the bucket and the policy definition.
 
-.. literalinclude:: ./s3/s3-ruby-example-bucket-policy.rb
-   :lines: 47-50
-   :dedent: 0
-   :language: ruby
+.. code-block:: ruby
+
+ s3.put_bucket_policy(
+  bucket: bucket,
+  policy: policy
+ )
 
 .. _aws-ruby-sdk-s3-example-bucket-policy-change-policy:
 
@@ -119,10 +126,17 @@ Next, parse the JSON object that is returned into a Ruby hash. Then make your in
 this code changes the ARN of the |IAM| entity. After you make your changes, call the :code:`put_bucket_policy` method again.
 Be sure to call the :code:`to_json` method on the hash to convert it back to a JSON object before applying the changed policy to the bucket.
 
-.. literalinclude:: ./s3/s3-ruby-example-bucket-policy.rb
-   :lines: 52-60
-   :dedent: 0
-   :language: ruby
+.. code-block:: ruby
+
+ policy_string = s3.get_bucket_policy(bucket: bucket).policy.read
+ policy_json = JSON.parse(policy_string)
+
+ policy_json["Statement"][0]["Principal"]["AWS"] = "arn:aws:iam::111122223333:root"
+
+ s3.put_bucket_policy(
+  bucket: bucket,
+  policy: policy_json.to_json
+ )
 
 .. _aws-ruby-sdk-s3-example-bucket-policy-clean-up:
 
@@ -135,10 +149,10 @@ method, specifying the name of the bucket.
 To delete the bucket, call the
 :ruby-sdk-api:`delete_bucket <Aws/S3/Client.html#delete_bucket-instance_method>` method, specifying the name of the bucket.
 
-.. literalinclude:: ./s3/s3-ruby-example-bucket-policy.rb
-   :lines: 62-63
-   :dedent: 0
-   :language: ruby
+.. code-block:: ruby
+
+ s3.delete_bucket_policy(bucket: bucket)
+ s3.delete_bucket(bucket: bucket)
 
 .. _aws-ruby-sdk-s3-example-bucket-policy-code:
 
@@ -147,10 +161,6 @@ Complete Example
 
 Here is the complete code for this example.
 
-.. literalinclude:: ./s3/s3-ruby-example-bucket-policy.rb
-   :lines: 21-63
+.. literalinclude:: ./example_code/s3/s3-ruby-example-bucket-policy.rb
    :dedent: 0
    :language: ruby
-
-
-

@@ -29,30 +29,19 @@ use server-side encryption. In that case, the specified encryption takes precede
 
 Choose :code:`Copy` to save the code locally.
 
-Create the file *add_default_sse_encryption.rb*.
+1. Create the file *add_default_sse_encryption.rb*.
 
-Add the required |S3| gem.
+2. Add the required |S3| gem.
 
 .. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
 
-.. literalinclude:: ./s3/s3_add_default_sse_encryption.rb
-   :lines: 13
-   :dedent: 0
-   :language: ruby
-
-Get the KMS key from the command line,
+3. Get the KMS key from the command line,
 Where :code:`key` is a KMS key ID as created in the :doc:`kms-example-create-key` example.
 
-.. literalinclude:: ./s3/s3_add_default_sse_encryption.rb
-   :lines: 16-21
-   :dedent: 0
-   :language: ruby
-
-Create an |S3| client and call :code:`put_bucket_encryption` to add
+4. Create an |S3| client and call :code:`put_bucket_encryption` to add
 default encryption to the bucket.
 
-.. literalinclude:: ./s3/s3_add_default_sse_encryption.rb
-   :lines: 27-37
+.. literalinclude:: ./example_code/s3/s3_add_default_sse_encryption.rb
    :dedent: 0
    :language: ruby
 

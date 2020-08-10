@@ -63,12 +63,7 @@ in the :code:`us-east-2` region.
 An additional variable is also declared for the bucket used in this example. To help ensure the bucket name is unique across all AWS accounts, an
 additional :code:`require` statement is added, and the :code:`SecureRandom` module's
 :code:`uuid` method is called to generate a unique identifier. This identifier is inserted into the
-name of the bucket to be created later in this example.
-
-.. literalinclude:: ./s3/s3_ruby_bucket_website.rb
-   :lines: 13-20
-   :dedent: 0
-   :language: ruby
+name of the bucket to be created later in the example.
 
 .. _aws-ruby-sdk-s3-example-bucket-website-create-bucket:
 
@@ -77,10 +72,9 @@ Create a Bucket
 
 Call the :ruby-sdk-api:`create_bucket <Aws/S3/Client.html#create_bucket-instance_method>` method, supplying the name of the bucket to create.
 
-.. literalinclude:: ./s3/s3_ruby_bucket_website.rb
-   :lines: 21
-   :dedent: 0
-   :language: ruby
+.. code-block:: Ruby
+
+  s3 = Aws::S3::Client.new(region: "us-west-2")
 
 .. _aws-ruby-sdk-s3-example-bucket-website-get-config:
 
@@ -91,11 +85,6 @@ Call the :ruby-sdk-api:`get_bucket_website <Aws/S3/Client.html#get_bucket_websit
 By default, a bucket is not configured as a website. To confirm this behavior, call the
 :code:`get_bucket_website` method. This returns an error, because there is no website configuration for the bucket.
 
-.. literalinclude:: ./s3/s3_ruby_bucket_website.rb
-   :lines: 24-28
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-bucket-website-add-object:
 
 Add an Object to a Bucket
@@ -104,11 +93,6 @@ Add an Object to a Bucket
 Call the :ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method, supplying the name of the bucket and object,
 the object's contents, and the object's access permissions set. This example adds two
 webpages to the bucket.
-
-.. literalinclude:: ./s3/s3_ruby_bucket_website.rb
-   :lines: 31-42
-   :dedent: 0
-   :language: ruby
 
 .. _aws-ruby-sdk-s3-example-bucket-website-set-config:
 
@@ -119,11 +103,6 @@ Call the :ruby-sdk-api:`put_bucket_website <Aws/S3/Client.html#put_bucket_websit
 the website configuration. For the website configuration, use an :ruby-sdk-api:`Aws::S3::Types::WebsiteConfiguration <Aws/S3/Types/WebsiteConfiguration.html>` hash, supplying the website's
 index and error webpages.
 
-.. literalinclude:: ./s3/s3_ruby_bucket_website.rb
-   :lines: 43-53
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-bucket-website-get-docs:
 
 Access a Bucket Website's Documents
@@ -131,22 +110,12 @@ Access a Bucket Website's Documents
 
 Call the Ruby :code:`Net::HTTP.get` method, supplying the address to the document in the bucket website.
 
-.. literalinclude:: ./s3/s3_ruby_bucket_website.rb
-   :lines: 56-60
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-bucket-website-delete:
 
 Delete a Bucket Website
 =======================
 
 Call the :ruby-sdk-api:`delete_bucket_website <Aws/S3/Client.html#delete_bucket_website-instance_method>` method, supplying the name of the bucket.
-
-.. literalinclude:: ./s3/s3_ruby_bucket_website.rb
-   :lines: 63
-   :dedent: 0
-   :language: ruby
 
 .. _aws-ruby-sdk-s3-example-bucket-website-delete-bucket:
 
@@ -157,11 +126,6 @@ Call the :ruby-sdk-api:`bucket <Aws/S3/Resource.html#bucket-instance_method>` me
 This returns an :ruby-sdk-api:`Aws::S3::Bucket <Aws/S3/Bucket.html>` object. Then call the :code:`Aws::S3::Bucket` object's
 :ruby-sdk-api:`delete <Aws/S3/Bucket.html#delete!-instance_method>` method.
 
-.. literalinclude:: ./s3/s3_ruby_bucket_website.rb
-   :lines: 66-67
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-bucket-website-code:
 
 Complete Example
@@ -169,8 +133,6 @@ Complete Example
 
 Here is the complete code for this example.
 
-.. literalinclude:: ./s3/s3_ruby_bucket_website.rb
-   :lines: 13-67
+.. literalinclude:: ./example_code/s3/s3_ruby_bucket_website.rb
    :dedent: 0
    :language: ruby
-

@@ -22,7 +22,6 @@ Adding a New |IAM| User
 The following example creates the |IAM| user :code:`my_groovy_user` in the :code:`us-west-2` region with the password :code:`REPLACE_ME`,
 and displays the user's account ID. If a user with that name already exists, it displays a message and does not create a new user.
 
-.. literalinclude:: ./iam/iam-ruby-example-add-new-user.rb
-   :lines: 13-27
+.. literalinclude:: ./example_code/iam/iam-ruby-example-add-new-user.rb
    :dedent: 0
    :language: ruby

@@ -18,47 +18,21 @@ The following example lists the documents for a user.
 Choose :code:`Copy` to save the code locally, or see the link to the complete
 example at the end of this topic.
 
-Require the |sdk-ruby| module.
+1. Require the |sdk-ruby| module.
 
-.. literalinclude:: ./workdocs/wd_list_user_docs.rb
-   :lines: 13
-   :dedent: 0
-   :language: ruby
+2. Create a helper method to get the root folder of a user.
 
-Create a helper method to get the root folder of a user.
+3. Create a |WD| client.
 
-.. literalinclude:: ./workdocs/wd_list_user_docs.rb
-   :lines: 15-30
-   :dedent: 0
-   :language: ruby
+4. Get the root folder for that user.
 
-Create a |WD| client.
-
-.. literalinclude:: ./workdocs/wd_list_user_docs.rb
-   :lines: 32
-   :dedent: 0
-   :language: ruby
-
-Get the root folder for that user.
-
-.. literalinclude:: ./workdocs/wd_list_user_docs.rb
-   :lines: 34-40
-   :dedent: 0
-   :language: ruby
-
-Call :code:`describe_folder_contents` to get the contents of the folder
+5. Call :code:`describe_folder_contents` to get the contents of the folder
 in ascending order.
 
-.. literalinclude:: ./workdocs/wd_list_user_docs.rb
-   :lines: 47-51
-   :dedent: 0
-   :language: ruby
-
-Display the name, size (in bytes), last modified date, document ID and version
+6. Display the name, size (in bytes), last modified date, document ID and version
 ID for each document in the user's root folder.
 
-.. literalinclude:: ./workdocs/wd_list_user_docs.rb
-   :lines: 53-62
+.. literalinclude:: ./example_code/workdocs/wd_list_user_docs.rb
    :dedent: 0
    :language: ruby
 

@@ -22,8 +22,7 @@ Sending a Message to an Email Address in |SES|
 The following example demonstrates how to use the |sdk-ruby| to send a message to
 an |SES| email address.
 
-.. literalinclude:: ./ses/ses_send_email.rb
-   :lines: 13-83
+.. literalinclude:: ./example_code/ses/ses_send_email.rb
    :dedent: 0
    :language: ruby
 

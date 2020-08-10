@@ -23,7 +23,6 @@ The following example gets the contents of the item :code-ruby:`my-item` from th
 :code-ruby:`my-bucket` in the :code:`us-west-2` region, and saves it to the :file:`my-item.txt` file
 in the :file:`./my-code` directory.
 
-.. literalinclude:: ./s3/s3-ruby-example-get-item.rb
-   :lines: 13-21
+.. literalinclude:: ./example_code/s3/s3-ruby-example-get-item.rb
    :dedent: 0
    :language: ruby

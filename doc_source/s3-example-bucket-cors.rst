@@ -53,14 +53,7 @@ Configure the SDK
 
 For this example, add a :code:`require` statement so that you can use the classes and methods
 provided by the |sdk-ruby| for |S3|. Then create an :ruby-sdk-api:`Aws::S3::Client <Aws/S3/Client.html>` object in the AWS Region where you want to
-create the bucket and the specified AWS profile. This code creates the :code:`Aws::S3::Client` object
-in the :code:`us-east-1` region.
-An additional variable is also declared for the bucket used in this example.
-
-.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
-   :lines: 13-22
-   :dedent: 0
-   :language: ruby
+create the bucket and the specified AWS profile.
 
 .. _aws-ruby-sdk-s3-example-bucket-cors-configure:
 
@@ -69,26 +62,40 @@ Configure CORS for a Bucket
 
 Call the :ruby-sdk-api:`put_bucket_cors <Aws/S3/Client.html#put_bucket_cors-instance_method>` method, providing the name of the bucket and the CORS configuration settings.
 
-.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
-   :lines: 59-62
-   :dedent: 0
-   :language: ruby
-
 For the CORS configuration settings, declare an :ruby-sdk-api:`Aws::S3::Types::CORSConfiguration <Aws/S3/Types/CORSConfiguration.html>` hash. Specify things such as the HTTP methods
 that the specified origins are allowed to execute (:code:`allowed_methods`), the origins you want customers to be able to access the bucket from (:code:`allowed_origins`), and
 the headers in the response you want customers to be able to access from their applications (for example, from a JavaScript :code:`XMLHttpRequest` object, shown here in :code:`expose_headers`).
 
-.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
-   :lines: 48-56
-   :dedent: 0
-   :language: ruby
+.. code-block:: Ruby
+
+ s3.put_bucket_cors(
+  bucket: bucket,
+  cors_configuration: cors_configuration
+ )
 
 For the HTTP methods that the specified origins are allowed to execute, you could specify them inline or, as shown here, you could get them from the user at the command line.
 
-.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
-   :lines: 27-45
-   :dedent: 0
-   :language: ruby
+.. code-block:: Ruby
+
+ allowed_methods = []
+ ARGV.each do |arg|
+ case arg.upcase
+ when "POST"
+    allowed_methods << "POST"
+  when "GET"
+    allowed_methods << "GET"
+  when "PUT"
+    allowed_methods << "PUT"
+  when "PATCH"
+    allowed_methods << "PATCH"
+  when "DELETE"
+    allowed_methods << "DELETE"
+  when "HEAD"
+    allowed_methods << "HEAD"
+  else
+    puts "#{arg} is not a valid HTTP method"
+  end
+ end
 
 For example, assuming the code file is named :code:`doc_sample_code_s3_bucket_cors.rb`, and you want to allow the specified origins to execute only GET and POST methods, here is how the user could
 run the code from the command line.
@@ -106,11 +113,6 @@ Call the :ruby-sdk-api:`get_bucket_cors <Aws/S3/Client.html#get_bucket_cors-inst
 :ruby-sdk-api:`Aws::S3::Types::GetBucketCorsOutput <Aws/S3/Types/GetBucketCorsOutput.html>` object. This object's :code:`cors_rules` attribute returns an array of
 :ruby-sdk-api:`Aws::S3::Types::CORSRule <Aws/S3/Types/CORSRule.html>` objects, which represent the bucket's CORS settings.
 
-.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
-   :lines: 65-66
-   :dedent: 0
-   :language: ruby
-
 .. _aws-ruby-sdk-s3-example-bucket-cors-code:
 
 Complete Example
@@ -118,7 +120,6 @@ Complete Example
 
 Here is the complete code for this example.
 
-.. literalinclude:: ./s3/s3_ruby_bucket_cors.rb
-   :lines: 13-69
+.. literalinclude:: ./example_code/s3/s3_ruby_bucket_cors.rb
    :dedent: 0
    :language: ruby

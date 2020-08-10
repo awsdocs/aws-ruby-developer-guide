@@ -61,7 +61,6 @@ You also need to:
 Example
 *******
 
-.. literalinclude:: ./cloudwatch/cw-ruby-example-send-events-ec2.rb
-   :lines: 68-189
+.. literalinclude:: ./example_code/cloudwatch/cw-ruby-example-send-events-ec2.rb
    :dedent: 0
    :language: ruby

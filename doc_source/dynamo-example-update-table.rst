@@ -22,7 +22,6 @@ Updating an |DDBlong| Table
 The following example updates all the items in the :code-ruby:`Users` table in the :code-ruby:`us-west-2`
 region to include a new field, :code-ruby:`airmiles`, and sets the value to **10000**.
 
-.. literalinclude:: ./dynamodb/dynamodb-ruby-example-update-users-table.rb
-   :lines: 13-33
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-update-users-table.rb
    :dedent: 0
    :language: ruby
