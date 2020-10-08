@@ -107,3 +107,15 @@ in the |AEB-dg|. For deploying a Ruby on Rails application with |OPS|, see
 `Deploying Ruby on Rails Applications to AWS OpsWorks <http://ruby.awsblog.com/post/Tx7FQMT084INCR/Deploying-Ruby-on-Rails-Applications-to-AWS-OpsWorks>`_.
 For an overview of AWS deployment services, see
 `Overview of Deployment Options on AWS <https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf>`_.
+
+Maintenance and support for SDK major versions
+==============================================
+
+For information about maintenance and support for SDK major versions and their underlying dependencies,
+see the following in the `AWS SDKs and Tools Shared Configuration and Credentials Reference Guide <https://docs.aws.amazon.com/credref/latest/refdocs/overview.html>`_:
+
+* `AWS SDKs and Tools Maintenance Policy <https://docs.aws.amazon.com/credref/latest/refdocs/maint-policy.html>`_
+
+* `AWS SDKs and Tools Version Support Matrix <https://docs.aws.amazon.com/credref/latest/refdocs/version-support-matrix.html>`_
+
+
