@@ -19,33 +19,8 @@ Encrypting an Amazon S3 Bucket Object on the Server
         Encrypt Amazon S3 bucket objects on the server using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
-The following example uses the
-:ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
-to add the object :code-ruby:`my_item` to the bucket
-:code-ruby:`my_bucket` in the :code:`us-west-2` region
-with server-side encryption set KMS.
-
-Note that this differs from :doc:`s3-example-default-server-side-encryption`,
-is in that case, the objects are encrypted without you having to explicitly perform the operation.
-
-1. Create the file *encrypt_object_sse.rb*.
-
-2. Add the required |S3| gem.
-
-.. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
-
-3. Set the bucket and object name and get the object from the file as a string.
-
-4. Create an |S3| client and call :code:`put_object` to upload the object to the bucket.
-Notice that the :code:`server_side_encryption` property is set to :code:`aws:kms`,
-indicating that |S3| encrypts the object using KMS.
-
-5. Finally, display a success message to the user.
+The following code example adds an encrypted object to an |S3| bucket. The encryption is performed on the server by using the aws/s3 AWS managed customer master key (CMK).
 
 .. literalinclude:: ./example_code/s3/s3_add_sses3_encrypt_item.rb
    :dedent: 0
    :language: ruby
-
-See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_add_sses3_encrypt_item.rb>`_
-on GitHub.

@@ -10,18 +10,16 @@
 
 .. _aws-ruby-sdk-s3-example-set-item-props:
 
-###############################################
-Changing the Properties for an |S3| Bucket Item
-###############################################
+#################################################
+Changing the Properties for an |S3| Bucket Object
+#################################################
 
 .. meta::
     :description:
-        Change Amazon S3 bucket item properties using this AWS SDK for Ruby code example.
+        Change Amazon S3 bucket object properties using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
-The following example adds public read-only access, sets server-side encryption to AES-256, and sets
-the storage class to Reduced Redundancy for the item :code-ruby:`my-item` in the bucket
-:code-ruby:`my-bucket` in the :code:`us-west-2` region.
+The following code example copies an object from one |S3| bucket to another. It also sets a predetermined access control list (ACL) and an |S3| storage class on the copied object.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-set-item-props.rb
    :dedent: 0
