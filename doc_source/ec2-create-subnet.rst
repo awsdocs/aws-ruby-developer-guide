@@ -19,11 +19,7 @@ Creating a Public Subnet for |EC2|
         Create public subnets for Amazon EC2 using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
-The following example creates a public subnet :code:`MyGroovySubnet` in the :code:`us-west-2` region
-and the Availablity Zone :code:`us-west-2a`. The example attaches the public subnet to a VPC with the ID :code:`VPC_ID` that uses the CIDR block :code:`10.200.10.0/24`, and then
-displays the subnet's ID.
-
-The public subnet created in this example has 256 private IP addresses within the VPC.
+The following code example creates a subnet within a virtual private cloud (VPC) in Amazon Virtual Private Cloud (Amazon VPC) and then tags the subnet.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-subnet.rb
    :dedent: 0

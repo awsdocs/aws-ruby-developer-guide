@@ -19,7 +19,7 @@ Starting an |EC2| Instance
         Start an Amazon EC2 instance using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
-The following example starts the instance :code:`i-123abc` in the :code:`us-west-2` region.
+The following example attempts to start the specified |EC2| instance.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-start-instance-i-123abc.rb
    :dedent: 0
