@@ -19,10 +19,7 @@ Getting Information about All |EC2| Instances with a Specific Tag Value
         Get information for all Amazon EC2 instances by tag value using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
-The following example lists the ID and state (pending, running, shutting down, terminated, stopping, or stopped)
-of an |EC2| instance with the tag :code:`Group` and tag value :code:`MyGroovyGroup` in the :code:`us-west-2` region.
-
-.. note:: The tag name and value are case-sensitive.
+The following code example lists the IDs and current states of available |EC2| instances matching the specified tag key and value.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-get-instance-info-by-tag.rb
    :dedent: 0

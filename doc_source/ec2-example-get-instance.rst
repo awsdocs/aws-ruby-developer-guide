@@ -19,7 +19,7 @@ Getting Information about a Specific |EC2| Instance
         Get Amazon EC2 instance information using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
-The following example lists the state of an instance :code:`i-123abc` in the :code:`us-west-2` region.
+The following example lists the state of the specified |EC2| instance.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-list-state-instance-i-123abc.rb
    :dedent: 0

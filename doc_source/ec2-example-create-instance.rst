@@ -19,13 +19,7 @@ Creating an |EC2| Instance
         Create Amazon EC2 instances using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
-The following example creates an |EC2| instance :code:`MyGroovyInstance`, with the tag :code:`Group` and value :code:`MyGroovyGroup`. The instance is created
-in Availability Zone :code:`us-west-2a`. The instance has the machine image :code:`MACHINE_IMAGE`
-for the account with ID :code:`ACCOUNT_ID`,
-the security group with the ID :code:`SECURITY_GROUP_ID`, and the subnet
-with the ID :code:`SUBNET_ID`. Then it displays the instance's ID and public IP address.
-
-.. note:: In the empty script value, you can add instructions that your |EC2| instance executes when it starts.
+The following example creates and tags an |EC2| instance.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-create-instance.rb
    :dedent: 0

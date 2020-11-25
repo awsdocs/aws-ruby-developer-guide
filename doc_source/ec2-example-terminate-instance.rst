@@ -19,7 +19,7 @@ Terminating an |EC2| Instance
         Learn how to terminate Amazon EC2 instances using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code example, Amazon EC2
 
-The following example terminates the |EC2| instance :code:`i-123abc` in the :code:`us-west-2` region.
+The following example attempts to terminate the specified |EC2| instance.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-terminate-instance-i-123abc.rb
    :dedent: 0

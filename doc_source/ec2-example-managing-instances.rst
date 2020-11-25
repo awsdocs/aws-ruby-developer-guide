@@ -18,30 +18,13 @@ Managing |EC2| Instances
    :description: Learn how to manage Amazon EC2 instances using this AWS SDK for Ruby code example.
    :keywords: AWS SDK for Ruby code examples, Amazon EC2
 
+The following code example:
 
-In this example, you use the |sdk-ruby| with |EC2| to:
-
-#. Stop an existing |EC2| instance by using :aws-ruby-ec2-client-method:`stop_instances`.
-#. Restart the instance by using :aws-ruby-ec2-client-method:`start_instances`.
-#. Reboot the instance by using :aws-ruby-ec2-client-method:`reboot_instances`.
-#. Enable detailed monitoring for the instance by using :aws-ruby-ec2-client-method:`monitor_instances`.
-#. Get information about available instances by using :aws-ruby-ec2-client-method:`describe_instances`.
-
-*************
-Prerequisites
-*************
-
-Before running the example code, you need to install and configure the |sdk-ruby|, as described
-in:
-
-* :ref:`aws-ruby-sdk-setup-install`
-* :ref:`aws-ruby-sdk-setup-config`
-
-You also need to replace `INSTANCE-ID` in the code with the instance ID of an existing EC2 instance.
-
-*******
-Example
-*******
+#. Stops an |EC2| instance.
+#. Restarts the instance.
+#. Reboots the instance.
+#. Enables detailed monitoring for the instance.
+#. Displays information about available instances.
 
 .. literalinclude:: ./example_code/ec2/ec2-ruby-example-manage-instances.rb
    :dedent: 0
