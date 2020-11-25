@@ -19,31 +19,8 @@ Encrypting an Amazon S3 Bucket Object with an AWS KMS Key
         Encrypt Amazon S3 bucket objects with a client-side AWS KMS key using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
-The following example uses the
-:ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
-to add the object :code-ruby:`my_item` to the bucket
-:code-ruby:`my_bucket` in the :code:`us-west-2` region.
-
-Choose :code:`Copy` to save the code locally.
-
-Create the file *encrypt_object_csekms.rb*.
-
-1. Add the required |S3| gem.
-
-.. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
-
-2. Get the AWS KMS key from the command line,
-where :code:`key` is an AWS KMS key ID as created in the :doc:`kms-example-create-key` example.
-
-3. Set the bucket and object name and get the contents of the object from the file as a string.
-
-4. Create a |KMS| and |S3| encryption client, call :code:`put_object` to upload the object to the bucket,
-and display a success message.
+The following code example uploads an encrypted object to an |S3| bucket.
 
 .. literalinclude:: ./example_code/s3/s3_add_cskms_encrypt_item.rb
    :dedent: 0
    :language: ruby
-
-See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_add_cskms_encrypt_item.rb>`_
-on GitHub.

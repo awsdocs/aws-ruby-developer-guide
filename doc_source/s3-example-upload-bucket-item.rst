@@ -10,18 +10,16 @@
 
 .. _aws-ruby-sdk-s3-example-upload-bucket-item:
 
-###################################
-Uploading an Item to an |S3| Bucket
-###################################
+#####################################
+Uploading an Object to an |S3| Bucket
+#####################################
 
 .. meta::
     :description:
-        Upload Amazon S3 bucket items using this AWS SDK for Ruby code example.
+        Upload Amazon S3 bucket objects using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
-The following example uploads the item (file) :file:`C:\file.txt` to the bucket
-:code-ruby:`my-bucket` in the :code:`us-west-2` region.  Because :file:`C:\file.txt` is the fully
-qualified name of the file, the name of the item is set to the name of the file.
+The following example uploads an object to a bucket in |S3|.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-upload-item.rb
    :dedent: 0
