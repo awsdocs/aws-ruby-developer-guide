@@ -19,13 +19,8 @@ Creating an |CWlong| Alarm
         Create Amazon CloudWatch alarms using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, CloudWatch alarms
 
-The following example creates a |CW| alarm named *my-alarm* that sends a message through the |SNS| topic
-with the ARN named :code:`ARN`
-when the |S3| bucket named *my-bucket* has more than 50 items in a 24-hour period.
+The following code example creates a new |CW| alarm (or updates an existing alarm, if an alarm with the specified name already exists).
 
 .. literalinclude:: ./example_code/cloudwatch/cw-ruby-example-create-alarm.rb
    :dedent: 0
    :language: ruby
-
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/cloudwatch/cw-ruby-example-create-alarm.rb>`_
-on GitHub.
