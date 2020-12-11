@@ -31,5 +31,5 @@ seconds, up to a maximum of 500 seconds, to see if the table was created.
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/dynamodb/dynamodb_ruby_example_create_movies_table.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/dynamodb_ruby_example_create_movies_table.rb>`_
 on GitHub.
