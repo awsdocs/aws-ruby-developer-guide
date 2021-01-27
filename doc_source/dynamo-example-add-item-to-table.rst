@@ -19,9 +19,7 @@ Adding an Item to an |DDBlong| Table
         Add items to Amazony DynamoDB tables using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example adds an item with the :code:`ID` value of **123456**, :code-ruby:`FirstName`
-value of **John**, and :code-ruby:`LastName` value of **Doe** to the :code-ruby:`Users` table in the
-:code-ruby:`us-west-2` region.
+The following example adds an item to a table.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-add-item-users-table.rb
    :dedent: 0

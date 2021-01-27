@@ -11,7 +11,7 @@
 .. _aws-ruby-sdk-dynamo-example-list-table-items:
 
 #########################################################
-Getting Information about the Items in an |DDBlong| Table
+Getting Information about All Items in an |DDBlong| Table
 #########################################################
 
 .. meta::
@@ -19,8 +19,7 @@ Getting Information about the Items in an |DDBlong| Table
         Get Amazon DynamoDB table item information using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example lists up to 50 items from the :code-ruby:`Users` table in the
-:code-ruby:`us-west-2` region.
+The following code example lists up to 50 items from a table by using a scan operation.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-50-users-table-items.rb
    :dedent: 0

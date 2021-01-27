@@ -19,13 +19,8 @@ Updating an |DDBlong| Table Item
         Update an Amazon DynamoDB table item using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example updates the rating to **0.1** for the item with the :code:`year` **2015** and
-:code-ruby:`title`  **The Big New Movie**
-in the :code-ruby:`Movies` table in the :code-ruby:`us-west-2` region.
+The following example updates an item in a table.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_update_movies_item.rb
    :dedent: 0
    :language: ruby
-
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/dynamodb/dynamodb_ruby_example_update_movies_item.rb>`_
-on GitHub.

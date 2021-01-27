@@ -19,13 +19,13 @@ Reading an Item in an |DDBlong| Table
         Display information about an item in an Amazon DynamoDB tables using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example displays information about the item with the :code:`year` **2015** and
-:code-ruby:`title`  **The Big New Movie** in the :code-ruby:`Movies` table in the
-:code-ruby:`us-west-2` region.
+The following code examples display information about an item in a table.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_read_movies_item.rb
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/dynamodb/dynamodb_ruby_example_read_movies_item.rb>`_
-on GitHub.
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-item-123456-users-table.rb
+   :dedent: 0
+   :language: ruby
+

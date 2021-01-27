@@ -19,19 +19,14 @@ Loading Items from a JSON File into an |DDBlong| Table
         Add the items in a JSON file to an Amazon DynamoDB table using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example adds the items from the JSON file *movie_data.json*
-to the :code-ruby:`Movies` table in the :code-ruby:`us-west-2` region.
+The following code example adds items from a JSON file to a table.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_load_movies.rb
    :dedent: 0
    :language: ruby
 
-Here is an example of a JSON file that loads two movies.
+The following JSON file example defines two of these items.
 
 .. literalinclude:: ./example_code/dynamodb/movie_data.json
    :dedent: 0
    :language: json
-
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/dynamodb/dynamodb_ruby_example_load_movies.rb>`_
-and the `JSON file <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/dynamodb/movie_data.json>`_
-on GitHub.

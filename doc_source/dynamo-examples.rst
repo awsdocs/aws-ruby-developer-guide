@@ -39,8 +39,12 @@ interface so you can experiment with |DDB| offline.
    dynamo-example-create-table
    dynamo-example-create-table-item
    dynamo-example-load-table-items-from-json
+   dynamo-example-add-item-to-table
    dynamo-example-read-table-item
+   dynamo-example-list-table-items
    dynamo-example-update-table-item
+   dynamo-example-update-table
+   dynamo-example-create-index
    dynamo-example-delete-table-item
    dynamo-example-delete-table
    

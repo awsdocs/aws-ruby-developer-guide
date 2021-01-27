@@ -20,8 +20,7 @@ Getting Information about a Specific Item in an |DDBlong| Table
         code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example displays the first and last name of an item with an :code-ruby:`ID` of
-**123456** in the :code-ruby:`Users` table in the :code-ruby:`us-west-2` region.
+The following code example gets information about an item in a table.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-list-item-123456-users-table.rb
    :dedent: 0
