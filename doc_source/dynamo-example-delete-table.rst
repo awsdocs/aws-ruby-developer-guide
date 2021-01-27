@@ -19,11 +19,8 @@ Deleting an |DDBlong| Table
         Delete an Amazon DynamoDB table using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example deletes the :code-ruby:`Movies` table in the :code-ruby:`us-west-2` region.
+The following example deletes a table.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_delete_movies_table.rb
    :dedent: 0
    :language: ruby
-
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/dynamodb/dynamodb_ruby_example_delete_movies_table.rb>`_
-on GitHub.

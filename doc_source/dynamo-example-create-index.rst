@@ -19,9 +19,7 @@ Creating an Index for an |DDBlong| Table
         Create an index for an Amazon DynamoDB table using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example adds a new index, :code-ruby:`air-mileage-index`, to the :code-ruby:`Users`
-table in the :code-ruby:`us-west-2` region.  Once the status of the index is :code-ruby:`ACTIVE`,
-you can search for items in the table based on the value of their :code-ruby:`airmiles`.
+The following example adds a new index to a table.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-add-index.rb
    :dedent: 0

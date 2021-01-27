@@ -19,17 +19,12 @@ Creating an |DDBlong| Table
         Create a DynamoDB table using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example creates the table :code-ruby:`Movies` with two required
-attributes: :code-ruby:`year` and :code-ruby:`title` in the :code-ruby:`us-west-2` region.
-
-The :code-ruby:`wait_until` call blocks you from using the table until
-|DDB| has created it.
-By default, the |DDB| client's :code-ruby:`wait_until` method checks every 20
-seconds, up to a maximum of 500 seconds, to see if the table was created.
+The following examples create a table.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb_ruby_example_create_movies_table.rb
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/dynamodb/dynamodb_ruby_example_create_movies_table.rb>`_
-on GitHub.
+.. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-create-users-table.rb
+   :dedent: 0
+   :language: ruby

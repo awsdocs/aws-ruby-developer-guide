@@ -19,8 +19,7 @@ Getting Information about All |DDBlong| Tables
         Get Amazon DynamoDB table information using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, DynamoDB
 
-The following example lists the names and number of items in each table in the
-:code-ruby:`us-west-2` region.
+The following code example lists the names and number of items in each available table.
 
 .. literalinclude:: ./example_code/dynamodb/dynamodb-ruby-example-show-tables-names-and-item-count.rb
    :dedent: 0
