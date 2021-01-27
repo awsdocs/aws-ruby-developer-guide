@@ -19,7 +19,7 @@ Creating an |IAM| Role
         Create an IAM role using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, IAM
 
-The following example creates the role :code:`my_groovy_role` so that |EC2| can access |S3| and |DDBlong| in the :code:`us-west-2` region.
+The following code example creates a role in |IAMlong| (|IAM|).
 
 .. literalinclude:: ./example_code/iam/iam-ruby-example-create-role.rb
    :dedent: 0

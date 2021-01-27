@@ -19,8 +19,7 @@ Adding a New |IAM| User
         Add new IAM users with this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, IAM
 
-The following example creates the |IAM| user :code:`my_groovy_user` in the :code:`us-west-2` region with the password :code:`REPLACE_ME`,
-and displays the user's account ID. If a user with that name already exists, it displays a message and does not create a new user.
+The following code example creates a user in |IAMlong| (|IAM|).
 
 .. literalinclude:: ./example_code/iam/iam-ruby-example-add-new-user.rb
    :dedent: 0

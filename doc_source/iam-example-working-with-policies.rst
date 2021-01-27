@@ -19,31 +19,12 @@ Working with IAM Policies
         Learn to work with IAM policies using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, IAM
 
-An |IAM| policy is a document that specifies one or more permissions. For more information about IAM policies, see :IAM-ug:`Overview of IAM Policies <access_policies>`.
+The following code example demonstrates how to:
 
-In this example, you use the |sdk-ruby| with |IAM| to:
-
-#. Create a policy, using :aws-ruby-iam-client-method:`create_policy`.
-#. Get information about the policy, using :aws-ruby-iam-client-method:`get_policy`.
-#. Attach the policy to a role, using :aws-ruby-iam-client-method:`attach_role_policy`.
-#. List policies attached to the role, using :aws-ruby-iam-client-method:`list_attached_role_policies`.
-#. Detach the policy from the role, using :aws-ruby-iam-client-method:`detach_role_policy`.
-
-*************
-Prerequisites
-*************
-
-Before running the example code, you need to install and configure the |sdk-ruby|, as described
-in:
-
-* :ref:`aws-ruby-sdk-setup-install`
-* :ref:`aws-ruby-sdk-setup-config`
-
-You will also need to create the role (`my-role`) specified in the script. You can do this in the |IAM| console.
-
-*******
-Example
-*******
+#. Create a policy in |IAMlong| (|IAM|).
+#. Attach the policy to a role.
+#. List the policies that are attached to the role.
+#. Detach the policy from the role.
 
 .. literalinclude:: ./example_code/iam/iam-ruby-example-manage-policies.rb
   :dedent: 0
