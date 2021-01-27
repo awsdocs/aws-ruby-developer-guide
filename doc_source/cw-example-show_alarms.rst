@@ -11,7 +11,7 @@
 .. _aws-ruby-sdk-cw-example-show_alarms:
 
 #############################################
-Getting Information about All |CWlong| Alarms
+Getting Information about |CWlong| Alarms
 #############################################
 
 .. meta::
@@ -19,11 +19,8 @@ Getting Information about All |CWlong| Alarms
         Get information about Amazon CloudWatch alarms using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, CloudWatch
 
-The following example displays information about your |CWlong| alarms.
+The following code example displays information about available metric alarms in |CWlong|.
 
 .. literalinclude:: ./example_code/cloudwatch/cw-ruby-example-show-alarms.rb
    :dedent: 0
    :language: ruby
-
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/cloudwatch/cw-ruby-example-show-alarms.rb>`_
-on GitHub.

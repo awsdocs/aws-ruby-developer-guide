@@ -19,33 +19,8 @@ Decrypting an Amazon S3 Bucket Object with a Private Key
         Decrypt Amazon S3 bucket objects with client-side private keys using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
-The following example uses the
-:ruby-sdk-api:`get_object <Aws/S3/Client.html#get_object-instance_method>` method
-to get the object :code-ruby:`my_item` from the bucket
-:code-ruby:`my_bucket` in the :code:`us-west-2` region. Then it
-decrypts the contents with the
-`PKey <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/PKey.html>`_
-class.
-
-1. Create the file *decrypt_object_csepk.rb*.
-
-2. Add the required |S3| and OpenSSL gems.
-
-.. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
-
-3. Get the pass phrase from the command line.
-
-4. Set the bucket name, object name, and name of the private key file.
-
-5. Create an RSA key from the contents of the key file and passphrase.
-
-6. Create an |S3| encryption client, call :code:`get_object`, get the contents of the object as text
-and print out the object's contents.
+The following code example downloads an object from an |S3| bucket. The object's contents were originally encrypted with an RSA public key.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-get-cspk-item.rb
    :dedent: 0
    :language: ruby
-
-See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3-ruby-example-get-cspk-item.rb>`_
-on GitHub.

@@ -19,7 +19,7 @@ Adding a Managed Policy to an |IAM| User
         Learn to add a managed poligy to an IAM user with this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, IAM
 
-The following example adds the managed policy :code:`AmazonS3FullAccess` to the |IAM| user :code:`my_groovy_user` in the :code:`us-west-2` region.
+The following code example attaches a policy to a user in |IAMlong| (|IAM|).
 
 .. literalinclude:: ./example_code/iam/iam-ruby-example-add-managed-policy.rb
    :dedent: 0

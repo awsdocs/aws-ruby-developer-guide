@@ -10,22 +10,16 @@
 
 .. _aws-ruby-sdk-s3-example-get-bucket-items:
 
-###########################################
-Getting Information about |S3| Bucket Items
-###########################################
+#############################################
+Getting Information about |S3| Bucket Objects
+#############################################
 
 .. meta::
     :description:
-        Get Amazon S3 bucket item information using this AWS SDK for Ruby code example.
+        Get Amazon S3 bucket object information using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, Amazon S3
 
-A presigned URL gives you access to the object identified in the URL, if the creator of the
-presigned URL has permissions to access that object. You can use a presigned URL to allow a user to
-click a link and see an item without having to make the item public.
-
-The following example lists the names and presigned URLs of the first 50 items of the bucket
-:code-ruby:`my-bucket` in the :code:`us-west-2` region.  If a limit is not specified, |S3| lists up
-to 1,000 items.
+The following code example lists up to the first 1,000 objects in the specified bucket in |S3|.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-list-bucket-items.rb
    :dedent: 0

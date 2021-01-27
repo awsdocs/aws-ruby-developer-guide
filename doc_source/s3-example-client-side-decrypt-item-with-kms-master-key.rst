@@ -19,26 +19,7 @@ Decrypting an Amazon S3 Bucket Object with an AWS KMS Key
         Decrypt Amazon S3 bucket objects with client-side AWS KMS keys using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
-The following example uses the
-:ruby-sdk-api:`get_object <Aws/S3/Client.html#get_object-instance_method>` method
-to get the object :code-ruby:`my_item` from the bucket
-:code-ruby:`my_bucket` in the :code:`us-west-2` region.
-
-1. Create the file *decrypt_object_csekms.rb*.
-
-2. Add the required |S3| gem.
-
-.. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
-
-3. Get the AWS KMS key from the command line,
-Where :code:`key` is an AWS KMS key ID as created in the :doc:`kms-example-create-key` example
-and must be the same value you used to encrypt the object.
-
-4. Set the bucket name and object name.
-
-5. Create a |KMS| and |S3| client.
-
-6. Call :code:`get_object` to get the object and display the result.
+The following code example gets the contents of an encrypted object in an |S3| bucket.
 
 .. literalinclude:: ./example_code/s3/s3_get_cskms_decrypt_item.rb
    :dedent: 0

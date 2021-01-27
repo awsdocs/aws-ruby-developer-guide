@@ -19,32 +19,9 @@ Encrypting an Amazon S3 Bucket Object with a Public Key
         Encrypt Amazon S3 bucket buckets with a client-side public key using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples
 
-The following example uses the
-`PKey <http://ruby-doc.org/stdlib-2.0.0/libdoc/openssl/rdoc/OpenSSL/PKey.html>`_
-class to encrypt an object with a public key and the
-:ruby-sdk-api:`put_object <Aws/S3/Client.html#put_object-instance_method>` method
-to add the object :code-ruby:`my_item` to the bucket
-:code-ruby:`my_bucket` in the :code:`us-west-2` region.
-
-1. Create the file *encrypt_object_csepk.rb*.
-
-2. Add the required |S3| and OpenSSL gems.
-
-.. note:: Version 2 of the |sdk-ruby| didn't have service-specific gems.
-
-3. Set the bucket name, object name, and name of the file containing the public key.
-See :doc:`s3-example-create-public-private-key` for information about creating a public key.
-
-4. Get the file contents as a string; get the public key from the file
-and create a new RSA key to encrypt the bucket object.
-
-5. Create an |S3| encryption client and call :code:`put_object` to upload the object to the bucket.
-Finally, display a message to the user about the results.
+The following code example uploads an object to an |S3| bucket. The object's contents are encrypted with an RSA public key.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-add-cspk-item.rb
    :dedent: 0
    :language: ruby
 
-See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3-ruby-example-add-cspk-item.rb>`_
-on GitHub.

@@ -19,28 +19,12 @@ Managing |IAM| Users
         Learn to manage IAM users with this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, IAM
 
-An |IAM| user represents a person or service that interacts with AWS. For more information about |IAM| users, see :IAM-ug:`IAM Users <id_users>`.
+The following code example demonstrates how to:
 
-In this example, you use the |sdk-ruby| with |IAM| to:
-
-#. Get information about available AWS |IAM| users by using :aws-ruby-iam-client-method:`list_users`.
-#. Create a user by using :aws-ruby-iam-client-method:`create_user`.
-#. Update the user's name by using :aws-ruby-iam-client-method:`update_user`.
-#. Delete the user by using :aws-ruby-iam-client-method:`delete_user`.
-
-*************
-Prerequisites
-*************
-
-Before running the example code, you need to install and configure the |sdk-ruby|, as described
-in:
-
-* :ref:`aws-ruby-sdk-setup-install`
-* :ref:`aws-ruby-sdk-setup-config`
-
-*******
-Example
-*******
+#. Get a list of user names in |IAMlong| (|IAM|).
+#. Create a user.
+#. Update the user's name.
+#. Delete the user.
 
 .. literalinclude:: ./example_code/iam/iam-ruby-example-manage-users.rb
    :dedent: 0

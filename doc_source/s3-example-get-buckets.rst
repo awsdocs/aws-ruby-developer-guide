@@ -19,16 +19,8 @@ Getting Information about All |S3| Buckets
         Get Amazon S3 bucket information using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, Amazon S3
 
-The following example lists the names of up to 50 of your |S3| buckets.  Copy the code and save it
-as :file:`buckets.rb`. Notice that although the :code:`Resource` object is created in the
-:code:`us-west-2` region, |S3| returns buckets to which you have access, regardless of the region
-they are in.
+The following example lists the names of up to 50 available |S3| buckets for the specified AWS Region.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-show-50-buckets.rb
    :dedent: 0
    :language: ruby
-
-.. note:: When you specify a region, the :code:`buckets` method calls the
-   :code:`Client#list_buckets` method, which returns a list of all buckets owned by the
-   authenticated sender of the request.  See :ref:`aws-ruby-sdk-s3-example-get-buckets-in-region` to
-   learn how to filter this list to get the buckets only in a specific region.

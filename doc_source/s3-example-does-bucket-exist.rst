@@ -19,27 +19,13 @@ Determining Whether an |S3| Bucket Exists
         Find out if an Amazon S3 bucket exists using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code example. Amazon S3
 
-There are two cases in which you would want to determine whether a bucket already exists. You
-perform these tests in lieu of receiving an exception if the condition fails:
-
-* You want to determine whether a bucket with a specific name already exists among all buckets, even
-  ones to which you do not have access.  This test helps prevent you from trying to create a bucket
-  with the name of an existing bucket, which causes an exception.
-
-* You want to perform an operation, such as add an item to a bucket, only on a bucket to which you
-  have access.
-
-The following example sets :code-ruby:`bucket_exists` to :code:`true` if a bucket with the name
-:code-ruby:`my-bucket` already exists.  The :code:`region:` parameter to :code:`Resource` has no
-effect on the result.
+The following code example checks whether the specified bucket exists in |S3| and is accessible to you.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-bucket-exists.rb
    :dedent: 0
    :language: ruby
 
-The following example sets ``bucket_exists`` to ``true`` if the bucket with the
-name ``my-bucket`` exists and you have access to the bucket.
-In this case, the ``region`` parameter to ``Client`` has an effect on the result.
+The following code example checks whether the specified bucket exists in |S3| and you have permission to access it.
 
 .. literalinclude:: ./example_code/s3/s3-ruby-example-head-bucket.rb
    :dedent: 0

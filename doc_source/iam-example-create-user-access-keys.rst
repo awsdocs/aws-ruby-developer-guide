@@ -19,7 +19,7 @@ Create User Access Keys for an |IAM| User
         Create an IAM user's access keys using this AWS SDK for Ruby code example.
     :keywords: AWS SDK for Ruby code examples, IAM
 
-The following example creates an access key and secret key for the |IAM| user :code:`my_groovy_user` in the :code:`us-west-2` region.
+The following code example creates an access key for a user in |IAMlong| (|IAM|).
 
 .. literalinclude:: ./example_code/iam/iam-ruby-example-create-user-access-keys.rb
    :dedent: 0
