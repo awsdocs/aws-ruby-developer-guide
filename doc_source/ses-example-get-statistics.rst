@@ -27,5 +27,5 @@ are bounced or rejected.
    :dedent: 0
    :language: ruby
 
-See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/ses/ses_get_statistics.rb>`_
+See the `complete example <https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/ses/ses_get_statistics.rb>`_
 on GitHub.

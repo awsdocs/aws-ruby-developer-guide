@@ -28,5 +28,5 @@ If no command line argument is supplied, it emits an error and quits.
 
 
 Choose :code:`Copy` to save the code locally. See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/codebuild/aws-ruby-sdk-codebuild-example-build-project.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/codebuild/aws-ruby-sdk-codebuild-example-build-project.rb>`_
 on GitHub.

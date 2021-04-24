@@ -8,7 +8,7 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-.. Example at https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_ruby_bucket_website.rb
+.. Example at https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_ruby_bucket_website.rb
 
 .. _aws-ruby-sdk-s3-example-bucket-website:
 

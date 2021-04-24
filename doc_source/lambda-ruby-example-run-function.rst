@@ -81,5 +81,5 @@ The first step is to load the modules we use:
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/lambda/aws-ruby-sdk-lambda-example-run-function.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/lambda/aws-ruby-sdk-lambda-example-run-function.rb>`_
 on GitHub.

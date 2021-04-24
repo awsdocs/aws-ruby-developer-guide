@@ -29,5 +29,5 @@ phase of the build took, in seconds.
 
 Choose :code:`Copy` to save the code locally.
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/codebuild/aws-ruby-sdk-codebuild-example-list-builds.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/codebuild/aws-ruby-sdk-codebuild-example-list-builds.rb>`_
 on GitHub.

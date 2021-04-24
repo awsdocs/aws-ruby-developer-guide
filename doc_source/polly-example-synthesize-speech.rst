@@ -38,5 +38,5 @@ Add the required gem.
 .. note:: The resulting MP3 file is in the MPEG-2 format.
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/polly/polly_synthesize_speech.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/polly/polly_synthesize_speech.rb>`_
 on GitHub.

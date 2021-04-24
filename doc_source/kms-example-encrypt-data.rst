@@ -32,5 +32,5 @@ The example displays a readable version of the resulting encrypted blob.
 
 Choose :code:`Copy` to save the code locally.
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/kms/aws-ruby-sdk-kms-example-encrypt-data.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/kms/aws-ruby-sdk-kms-example-encrypt-data.rb>`_
 on GitHub.

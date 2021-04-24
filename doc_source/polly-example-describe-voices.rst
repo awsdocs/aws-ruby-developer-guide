@@ -36,5 +36,5 @@ Add the required gem.
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/polly/polly_describe_voices.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/polly/polly_describe_voices.rb>`_
 on GitHub.

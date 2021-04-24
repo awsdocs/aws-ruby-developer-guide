@@ -37,5 +37,5 @@ ID for each document in the user's root folder.
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/workdocs/wd_list_user_docs.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/workdocs/wd_list_user_docs.rb>`_
 on GitHub.

@@ -26,5 +26,5 @@ The following code example gets the contents of an encrypted object in an |S3| b
    :language: ruby
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/s3/s3_get_cskms_decrypt_item.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/s3/s3_get_cskms_decrypt_item.rb>`_
 on GitHub.

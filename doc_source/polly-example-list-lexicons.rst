@@ -37,5 +37,5 @@ Add the required gem.
 
 
 See the `complete example
-<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/polly/polly_list_lexicons.rb>`_
+<https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/example_code/polly/polly_list_lexicons.rb>`_
 on GitHub.
