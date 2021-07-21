@@ -1,50 +1,50 @@
-This repository contains the source for the official [Amazon Web Services SDK for Ruby Developer
-Guide](http://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide).
-It provides information about how to install, set up, and use the
-[Amazon Web Services SDK for Ruby](https://aws.amazon.com/sdk-for-ruby) to create Ruby
-applications that use Amazon Web Services.
+## [Developer guide](doc_source/index.md) for the AWS SDK for Ruby
 
-The guide content is written in Markdown. It relies on content that is provided in the Amazon Web
-Services documentation team's [shared content](https://github.com/awsdocs/aws-doc-shared-content)
-and [SDK examples](https://github.com/awsdocs/aws-doc-sdk-examples) repositories.
+This is the open source version of the developer guide for the Amazon Web Services (AWS) SDK for Ruby.
 
-Reporting issues
-================
+**NOTE**: The default branch for this repo has changed to `main`.
+If you have cloned the previous default branch, please update your local repo to use the `main` branch.
 
-You can use the [Issues](https://github.com/awsdocs/aws-ruby-developer-guide/issues) section of this
-repository to report problems in the documentation. *When submitting an issue, please indicate*:
+To view this documentation, start with the [index](doc_source/index.md).
 
-* The page (a URL or file name is best) that the issue occurs on.
+This repository contains the open source version of the official [AWS SDK for Ruby Developer Guide](https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide).
+It provides information about how to install, set up, and use the [AWS SDK for Ruby](https://aws.amazon.com/sdk-for-ruby) to create Ruby applications that use AWS.
 
-* What the issue is, using as much detail as you can provide. For many issues, this might be as
-  simple as "The page has a typo; the word 'complie' in the third paragraph shoud be 'compile'." If
-  the issue is more complex, please describe it with enough detail that it's clear to the Amazon Web
-  Services documentation team what the problem is.
+The GitHub repository for the AWS SDK for Ruby is at https://github.com/aws/aws-sdk-ruby.
 
-Contributing fixes and updates
-==============================
+## Recent updates
 
-To contribute your own documentation fixes or updates, please use the Github-standard procedures for
-[forking the repository](https://help.github.com/articles/fork-a-repo/) and submitting a
-[pull request](https://help.github.com/articles/using-pull-requests/).
+You can find out when this guide has had major updates and what those updates were by looking in the [Document History](doc_source/history.md) topic.
 
-Note that many common substitutions found in these docs are sourced from the
-[shared content](https://github.com/awsdocs/aws-doc-shared-content) repository. If you see a
-substitution used that isn't declared at the top of the source file, then it's probably defined in
-the shared content.
+## Reporting issues
 
-Code examples in the documentation
-==================================
+You can use the Issues section of this repository to report problems in the documentation. When submitting an issue, please indicate:
 
-You can find the code examples featured in this documentation in a separate repository:
-[aws-doc-sdk-examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/ruby). Full
-code and build files are included, so you can build and run any of the provided examples yourself.
+  * What page the issue occurs on; a URL or filename is best.
+  * What the issue is, using as much detail as you can provide.
+    * The issue might be simple. For example: "The page has a typo; the word 'complie' in the third paragraph should be 'compile'."
+    * The issue might be more complex. If so, please describe it with enough detail so that it's clear to the AWS documentation team what the problem is.
 
-In addition to examples in Ruby, you'll also find examples for each of the other Amazon Web
-Services SDKs. If you find issues with any of the examples, you can submit issues or fork the
-repository and submit a pull request!
+## Contributing fixes and updates
 
-The code examples are provided under the *Apache 2.0* open source license. See the example
-repository's [README](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/README.md) for
-more details.
+To contribute your own documentation fixes or updates, please use standard GitHub procedures for [forking a repository](https://help.github.com/articles/fork-a-repo/) and [submitting a pull request](https://help.github.com/articles/using-pull-requests/).
 
+## Code examples in the documentation
+
+The code examples featured in this documentation can be found in a separate repository: [aws-doc-sdk-examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/ruby/example_code).
+
+In addition to examples in Ruby, you'll also find examples for each of the other AWS SDKs. If you find issues with any of the examples, you can submit Issues or fork the repository and submit a pull request!
+
+The code examples are provided under the Apache 2.0 open source license. For more details, see the example repository's [README](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/README.rst).
+
+## Copyright and license
+
+All content in this repository, unless otherwise stated, is Copyright Amazon.com, Inc. or its affiliates. All rights reserved.
+
+Except where otherwise noted, this work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/) (the "License"). Use the preceding link for a human-readable summary of the license terms. The full license text is available at: http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode and in the LICENSE file accompanying this repository.
+
+## License summary
+
+The documentation is made available under the Creative Commons Attribution-ShareAlike 4.0 International License. See the LICENSE file.
+
+The sample code within this documentation is made available under the MIT-0 license. See the LICENSE-SAMPLECODE file.
