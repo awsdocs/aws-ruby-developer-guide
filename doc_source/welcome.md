@@ -2,7 +2,7 @@
 
 Welcome to the AWS SDK for Ruby\.
 
-The AWS SDK for Ruby helps take the complexity out of coding by providing Ruby classes for almost all AWS services, including Amazon Simple Storage Service, Amazon Elastic Compute Cloud, and Amazon DynamoDB\. For a complete list of services supported by the AWS SDK for Ruby, see the [Supported Services](https://github.com/aws/aws-sdk-ruby/blob/master/README.md#supported-services) section of the AWS SDK for Ruby Readme file\. This section also lists the gems that the AWS SDK for Ruby supports as version 3 modularized the monolithic SDK gem into service\-specific gems\.
+The AWS SDK for Ruby helps take the complexity out of coding by providing Ruby classes for almost all AWS services, including Amazon Simple Storage Service, Amazon Elastic Compute Cloud, and Amazon DynamoDB\. For a complete list of services supported by the AWS SDK for Ruby, see the [Supported Services](https://github.com/aws/aws-sdk-ruby/blob/master/README.md#supported-services) section of the AWS SDK for Ruby README file\. This section also lists the gems that the AWS SDK for Ruby supports as version 3 modularized the monolithic SDK gem into service\-specific gems\.
 
 ## Using the AWS SDK for Ruby with AWS Cloud9<a name="aws-ruby-sdk-developer-guide-cloud9"></a>
 

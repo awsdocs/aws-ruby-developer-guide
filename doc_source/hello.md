@@ -41,7 +41,7 @@ obj.upload_file('my_file')
 
 ## Listing the Contents of a Bucket<a name="aws-ruby-sdk-hello-world-list-bucket-contents"></a>
 
-To list the contents of a bucket, use the [Aws::S3::Bucket:Objects](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Bucket.html#objects-instance_method) method\. The following example lists up to 50 bucket items for the bucket `my-bucket`\.
+To list the contents of a bucket, use the [https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Bucket.html#objects-instance_method](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Bucket.html#objects-instance_method) method\. The following example lists up to 50 bucket items for the bucket `my-bucket`\.
 
 ```
 my_bucket.objects.limit(50).each do |obj|
@@ -176,6 +176,6 @@ ruby hello-s3.rb bucket-name upload your_file.txt
 ## Next Steps<a name="aws-ruby-sdk-hello-world-next-steps"></a>
 
 Now that you’ve completed your first AWS SDK for Ruby application, here are some suggestions to extend the code you just wrote:
-+ Use the `buckets` collection from the [Aws::S3::Resource](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Resource.html) class to get a list of buckets\.
-+ Use `#get` method from the [Bucket](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Bucket.html) class to download an object from the bucket\.
++ Use the `buckets` collection from the [https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Resource.html](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Resource.html) class to get a list of buckets\.
++ Use `#get` method from the [https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Bucket.html](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Bucket.html) class to download an object from the bucket\.
 + Use the code in [Adding a File to the Bucket](#aws-ruby-sdk-hello-world-add-to-bucket) to confirm the item exists in the bucket, and then update that bucket item\.

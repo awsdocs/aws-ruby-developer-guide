@@ -1,6 +1,6 @@
 # Amazon S3 Encryption Client Migration<a name="s3-encryption-migration"></a>
 
-This topic shows how to migrate your applications from Version 1 \(V1\) of the \(Amazon S3\) encryption client to Version 2 \(V2\), and ensure application availability throughout the migration process\.
+This topic shows how to migrate your applications from Version 1 \(V1\) of the Amazon Simple Storage Service \(Amazon S3\) encryption client to Version 2 \(V2\), and ensure application availability throughout the migration process\.
 
 ## Migration Overview<a name="migration-overview"></a>
 

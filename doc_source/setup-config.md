@@ -4,12 +4,12 @@ Learn how to configure the AWS SDK for Ruby\. To use the SDK, you must set eithe
 
 ## Get your AWS access keys<a name="aws-ruby-sdk-getting-credentials"></a>
 
-Access keys consist of an *access key ID* and *secret access key*, which are used to sign programmatic requests that you make to AWS\. If you don’t have access keys, you can create them by using the [AWS Management Console]()\. We recommend that you use IAM access keys instead of AWS root account access keys\. IAM lets you securely control access to AWS services and resources in your AWS account\.
+Access keys consist of an *access key ID* and *secret access key*, which are used to sign programmatic requests that you make to AWS\. If you don’t have access keys, you can create them by using the [Management Console](https://console.aws.amazon.com/)\. We recommend that you use IAM access keys instead of AWS root account access keys\. IAM lets you securely control access to AWS services and resources in your AWS account\.
 
 **Note**  
 To create access keys, you must have permissions to perform the required IAM actions\. For more information, see [Granting IAM User Permission to Manage Password Policy and Credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_delegate-permissions.html) in the IAM User Guide\.
 
-### To get your access key ID and secret access key<a name="w3aab9b7b3b5"></a>
+### To get your access key ID and secret access key<a name="get-access-id"></a>
 
 1. Open the [IAM console](https://console.aws.amazon.com/iam/home)\.
 
@@ -50,7 +50,7 @@ You can override these settings in your code\. The precedence is:
 
 1.  [Setting Credentials in a Client Object](#aws-ruby-sdk-credentials-client) 
 
-1.  [Setting Credentials Using Aws\.config](#aws-ruby-sdk-credentials-aws-config) 
+1.  [Setting Credentials Using `Aws.config`](#aws-ruby-sdk-credentials-aws-config) 
 
 The following sections describe the various ways you can set credentials, starting with the most flexible approach\. For more information about AWS credentials and recommended approaches for credential management, see [AWS Security Credentials](https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html) in the AWS General Reference\.
 
@@ -98,7 +98,7 @@ set AWS_ACCESS_KEY_ID=your_access_key_id
 set AWS_SECRET_ACCESS_KEY=your_secret_access_key
 ```
 
-### Setting Credentials Using Aws\.config<a name="aws-ruby-sdk-credentials-aws-config"></a>
+### Setting Credentials Using `Aws.config`<a name="aws-ruby-sdk-credentials-aws-config"></a>
 
 Set the credentials in your code by updating the values in the `Aws.config` hash\.
 
@@ -112,7 +112,7 @@ Aws.config.update({
 
 ### Changing your Credentials Location<a name="aws-ruby-sdk-credentials-move"></a>
 
-You can also use **Aws\.config** to store your credentials in a non\-standard location\.
+You can also use **`Aws.config`** to store your credentials in a non\-standard location\.
 
 The following example updates your configuration to store your credentials at *my\-path*\.
 
@@ -140,7 +140,7 @@ For an Amazon Elastic Compute Cloud instance, create an AWS Identity and Access 
 
 ## Creating an AWS STS Access Token<a name="aws-ruby-sdk-credentials-access-token"></a>
 
-Use the [Aws::AssumeRoleCredentials](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/AssumeRoleCredentials.html) method to create an AWS Security Token Service \(AWS STS\) access token\.
+Use the [https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/AssumeRoleCredentials.html](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/AssumeRoleCredentials.html) method to create an AWS Security Token Service \(AWS STS\) access token\.
 
 The following example uses an access token to create an Amazon S3 client object, where `linked::account::arn` is the Amazon Resource Name \(ARN\) of the role to assume and `session-name` is an identifier for the assumed role session\.
 
@@ -158,7 +158,7 @@ s3 = Aws::S3::Client.new(credentials: role_credentials)
 
 You need to set a [region](https://docs.aws.amazon.com/general/latest/gr/rande.html) when using most AWS services\. You can set the AWS Region in ways similar to setting your AWS credentials\. The AWS SDK for Ruby searches for a region in the following order:
 +  [Setting the Region in a Client or Resource Object](#aws-ruby-sdk-region-client-resource) 
-+  [Setting the Region Using Aws\.config](#aws-ruby-sdk-region-aws-config) 
++  [Setting the Region Using `Aws.config`](#aws-ruby-sdk-region-aws-config) 
 +  [Setting the Region Using Environment Variables](#aws-ruby-sdk-region-environment) 
 
 The rest of this section describes how to set a region, starting with the most flexible approach\.
@@ -179,7 +179,7 @@ To set this variable on Windows, use the `set` command\. The following example s
 set AWS_REGION=us-west-2
 ```
 
-### Setting the Region Using Aws\.config<a name="aws-ruby-sdk-region-aws-config"></a>
+### Setting the Region Using `Aws.config`<a name="aws-ruby-sdk-region-aws-config"></a>
 
 Set the region by adding a `region` value to the `Aws.config` hash\. The following example updates the `Aws.config` hash to use the `us-west-1` region\.
 

@@ -1,6 +1,6 @@
 # Amazon RDS Examples Using the AWS SDK for Ruby<a name="rds-examples"></a>
 
-Amazon Relational Database Service \(Amazon RDS\) is a web service that makes it easier to set up, operate, and scale a relational database in the cloud\. You can use the following examples to access Amazon RDS using the AWS SDK for Ruby\. For more information about Amazon RDS, see the [ documentation](https://aws.amazon.com/documentation/rds/)\.
+Amazon Relational Database Service \(Amazon RDS\) is a web service that makes it easier to set up, operate, and scale a relational database in the cloud\. You can use the following examples to access Amazon RDS using the AWS SDK for Ruby\. For more information about Amazon RDS, see the [Amazon Relational Database Service documentation](https://aws.amazon.com/documentation/rds/)\.
 
 **Note**  
 Some of the following examples use methods that were introduced in the `2.2.18` version of the `Aws::RDS::Resource` class\. To run those examples, you must use that version or a later version of the `aws-sdk` gem\.

@@ -1,6 +1,6 @@
 # Amazon EC2 Tips and Tricks<a name="ec2-tips"></a>
 
-This section provides some tips to help you use the AWS SDK for Ruby with Amazon Elastic Compute Cloud \(Amazon EC2\) services\. For more information about Amazon EC2, see the [Amazon EC2 Getting Started Guide]()\.
+This section provides some tips to help you use the AWS SDK for Ruby with Amazon Elastic Compute Cloud \(Amazon EC2\) services\. For more information about Amazon EC2, see the [Amazon EC2 Getting Started Guide](https://docs.aws.amazon.com/AWSEC2/latest/GettingStartedGuide/)\.
 
 ## Switching Elastic IPs<a name="aws-ruby-sdk-ec2-tip-switch-elastic-ips"></a>
 

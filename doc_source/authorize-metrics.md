@@ -1,16 +1,16 @@
-# Authorize SDK Metrics to Collect and Send Metrics in the<a name="authorize-metrics"></a>
+# Authorize SDK Metrics to Collect and Send Metrics in the AWS SDK for Ruby<a name="authorize-metrics"></a>
 
 To collect metrics from AWS SDKs using AWS SDK Metrics for Enterprise Support, Enterprise customers must create an IAM Role that gives CloudWatch agent permission to gather data from their Amazon EC2 instance or production environment\.
 
 Use the following code sample or the AWS Console to create an IAM Policy and Role for an CloudWatch agent to access SDK Metrics in your environment\.
 
-Learn more about using SDK Metrics with in [Set up SDK Metrics in the AWS SDK for Ruby](setup-metrics.md)\.
+Learn more about using SDK Metrics with AWS SDK for Ruby in [Set up SDK Metrics in the AWS SDK for Ruby](setup-metrics.md)\.
 
-## Set Up Access Permissions Using the<a name="setup-access-permissions-sdk"></a>
+## Set Up Access Permissions Using the AWS SDK for Ruby<a name="setup-access-permissions-sdk"></a>
 
 Create an IAM role for the instance that has permission for Amazon EC2 Systems Manager and SDK Metrics\.
 
-First, create a policy using \. Then create a role using \. Finally, attach the policy you created to your new role with \.
+First, create a policy using `CreatePolicy`\. Then create a role using `CreateRole`\. Finally, attach the policy you created to your new role with `AttachRolePolicy`\.
 
 ```
 require 'aws-sdk-iam' # v2: require 'aws-sdk'

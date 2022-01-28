@@ -2,7 +2,7 @@
 
 The following code example:
 
-1. Displays information about any addresses associated with an \(Amazon EC2\) instance\.
+1. Displays information about any addresses associated with an Amazon Elastic Compute Cloud \(Amazon EC2\) instance\.
 
 1. Creates an Elastic IP address in Amazon Virtual Private Cloud \(Amazon VPC\)\.
 

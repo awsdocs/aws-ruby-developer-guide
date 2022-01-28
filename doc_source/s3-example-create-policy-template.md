@@ -87,4 +87,4 @@ s3.put_bucket_lifecycle_configuration(:bucket => 'other_bucket', :lifecycle_conf
 Best Practice  
 We recommend that you enable the [AbortIncompleteMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlifecycle.html) lifecycle rule on your Amazon S3 buckets\.  
 This rule directs Amazon S3 to abort multipart uploads that don’t complete within a specified number of days after being initiated\. When the set time limit is exceeded, Amazon S3 aborts the upload and then deletes the incomplete upload data\.  
-For more information, see [Lifecycle Configuration for a Bucket with Versioning](https://docs.aws.amazon.com/AmazonS3/latest/UG/lifecycle-configuration-bucket-with-versioning.html) in the \.
+For more information, see [Lifecycle Configuration for a Bucket with Versioning](https://docs.aws.amazon.com/AmazonS3/latest/UG/lifecycle-configuration-bucket-with-versioning.html) in the Amazon Simple Storage Service User Guide\.

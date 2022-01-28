@@ -4,13 +4,13 @@ Amazon SQS provides highly scalable hosted queues for storing messages as they t
 
 In this example, you use the AWS SDK for Ruby with Amazon SQS to:
 
-1. Get a list of your queues by using [Aws::SQS::Client\#list\_queues](https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#list_queues-instance_method)\.
+1. Get a list of your queues by using [https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#list_queues-instance_method](https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#list_queues-instance_method)\.
 
-1. Create a queue by using [Aws::SQS::Client\#create\_queue](https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#create_queue-instance_method)\.
+1. Create a queue by using [https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#create_queue-instance_method](https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#create_queue-instance_method)\.
 
-1. Get the queue’s URL by using [Aws::SQS::Client\#get\_queue\_url](https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#get_queue_url-instance_method)\.
+1. Get the queue’s URL by using [https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#get_queue_url-instance_method](https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#get_queue_url-instance_method)\.
 
-1. Delete the queue by using [Aws::SQS::Client\#delete\_queue](https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#delete_queue-instance_method)\.
+1. Delete the queue by using [https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#delete_queue-instance_method](https://docs.aws.amazon.com/sdkforruby/api/Aws/SQS/Client.html#delete_queue-instance_method)\.
 
 ## Prerequisites<a name="prerequisites"></a>
 

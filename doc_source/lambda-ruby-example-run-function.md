@@ -33,10 +33,10 @@ The output JSON looks like the following, where:
 ```
 
 The first step is to load the modules we use:
-+  `aws-sdk` loads the AWS SDK for Ruby module we use to invoke the function\.
++  `aws-sdk` loads the AWS SDK for Ruby module we use to invoke the Lambda function\.
 +  `json` loads the JSON module we use to marshall and unmarshall the request and response payloads\.
 +  `os` loads the OS module we use to ensure we can run our Ruby application on Microsoft Windows\. If you are on a different operating system, you can remove those lines\.
-+ We then create the client we use to invoke the function\.
++ We then create the Lambda client we use to invoke the Lambda function\.
 + Next we create the hash for the request arguments and call `MyGetItemsFunction`\.
 + Finally we parse the response, and if are successful, we print out the items\.
 

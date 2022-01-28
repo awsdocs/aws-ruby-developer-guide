@@ -1,6 +1,6 @@
 # Encrypting Amazon S3 Bucket Items<a name="s3-example-encrypt-bucket-items"></a>
 
-Amazon S3 supports encrypting Amazon S3 bucket objects on both the client and the server\. To encrypt objects on the client, you perform the encryption yourself, either using keys that you create or keys that \(AWS KMS\) manages for you\.
+Amazon S3 supports encrypting Amazon S3 bucket objects on both the client and the server\. To encrypt objects on the client, you perform the encryption yourself, either using keys that you create or keys that AWS Key Management Service \(AWS KMS\) manages for you\.
 
 To encrypt objects on the server, you have more options\.
 + You can have Amazon S3 automatically encrypt objects as you upload them to a bucket\. Once you configure a bucket with this option, every object that you upload–from that point on–is encrypted\.

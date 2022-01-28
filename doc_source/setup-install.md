@@ -8,7 +8,7 @@ Before you install the AWS SDK for Ruby, you need an AWS account and Ruby versio
 
 If you don’t have an AWS account, use the following procedure to create one\.
 
-1. Open [http://aws\.amazon\.com/](https://aws.amazon.com/) and choose **Create an AWS Account**\.
+1. Open [https://aws\.amazon\.com/](https://aws.amazon.com/) and choose **Create an AWS Account**\.
 
 1. Follow the online instructions\.
 

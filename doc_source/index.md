@@ -21,7 +21,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Hello World Tutorial for the AWS SDK for Ruby](hello.md)
 + [Configuring the AWS SDK for Ruby](setup-config.md)
    + [SDK Metrics in the AWS SDK for Ruby](sdk-metrics.md)
-      + [Authorize SDK Metrics to Collect and Send Metrics in the](authorize-metrics.md)
+      + [Authorize SDK Metrics to Collect and Send Metrics in the AWS SDK for Ruby](authorize-metrics.md)
       + [Set up SDK Metrics in the AWS SDK for Ruby](setup-metrics.md)
       + [Definitions for SDK Metrics](define-metrics.md)
 + [Using AWS Cloud9 with the AWS SDK for Ruby](cloud9-ruby.md)

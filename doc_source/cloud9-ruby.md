@@ -1,6 +1,6 @@
 # Using AWS Cloud9 with the AWS SDK for Ruby<a name="cloud9-ruby"></a>
 
-You can use AWS Cloud9 with the AWS SDK for Ruby to write and run your Ruby code using just a browser\. AWS Cloud9 includes tools such as a code editor and terminal\. Because the AWS Cloud9 IDE is cloud based, you can work on your projects from your office, home, or anywhere using an internet\-connected machine\. For general information about AWS Cloud9, see the \.
+You can use AWS Cloud9 with the AWS SDK for Ruby to write and run your Ruby code using just a browser\. AWS Cloud9 includes tools such as a code editor and terminal\. Because the AWS Cloud9 IDE is cloud based, you can work on your projects from your office, home, or anywhere using an internet\-connected machine\. For general information about AWS Cloud9, see the AWS Cloud9 User Guide\.
 
 Follow these instructions to set up AWS Cloud9 with the AWS SDK for Ruby:
 +  [Step 1: Set up Your AWS Account to Use AWS Cloud9](#cloud9-ruby-account) 
@@ -13,13 +13,13 @@ Follow these instructions to set up AWS Cloud9 with the AWS SDK for Ruby:
 
 Start to use AWS Cloud9 by signing in to the AWS Cloud9 console as an AWS Identity and Access Management \(IAM\) entity \(for example, an IAM user\) in your AWS account who has access permissions for AWS Cloud9\.
 
-To set up an IAM entity in your AWS account to access AWS Cloud9, and to sign in to the AWS Cloud9 console, see [Team Setup for AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/setup.html) in the \.
+To set up an IAM entity in your AWS account to access AWS Cloud9, and to sign in to the AWS Cloud9 console, see [Team Setup for AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/setup.html) in the AWS Cloud9 User Guide\.
 
 ## Step 2: Set up Your AWS Cloud9 Development Environment<a name="cloud9-ruby-environment"></a>
 
 After you sign in to the AWS Cloud9 console, use the console to create an AWS Cloud9 development environment\. After you create the environment, AWS Cloud9 opens the IDE for that environment\.
 
-See [Creating an Environment in AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/create-environment.html) in the for details\.
+See [Creating an Environment in AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/create-environment.html) in the AWS Cloud9 User Guide for details\.
 
 **Note**  
 As you create your environment in the console for the first time, we recommend that you choose the option to **Create a new instance for environment \(EC2\)**\. This option tells AWS Cloud9 to create an environment, launch an Amazon EC2 instance, and then connect the new instance to the new environment\. This is the fastest way to begin using AWS Cloud9\.
@@ -64,4 +64,4 @@ To learn how to work with these and other code examples, see [AWS SDK for Ruby C
 
 ## Step 5: Run Example Code<a name="cloud9-ruby-run"></a>
 
-To run code in your AWS Cloud9 development environment, see [Run Your Code](https://docs.aws.amazon.com/cloud9/latest/user-guide/build-run-debug.html#build-run-debug-run) in the \.
+To run code in your AWS Cloud9 development environment, see [Run Your Code](https://docs.aws.amazon.com/cloud9/latest/user-guide/build-run-debug.html#build-run-debug-run) in the AWS Cloud9 User Guide\.

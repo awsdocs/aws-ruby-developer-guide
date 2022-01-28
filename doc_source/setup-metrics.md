@@ -55,7 +55,7 @@ Enabling SDK Metrics does not configure your credentials to use an AWS service\.
 
 ### Option 2: AWS Shared Config File<a name="enable-csm-option-2"></a>
 
-If no SDK Metrics configuration is found in the environment variables, the AWS SDK for Ruby looks for your customized AWS profile field\. Then it checks the `aws_csm` profile\. To enable SDK Metrics, add `csm_enabled` to the shared config file *\~/\.aws/config*\.
+If no SDK Metrics configuration is found in the environment variables, the AWS SDK for Ruby looks for your customized AWS profile field\. Then it checks the `aws_csm` profile\. To enable SDK Metrics, add `csm_enabled` to the shared config file `~/.aws/config`\.
 
 ```
 [default]
@@ -85,7 +85,7 @@ export AWS_CSM_PORT=1234
 
 ### Option 2: AWS Shared Config File<a name="update-cw-agent-option2"></a>
 
-Most services use the default port\. If your service requires a unique port ID, add `AWS_CSM_PORT=[PORT-NUMBER]`, where PORT\-NUMBER is the port number, to *\~/\.aws/config*\.
+Most services use the default port\. If your service requires a unique port ID, add `AWS_CSM_PORT=[PORT-NUMBER]`, where PORT\-NUMBER is the port number, to `~/.aws/config`\.
 
 ```
 [default]
@@ -108,7 +108,7 @@ amazon-cloudwatch-agent-ctl -a start;
 
 ## Disable SDK Metrics<a name="disable-sdk-metrics"></a>
 
-To turn off SDK Metrics, set `csm_enabled` to **false** in your environment variables or in your AWS Shared config file *\~/\.aws/config*\. Then restart your CloudWatch agent so that the changes can take effect\.
+To turn off SDK Metrics, set `csm_enabled` to **false** in your environment variables or in your AWS Shared config file `~/.aws/config`\. Then restart your CloudWatch agent so that the changes can take effect\.
 
 ### Set `csm_enabled` to **false**<a name="set-csm-enabled-false"></a>
 
