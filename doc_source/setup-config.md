@@ -204,5 +204,3 @@ If you need to use a nonstandard endpoint in the region you’ve selected, add a
 ```
 s3 = Aws::S3::Resource.new(endpoint: other_endpoint)
 ```
-
-**Topics**
