@@ -12,5 +12,5 @@ Cloud security at Amazon Web Services \(AWS\) is the highest priority\. As an AW
 + [Compliance Validation](compliance-validation.md)
 + [Resilience](disaster-recovery-resiliency.md)
 + [Infrastructure Security](infrastructure-security.md)
-+ [Using TLS 1\.2](tls-version.md)
++ [Enforcing a minimum TLS version](tls-version.md)
 + [S3 Encryption Client Migration](s3-encryption-migration.md)

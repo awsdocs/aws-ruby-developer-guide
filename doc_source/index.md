@@ -179,6 +179,6 @@ Amazon's trademarks and trade dress may not be used in
    + [Compliance Validation for AWS SDK for Ruby](compliance-validation.md)
    + [Resilience for AWS SDK for Ruby](disaster-recovery-resiliency.md)
    + [Infrastructure Security for AWS SDK for Ruby](infrastructure-security.md)
-   + [Using TLS 1.2 in AWS SDK for Ruby](tls-version.md)
+   + [Enforcing a minimum TLS version in the AWS SDK for Ruby](tls-version.md)
    + [Amazon S3 Encryption Client Migration](s3-encryption-migration.md)
 + [Document History](history.md)
