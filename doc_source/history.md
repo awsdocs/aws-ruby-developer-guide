@@ -6,4 +6,5 @@ The following table describes important changes in this document\. For notificat
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Getting Information about All Amazon RDS Security Groups](rds-example-get-security_groups.md) | Added note about retiring EC2\-Classic\. | July 26, 2022 | 
 | [SDK Metrics](#history) | Removed information about enabling SDK Metrics for Enterprise Support, which has been deprecated\. | January 28, 2022 | 
