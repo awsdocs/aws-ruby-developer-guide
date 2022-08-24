@@ -37,4 +37,4 @@ resp = client.create_key({
 puts resp.key_metadata.key_id
 ```
 
-Choose `Copy` to save the code locally\. See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/kms/aws-ruby-sdk-kms-example-create-key.rb) on GitHub\.
+Choose `Copy` to save the code locally\. See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/ruby/example_code/kms/create_key.rb) on GitHub\.

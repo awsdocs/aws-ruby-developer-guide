@@ -36,4 +36,4 @@ puts 'Blob:'
 puts resp.ciphertext_blob.unpack('H*')
 ```
 
-Choose `Copy` to save the code locally\. See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/kms/aws-ruby-sdk-kms-example-encrypt-data.rb) on GitHub\.
+Choose `Copy` to save the code locally\. See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/ruby/example_code/kms/encrypt_data.rb) on GitHub\.
