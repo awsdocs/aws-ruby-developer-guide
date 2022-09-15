@@ -15,7 +15,7 @@ require 'aws-sdk-dynamodb'
 # @param table_item [Hash] The properties of the item, in the correct format.
 # @example
 #   get_item_from_table(
-#     Aws::DynamoDB::Client.new(region, 'us-west-2'),
+#     Aws::DynamoDB::Client.new(region: 'us-west-2'),
 #     {
 #       table_name: 'Movies',
 #       item: {
@@ -59,4 +59,4 @@ end
 run_me if $PROGRAM_NAME == __FILE__
 ```
 
-See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/ruby/dynamodb/dynamodb_ruby_example_read_movies_item.rb) on GitHub\.
+See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/ruby/example_code/dynamodb/scenario_getting_started_movies.rb) on GitHub\.
